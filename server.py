@@ -263,10 +263,9 @@ def patristic_commentary(reference: str, fathers: list[str] | None = None) -> st
                 result += f"**Original ({r['original_lang']}):**\n{r['text_original'][:800]}\n\n"
                 result += f"**English translation:**\n{r['text'][:800]}\n\n"
             else:
-                # The text we have is English translation; note the original language
-                result += f"{r['text'][:1000]}\n"
-                if r['original_lang'] in ('greek', 'latin'):
-                    result += f"\n_[Original in {r['original_lang']}; showing English translation from {'ANF/NPNF'}]_\n"
+                # We only have the English translation
+                result += f"**English translation:**\n{r['text'][:1000]}\n\n"
+                result += f"⚠️ _Original {r['original_lang']} text not in database. Use web_search to find the original from Migne PG/PL, TLG, or Perseus. Search: \"{r['father']} {r['work']} greek/latin original text\"_\n"
             
             result += "\n---\n\n"
         
