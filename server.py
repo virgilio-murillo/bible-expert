@@ -217,6 +217,7 @@ def critical_apparatus(reference: str) -> str:
 @mcp.tool()
 def patristic_commentary(reference: str, fathers: list[str] | None = None) -> str:
     """Get patristic commentary on a verse from the Church Fathers.
+    Shows the original language (Greek/Latin) when available, plus English translation.
     
     Args:
         reference: Verse reference like "Romans 9:13"
@@ -227,25 +228,58 @@ def patristic_commentary(reference: str, fathers: list[str] | None = None) -> st
         book, chap_verse = _parse_reference(reference)
         chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
         
-        query = "SELECT father, work, text, date_approx FROM patristic WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ?"
-        params = [book, chapter, verse_start, verse_end]
+        query = """SELECT father, work, text, text_original, original_lang, date_approx 
+                   FROM patristic WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ?"""
+        params: list = [book, chapter, verse_start, verse_end]
         
-        if fathers:
-            placeholders = ",".join("?" * len(fathers))
-            query += f" AND father IN ({placeholders})"
-            params.extend(fathers)
-        
-        query += " ORDER BY date_approx"
-        rows = db.execute(query, params).fetchall()
+        # Try normalized book names
+        candidates = _normalize_book(book, "")
+        rows = []
+        for b in candidates:
+            if fathers:
+                # Use LIKE for each father name (they may be partial matches)
+                father_clauses = " OR ".join(["father LIKE ?" for _ in fathers])
+                q = query + f" AND ({father_clauses})"
+                p = [b, chapter, verse_start, verse_end] + [f"%{f}%" for f in fathers]
+            else:
+                q = query
+                p = [b, chapter, verse_start, verse_end]
+            q += " ORDER BY (text_original IS NOT NULL) DESC, date_approx LIMIT 20"
+            rows = db.execute(q, p).fetchall()
+            if rows:
+                break
         
         if not rows:
             return f"No patristic commentary found for {reference}."
         
         result = f"**Patristic Commentary: {reference}**\n\n"
         for r in rows:
-            result += f"### {r['father']} ({r['date_approx'] or '?'})\n"
+            lang_tag = f" [{r['original_lang'].upper()}]" if r['original_lang'] else ""
+            result += f"### {r['father']}{lang_tag} ({r['date_approx'] or '?'})\n"
             result += f"*{r['work']}*\n\n"
-            result += f"{r['text'][:1000]}\n\n---\n\n"
+            
+            # Show original text if available (Greek/Latin)
+            if r['text_original']:
+                result += f"**Original ({r['original_lang']}):**\n{r['text_original'][:800]}\n\n"
+                result += f"**English translation:**\n{r['text'][:800]}\n\n"
+            else:
+                # The text we have is English translation; note the original language
+                result += f"{r['text'][:1000]}\n"
+                if r['original_lang'] in ('greek', 'latin'):
+                    result += f"\n_[Original in {r['original_lang']}; showing English translation from {'ANF/NPNF'}]_\n"
+            
+            result += "\n---\n\n"
+        
+        # Also check if there's Greek text from Apostolic Fathers for this reference
+        af_rows = db.execute(
+            "SELECT book, text FROM verses WHERE version='ApostolicFathers' AND book LIKE ? AND chapter=? AND verse_num BETWEEN ? AND ?",
+            (f"%{book}%", chapter, verse_start, verse_end)
+        ).fetchall()
+        if af_rows:
+            result += "### Original Greek (Apostolic Fathers)\n"
+            for r in af_rows:
+                result += f"**{r['book']}** {chapter}:{verse_start}:\n{r['text'][:500]}\n\n"
+        
         return result
     finally:
         db.close()
