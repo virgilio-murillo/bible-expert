@@ -279,6 +279,21 @@ def patristic_commentary(reference: str, fathers: list[str] | None = None) -> st
             for r in af_rows:
                 result += f"**{r['book']}** {chapter}:{verse_start}:\n{r['text'][:500]}\n\n"
         
+        # If we didn't find entries with original text, search the unindexed originals
+        has_originals = any(r['text_original'] for r in rows)
+        if not has_originals:
+            # Search Greek/Latin originals that mention this book/chapter
+            book_search = book[:4]  # short form for searching in Greek/Latin text
+            orig_rows = db.execute(
+                "SELECT father, work, text_original, original_lang FROM patristic "
+                "WHERE text_original LIKE ? AND original_lang IS NOT NULL LIMIT 5",
+                (f"%{book_search}%{chapter}%",)
+            ).fetchall()
+            if orig_rows:
+                result += "\n### Additional Original Texts (unindexed, possibly relevant)\n"
+                for r in orig_rows:
+                    result += f"**{r['father']}** [{r['original_lang'].upper()}] *{r['work']}*:\n{r['text_original'][:400]}\n\n"
+        
         return result
     finally:
         db.close()
