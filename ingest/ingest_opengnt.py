@@ -81,7 +81,7 @@ def ingest_opengnt(db):
             book = BOOK_MAP[book_num]
             chapter = int(ref[1])
             verse = int(ref[2])
-            word = morph[1] if len(morph) > 1 else ""  # OGNTu (unicode)
+            word = morph[2] if len(morph) > 2 else morph[1] if len(morph) > 1 else ""  # OGNTa (accented)
             lexeme = morph[3] if len(morph) > 3 else ""
             rmac = morph[4] if len(morph) > 4 else ""
             strongs = morph[5] if len(morph) > 5 else ""

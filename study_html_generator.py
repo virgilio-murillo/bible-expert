@@ -204,7 +204,7 @@ def gather_chapter_data(book: str, chapter: int, version: str, candidates: list)
     for b in candidates:
         rows = db.execute("""
             SELECT DISTINCT verse_num, father, work, text, original_lang, text_original
-            FROM patristic WHERE book=? AND chapter=? AND length(text) > 30
+            FROM patristic WHERE book=? AND chapter=? AND (length(text) > 30 OR length(text_original) > 30)
             ORDER BY verse_num, father
         """, (b, chapter)).fetchall()
         if rows:
@@ -284,7 +284,21 @@ def _lookup_ref_text(db, ref: str) -> dict:
     m = re.match(r'(.+?)\s+(\d+):(\d+)', ref)
     if not m:
         return {"es": "", "gr": ""}
-    book, ch, vs = m.group(1), int(m.group(2)), int(m.group(3))
+    book_raw, ch, vs = m.group(1), int(m.group(2)), int(m.group(3))
+    # Resolve abbreviated book names
+    ABBREV = {'Mt':'Matthew','Mk':'Mark','Lk':'Luke','Jn':'John','Ac':'Acts','Ro':'Romans',
+              'Gn':'Genesis','Ex':'Exodus','Lv':'Leviticus','Nu':'Numbers','Dt':'Deuteronomy',
+              'Jos':'Joshua','Jdg':'Judges','1Sm':'1 Samuel','2Sm':'2 Samuel',
+              '1Kgs':'1 Kings','2Kgs':'2 Kings','Is':'Isaiah','Jr':'Jeremiah','Eze':'Ezekiel',
+              'Dn':'Daniel','Ho':'Hosea','Jl':'Joel','Am':'Amos','Mic':'Micah','Hab':'Habakkuk',
+              'Zch':'Zechariah','Mal':'Malachi','Ps':'Psalms','Pr':'Proverbs','Ec':'Ecclesiastes',
+              'Ga':'Galatians','Eph':'Ephesians','Php':'Philippians','Col':'Colossians',
+              'He':'Hebrews','Jas':'James','Re':'Revelation','Tt':'Titus',
+              '1Cor':'1 Corinthians','2Cor':'2 Corinthians','1Th':'1 Thessalonians',
+              '2Th':'2 Thessalonians','1Tm':'1 Timothy','2Tm':'2 Timothy',
+              '1Pe':'1 Peter','2Pe':'2 Peter','1Jn':'1 John','2Jn':'2 John','3Jn':'3 John',
+              'Jd':'Jude','Phm':'Philemon'}
+    book = ABBREV.get(book_raw.replace(' ',''), book_raw)
     result = {"es": "", "gr": ""}
     # Spanish
     row = db.execute("SELECT text FROM verses WHERE book=? AND chapter=? AND verse_num=? AND version='RVR1909' LIMIT 1", (book, ch, vs)).fetchone()
@@ -594,7 +608,7 @@ def generate_study_html(book: str, chapter: int, version: str,
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Embed all data as JSON for JS interactivity
-    js_data = json.dumps(chapter_data, ensure_ascii=False)
+    js_data = json.dumps(chapter_data, ensure_ascii=False).replace('</','<\\/')
 
     verses_count = len(chapter_data["verses"])
     patristic_count = len(chapter_data["patristic"])
@@ -784,7 +798,7 @@ function toggleTrans(v) {{
 }}
 
 const TENSE_ES = {{'P':'Presente','I':'Imperfecto (pasado continuo)','F':'Futuro','A':'Aoristo (pasado puntual)','X':'Perfecto (resultado presente)','Y':'Pluscuamperfecto'}};
-const VOICE_ES = {{'A':'Activa','M':'Media','P':'Pasiva'}};
+const VOICE_ES = {{'A':'Activa','M':'Media','P':'Pasiva','D':'Media (deponente)','O':'Pasiva (deponente)','N':'Media/Pasiva'}};
 const MOOD_ES = {{'I':'Indicativo','S':'Subjuntivo','O':'Optativo','M':'Imperativo','N':'Infinitivo','P':'Participio'}};
 function verbTenseEs(rmac) {{
   if (!rmac || !rmac.startsWith('V-')) return '';
@@ -801,12 +815,54 @@ function verbTenseEs(rmac) {{
 const CONTEXT_MEANINGS = {{
   'λέγω_PPP': 'llamado, de nombre',
   'λέγω_PAP': 'diciendo',
+  'λέγω_AAP': 'habiendo dicho',
   'ἔρχομαι_2AAP': 'habiendo venido',
   'ἔρχομαι_PNP': 'viniendo, que viene',
+  'ἔρχομαι_PMP': 'viniendo',
   'ὁράω_2AAP': 'habiendo visto',
   'ἀκούω_AAP': 'habiendo oído',
+  'ἀκούω_PAP': 'oyendo, al oír',
   'γίνομαι_2AMP': 'habiendo llegado a ser',
+  'γίνομαι_PMP': 'llegando a ser',
   'εἰμί_PAP': 'siendo, que es',
+  'πιστεύω_PAP': 'creyendo, el que cree',
+  'πιστεύω_AAP': 'habiendo creído',
+  'ἔχω_PAP': 'teniendo, que tiene',
+  'ποιέω_PAP': 'haciendo, que hace',
+  'ποιέω_AAP': 'habiendo hecho',
+  'λαμβάνω_2AAP': 'habiendo recibido',
+  'λαμβάνω_PAP': 'recibiendo',
+  'ἀποκρίνομαι_ADP': 'respondiendo',
+  'εἰσέρχομαι_2AAP': 'habiendo entrado',
+  'ἐξέρχομαι_2AAP': 'habiendo salido',
+  'θέλω_PAP': 'queriendo, que quiere',
+  'δίδωμι_PAP': 'dando',
+  'δίδωμι_AAP': 'habiendo dado',
+  'γράφω_PPP': 'escrito, lo que está escrito',
+  'γράφω_PAP': 'escribiendo',
+  'γινώσκω_2AAP': 'habiendo conocido',
+  'γινώσκω_PAP': 'conociendo',
+  'ἐγείρω_APP': 'habiendo sido levantado',
+  'ἐγείρω_AAP': 'habiendo levantado',
+  'καλέω_PPP': 'llamado',
+  'καλέω_PAP': 'llamando',
+  'ἀποστέλλω_APP': 'habiendo sido enviado',
+  'ἀποστέλλω_AAP': 'habiendo enviado',
+  'βαπτίζω_APP': 'habiendo sido bautizado',
+  'πληρόω_AAP': 'habiendo cumplido',
+  'πληρόω_APP': 'habiendo sido cumplido',
+  'ζάω_PAP': 'viviendo, que vive',
+  'κρίνω_PAP': 'juzgando',
+  'κρίνω_AAP': 'habiendo juzgado',
+  'σῴζω_APP': 'habiendo sido salvado',
+  'σῴζω_PAP': 'salvando',
+  'ἀγαπάω_PAP': 'amando, que ama',
+  'προσέρχομαι_2AAP': 'habiéndose acercado',
+  'ἀναβαίνω_2AAP': 'habiendo subido',
+  'καταβαίνω_2AAP': 'habiendo bajado',
+  'στρέφω_2APP': 'habiéndose vuelto',
+  'παραλαμβάνω_2AAP': 'habiendo tomado consigo',
+  'ἐμβαίνω_2AAP': 'habiendo embarcado',
 }};
 function contextualMeaning(w) {{
   if (!w.m || !w.m.startsWith('V-')) return '';
@@ -871,6 +927,10 @@ function explainEnding(w) {{
   if (rmac.startsWith('N-') || rmac.startsWith('A-') || rmac.startsWith('T-')) {{
     const typeNames = {{'N':'Sustantivo','A':'Adjetivo','T':'Artículo'}};
     const c = rmac[2]; const g = rmac[3]; const n = rmac[4];
+    // Handle indeclinable forms (N-PRI = proper noun indeclinable, A-NUI = numeral indeclinable)
+    if (n === 'I' || (g === 'I') || rmac.includes('PRI') || rmac.includes('NUI') || rmac.includes('OI')) {{
+      return header + `<strong>${{typeNames[firstChar]}}</strong> — indeclinable (no cambia de forma)<br><span style="font-size:0.78rem;color:#555">Nombre propio o préstamo de otro idioma</span>`;
+    }}
     let expl = header + `<strong>${{typeNames[firstChar]}}</strong><br>`;
     expl += `${{caseExplain[c] || c}}<br>`;
     expl += `<span style="font-size:0.78rem;color:#555">${{genders[g]||g}}, ${{numbers[n]||n}}</span>`;
@@ -1164,7 +1224,7 @@ function showVariants(v) {{
     + '</div>';
   html += vars.map(va => `<div style="margin-bottom:0.7rem;padding:0.6rem;background:#fff3e0;border-radius:6px">`
     + `<strong style="font-size:1rem">${{va.r}}</strong><br>`
-    + `<span style="font-size:0.82rem;color:#555">MSS: ${{renderMSS(va.ms)}}</span><br>`
+    + `<span style="font-size:0.82rem;color:#555">${{renderMSS(va.r)}}</span><br>`
     + `<span style="font-size:0.78rem;color:var(--mut)">Tipo textual: <strong>${{va.tt}}</strong></span></div>`).join('');
   html += '<hr style="margin:1rem 0;border:none;border-top:1px solid #ddd">';
   html += '<button onclick="openTCAnalysis()" style="padding:8px 16px;background:#c62828;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.9rem;margin-top:0.5rem">Abrir crítica textual completa &#8599;</button>';
@@ -1266,7 +1326,8 @@ function showMSS(el, key) {{
   const r = el.getBoundingClientRect();
   tip.style.left = r.left + 'px';
   tip.style.top = (r.bottom + 8) + 'px';
-  setTimeout(() => {{ tip.style.display = 'none'; }}, 4000);
+  if (tip._tid) clearTimeout(tip._tid);
+  tip._tid = setTimeout(() => {{ tip.style.display = 'none'; }}, 4000);
   tip.onclick = () => {{ tip.style.display = 'none'; }};
 }}
 
@@ -1279,7 +1340,10 @@ new Chart(document.getElementById('fathersChart'), {{
 
 // Map zoom
 const mapImg = document.getElementById('mapImg');
-if (mapImg) mapImg.addEventListener('click', () => mapImg.classList.toggle('zoomed'));
+if (mapImg) {{
+  mapImg.addEventListener('click', () => mapImg.classList.toggle('zoomed'));
+  document.addEventListener('keydown', (e) => {{ if (e.key === 'Escape' && mapImg.classList.contains('zoomed')) mapImg.classList.remove('zoomed'); }});
+}}
 
 // Manuscripts timeline and map
 if (D.manuscripts && Object.keys(D.manuscripts).length && D.apparatus && D.apparatus.length) {{

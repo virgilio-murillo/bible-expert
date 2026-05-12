@@ -32,7 +32,6 @@ def get_db(readonly=True):
     else:
         conn = sqlite3.connect(str(DB_PATH), timeout=30)
     conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA busy_timeout=30000")
     return conn
 
@@ -55,7 +54,7 @@ def verse_lookup(book: str, chapter: int, verse_start: int = 1, verse_end: int |
         chapter: Chapter number
         verse_start: Starting verse (default 1)
         verse_end: Ending verse (default = verse_start, or end of chapter if verse_start=1)
-        version: Text version. Options: MorphGNT, LXX, WLC, RVR1960, YLT, Vulgate, ApostolicFathers
+        version: Text version. Options: MorphGNT, LXX, WLC, RVR60, YLT, Vulgate, ApostolicFathers
         include_morphology: Include word-level morphological parsing (Greek/Hebrew only)
     """
     db = get_db()
@@ -96,10 +95,10 @@ def parallel_versions(book: str, chapter: int, verse_start: int = 1, verse_end: 
         chapter: Chapter number
         verse_start: Starting verse
         verse_end: Ending verse (default = verse_start)
-        versions: List of versions to compare. Default: MorphGNT, LXX, WLC, RVR1960, YLT, Vulgate
+        versions: List of versions to compare. Default: MorphGNT, LXX, WLC, RVR60, YLT, Vulgate
     """
     if versions is None:
-        versions = ["MorphGNT", "LXX", "WLC", "RVR1960", "YLT", "Vulgate"]
+        versions = ["MorphGNT", "LXX", "WLC", "RVR60", "KJV", "BSB", "YLT", "Vulgate"]
     
     db = get_db()
     try:
@@ -841,11 +840,15 @@ def _fts_search(db, query: str, scope: str, limit: int) -> str:
 
 _embedding_model = None
 
+import threading as _threading
+_embedding_lock = _threading.Lock()
+
 def _get_embedding_model():
     global _embedding_model
-    if _embedding_model is None:
-        from sentence_transformers import SentenceTransformer
-        _embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+    with _embedding_lock:
+        if _embedding_model is None:
+            from sentence_transformers import SentenceTransformer
+            _embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
     return _embedding_model
 
 
