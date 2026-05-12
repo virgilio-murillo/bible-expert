@@ -4,6 +4,7 @@ import os
 import sqlite3
 from pathlib import Path
 from mcp.server.fastmcp import FastMCP
+from books import resolve_book, get_all_db_names, BOOKS
 
 DB_PATH = Path(__file__).parent / "db" / "bible.db"
 DATA_DIR = Path(__file__).parent / "data"
@@ -11,37 +12,67 @@ DATA_DIR = Path(__file__).parent / "data"
 mcp = FastMCP("Bible-Expert")
 
 
-def get_db():
-    """Get a database connection."""
-    conn = sqlite3.connect(str(DB_PATH))
+def _resolve_book_or_error(book) -> str:
+    """Resolve book name/ID or raise a helpful error."""
+    resolved = resolve_book(book)
+    if resolved:
+        return resolved
+    # Build hint
+    raise ValueError(
+        f"Unknown book: '{book}'. Use a numeric ID (1-84), English name, Spanish name, or abbreviation. "
+        f"Examples: 2 or 'Exodus' or 'Éxodo' or 'Exod' or 'Ex'"
+    )
+
+
+def get_db(readonly=True):
+    """Get a database connection with concurrency-safe settings."""
+    if readonly:
+        uri = f"file:{DB_PATH}?mode=ro"
+        conn = sqlite3.connect(uri, uri=True, timeout=30)
+    else:
+        conn = sqlite3.connect(str(DB_PATH), timeout=30)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA busy_timeout=30000")
     return conn
 
 
 @mcp.tool()
-def verse_lookup(reference: str, version: str = "SBLGNT", include_morphology: bool = False) -> str:
-    """Look up Bible verse(s) by canonical reference (RVR60/Hebrew numbering). Supports all loaded versions.
+def book_list() -> str:
+    """List all available book IDs with their canonical names. Use these IDs in other tools."""
+    lines = []
+    for bid, (name, aliases) in BOOKS.items():
+        lines.append(f"{bid}: {name}")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def verse_lookup(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, version: str = "SBLGNT", include_morphology: bool = False) -> str:
+    """Look up Bible verse(s). Uses RVR60/Hebrew numbering.
     
     Args:
-        reference: Canonical reference in RVR60 numbering like "Gen 1:1", "John 3:16-18", "Psalms 23:1"
+        book: Book name (English/Spanish/abbreviation) or numeric ID (1=Genesis, 2=Exodus... 66=Revelation). Full list via book_list tool.
+        chapter: Chapter number
+        verse_start: Starting verse (default 1)
+        verse_end: Ending verse (default = verse_start, or end of chapter if verse_start=1)
         version: Text version. Options: MorphGNT, LXX, WLC, RVR1960, YLT, Vulgate, ApostolicFathers
         include_morphology: Include word-level morphological parsing (Greek/Hebrew only)
     """
     db = get_db()
     try:
-        book, chap_verse = _parse_reference(reference)
-        chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = 176 if verse_start == 1 else verse_start
         
-        rows = _query_verse(db, book, chapter, verse_start, verse_end, version)
+        rows = _query_verse(db, resolved, chapter, verse_start, verse_end, version)
         
         if not rows:
-            return f"No results for {reference} in {version}. Available versions: " + _list_versions(db)
+            return f"No results for {resolved} {chapter}:{verse_start}-{verse_end} in {version}. Available versions: " + _list_versions(db)
         
-        result = f"**{reference}** ({version}):\n\n"
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
+        result = f"**{ref}** ({version}):\n\n"
         
-        # Add versification note
-        note = _get_versification_note(book, chapter, verse_start, version)
+        note = _get_versification_note(resolved, chapter, verse_start, version)
         if note:
             result += f"_{note}_\n\n"
         
@@ -50,16 +81,21 @@ def verse_lookup(reference: str, version: str = "SBLGNT", include_morphology: bo
             if include_morphology and r['morphology']:
                 result += f"     Morphology: {r['morphology']}\n"
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
 
 @mcp.tool()
-def parallel_versions(reference: str, versions: list[str] | None = None) -> str:
+def parallel_versions(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, versions: list[str] | None = None) -> str:
     """Show a verse in multiple translations side-by-side. Uses RVR60/Hebrew numbering as canonical.
     
     Args:
-        reference: Canonical verse reference in RVR60 numbering like "John 1:1", "Psalms 23:1"
+        book: Book name or numeric ID (1-84)
+        chapter: Chapter number
+        verse_start: Starting verse
+        verse_end: Ending verse (default = verse_start)
         versions: List of versions to compare. Default: MorphGNT, LXX, WLC, RVR1960, YLT, Vulgate
     """
     if versions is None:
@@ -67,42 +103,41 @@ def parallel_versions(reference: str, versions: list[str] | None = None) -> str:
     
     db = get_db()
     try:
-        book, chap_verse = _parse_reference(reference)
-        chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = verse_start
         
-        result = f"**{reference}** — Parallel Comparison:\n"
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
+        result = f"**{ref}** — Parallel Comparison:\n"
         
-        # Add versification note if applicable
-        note = _get_versification_note(book, chapter, verse_start, "LXX")
+        note = _get_versification_note(resolved, chapter, verse_start, "LXX")
         if note:
             result += f"\n_{note}_\n"
         
         result += "\n"
         for ver in versions:
-            rows = _query_verse(db, book, chapter, verse_start, verse_end, ver)
+            rows = _query_verse(db, resolved, chapter, verse_start, verse_end, ver)
             text = " ".join(r['text'] for r in rows) if rows else "(not available)"
             result += f"**{ver}**: {text}\n\n"
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
 
 @mcp.tool()
-def semantic_search(query: str, scope: str = "all", limit: int = 10) -> str:
+def semantic_search(query: str, scope: str = "all", limit: int = 10, language: str = "auto") -> str:
     """Search biblical texts by meaning using semantic similarity.
     
     Args:
-        query: Natural language query in any language (Spanish, English, Greek, Hebrew)
+        query: Natural language query in any language (Spanish, English, Greek, Hebrew, Latin)
         scope: Filter scope. Options: all, ot, nt, deuterocanonical, pseudepigrapha, dss, apocryphal, apostolic_fathers
         limit: Max results to return (default 10)
+        language: Which embedding table to search. Options: auto, greek, latin, hebrew, spanish, english. Auto detects from query.
     """
     db = get_db()
     try:
-        # Check if embeddings are available
-        has_vec = db.execute("SELECT count(*) FROM sqlite_master WHERE name='verse_embeddings'").fetchone()[0]
-        if not has_vec:
-            return _fts_search(db, query, scope, limit)
-        
         try:
             import sqlite_vec
             from sentence_transformers import SentenceTransformer
@@ -113,46 +148,65 @@ def semantic_search(query: str, scope: str = "all", limit: int = 10) -> str:
             model = _get_embedding_model()
             embedding = model.encode(query)
             
-            scope_filter = _scope_to_sql(scope)
-            if scope_filter:
-                scope_filter = "AND " + scope_filter.replace("WHERE ", "")
+            # Auto-detect language or use specified
+            if language == "auto":
+                # Check for Greek/Hebrew/Latin characters
+                if any(0x0370 <= ord(c) <= 0x03FF or 0x1F00 <= ord(c) <= 0x1FFF for c in query):
+                    language = "greek"
+                elif any(0x0590 <= ord(c) <= 0x05FF for c in query):
+                    language = "hebrew"
+                elif all(ord(c) < 0x0250 for c in query if c.isalpha()) and any(w in query.lower() for w in ['et','in','ad','cum','qui','est','deus','dominus']):
+                    language = "latin"
+                elif any(w in query.lower() for w in ['el','la','los','las','de','en','que','por','con','dios']):
+                    language = "spanish"
+                else:
+                    language = "english"
+            
+            table = f"verse_embeddings_{language}"
+            
+            # Check table exists
+            exists = db.execute(f"SELECT count(*) FROM sqlite_master WHERE name='{table}'").fetchone()[0]
+            if not exists:
+                table = "verse_embeddings_spanish"  # fallback
             
             rows = db.execute(f"""
                 SELECT v.book, v.chapter, v.verse_num, v.version, v.text, v.canon_status, e.distance
-                FROM verse_embeddings e
+                FROM {table} e
                 JOIN verses v ON e.verse_id = v.id
                 WHERE e.embedding MATCH ? AND k = ?
-                {scope_filter}
             """, (embedding.tobytes(), limit)).fetchall()
             
-            result = f"**Semantic search**: \"{query}\" (scope: {scope})\n\n"
+            result = f"**Semantic search**: \"{query}\" (language: {language})\n\n"
             for i, r in enumerate(rows, 1):
                 result += f"{i}. [{r[0]} {r[1]}:{r[2]}] ({r[3]}) — {r[4][:200]}\n"
                 result += f"   Canon: {r[5] or 'N/A'} | Distance: {r[6]:.4f}\n\n"
             return result if rows else "No results found."
         except (ImportError, Exception) as e:
-            # Fallback to FTS
             return _fts_search(db, query, scope, limit)
     finally:
         db.close()
 
 
 @mcp.tool()
-def morphology_analysis(reference: str, version: str = "MorphGNT") -> str:
+def morphology_analysis(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, version: str = "MorphGNT") -> str:
     """Get detailed word-by-word morphological analysis for a verse.
     
     Args:
-        reference: Verse reference like "John 1:1"
+        book: Book name or numeric ID (1-84)
+        chapter: Chapter number
+        verse_start: Starting verse
+        verse_end: Ending verse (default = verse_start)
         version: Morphological source. Options: MorphGNT (Greek NT), WLC (Hebrew OT), LXX
     """
     db = get_db()
     try:
-        book, chap_verse = _parse_reference(reference)
-        chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = verse_start
         
-        # Try multiple book name variants
+        candidates = get_all_db_names(resolved)
         rows = []
-        for b in _normalize_book(book, version):
+        for b in candidates:
             rows = db.execute(
                 "SELECT word_pos, word, lemma, morph_code, gloss, strongs FROM morphology "
                 "WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ? AND version=? "
@@ -163,40 +217,49 @@ def morphology_analysis(reference: str, version: str = "MorphGNT") -> str:
                 break
         
         if not rows:
-            return f"No morphological data for {reference} in {version}."
+            ref = f"{resolved} {chapter}:{verse_start}"
+            return f"No morphological data for {ref} in {version}."
         
-        result = f"**Morphology: {reference}** ({version}):\n\n"
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
+        result = f"**Morphology: {ref}** ({version}):\n\n"
         result += "| # | Word | Lemma | Parsing | Gloss | Strong's |\n|---|------|-------|---------|-------|----------|\n"
         for r in rows:
             result += f"| {r['word_pos']} | {r['word']} | {r['lemma']} | {r['morph_code']} | {r['gloss'] or ''} | {r['strongs'] or ''} |\n"
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
 
 @mcp.tool()
-def critical_apparatus(reference: str) -> str:
+def critical_apparatus(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None) -> str:
     """Get textual variants and manuscript evidence for a verse.
     
     Args:
-        reference: Verse reference like "John 7:53" or "Mark 16:9"
+        book: Book name or numeric ID (1-84)
+        chapter: Chapter number
+        verse_start: Starting verse
+        verse_end: Ending verse (default = verse_start)
     """
     db = get_db()
     try:
-        book, chap_verse = _parse_reference(reference)
-        chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = verse_start
         
         rows = db.execute(
             "SELECT verse_num, variant_id, reading, manuscripts, text_type, notes FROM apparatus "
             "WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ? "
             "ORDER BY verse_num, variant_id",
-            (book, chapter, verse_start, verse_end)
+            (resolved, chapter, verse_start, verse_end)
         ).fetchall()
         
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
         if not rows:
-            return f"No apparatus data for {reference}. This verse may have no significant variants in our database."
+            return f"No apparatus data for {ref}. This verse may have no significant variants in our database."
         
-        result = f"**Critical Apparatus: {reference}**\n\n"
+        result = f"**Critical Apparatus: {ref}**\n\n"
         current_variant = None
         for r in rows:
             vid = f"{r['verse_num']}.{r['variant_id']}"
@@ -210,111 +273,119 @@ def critical_apparatus(reference: str) -> str:
             if r['notes']:
                 result += f"  Notes: {r['notes']}\n"
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
 
 @mcp.tool()
-def patristic_commentary(reference: str, fathers: list[str] | None = None) -> str:
+def patristic_commentary(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, fathers: list[str] | None = None) -> str:
     """Get patristic commentary on a verse from the Church Fathers.
     Shows the original language (Greek/Latin) when available, plus English translation.
     
     Args:
-        reference: Verse reference like "Romans 9:13"
+        book: Book name or numeric ID (1-84). Examples: "Exodus", "Éxodo", 2, "Ex"
+        chapter: Chapter number
+        verse_start: Starting verse (default 1 = whole chapter)
+        verse_end: Ending verse (default = verse_start, or end of chapter if verse_start=1)
         fathers: Filter by specific fathers. E.g. ["Chrysostom", "Augustine", "Origen"]. Default: all available.
     """
     db = get_db()
     try:
-        book, chap_verse = _parse_reference(reference)
-        chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = 176 if verse_start == 1 else verse_start
         
-        query = """SELECT father, work, text, text_original, original_lang, date_approx 
-                   FROM patristic WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ?"""
-        params: list = [book, chapter, verse_start, verse_end]
-        
-        # Try normalized book names
-        candidates = _normalize_book(book, "")
+        candidates = get_all_db_names(resolved)
         rows = []
         for b in candidates:
             if fathers:
-                # Use LIKE for each father name (they may be partial matches)
                 father_clauses = " OR ".join(["father LIKE ?" for _ in fathers])
-                q = query + f" AND ({father_clauses})"
+                q = f"""SELECT id, father, work, text, text_original, original_lang, date_approx 
+                       FROM patristic WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ?
+                       AND ({father_clauses}) ORDER BY (text_original IS NOT NULL) DESC, date_approx LIMIT 20"""
                 p = [b, chapter, verse_start, verse_end] + [f"%{f}%" for f in fathers]
             else:
-                q = query
+                q = """SELECT id, father, work, text, text_original, original_lang, date_approx 
+                       FROM patristic WHERE book=? AND chapter=? AND verse_num BETWEEN ? AND ?
+                       ORDER BY (text_original IS NOT NULL) DESC, date_approx LIMIT 20"""
                 p = [b, chapter, verse_start, verse_end]
-            q += " ORDER BY (text_original IS NOT NULL) DESC, date_approx LIMIT 20"
             rows = db.execute(q, p).fetchall()
             if rows:
                 break
         
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
         if not rows:
-            return f"No patristic commentary found for {reference}."
+            return f"No patristic commentary found for {ref}."
         
-        result = f"**Patristic Commentary: {reference}**\n\n"
+        result = f"**Patristic Commentary: {ref}**\n\n"
         for r in rows:
             lang_tag = f" [{r['original_lang'].upper()}]" if r['original_lang'] else ""
-            result += f"### {r['father']}{lang_tag} ({r['date_approx'] or '?'})\n"
+            result += f"### {r['father']}{lang_tag} ({r['date_approx'] or '?'}) [id={r['id']}]\n"
             result += f"*{r['work']}*\n\n"
             
-            # Show original text if available (Greek/Latin)
             if r['text_original']:
                 result += f"**Original ({r['original_lang']}):**\n{r['text_original'][:800]}\n\n"
                 result += f"**English translation:**\n{r['text'][:800]}\n\n"
             else:
-                # We only have the English translation
                 result += f"**English translation:**\n{r['text'][:1000]}\n\n"
-                result += f"⚠️ _Original {r['original_lang']} text not in database. Use web_search to find the original from Migne PG/PL, TLG, or Perseus. Search: \"{r['father']} {r['work']} greek/latin original text\"_\n"
+                result += f"⚠️ _Original {r['original_lang'] or 'greek/latin'} text not in database (id={r['id']}). Find it via web_search, then call save_patristic_original(patristic_id={r['id']}, text_original=..., original_lang=...) to index it._\n"
             
             result += "\n---\n\n"
         
-        # Also check if there's Greek text from Apostolic Fathers for this reference
-        af_rows = db.execute(
-            "SELECT book, text FROM verses WHERE version='ApostolicFathers' AND book LIKE ? AND chapter=? AND verse_num BETWEEN ? AND ?",
-            (f"%{book}%", chapter, verse_start, verse_end)
-        ).fetchall()
-        if af_rows:
-            result += "### Original Greek (Apostolic Fathers)\n"
-            for r in af_rows:
-                result += f"**{r['book']}** {chapter}:{verse_start}:\n{r['text'][:500]}\n\n"
-        
-        # If we didn't find entries with original text, search the unindexed originals
-        has_originals = any(r['text_original'] for r in rows)
-        if not has_originals:
-            # Search Greek/Latin originals that mention this book/chapter
-            book_search = book[:4]  # short form for searching in Greek/Latin text
-            orig_rows = db.execute(
-                "SELECT father, work, text_original, original_lang FROM patristic "
-                "WHERE text_original LIKE ? AND original_lang IS NOT NULL LIMIT 5",
-                (f"%{book_search}%{chapter}%",)
-            ).fetchall()
-            if orig_rows:
-                result += "\n### Additional Original Texts (unindexed, possibly relevant)\n"
-                for r in orig_rows:
-                    result += f"**{r['father']}** [{r['original_lang'].upper()}] *{r['work']}*:\n{r['text_original'][:400]}\n\n"
-        
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
 
 @mcp.tool()
-def cross_references(reference: str, include_intertextual: bool = True) -> str:
+def save_patristic_original(patristic_id: int, text_original: str, original_lang: str = "greek") -> str:
+    """Save the original Greek/Latin text for a patristic entry that only has English translation.
+    Call this after finding the original text via web search.
+    
+    Args:
+        patristic_id: The ID of the patristic record (from patristic_commentary output)
+        text_original: The original Greek or Latin text
+        original_lang: Language of the original text: "greek" or "latin"
+    """
+    db = get_db(readonly=False)
+    try:
+        row = db.execute("SELECT id, father, work FROM patristic WHERE id=?", (patristic_id,)).fetchone()
+        if not row:
+            return f"No patristic record with id={patristic_id}."
+        db.execute(
+            "UPDATE patristic SET text_original=?, original_lang=? WHERE id=?",
+            (text_original, original_lang, patristic_id)
+        )
+        db.commit()
+        return f"✅ Saved {original_lang} original for {row['father']} — {row['work']} (id={patristic_id}, {len(text_original)} chars)"
+    finally:
+        db.close()
+
+
+@mcp.tool()
+def cross_references(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, include_intertextual: bool = True) -> str:
     """Get cross-references and intertextual connections for a verse.
     
     Args:
-        reference: Verse reference like "Hebrews 1:3"
+        book: Book name or numeric ID (1-84)
+        chapter: Chapter number
+        verse_start: Starting verse
+        verse_end: Ending verse (default = verse_start)
         include_intertextual: Include connections to pseudepigrapha, DSS, and apocrypha (default true)
     """
     db = get_db()
     try:
-        book, chap_verse = _parse_reference(reference)
-        chapter, verse_start, verse_end = _parse_chap_verse(chap_verse)
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = verse_start
         
-        # Try multiple book name variants
+        candidates = get_all_db_names(resolved)
         rows = []
-        for b in _normalize_book(book, ""):
+        for b in candidates:
             rows = db.execute(
                 "SELECT target_ref, relationship, notes, target_canon_status FROM cross_refs "
                 "WHERE source_book=? AND source_chapter=? AND source_verse BETWEEN ? AND ? "
@@ -327,10 +398,11 @@ def cross_references(reference: str, include_intertextual: bool = True) -> str:
         if not include_intertextual:
             rows = [r for r in rows if r['target_canon_status'] in ('protocanonical', 'deuterocanonical')]
         
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
         if not rows:
-            return f"No cross-references found for {reference}."
+            return f"No cross-references found for {ref}."
         
-        result = f"**Cross-References: {reference}**\n\n"
+        result = f"**Cross-References: {ref}**\n\n"
         current_rel = None
         for r in rows:
             if r['relationship'] != current_rel:
@@ -342,6 +414,8 @@ def cross_references(reference: str, include_intertextual: bool = True) -> str:
                 result += f" — {r['notes']}"
             result += "\n"
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
@@ -534,36 +608,46 @@ def canon_history(book_name: str) -> str:
 
 
 @mcp.tool()
-def text_comparison(ref1: str, ref2: str, version1: str = "WLC", version2: str = "LXX") -> str:
+def text_comparison(book1: str, chapter1: int, verse1: int, book2: str, chapter2: int, verse2: int, version1: str = "WLC", version2: str = "LXX") -> str:
     """Compare two parallel passages or the same passage in different textual traditions.
     Useful for MT vs LXX, MT vs DSS, Synoptic parallels, etc.
     
     Args:
-        ref1: First reference (e.g. "Isaiah 7:14")
-        ref2: Second reference (e.g. "Isaiah 7:14") — can be same verse different version, or a parallel passage
-        version1: Version for ref1 (default WLC)
-        version2: Version for ref2 (default LXX)
+        book1: First book name or ID
+        chapter1: First chapter
+        verse1: First verse
+        book2: Second book name or ID
+        chapter2: Second chapter
+        verse2: Second verse
+        version1: Version for first passage (default WLC)
+        version2: Version for second passage (default LXX)
     """
     db = get_db()
     try:
-        text1 = _get_verse_text(db, ref1, version1)
-        text2 = _get_verse_text(db, ref2, version2)
+        resolved1 = _resolve_book_or_error(book1)
+        resolved2 = _resolve_book_or_error(book2)
         
+        rows1 = _query_verse(db, resolved1, chapter1, verse1, verse1, version1)
+        rows2 = _query_verse(db, resolved2, chapter2, verse2, verse2, version2)
+        text1 = " ".join(r['text'] for r in rows1) if rows1 else "(not available)"
+        text2 = " ".join(r['text'] for r in rows2) if rows2 else "(not available)"
+        
+        ref1 = f"{resolved1} {chapter1}:{verse1}"
+        ref2 = f"{resolved2} {chapter2}:{verse2}"
         result = f"**Text Comparison**\n\n"
         result += f"**{ref1}** ({version1}):\n{text1}\n\n"
         result += f"**{ref2}** ({version2}):\n{text2}\n\n"
         
-        # Check if there's a comparison note in the database
-        book1, cv1 = _parse_reference(ref1)
-        ch1, vs1, ve1 = _parse_chap_verse(cv1)
         notes = db.execute(
             "SELECT note FROM comparison_notes WHERE book=? AND chapter=? AND verse_num=?",
-            (book1, ch1, vs1)
+            (resolved1, chapter1, verse1)
         ).fetchone()
         if notes:
             result += f"**Scholarly notes**: {notes['note']}\n"
         
         return result
+    except ValueError as e:
+        return str(e)
     finally:
         db.close()
 
@@ -684,63 +768,16 @@ def _adjust_chapter_for_version(book: str, chapter: int, verse_start: int, versi
     return chapter, verse_start
 
 
-# --- Book name normalization ---
-
-_BOOK_ALIASES = {
-    # English full -> abbreviations used in WLC/LXX
-    "genesis": ["Gen", "Genesis"], "exodus": ["Exod", "Exodus"], "leviticus": ["Lev", "Leviticus"],
-    "numbers": ["Num", "Numbers"], "deuteronomy": ["Deut", "Deuteronomy"],
-    "joshua": ["Josh", "Joshua"], "judges": ["Judg", "Judges"], "ruth": ["Ruth"],
-    "1 samuel": ["1Sam", "1 Samuel", "I Samuel"], "2 samuel": ["2Sam", "2 Samuel", "II Samuel"],
-    "1 kings": ["1Kgs", "1 Kings", "I Kings"], "2 kings": ["2Kgs", "2 Kings", "II Kings"],
-    "1 chronicles": ["1Chr", "1 Chronicles", "I Chronicles"], "2 chronicles": ["2Chr", "2 Chronicles", "II Chronicles"],
-    "ezra": ["Ezra"], "nehemiah": ["Neh", "Nehemiah"], "esther": ["Esth", "Esther"],
-    "job": ["Job"], "psalms": ["Ps", "Pss", "Psalms"], "proverbs": ["Prov", "Proverbs"],
-    "ecclesiastes": ["Eccl", "Ecclesiastes"], "song of solomon": ["Song", "Song of Solomon"],
-    "isaiah": ["Isa", "Isaiah"], "jeremiah": ["Jer", "Jeremiah"],
-    "lamentations": ["Lam", "Lamentations"], "ezekiel": ["Ezek", "Ezekiel"],
-    "daniel": ["Dan", "Daniel"], "hosea": ["Hos", "Hosea"], "joel": ["Joel"],
-    "amos": ["Amos"], "obadiah": ["Obad", "Obadiah"], "jonah": ["Jonah"],
-    "micah": ["Mic", "Micah"], "nahum": ["Nah", "Nahum"], "habakkuk": ["Hab", "Habakkuk"],
-    "zephaniah": ["Zeph", "Zephaniah"], "haggai": ["Hag", "Haggai"],
-    "zechariah": ["Zech", "Zechariah"], "malachi": ["Mal", "Malachi"],
-    "matthew": ["Matt", "Matthew"], "mark": ["Mark"], "luke": ["Luke"], "john": ["John"],
-    "acts": ["Acts"], "romans": ["Rom", "Romans"],
-    "1 corinthians": ["1Cor", "1 Corinthians", "I Corinthians"], "2 corinthians": ["2Cor", "2 Corinthians", "II Corinthians"],
-    "galatians": ["Gal", "Galatians"], "ephesians": ["Eph", "Ephesians"],
-    "philippians": ["Phil", "Philippians"], "colossians": ["Col", "Colossians"],
-    "1 thessalonians": ["1Thess", "1 Thessalonians", "I Thessalonians"], "2 thessalonians": ["2Thess", "2 Thessalonians", "II Thessalonians"],
-    "1 timothy": ["1Tim", "1 Timothy", "I Timothy"], "2 timothy": ["2Tim", "2 Timothy", "II Timothy"],
-    "titus": ["Titus"], "philemon": ["Phlm", "Philemon"], "hebrews": ["Heb", "Hebrews"],
-    "james": ["Jas", "James"], "1 peter": ["1Pet", "1 Peter", "I Peter"], "2 peter": ["2Pet", "2 Peter", "II Peter"],
-    "1 john": ["1John", "1 John", "I John"], "2 john": ["2John", "2 John", "II John"], "3 john": ["3John", "3 John", "III John"],
-    "jude": ["Jude"], "revelation": ["Rev", "Revelation", "Revelation of John"],
-    # Deuterocanonical
-    "tobit": ["Tob", "Tobit"], "judith": ["Jdt", "Judith"],
-    "wisdom": ["Wis", "Wisdom", "Wisdom of Solomon"],
-    "sirach": ["Sir", "Sirach", "Ecclesiasticus"],
-    "baruch": ["Bar", "Baruch"], "1 maccabees": ["1Macc", "1 Maccabees"],
-    "2 maccabees": ["2Macc", "2 Maccabees"], "3 maccabees": ["3Macc", "3 Maccabees"],
-    "4 maccabees": ["4Macc", "4 Maccabees"],
-}
-
-def _normalize_book(book: str, version: str) -> str:
-    """Find the correct book name for a given version."""
-    key = book.lower().strip()
-    aliases = _BOOK_ALIASES.get(key, [book])
-    # The input itself is always a valid candidate
-    candidates = [book] + aliases
-    return candidates
+# --- Helper functions ---
 
 
 def _query_verse(db, book: str, chapter: int, verse_start: int, verse_end: int, version: str):
     """Query verses trying multiple book name variants, adjusting versification."""
     adj_chapter, adj_verse_start = _adjust_chapter_for_version(book, chapter, verse_start, version)
-    # Adjust verse_end by same offset
     verse_offset = adj_verse_start - verse_start
     adj_verse_end = verse_end + verse_offset
     
-    candidates = _normalize_book(book, version)
+    candidates = get_all_db_names(book)
     for b in candidates:
         rows = db.execute(
             "SELECT verse_num, text, morphology FROM verses "
@@ -766,40 +803,9 @@ def _query_verse(db, book: str, chapter: int, verse_start: int, verse_end: int, 
 
 # --- Helper functions ---
 
-def _parse_reference(ref: str) -> tuple[str, str]:
-    """Parse 'John 3:16' into ('John', '3:16') or '1 Cor 15:3-5' into ('1 Cor', '15:3-5')."""
-    parts = ref.strip().rsplit(" ", 1)
-    if len(parts) == 2:
-        return parts[0], parts[1]
-    return parts[0], "1:1"
-
-
-def _parse_chap_verse(cv: str) -> tuple[int, int, int]:
-    """Parse '3:16' into (3, 16, 16) or '3:16-18' into (3, 16, 18)."""
-    if ":" not in cv:
-        return int(cv), 1, 176  # whole chapter
-    chap, verses = cv.split(":")
-    if "-" in verses:
-        start, end = verses.split("-")
-        return int(chap), int(start), int(end)
-    return int(chap), int(verses), int(verses)
-
-
-def _get_verse_text(db, ref: str, version: str) -> str:
-    book, cv = _parse_reference(ref)
-    chapter, vs, ve = _parse_chap_verse(cv)
-    rows = _query_verse(db, book, chapter, vs, ve, version)
-    return " ".join(r['text'] for r in rows) if rows else "(not available)"
-
-
 def _list_versions(db) -> str:
     rows = db.execute("SELECT DISTINCT version FROM verses").fetchall()
     return ", ".join(r['version'] for r in rows)
-
-
-def _list_texts(db) -> str:
-    rows = db.execute("SELECT name FROM authenticity ORDER BY name").fetchall()
-    return ", ".join(r['name'] for r in rows)
 
 
 def _scope_to_sql(scope: str) -> str:
@@ -841,6 +847,99 @@ def _get_embedding_model():
         from sentence_transformers import SentenceTransformer
         _embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
     return _embedding_model
+
+
+@mcp.tool()
+def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir: str = "") -> str:
+    """Generate a complete interactive HTML study of a Bible chapter.
+    
+    Produces a standalone HTML with:
+    - Full chapter text with clickable verses (popup: original text, LXX, morphology, variants, patristic)
+    - High-resolution geographic map (PNG) with places, routes, events
+    - Chart of Church Fathers distribution
+    - Cross-references with hover preview
+    - Event timeline
+    
+    Args:
+        book: Book name or numeric ID (1-84)
+        chapter: Chapter number
+        version: Text version for display. Options: RVR1909, YLT, Vulgate, LXX, WLC, MorphGNT
+        output_dir: Directory to save output. Default: ~/bible-studies/<book>-<chapter>/
+    """
+    import boto3, json
+    from study_html_generator import gather_chapter_data, generate_study_html
+    from map_generator import generate_chapter_map
+    
+    db = get_db()
+    try:
+        resolved = _resolve_book_or_error(book)
+        candidates = get_all_db_names(resolved)
+        
+        # Gather all data
+        chapter_data = gather_chapter_data(resolved, chapter, version, candidates)
+        if not chapter_data["verses"]:
+            return f"No text found for {resolved} {chapter} in {version}."
+        
+        # Extract geographic data via LLM
+        full_text = "\n".join(f"{v['v']}. {v['text']}" for v in chapter_data["verses"][:40])
+        geo_data = _extract_geo_data(resolved, chapter, full_text)
+        
+        # Output directory
+        if not output_dir:
+            output_dir = str(Path.home() / "bible-studies" / f"{resolved.replace(' ', '_')}-{chapter}")
+        out_path = Path(output_dir)
+        out_path.mkdir(parents=True, exist_ok=True)
+        
+        # Generate map
+        if geo_data.get("places"):
+            generate_chapter_map(
+                places=geo_data["places"], routes=geo_data.get("routes", []),
+                events=geo_data.get("events", []),
+                title=f"Mapa: {resolved} {chapter}",
+                output_path=out_path / "map.png"
+            )
+        
+        # Generate HTML
+        html_path = generate_study_html(
+            book=resolved, chapter=chapter, version=version,
+            chapter_data=chapter_data, geo_data=geo_data, output_dir=out_path
+        )
+        
+        return f"✅ Study generated: {html_path}\n\nOpen with: open \"{html_path}\""
+    except ValueError as e:
+        return str(e)
+    finally:
+        db.close()
+
+
+def _extract_geo_data(book: str, chapter: int, text: str) -> dict:
+    """Use Haiku to extract places, routes, and events from chapter text."""
+    import boto3, json
+    try:
+        client = boto3.client("bedrock-runtime", region_name="us-east-1")
+        prompt = f"""Analyze this Bible chapter ({book} {chapter}) and extract geographic information.
+Return ONLY valid JSON with this structure:
+{{"places": [{{"name": "Jerusalem", "role": "capital"}}], "routes": [{{"from": "Egypt", "to": "Sinai", "label": "Exodus"}}], "events": [{{"place": "Jerusalem", "event": "Temple built"}}]}}
+
+Use English place names. Only include places actually mentioned or clearly implied.
+
+Text:
+{text[:3000]}"""
+
+        r = client.converse(
+            modelId="global.anthropic.claude-haiku-4-5-20251001-v1:0",
+            messages=[{"role": "user", "content": [{"text": prompt}]}],
+            inferenceConfig={"maxTokens": 1000, "temperature": 0},
+        )
+        response_text = r['output']['message']['content'][0]['text']
+        # Extract JSON
+        start = response_text.find('{')
+        end = response_text.rfind('}') + 1
+        if start >= 0 and end > start:
+            return json.loads(response_text[start:end])
+    except Exception:
+        pass
+    return {"places": [], "routes": [], "events": []}
 
 
 if __name__ == "__main__":
