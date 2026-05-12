@@ -13,6 +13,10 @@ DB_PATH = Path(__file__).parent.parent / "db" / "bible.db"
 SOURCES = [
     ("rwp", "Robertson's Word Pictures", "https://www.studylight.org/commentaries/eng/rwp/{book}-{chapter}.html"),
     ("vws", "Vincent's Word Studies", "https://www.studylight.org/commentaries/eng/vnt/{book}-{chapter}.html"),
+    ("egt", "Expositor's Greek Testament", "https://www.studylight.org/commentaries/eng/egt/{book}-{chapter}.html"),
+    ("hmc", "Meyer's Critical Commentary", "https://www.studylight.org/commentaries/eng/hmc/{book}-{chapter}.html"),
+    ("jab", "Bengel's Gnomon", "https://www.studylight.org/commentaries/eng/jab/{book}-{chapter}.html"),
+    ("hac", "Alford's Greek Testament", "https://www.studylight.org/commentaries/eng/hac/{book}-{chapter}.html"),
 ]
 
 # Book name mapping for URLs

@@ -9,8 +9,9 @@ S3_BUCKET = "bible-study-cache-609009159737"
 def _s3_cache_get(key: str) -> str:
     """Get cached content from S3. Returns empty string if not found."""
     import boto3
+    from botocore.config import Config
     try:
-        client = boto3.client("s3", region_name="us-east-1")
+        client = boto3.client("s3", region_name="us-east-1", config=Config(connect_timeout=5, read_timeout=10))
         obj = client.get_object(Bucket=S3_BUCKET, Key=key)
         return obj["Body"].read().decode("utf-8")
     except Exception:
@@ -20,8 +21,9 @@ def _s3_cache_get(key: str) -> str:
 def _s3_cache_put(key: str, content: str):
     """Store content in S3 cache."""
     import boto3
+    from botocore.config import Config
     try:
-        client = boto3.client("s3", region_name="us-east-1")
+        client = boto3.client("s3", region_name="us-east-1", config=Config(connect_timeout=5, read_timeout=10))
         client.put_object(Bucket=S3_BUCKET, Key=key, Body=content.encode("utf-8"), ContentType="text/html")
     except Exception:
         pass
@@ -47,8 +49,18 @@ def gather_chapter_data(book: str, chapter: int, version: str, candidates: list)
             data["verses"] = [{"v": r["verse_num"], "text": r["text"]} for r in rows]
             break
 
+    # Ensure we have Spanish translation for NT toggle (separate from main version)
+    if version != "RVR60":
+        for b in candidates:
+            rows = db.execute("SELECT verse_num, text FROM verses WHERE book=? AND chapter=? AND version='RVR60' ORDER BY verse_num", (b, chapter)).fetchall()
+            if not rows:
+                rows = db.execute("SELECT verse_num, text FROM verses WHERE book=? AND chapter=? AND version='RVR1909' ORDER BY verse_num", (b, chapter)).fetchall()
+            if rows:
+                data["spanish"] = {r["verse_num"]: r["text"] for r in rows}
+                break
+
     # Parallel versions (original + LXX)
-    for ver in ["WLC", "LXX", "MorphGNT", "SBLGNT"]:
+    for ver in ["WLC", "LXX"]:
         for b in candidates:
             rows = db.execute("SELECT verse_num, text FROM verses WHERE book=? AND chapter=? AND version=? ORDER BY verse_num", (b, chapter, ver)).fetchall()
             if rows:
@@ -57,7 +69,7 @@ def gather_chapter_data(book: str, chapter: int, version: str, candidates: list)
 
     # All translations for verse comparison
     data["translations"] = {}
-    for ver in ["RVR1909", "YLT", "Vulgate"]:
+    for ver in ["RVR60", "RVR1909", "KJV", "ASV", "BSB", "Darby", "LITV", "YLT", "Vulgate"]:
         for b in candidates:
             rows = db.execute("SELECT verse_num, text FROM verses WHERE book=? AND chapter=? AND version=? ORDER BY verse_num", (b, chapter, ver)).fetchall()
             if rows:
@@ -193,7 +205,7 @@ def gather_chapter_data(book: str, chapter: int, version: str, candidates: list)
         rows = db.execute("""
             SELECT DISTINCT verse_num, father, work, text, original_lang, text_original
             FROM patristic WHERE book=? AND chapter=? AND length(text) > 30
-            ORDER BY verse_num, father LIMIT 80
+            ORDER BY verse_num, father
         """, (b, chapter)).fetchall()
         if rows:
             data["patristic"] = [{"v": r["verse_num"], "f": r["father"], "w": r["work"] or "",
@@ -246,10 +258,6 @@ def gather_chapter_data(book: str, chapter: int, version: str, candidates: list)
     except Exception:
         pass
 
-    # Generate patristic thematic analysis
-    if data["patristic"]:
-        data["patristic_analysis"] = _generate_patristic_analysis(book, chapter, data["patristic"])
-
     # Generate exegetical commentary from the Greek
     if data["morphology"]:
         # Load real commentaries (Robertson, Vincent, etc.) - NO LLM needed
@@ -264,28 +272,37 @@ def gather_chapter_data(book: str, chapter: int, version: str, candidates: list)
                 })
         except Exception:
             pass
-        # Generate IA synthesis grounded on real commentaries
-        if data["greek_commentaries"]:
-            data["exegetical"] = _generate_grounded_exegetical(book, chapter, data["greek_commentaries"], data["morphology"])
-        else:
-            data["exegetical"] = ""
+        data["exegetical"] = ""
 
     db.close()
     return data
 
 
-def _lookup_ref_text(db, ref: str) -> str:
-    """Try to get the text of a cross-reference target."""
+def _lookup_ref_text(db, ref: str) -> dict:
+    """Try to get the text of a cross-reference target (Spanish + Greek/LXX)."""
     import re
     m = re.match(r'(.+?)\s+(\d+):(\d+)', ref)
     if not m:
-        return ""
+        return {"es": "", "gr": ""}
     book, ch, vs = m.group(1), int(m.group(2)), int(m.group(3))
+    result = {"es": "", "gr": ""}
+    # Spanish
     row = db.execute("SELECT text FROM verses WHERE book=? AND chapter=? AND verse_num=? AND version='RVR1909' LIMIT 1", (book, ch, vs)).fetchone()
     if row:
-        return row["text"][:200]
-    row = db.execute("SELECT text FROM verses WHERE book LIKE ? AND chapter=? AND verse_num=? LIMIT 1", (f"%{book}%", ch, vs)).fetchone()
-    return row["text"][:200] if row else ""
+        result["es"] = row["text"][:300]
+    else:
+        row = db.execute("SELECT text FROM verses WHERE book LIKE ? AND chapter=? AND verse_num=? AND version='RVR1909' LIMIT 1", (f"%{book}%", ch, vs)).fetchone()
+        if row:
+            result["es"] = row["text"][:300]
+    # Greek (MorphGNT for NT, LXX for OT)
+    for ver in ["MorphGNT", "SBLGNT", "LXX", "WLC"]:
+        row = db.execute("SELECT text FROM verses WHERE book=? AND chapter=? AND verse_num=? AND version=? LIMIT 1", (book, ch, vs, ver)).fetchone()
+        if not row:
+            row = db.execute("SELECT text FROM verses WHERE book LIKE ? AND chapter=? AND verse_num=? AND version=? LIMIT 1", (f"%{book}%", ch, vs, ver)).fetchone()
+        if row:
+            result["gr"] = row["text"][:300]
+            break
+    return result
 
 
 def _strip_md(text: str) -> str:
@@ -377,8 +394,8 @@ Responde en espa\u00f1ol. SOLO HTML."""
 
 
 def _generate_patristic_analysis(book: str, chapter: int, patristic: list) -> str:
-    """Generate thematic analysis of patristic commentaries using LLM."""
-    cache_key = f"cache/{book}/{chapter}/patristic_analysis.html"
+    """Generate thematic analysis of patristic commentaries using multiple LLM calls."""
+    cache_key = f"cache/{book}/{chapter}/patristic_analysis_v2.html"
     cached = _s3_cache_get(cache_key)
     if cached:
         return cached
@@ -386,43 +403,121 @@ def _generate_patristic_analysis(book: str, chapter: int, patristic: list) -> st
     from botocore.config import Config
     try:
         client = boto3.client("bedrock-runtime", region_name="us-east-1",
-                              config=Config(read_timeout=120))
-        # Prepare patristic texts (limit to avoid token overflow)
-        texts = "\n\n".join(
-            f"[v.{p['v']}] {p['f']} ({p['w']}): {p['t'][:400]}"
-            for p in patristic[:60]
-        )
-        prompt = f"""Analiza estos {len(patristic)} comentarios patrísticos de {book} {chapter} y genera HTML interactivo.
+                              config=Config(read_timeout=180))
+
+        # Split into chunks by verse groups
+        from collections import defaultdict
+        by_verse = defaultdict(list)
+        for p in patristic:
+            by_verse[p['v']].append(p)
+        verses_sorted = sorted(by_verse.keys())
+
+        # Create chunks of ~100 entries each
+        chunks = []
+        current_chunk = []
+        for v in verses_sorted:
+            current_chunk.extend(by_verse[v])
+            if len(current_chunk) >= 100:
+                chunks.append(current_chunk)
+                current_chunk = []
+        if current_chunk:
+            chunks.append(current_chunk)
+
+        # Phase 1: Extract themes from each chunk
+        chunk_analyses = []
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        def _call_chunk_phase1(i, chunk):
+            texts = "\n".join(f"[v.{p['v']}] {p['f']}: {p['t'][:250]}" for p in chunk)
+            verse_range = f"v.{chunk[0]['v']}-{chunk[-1]['v']}"
+            prompt = f"""Analiza estos {len(chunk)} comentarios patrísticos de {book} {chapter} ({verse_range}).
 
 COMENTARIOS:
 {texts}
 
-GENERA HTML (solo HTML con estilos inline, sin markdown) con esta estructura:
+Extrae los TEMAS TEOLÓGICOS principales. Para cada tema devuelve JSON:
+[{{"tema": "nombre", "padres_favor": [{{"padre": "X", "cita": "texto breve", "verso": N}}], "padres_contra": [{{"padre": "Y", "cita": "texto breve", "verso": N}}], "consenso": "alto|medio|bajo"}}]
 
-1. TEMAS PRINCIPALES (identifica 8-15 temas teológicos/exegéticos que surgen de los comentarios)
-Para cada tema:
-- Nombre del tema
-- Barra visual de consenso (verde=acuerdo, rojo=desacuerdo, amarillo=matiz)
-- Padres A FAVOR con cita textual breve entre comillas
-- Padres EN CONTRA o con MATIZ diferente, con cita textual
-- Cada cita debe indicar [Padre, Obra, v.X] para rastreabilidad
+SOLO JSON, sin explicación."""
+            r = client.converse(
+                modelId="global.anthropic.claude-sonnet-4-20250514-v1:0",
+                messages=[{"role": "user", "content": [{"text": prompt}]}],
+                inferenceConfig={"maxTokens": 4000, "temperature": 0},
+            )
+            return (i, r['output']['message']['content'][0]['text'])
 
-2. TABLA RESUMEN: Tema | Consenso | Padres a favor | Padres con matiz
+        # Phase 1: parallel (2 workers to avoid throttling)
+        chunk_analyses = [None] * len(chunks)
+        with ThreadPoolExecutor(max_workers=2) as ex:
+            futures = [ex.submit(_call_chunk_phase1, i, chunk) for i, chunk in enumerate(chunks)]
+            for f in as_completed(futures):
+                try:
+                    i, result = f.result()
+                    chunk_analyses[i] = result
+                except Exception:
+                    pass
 
-3. OBSERVACIONES: patrones generales, escuelas teológicas representadas (Alejandría vs Antioquía, etc.)
+        # Phase 2: Expand each chunk's themes into detailed HTML with all citations
+        def _call_chunk_phase2(i, analysis):
+            verse_range = f"v.{chunks[i][0]['v']}-{chunks[i][-1]['v']}"
+            full_texts = "\n".join(f"[v.{p['v']}] {p['f']} ({p['w']}): {p['t'][:400]}" for p in chunks[i])
+
+            expand_prompt = f"""Genera HTML detallado para los temas patrísticos de {book} {chapter} ({verse_range}).
+
+TEMAS IDENTIFICADOS:
+{analysis}
+
+TEXTOS COMPLETOS DE LOS PADRES:
+{full_texts}
+
+Para CADA tema genera HTML (estilos inline) con:
+1. <h3> con nombre del tema
+2. Barra de consenso (div con background verde/naranja/rojo)
+3. Para CADA padre que opina sobre este tema:
+   - Nombre del padre en negrita
+   - Cita textual COMPLETA entre comillas (no resumas)
+   - [v.X] indicando el versículo
+   - Posición: ✅ a favor / ⚠️ matiz / ❌ en contra
+4. Resumen del debate en 1-2 oraciones
 
 REGLAS:
-- Cada posición DEBE incluir la cita textual original del padre (entre comillas)
-- Indicar claramente cuándo hay desacuerdo real vs. complementariedad
-- Usar colores: verde (#c8e6c9) para consenso, naranja (#ffe0b2) para matiz, rojo (#ffcdd2) para desacuerdo
+- Incluye TODOS los padres, no solo los principales
+- Citas textuales completas entre comillas
+- Cada cita con [Padre, v.X]
 - Responde en español. SOLO HTML."""
 
-        r = client.converse(
-            modelId="global.anthropic.claude-sonnet-4-20250514-v1:0",
-            messages=[{"role": "user", "content": [{"text": prompt}]}],
-            inferenceConfig={"maxTokens": 6000, "temperature": 0},
-        )
-        result = _strip_md(r['output']['message']['content'][0]['text'])
+            r = client.converse(
+                modelId="global.anthropic.claude-sonnet-4-20250514-v1:0",
+                messages=[{"role": "user", "content": [{"text": expand_prompt}]}],
+                inferenceConfig={"maxTokens": 6000, "temperature": 0},
+            )
+            return (i, _strip_md(r['output']['message']['content'][0]['text']))
+
+        # Phase 2: parallel (2 workers)
+        all_html_parts = [None] * len(chunks)
+        with ThreadPoolExecutor(max_workers=2) as ex:
+            futures = [ex.submit(_call_chunk_phase2, i, a) for i, a in enumerate(chunk_analyses) if a]
+            for f in as_completed(futures):
+                try:
+                    i, html = f.result()
+                    all_html_parts[i] = html
+                except Exception as e:
+                    import sys
+                    print(f"Phase2 error: {e}", file=sys.stderr, flush=True)
+
+        # Add navigation header and stats
+        father_counts = {}
+        for p in patristic:
+            father_counts[p['f']] = father_counts.get(p['f'], 0) + 1
+        stats_html = f'<div style="padding:1rem;background:#e3f2fd;border-radius:8px;margin-bottom:1.5rem">'
+        stats_html += f'<strong>📊 {len(patristic)} comentarios</strong> de {len(father_counts)} padres · '
+        stats_html += f'Versículos: {min(p["v"] for p in patristic)}-{max(p["v"] for p in patristic)}<br>'
+        stats_html += f'<span style="font-size:0.8rem;color:#555">Top: {", ".join(f"{k} ({v})" for k,v in sorted(father_counts.items(), key=lambda x:-x[1])[:8])}</span>'
+        stats_html += '</div>'
+
+        result = stats_html + "\n".join(p for p in all_html_parts if p)
+        if not any(all_html_parts):
+            result = ""
         _s3_cache_put(cache_key, result)
         return result
     except Exception:
@@ -430,8 +525,8 @@ REGLAS:
 
 
 def _generate_grounded_exegetical(book: str, chapter: int, commentaries: dict, morphology: dict) -> str:
-    """Generate exegetical synthesis grounded ONLY on Robertson/Vincent data."""
-    cache_key = f"cache/{book}/{chapter}/exegetical_grounded.html"
+    """Generate exegetical synthesis: verse-by-verse, all commentators + conclusion."""
+    cache_key = f"cache/{book}/{chapter}/exegetical_grounded_v2.html"
     cached = _s3_cache_get(cache_key)
     if cached:
         return cached
@@ -439,37 +534,54 @@ def _generate_grounded_exegetical(book: str, chapter: int, commentaries: dict, m
     from botocore.config import Config
     try:
         client = boto3.client("bedrock-runtime", region_name="us-east-1",
-                              config=Config(read_timeout=120))
-        # Build input from real commentaries
-        comm_text = ""
-        for v in sorted(commentaries.keys())[:20]:
-            comm_text += f"\n--- v.{v} ---\n"
-            for c in commentaries[v]:
-                comm_text += f"[{c['name']}]: {c['text'][:500]}\n"
+                              config=Config(read_timeout=180))
 
-        prompt = f"""Sintetiza estos comentarios exegéticos de {book} {chapter} en un análisis en español, verso por verso. SOLO HTML con estilos inline.
+        # Split verses into chunks of ~10
+        verses_sorted = sorted(commentaries.keys())
+        chunks = [verses_sorted[i:i+10] for i in range(0, len(verses_sorted), 10)]
 
-COMENTARIOS DE ERUDITOS (Robertson's Word Pictures, Vincent's Word Studies):
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        def _call_exeg_chunk(idx, chunk_verses):
+            comm_text = ""
+            for v in chunk_verses:
+                comm_text += f"\n--- v.{v} ---\n"
+                for c in commentaries[v]:
+                    comm_text += f"[{c['name']}]: {c['text'][:700]}\n"
+
+            prompt = f"""Genera un comentario exegético VERSO POR VERSO de {book} {chapter} (versículos {chunk_verses[0]}-{chunk_verses[-1]}) basado en estos comentaristas. SOLO HTML con estilos inline.
+
+COMENTARIOS:
 {comm_text}
 
-REGLAS ESTRICTAS:
-1. NO inventes citas. Solo usa información que aparece EXPLÍCITAMENTE en los comentarios de arriba.
-2. Si Robertson cita a Heródoto, Platón, etc., repite esa cita tal cual — NO agregues otras.
-3. Para cada referencia mencionada por Robertson/Vincent, agrega un link a Perseus Digital Library: https://www.perseus.tufts.edu/hopper/text?doc=
-4. Organiza por versículo con las palabras griegas clave resaltadas.
-5. Traduce al español las explicaciones de Robertson/Vincent.
-6. Agrega el análisis morfológico (tiempo, voz, modo) cuando sea relevante.
+Para CADA versículo genera:
+<div style="margin-bottom:1.5rem;padding:1rem;border:1px solid #e0e0e0;border-radius:8px">
+  <h3 style="color:#1a237e;margin-bottom:0.5rem">v.N — [palabra(s) griega(s) clave]</h3>
+  <div style="line-height:1.7">[Síntesis en español integrando los comentaristas. Menciona (Robertson), (Vincent), (Expositor's), (Meyer), (Bengel), (Alford) entre paréntesis. Resalta palabras griegas. Señala acuerdos y desacuerdos.]</div>
+</div>
 
-FORMATO: <div> por versículo con borde izquierdo verde. Palabras griegas en <span style="font-family:'Noto Serif',serif;color:#1b5e20;font-weight:bold">. Links en azul.
+ÉNFASIS ESPECIAL: Si algún comentarista cita uso de la palabra en literatura EXTRA-BÍBLICA (papiros, Heródoto, Tucídides, Platón, Josefo, Filón, inscripciones), INCLUYE esa referencia con detalle. Estas son las observaciones más valiosas.
 
-Responde en español. SOLO HTML."""
+REGLAS: Síntesis en español. NO copies en inglés. Resalta griego con <span style="font-family:'Noto Serif',serif;color:#1b5e20;font-weight:bold">. SOLO HTML."""
 
-        r = client.converse(
-            modelId="global.anthropic.claude-sonnet-4-20250514-v1:0",
-            messages=[{"role": "user", "content": [{"text": prompt}]}],
-            inferenceConfig={"maxTokens": 6000, "temperature": 0},
-        )
-        result = _strip_md(r['output']['message']['content'][0]['text'])
+            r = client.converse(
+                modelId="global.anthropic.claude-sonnet-4-20250514-v1:0",
+                messages=[{"role": "user", "content": [{"text": prompt}]}],
+                inferenceConfig={"maxTokens": 5000, "temperature": 0},
+            )
+            return (idx, _strip_md(r['output']['message']['content'][0]['text']))
+
+        all_html_parts = [None] * len(chunks)
+        with ThreadPoolExecutor(max_workers=2) as ex:
+            futures = [ex.submit(_call_exeg_chunk, i, cv) for i, cv in enumerate(chunks)]
+            for f in as_completed(futures):
+                try:
+                    i, html = f.result()
+                    all_html_parts[i] = html
+                except Exception:
+                    pass
+
+        result = "\n".join(p for p in all_html_parts if p)
         _s3_cache_put(cache_key, result)
         return result
     except Exception:
@@ -558,6 +670,7 @@ header h1 {{ font-size: 2.2rem; }} header p {{ opacity: 0.8; }}
 .trans-toggle {{ font-size: 0.7rem; cursor: pointer; color: var(--mut); margin-left: 0.3rem; user-select: none; }}
 .trans-toggle:hover {{ color: var(--pri); }}
 .verse-line.main.collapsed {{ display: none; }}
+.collapsed {{ display: none; }}
 .vnum {{ font-weight: 700; color: var(--acc); font-size: 0.8rem; margin-right: 0.3rem; }}
 .vlabel {{ font-size: 0.65rem; color: var(--mut); font-weight: 600; text-transform: uppercase; margin-right: 0.3rem; }}
 .verse-footer {{ display: flex; gap: 0.5rem; align-items: center; margin-top: 0.4rem; flex-wrap: wrap; }}
@@ -611,8 +724,6 @@ header h1 {{ font-size: 2.2rem; }} header p {{ opacity: 0.8; }}
   <div class="card"><h2>📅 Eventos</h2><div class="timeline" id="eventsContainer"></div></div>
 </div>
 </div>
-<div class="card" id="exegeticalCard" style="display:none"><h2>📜 Comentario Exegético del Griego</h2><button onclick="openExegeticalTab()" style="padding:10px 20px;background:#1a237e;color:white;border:none;border-radius:8px;cursor:pointer;font-size:0.9rem">Abrir comentario exegético completo ↗</button><p style="font-size:0.75rem;color:var(--mut);margin-top:0.5rem">Robertson's Word Pictures + Vincent's Word Studies (verso por verso)</p></div>
-<div class="card" id="patristicAnalysisCard" style="display:none"><h2>⚖️ Análisis Temático Patrístico</h2><div id="patristicAnalysisContent"></div></div>
 <div class="card" id="mssMapCard" style="display:none"><h2>🗺️ Manuscritos — Mapa y Línea de Tiempo</h2><div id="mssTimeline"></div><div id="mssMapContainer" style="margin-top:1rem"></div></div>
 </div>
 <div class="overlay" id="overlay" onclick="closePopup()"></div>
@@ -628,7 +739,8 @@ D.verses.forEach(v => {{
   const div = document.createElement('div');
   div.className = 'verse-block';
   const mainCls = isOT ? 'verse-line main' : 'verse-line main collapsed';
-  let html = `<div class="${{mainCls}}" id="trans-${{v.v}}"><span class="vnum">${{v.v}}</span><span class="vlabel">{version}</span>${{v.text}}</div>`;
+  const transText = (D.spanish && D.spanish[v.v]) ? D.spanish[v.v] : v.text;
+  let html = `<div class="${{mainCls}}" id="trans-${{v.v}}"><span class="vnum">${{v.v}}</span><span class="vlabel">RVR</span>${{transText}}</div>`;
 
   // Original text line (always visible)
   if (isOT && D.parallel.WLC && D.parallel.WLC[v.v]) {{
@@ -657,6 +769,8 @@ D.verses.forEach(v => {{
   html += '<div class="verse-footer">';
   if (patrCount > 0) html += `<button class="vbtn patr" onclick="showPatristic(${{v.v}})">&#10013; ${{patrCount}} comentario${{patrCount>1?'s':''}}</button>`;
   if (variants.length > 0) html += `<button class="vbtn variant" onclick="showVariants(${{v.v}})">&#9888; ${{variants.length}} variante${{variants.length>1?'s':''}}</button>`;
+  const commCount = D.greek_commentaries[v.v] ? D.greek_commentaries[v.v].length : 0;
+  if (commCount > 0) html += `<button class="vbtn" onclick="showExegetical(${{v.v}})" style="background:#e8f5e9;border-color:#4caf50;color:#1b5e20">&#128218; ${{commCount}} exégesis</button>`;
   html += `<button class="vbtn" onclick="showTranslations(${{v.v}})">&#128214; versiones</button>`;
   html += '</div>';
 
@@ -709,6 +823,120 @@ function contextualMeaning(w) {{
   return '';
 }}
 
+function explainEnding(w) {{
+  const form = w.w;
+  const lemma = w.l;
+  const rmac = w.m || '';
+  if (!rmac) return '';
+
+  // Normalize: strip accents for comparison to find stem/ending
+  const strip = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const sf = strip(form), sl = strip(lemma);
+  let common = 0;
+  while (common < sf.length && common < sl.length && sf[common] === sl[common]) common++;
+  if (common < 2) common = Math.min(sf.length, 2);
+  const stem = form.substring(0, common);
+  const ending = form.substring(common);
+
+  const stemHtml = `<strong style="font-family:'Noto Serif',serif;font-size:1.05rem">${{stem}}</strong>`;
+  const endHtml = ending ? `<strong style="font-family:'Noto Serif',serif;font-size:1.05rem;color:#c62828">${{ending}}</strong>` : '';
+  let header = stemHtml + endHtml + `<br>`;
+
+  // Helper for case explanation
+  const caseExplain = {{'N':'Nominativo — SUJETO (quien hace la acción)','G':'Genitivo — POSESIÓN/ORIGEN (de...)','D':'Dativo — RECEPTOR/INSTRUMENTO (a/para/con)','A':'Acusativo — OBJETO DIRECTO (recibe la acción)','V':'Vocativo — INVOCACIÓN (dirigirse a alguien)'}};
+  const genders = {{'M':'masculino','F':'femenino','N':'neutro'}};
+  const numbers = {{'S':'singular','P':'plural'}};
+
+  // === INDECLINABLES ===
+  if (rmac === 'CONJ') return header + `<strong>Conjunción</strong> — conecta palabras u oraciones<br><span style="font-size:0.78rem;color:#555">No cambia de forma (indeclinable)</span>`;
+  if (rmac.startsWith('PREP')) return header + `<strong>Preposición</strong> — indica relación (lugar, tiempo, causa)<br><span style="font-size:0.78rem;color:#555">No cambia de forma. Rige un caso específico del sustantivo que le sigue.</span>`;
+  if (rmac.startsWith('ADV')) return header + `<strong>Adverbio</strong> — modifica al verbo (cómo, cuándo, dónde)<br><span style="font-size:0.78rem;color:#555">No cambia de forma (indeclinable)</span>`;
+  if (rmac.startsWith('PRT')) return header + `<strong>Partícula</strong> — palabra funcional que añade matiz<br><span style="font-size:0.78rem;color:#555">No cambia de forma. Puede indicar negación, énfasis, etc.</span>`;
+  if (rmac.startsWith('INJ')) return header + `<strong>Interjección</strong> — exclamación<br><span style="font-size:0.78rem;color:#555">No cambia de forma</span>`;
+  if (rmac.startsWith('HEB') || rmac.startsWith('ARAM')) return header + `<strong>Palabra hebrea/aramea</strong> transliterada al griego<br><span style="font-size:0.78rem;color:#555">No sigue declinación griega</span>`;
+
+  // === DECLINABLES (case/gender/number) ===
+  // Pronouns: P=personal, D=demonstrative, R=relative, X=indefinite, I=interrogative, S=possessive, F=reflexive, K=correlative, C=reciprocal, Q=correlative/interrogative
+  const pronounTypes = {{'P':'Pronombre personal (yo, tú, él...)','D':'Pronombre demostrativo (este, ese, aquel)','R':'Pronombre relativo (que, quien, cual)','X':'Pronombre indefinido (alguien, algo, cierto)','I':'Pronombre interrogativo (¿quién? ¿qué?)','S':'Pronombre posesivo (mío, tuyo, suyo)','F':'Pronombre reflexivo (a sí mismo)','K':'Pronombre correlativo (tal, tanto)','C':'Pronombre recíproco (unos a otros)','Q':'Pronombre correlativo/interrogativo'}};
+  const firstChar = rmac[0];
+  if (pronounTypes[firstChar]) {{
+    const c = rmac[2]; const g = rmac[3] || ''; const n = rmac[4] || '';
+    let expl = header + `<strong>${{pronounTypes[firstChar]}}</strong><br>`;
+    if (c && caseExplain[c]) expl += `${{caseExplain[c]}}<br>`;
+    if (g || n) expl += `<span style="font-size:0.78rem;color:#555">${{genders[g]||''}} ${{numbers[n]||''}}</span>`;
+    return expl;
+  }}
+
+  // Noun/Adjective/Article
+  if (rmac.startsWith('N-') || rmac.startsWith('A-') || rmac.startsWith('T-')) {{
+    const typeNames = {{'N':'Sustantivo','A':'Adjetivo','T':'Artículo'}};
+    const c = rmac[2]; const g = rmac[3]; const n = rmac[4];
+    let expl = header + `<strong>${{typeNames[firstChar]}}</strong><br>`;
+    expl += `${{caseExplain[c] || c}}<br>`;
+    expl += `<span style="font-size:0.78rem;color:#555">${{genders[g]||g}}, ${{numbers[n]||n}}</span>`;
+    return expl;
+  }}
+
+  // === VERBS ===
+  if (rmac.startsWith('V-')) {{
+    const code = rmac.substring(2);
+    let off = (code[0]==='1'||code[0]==='2') ? 1 : 0;
+    const tense = TENSE_ES[code[off]] || code[off];
+    const voice = VOICE_ES[code[off+1]] || code[off+1];
+    const mood = code[off+2];
+
+    const voiceExplain = {{'A':'el sujeto HACE la acción','M':'el sujeto actúa SOBRE SÍ MISMO','P':'el sujeto RECIBE la acción','D':'el sujeto actúa sobre sí mismo (deponente)'}};
+    const tenseExplain = {{'Presente':'acción en progreso (ahora)','Imperfecto (pasado continuo)':'acción continua en el pasado (estaba...)','Futuro':'acción futura (hará...)','Aoristo (pasado puntual)':'acción completada, vista como un todo (hizo)','Perfecto (resultado presente)':'acción pasada con resultado que permanece (ha hecho)','Pluscuamperfecto':'acción completada antes de otro evento pasado (había hecho)'}};
+
+    if (mood === 'P') {{ // Participle
+      const c = code[off+3]; const n = code[off+4];
+      let expl = header + `<strong>Participio</strong> = adjetivo verbal ("el que...", "habiendo...")<br>`;
+      expl += `<table style="font-size:0.78rem;margin:4px 0;border-collapse:collapse">`;
+      expl += `<tr><td style="padding:2px 6px;color:#555">Tiempo:</td><td style="padding:2px 6px"><strong>${{tense}}</strong> — ${{tenseExplain[tense]||''}}</td></tr>`;
+      expl += `<tr><td style="padding:2px 6px;color:#555">Voz:</td><td style="padding:2px 6px"><strong>${{voice}}</strong> — ${{voiceExplain[code[off+1]]||''}}</td></tr>`;
+      expl += `<tr><td style="padding:2px 6px;color:#555">Caso:</td><td style="padding:2px 6px">${{caseExplain[c]||c}}, ${{numbers[n]||n}}</td></tr>`;
+      expl += `</table>`;
+      const tDesc = (code[off]==='A'||code[off]==='2')?'habiendo':'mientras';
+      expl += `<div style="margin-top:4px;padding:4px 8px;background:#e8f5e9;border-radius:4px;font-size:0.8rem">💡 "<em>${{tDesc}} [verbo]</em>" — funciona como adjetivo del ${{c==='N'?'sujeto':c==='A'?'objeto':'sustantivo'}}</div>`;
+      return expl;
+    }}
+    if (mood === 'N') {{
+      let expl = header + `<strong>Infinitivo</strong> = forma nominal del verbo<br>`;
+      expl += `<span style="font-size:0.8rem">${{tense}} — ${{tenseExplain[tense]||''}}</span><br>`;
+      expl += `<span style="font-size:0.8rem">${{voice}} — ${{voiceExplain[code[off+1]]||''}}</span>`;
+      expl += `<div style="margin-top:4px;padding:4px 8px;background:#e8f5e9;border-radius:4px;font-size:0.8rem">💡 Equivale a "[verbo]" o "el [verbo]" en español</div>`;
+      return expl;
+    }}
+    if (mood === 'M') {{
+      const persons = {{'1':'1ª (nosotros)','2':'2ª (tú/vosotros)','3':'3ª (él/ellos)'}};
+      const p = code[off+3]; const n = code[off+4];
+      let expl = header + `<strong>Imperativo</strong> = ORDEN o MANDATO<br>`;
+      expl += `<table style="font-size:0.78rem;margin:4px 0;border-collapse:collapse">`;
+      expl += `<tr><td style="padding:2px 6px;color:#555">Tiempo:</td><td style="padding:2px 6px"><strong>${{tense}}</strong> — ${{tenseExplain[tense]||''}}</td></tr>`;
+      expl += `<tr><td style="padding:2px 6px;color:#555">Voz:</td><td style="padding:2px 6px">${{voice}} — ${{voiceExplain[code[off+1]]||''}}</td></tr>`;
+      expl += `<tr><td style="padding:2px 6px;color:#555">Persona:</td><td style="padding:2px 6px">${{persons[p]||p}} ${{numbers[n]||n}}</td></tr>`;
+      expl += `</table>`;
+      expl += `<div style="margin-top:4px;padding:4px 8px;background:#fff3e0;border-radius:4px;font-size:0.8rem">💡 "¡[Haz esto]!" — orden dirigida a ${{persons[p]||p}}</div>`;
+      return expl;
+    }}
+    // Indicative/Subjunctive/Optative
+    const persons = {{'1':'1ª persona (yo/nosotros)','2':'2ª persona (tú/vosotros)','3':'3ª persona (él/ellos)'}};
+    const moodExplain = {{'I':'Indicativo — afirma un HECHO real','S':'Subjuntivo — POSIBILIDAD, deseo, propósito','O':'Optativo — DESEO remoto o posibilidad lejana'}};
+    const p = code[off+3]; const n = code[off+4];
+    let expl = header + `<strong>${{moodExplain[mood]||mood}}</strong><br>`;
+    expl += `<table style="font-size:0.78rem;margin:4px 0;border-collapse:collapse">`;
+    expl += `<tr><td style="padding:2px 6px;color:#555">Tiempo:</td><td style="padding:2px 6px"><strong>${{tense}}</strong> — ${{tenseExplain[tense]||''}}</td></tr>`;
+    expl += `<tr><td style="padding:2px 6px;color:#555">Voz:</td><td style="padding:2px 6px"><strong>${{voice}}</strong> — ${{voiceExplain[code[off+1]]||''}}</td></tr>`;
+    expl += `<tr><td style="padding:2px 6px;color:#555">Persona:</td><td style="padding:2px 6px"><strong>${{persons[p]||p}}</strong> ${{numbers[n]||n}}</td></tr>`;
+    expl += `</table>`;
+    return expl;
+  }}
+
+  // Fallback
+  if (form !== lemma) return header + `<span style="font-size:0.8rem;color:#555">Forma flexionada de ${{lemma}}</span>`;
+  return '';
+}}
+
 function renderMorph(vnum, fallbackText) {{
   const words = D.morphology[vnum];
   if (!words || !words.length) return fallbackText || '';
@@ -723,24 +951,13 @@ function showWordTip(e, vnum, idx) {{
   const w = D.morphology[vnum][idx];
   if (!w) return;
   if (!tipEl) {{ tipEl = document.createElement('div'); tipEl.className = 'word-tip'; document.body.appendChild(tipEl); }}
-  const parsing = D.rmac[w.m] || w.m;
-  const comp = D.compounds[w.l];
-  let html = `<strong>${{w.l}}</strong>`;
-  if (w.g) html += ` — ${{w.g}}`;
   const ctx = contextualMeaning(w);
-  if (ctx) html += `<br><em>${{ctx}}</em>`;
-  else if (w.es) html += `<br><em>${{w.es}}</em>`;
-  // Verb tense indicator
-  const tenseEs = verbTenseEs(w.m);
-  if (tenseEs) html += `<br><span style="color:#80cbc4;font-weight:600">${{tenseEs}}</span>`;
-  if (comp) {{
-    html += `<br><span style="color:#ffcc80">` + comp.parts.map(p => `${{p.greek}} (${{p.meaning_es}})`).join(' + ') + `</span>`;
-  }}
-  html += `<br><span style="opacity:0.8;font-size:0.7rem">${{parsing}}</span>`;
-  tipEl.innerHTML = html;
+  const tip = ctx || (w.es && !w.es.startsWith('estando') ? w.es : w.g) || w.g || '';
+  tipEl.textContent = tip;
+  if (!tipEl.textContent) {{ tipEl.style.display='none'; return; }}
   tipEl.style.display = 'block';
   tipEl.style.left = e.pageX + 'px';
-  tipEl.style.top = (e.pageY - (comp ? 85 : tenseEs ? 70 : 55)) + 'px';
+  tipEl.style.top = (e.pageY - 30) + 'px';
 }}
 function hideWordTip() {{ if (tipEl) tipEl.style.display = 'none'; }}
 
@@ -765,20 +982,22 @@ function openWordStudy(vnum, idx) {{
   html += `</table>`;
   // Compound decomposition
   const comp = D.compounds[w.l];
-  if (comp) {{
-    html += `<div style="padding:0.7rem;background:#fff3e0;border-radius:6px;margin-bottom:1rem;border-left:3px solid #ff9800">`;
-    html += `<strong style="color:#e65100">&#9881; Etimología (${{w.l}}):</strong> `;
-    html += comp.parts.map(p => `<span style="font-size:1.1rem">${{p.greek}}</span> <span style="color:#555">(${{p.meaning_es}})</span>`).join(' + ');
-    if (comp.meaning) html += `<br><strong>→</strong> ${{comp.meaning}}`;
-    if (comp.root_note) html += `<br><span style="font-size:0.82rem;color:#555;margin-top:4px;display:inline-block">${{comp.root_note}}</span>`;
+  // Show form breakdown FIRST (most important for learning)
+  if (w.m && w.w !== w.l) {{
+    const endingInfo = explainEnding(w);
+    html += `<div style="padding:0.7rem;background:#e8eaf6;border-radius:6px;margin-bottom:1rem;border-left:3px solid #3f51b5">`;
+    html += `<strong style="color:#1a237e">📝 ${{w.w}}:</strong><br>`;
+    if (endingInfo) html += `<span style="font-size:1.05rem">${{endingInfo}}</span><br>`;
+    html += `<span style="color:#555;font-size:0.82rem">${{parsing}}</span>`;
     html += `</div>`;
   }}
-  // Explain the specific conjugated form
-  if (w.m && w.w !== w.l) {{
-    html += `<div style="padding:0.7rem;background:#e8eaf6;border-radius:6px;margin-bottom:1rem;border-left:3px solid #3f51b5">`;
-    html += `<strong style="color:#1a237e">📝 Forma actual (${{w.w}}):</strong><br>`;
-    html += `Lema: <strong>${{w.l}}</strong> → forma: <strong>${{w.w}}</strong><br>`;
-    html += `<span style="color:#333">${{parsing}}</span>`;
+  // Compound etymology (only if it's a compound word with prefix+root)
+  if (comp && comp.parts.length > 1) {{
+    html += `<div style="padding:0.7rem;background:#fff3e0;border-radius:6px;margin-bottom:1rem;border-left:3px solid #ff9800">`;
+    html += `<strong style="color:#e65100">&#9881; Origen:</strong> `;
+    html += comp.parts.filter(p => p.type !== 'desinencia').map(p => `<span style="font-size:1.05rem">${{p.greek}}</span> <span style="color:#555">(${{p.meaning_es}})</span>`).join(' + ');
+    if (comp.meaning) html += ` <strong>→</strong> ${{comp.meaning}}`;
+    if (comp.root_note) html += `<br><span style="font-size:0.82rem;color:#555;margin-top:4px;display:inline-block">${{comp.root_note}}</span>`;
     html += `</div>`;
   }}
   if (w.d) html += `<div style="padding:0.6rem;background:#e8f5e9;border-radius:6px;margin-bottom:1rem"><strong>Def:</strong> ${{w.d}}</div>`;
@@ -840,12 +1059,22 @@ Object.keys(xrefsByV).sort((a,b)=>a-b).forEach(v => {{
   xrefsByV[v].forEach(x => {{
     const span = document.createElement('span');
     span.className = 'xref';
-    span.innerHTML = `${{x.ref}}<span class="xref-tip">${{x.text || x.rel || 'Sin preview'}}</span>`;
+    span.style.cursor = 'pointer';
+    span.textContent = x.ref;
+    span.onclick = () => showXref(x);
     grp.appendChild(span);
   }});
   xc.appendChild(grp);
 }});
 if (!D.xrefs.length) xc.innerHTML = '<p style="color:var(--mut)">No hay referencias cruzadas.</p>';
+
+function showXref(x) {{
+  let html = `<div style="font-weight:700;color:var(--pri);margin-bottom:0.8rem;font-size:1.1rem">${{x.ref}}</div>`;
+  if (x.text.gr) html += `<div style="padding:0.6rem;background:#e8f5e9;border-radius:6px;margin-bottom:0.6rem;font-family:'Noto Serif',serif;font-size:0.95rem;line-height:1.6">${{x.text.gr}}</div>`;
+  if (x.text.es) html += `<div style="padding:0.6rem;background:#f5f5f5;border-radius:6px;font-size:0.9rem;line-height:1.5">${{x.text.es}}</div>`;
+  if (!x.text.gr && !x.text.es) html += '<p style="color:var(--mut)">Texto no disponible.</p>';
+  showPopup(`🔗 ${{x.ref}}`, html);
+}}
 
 // Events
 const ec = document.getElementById('eventsContainer');
@@ -884,13 +1113,17 @@ function showPatristic(v) {{
       h += `<span class="trans-toggle" onclick="document.getElementById('ptr${{pid}}').classList.toggle('collapsed')">&#128065; ${{btnLabel}}</span>`;
       h += `<div id="ptr${{pid}}" class="collapsed" style="margin-top:0.4rem;padding:0.5rem;background:#f9fbe7;border-radius:6px;font-size:0.85rem">${{secondText}}</div>`;
     }}
+    // Link to original source
+    const searchName = p.f.replace(/ - .*/,'').replace(/ of .*/,'');
+    const workSearch = p.w ? encodeURIComponent(p.f + ' ' + p.w) : encodeURIComponent(p.f);
+    h += `<div style="margin-top:0.3rem"><a href="https://www.newadvent.org/fathers/" target="_blank" style="font-size:0.7rem;color:#1565c0;text-decoration:none">📖 New Advent</a> · <a href="https://ccel.org/ccel/search?qu=${{workSearch}}" target="_blank" style="font-size:0.7rem;color:#1565c0;text-decoration:none">📚 CCEL</a> · <a href="https://www.google.com/search?q=${{workSearch}}+full+text" target="_blank" style="font-size:0.7rem;color:#1565c0;text-decoration:none">🔍 Buscar texto completo</a></div>`;
     h += `</div>`;
     return h;
   }}).join('');
   showPopup(`&#10013; v.${{v}} \u2014 Comentario Patr\u00edstico (${{refs.length}})`, html);
 }}
 function showTranslations(v) {{
-  const labels = {{'RVR1909':'Reina-Valera 1909','YLT':"Young's Literal Translation",'Vulgate':'Vulgata (Latín)'}};
+  const labels = {{'RVR60':'Reina-Valera 1960 (ES)','RVR1909':'Reina-Valera 1909 (ES)','KJV':'King James Version','ASV':'American Standard Version','BSB':'Berean Standard Bible','Darby':'Darby Translation','LITV':"Literal Translation (Green's)",'YLT':"Young's Literal Translation",'Vulgate':'Vulgata (Latín)'}};
   let html = '';
   for (const [ver, texts] of Object.entries(D.translations)) {{
     if (texts[v]) {{
@@ -901,6 +1134,28 @@ function showTranslations(v) {{
   }}
   if (!html) html = '<p style="color:var(--mut)">No hay versiones adicionales disponibles.</p>';
   showPopup(`&#128214; v.${{v}} \u2014 Versiones`, html);
+}}
+function showExegetical(v) {{
+  const comms = D.greek_commentaries[v] || [];
+  if (!comms.length) {{ showPopup(`&#128218; v.${{v}}`, '<p style="color:var(--mut)">No hay comentarios disponibles.</p>'); return; }}
+  // Quick synthesis: first meaningful sentence from each
+  let synthesis = '<div style="padding:0.7rem;background:#e8f5e9;border-radius:6px;margin-bottom:1rem;border-left:3px solid #1b5e20;line-height:1.6;font-size:0.88rem">';
+  comms.forEach(c => {{
+    const clean = c.text.replace(/<[^>]+>/g, '');
+    const firstSentence = clean.split(/[.!?]/).filter(s => s.trim().length > 20).slice(0, 2).join('. ').trim() + '.';
+    synthesis += `<strong style="color:#1b5e20">${{c.name.split("'")[0]}}:</strong> ${{firstSentence}}<br>`;
+  }});
+  synthesis += '</div>';
+  // Collapsible full commentaries
+  let eid = 0;
+  let html = synthesis + comms.map(c => {{
+    eid++;
+    return `<div style="margin-bottom:0.5rem">` +
+      `<div style="cursor:pointer;padding:0.4rem 0.7rem;background:#f5f5f5;border-radius:6px;border-left:3px solid #4caf50;display:flex;justify-content:space-between;align-items:center" onclick="document.getElementById('exg${{v}}_${{eid}}').classList.toggle('collapsed')">` +
+      `<strong style="color:#1b5e20;font-size:0.8rem">${{c.name}}</strong><span style="font-size:0.65rem;color:var(--mut)">ver completo ▼</span></div>` +
+      `<div id="exg${{v}}_${{eid}}" class="collapsed" style="padding:0.6rem;font-size:0.83rem;line-height:1.5;border:1px solid #e0e0e0;border-top:none;border-radius:0 0 6px 6px">${{c.text}}</div></div>`;
+  }}).join('');
+  showPopup(`&#128218; v.${{v}} \u2014 Exégesis del Griego`, html);
 }}
 function showVariants(v) {{
   const vars = D.apparatus.filter(a => a.v === v);
@@ -1025,51 +1280,6 @@ new Chart(document.getElementById('fathersChart'), {{
 // Map zoom
 const mapImg = document.getElementById('mapImg');
 if (mapImg) mapImg.addEventListener('click', () => mapImg.classList.toggle('zoomed'));
-
-// Exegetical commentary - opens in new tab
-if (D.greek_commentaries && Object.keys(D.greek_commentaries).length) {{
-  document.getElementById('exegeticalCard').style.display = 'block';
-}}
-function openExegeticalTab() {{
-  let html = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Comentario Exegético — ${{D.book}} ${{D.chapter}}</title>
-<style>body{{font-family:'Segoe UI',system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:1.5rem;line-height:1.8;color:#212121}}
-h1{{color:#1a237e;border-bottom:3px solid #1a237e;padding-bottom:0.5rem}}
-h2{{color:#c62828;margin-top:2rem}}h3{{color:#1a237e;font-size:1rem}}
-.verse-section{{margin-bottom:1.5rem;padding:1rem;border-left:3px solid #1b5e20;background:#fafafa;border-radius:0 8px 8px 0}}
-.source-name{{font-weight:700;color:#1a237e;font-size:0.9rem;margin-bottom:0.3rem}}
-.commentary-text{{font-size:0.92rem;line-height:1.7}}
-.ai-section{{margin-top:2rem;padding:1.5rem;background:#f3e5f5;border-radius:8px;border-left:3px solid #7b1fa2}}
-.ai-section h2{{color:#7b1fa2}}
-.warning{{background:#fff3e0;padding:0.8rem;border-radius:6px;font-size:0.82rem;color:#e65100;margin-bottom:1rem}}
-</style></head><body>
-<h1>📜 Comentario Exegético — ${{D.book}} ${{D.chapter}}</h1>`;
-
-  if (D.greek_commentaries) {{
-    Object.keys(D.greek_commentaries).sort((a,b)=>a-b).forEach(v => {{
-      html += `<div class="verse-section"><h3>Versículo ${{v}}</h3>`;
-      D.greek_commentaries[v].forEach(c => {{
-        html += `<div style="margin-bottom:0.8rem"><div class="source-name">${{c.name}}</div><div class="commentary-text">${{c.text}}</div></div>`;
-      }});
-      html += `</div>`;
-    }});
-  }}
-
-  if (D.exegetical) {{
-    html += `<div class="ai-section"><h2>📋 Síntesis en español (basada en Robertson/Vincent)</h2>`;
-    html += D.exegetical + `</div>`;
-  }}
-
-  html += `</body></html>`;
-  const blob = new Blob([html], {{type:'text/html'}});
-  window.open(URL.createObjectURL(blob), '_blank');
-}}
-
-// Patristic thematic analysis
-if (D.patristic_analysis) {{
-  const pa = document.getElementById('patristicAnalysisCard');
-  pa.style.display = 'block';
-  document.getElementById('patristicAnalysisContent').innerHTML = D.patristic_analysis;
-}}
 
 // Manuscripts timeline and map
 if (D.manuscripts && Object.keys(D.manuscripts).length && D.apparatus && D.apparatus.length) {{

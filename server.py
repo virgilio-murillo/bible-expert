@@ -905,7 +905,46 @@ def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir:
             chapter_data=chapter_data, geo_data=geo_data, output_dir=out_path
         )
         
-        return f"✅ Study generated: {html_path}\n\nOpen with: open \"{html_path}\""
+        # Open main HTML immediately
+        import subprocess
+        subprocess.Popen(["open", str(html_path)])
+        
+        # Generate deep analyses in background and auto-open when ready
+        import threading
+        def _generate_background_analyses():
+            import traceback
+            try:
+                from study_html_generator import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
+                
+                # Patristic thematic analysis
+                if chapter_data.get("patristic"):
+                    patr_html = _generate_patristic_analysis(resolved, chapter, chapter_data["patristic"])
+                    if patr_html:
+                        patr_path = out_path / "patristic_analysis.html"
+                        full = f'''<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Análisis Patrístico — {resolved} {chapter}</title>
+<style>body{{font-family:'Segoe UI',system-ui,sans-serif;max-width:1000px;margin:2rem auto;padding:1.5rem;line-height:1.7;color:#212121}}h1{{color:#c62828;border-bottom:3px solid #c62828;padding-bottom:0.5rem}}</style></head>
+<body><h1>⚖️ Análisis Temático Patrístico — {resolved} {chapter}</h1>{patr_html}</body></html>'''
+                        patr_path.write_text(full, encoding="utf-8")
+                        subprocess.Popen(["open", str(patr_path)])
+                
+                # Exegetical synthesis
+                if chapter_data.get("greek_commentaries"):
+                    exeg_html = _generate_grounded_exegetical(resolved, chapter, chapter_data["greek_commentaries"], chapter_data.get("morphology", {}))
+                    if exeg_html:
+                        exeg_path = out_path / "exegetical_analysis.html"
+                        full = f'''<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Análisis Exegético — {resolved} {chapter}</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+<style>body{{font-family:'Segoe UI',system-ui,sans-serif;max-width:1000px;margin:2rem auto;padding:1.5rem;line-height:1.7;color:#212121}}h1{{color:#1a237e;border-bottom:3px solid #1a237e;padding-bottom:0.5rem}}</style></head>
+<body><h1>📜 Análisis Exegético — {resolved} {chapter}</h1>{exeg_html}</body></html>'''
+                        exeg_path.write_text(full, encoding="utf-8")
+                        subprocess.Popen(["open", str(exeg_path)])
+            except Exception as e:
+                err_path = out_path / "background_error.txt"
+                err_path.write_text(traceback.format_exc(), encoding="utf-8")
+        
+        threading.Thread(target=_generate_background_analyses).start()
+        
+        return f"✅ Study generated and opened: {html_path}\n\n📋 Patristic & exegetical analyses generating in background (will auto-open when ready)."
     except ValueError as e:
         return str(e)
     finally:
