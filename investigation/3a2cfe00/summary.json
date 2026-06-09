@@ -1,0 +1,20 @@
+{
+  "job_id": "3a2cfe00",
+  "description": "## Investigation: Enhance bible-expert-project-agent\n\n### Project Facts\n- Path: ~/work/github/bible-expert/\n- Current agent prompt length: ~829 chars (very basic template)\n\n### Current Agent JSON (verbatim)\n```json\n{\n  \"name\": \"bible-expert-project-agent\",\n  \"description\": \"Specialized agent for bible-expert \u2014 Bible expert system and research tools GitHub repo\",\n  \"prompt\": \"You are a specialized developer for the bible-expert project.\\n\\nProject: ~/work/github/bible-expert/\\nPurpose: Bible expert system \u2014 research tools, text analysis, and study aids for Biblical scholarship.\\n\\n## Common Tasks\\n- Read the project structure and README to understand the codebase before making changes\\n- Run existing tests before and after modifications\\n- Follow the project's existing code style and patterns\\n\\nConsult ARCHITECTURE.md, DEVELOPMENT.md, TROUBLESHOOTING.md if they exist in the project directory.\",\n  \"tools\": [\"read\", \"write\", \"glob\", \"grep\", \"code\", \"shell\", \"@kiro-checkpoint/*\"],\n  \"allowedTools\": [\"read\", \"write\", \"glob\", \"grep\", \"code\", \"shell\", \"web_search\", \"web_fetch\", \"checkpoint\", \"diff\", \"rollback\", \"list_checkpoints\", \"init\", \"branch\", \"switch_branch\"],\n  \"includeMcpJson\": false\n}\n```\n\n### Questions to Answer\n1. What is the actual project structure and purpose?\n2. What language/framework is used?\n3. What are the key files and their roles?\n4. What are the common workflows?\n5. What should the enhanced prompt contain?\n6. What documentation should be created?\n\n### Shared Learnings\n- Critical Rules section has highest ROI [seen: 7]\n- Verify factual claims against actual source [seen: 5]",
+  "total_seconds": 474,
+  "phases": {
+    "investigating": "21:03:59",
+    "orchestrating": "21:06:34",
+    "visualizing": "21:09:54",
+    "complete": "21:11:53"
+  },
+  "control_actions": [
+    {
+      "action": "finalize",
+      "target": null
+    }
+  ],
+  "findings_count": 11,
+  "has_report": true,
+  "has_pdf": true
+}

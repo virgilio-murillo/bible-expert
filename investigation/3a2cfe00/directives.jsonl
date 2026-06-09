@@ -1,0 +1,4 @@
+{"from":"head","to":"all","directive":"Focus on verifying tool count discrepancy: README says 12 tools, server.py has 15 @mcp.tool decorators. Confirm actual tool names."}
+{"from":"head","to":"c2-tools","directive":"Verify default version string: README says SBLGNT, server.py uses 'SBLGNT' as default but MorphGNT ingest stores as 'MorphGNT'. Check if this causes lookup failures."}
+{"from":"head","to":"c5-aws","directive":"Confirm S3 bucket name and region from study_html_generator.py. No CloudWatch queries needed — this is a local dev tool, not a production service."}
+{"from":"head","to":"all","directive":"HEAD has sufficient signal from direct code inspection. Proceeding to finalize report."}

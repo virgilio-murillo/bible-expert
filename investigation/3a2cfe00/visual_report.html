@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report</title>
+<style>
+body { font-family: -apple-system, "Segoe UI", Helvetica Neue, sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #fff; }
+h1 { color: #232f3e; font-size: 22pt; border-bottom: 3px solid #ff9900; padding-bottom: 8px; }
+h2 { color: #0073bb; border-bottom: 2px solid #0073bb; padding-bottom: 4px; font-size: 16pt; margin-top: 2em; }
+h3 { color: #232f3e; font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; }
+th { background-color: #232f3e; color: white; padding: 8px; text-align: left; }
+td { border: 1px solid #ddd; padding: 6px 8px; }
+tr:nth-child(even) { background-color: #f8f8f8; }
+code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 10pt; color: #c7254e; }
+pre { background: #1e1e2e; padding: 16px; border-radius: 8px; font-size: 9.5pt; white-space: pre-wrap; word-break: break-word; overflow-x: auto; }
+pre code { background: none; color: #cdd6f4; padding: 0; font-size: inherit; }
+blockquote { border-left: 4px solid #0073bb; margin: 12px 0; padding: 8px 16px; background: #f0f7fc; }
+img { max-width: 100%; height: auto; display: block; margin: 12px auto; }
+.mermaid { background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e0e0e0; margin: 16px 0; text-align: center; }
+.code-wrapper { position: relative; }
+.copy-btn { position: absolute; top: 8px; right: 8px; background: #3498db; color: #fff; border: none; border-radius: 4px; padding: 4px 10px; font-size: 8pt; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+.copy-btn:hover { opacity: 1; }
+.copy-btn.copied { background: #27ae60; }
+</style>
+</head>
+<body>
+<h1 id="bible-expert-project-agent-enhancement-report">Bible Expert
+Project Agent — Enhancement Report</h1>
+<p><strong>Investigation ID:</strong> 3a2cfe00 | <strong>Date:</strong>
+2026-05-24 | <strong>Status:</strong> Findings Verified</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>The <code>bible-expert</code> project is a <strong>Python 3.11+ MCP
+server</strong> (<code>server.py</code>, ~988 lines) exposing <strong>15
+biblical research tools</strong> over stdio transport via FastMCP. It
+queries a SQLite database (<code>db/bible.db</code>) with 7 text
+versions spanning Greek, Hebrew, Latin, Spanish, and English, plus
+patristic commentary, Dead Sea Scrolls, and semantic embeddings.</p>
+<p>The current agent prompt (829 chars) is a generic template missing
+all project-specific context. Two active bugs were confirmed:
+<code>verse_lookup</code> defaults to <code>"SBLGNT"</code> (not a valid
+DB version — Greek NT is stored as <code>"MorphGNT"</code>), and both
+README and <code>pyproject.toml</code> report 12 tools when the actual
+count is 15. The enhanced prompt below corrects both and gives any agent
+working on this project immediate productivity.</p>
+<hr />
+<h2 id="architecture-diagram">Architecture Diagram</h2>
+<div class="mermaid">
+graph TD
+    Client["MCP Client<br/>(kiro-cli / Claude Code)"] -->|stdio JSON-RPC| Server["server.py<br/>15 @mcp.tool decorators"]
+    Server --> DB["db/bible.db<br/>SQLite + sqlite-vec"]
+    Server --> Books["books.py<br/>84 books, multilingual aliases"]
+    Server --> StudyGen["study_html_generator.py<br/>patristic + exegetical HTML"]
+    Server --> MapGen["map_generator.py<br/>cartopy + matplotlib maps"]
+    StudyGen -->|cache get/put| S3["S3 Bucket<br/>bible-study-cache-609009159737<br/>us-east-1"]
+    Server -->|geo extraction| Bedrock["AWS Bedrock<br/>claude-haiku-4-5"]
+    DB --> Ingest["ingest/ pipeline<br/>11 scripts"]
+    Ingest --> ExtData["data/external/<br/>6 git repos via setup.sh"]
+    Ingest --> LocalData["KOINE_ANKI_PATH<br/>MorphGNT + RVR60"]
+    S3 -->|sync_from_s3.sh| LocalDB["~/.kiro/mcp-servers/<br/>bible-tools/db/bible.db"]
+</div>
+<hr />
+<h2 id="detailed-analysis">Detailed Analysis</h2>
+<h3 id="project-structure">Project Structure</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Path</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>server.py</code></td>
+<td>Entry point — all 15 MCP tools, ~988 lines</td>
+</tr>
+<tr>
+<td><code>books.py</code></td>
+<td>Canonical book resolution, 84 books (IDs 1–84), multilingual
+aliases</td>
+</tr>
+<tr>
+<td><code>bible_places.py</code></td>
+<td>Geographic coordinates for map generation</td>
+</tr>
+<tr>
+<td><code>map_generator.py</code></td>
+<td>matplotlib + cartopy map PNG generation</td>
+</tr>
+<tr>
+<td><code>study_html_generator.py</code></td>
+<td>Interactive HTML output with S3 cache</td>
+</tr>
+<tr>
+<td><code>ingest/</code></td>
+<td>11 data pipeline scripts</td>
+</tr>
+<tr>
+<td><code>data-raw/</code></td>
+<td>Local raw data (RVR60 JSON, UBS5 apparatus, Matthew HTML notes)</td>
+</tr>
+<tr>
+<td><code>db/bible.db</code></td>
+<td>SQLite DB — gitignored, populated by ingest or
+<code>sync_from_s3.sh</code></td>
+</tr>
+<tr>
+<td><code>Makefile</code></td>
+<td>All developer workflows</td>
+</tr>
+<tr>
+<td><code>setup.sh</code></td>
+<td>Downloads 6 external git repos + runs ingest</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mcp-tools">15 MCP Tools</h3>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>book_list</code></td>
+<td>List all 84 supported books</td>
+</tr>
+<tr>
+<td><code>verse_lookup</code></td>
+<td>Fetch verses by book/chapter/verse, any version</td>
+</tr>
+<tr>
+<td><code>parallel_versions</code></td>
+<td>Same passage across multiple versions side-by-side</td>
+</tr>
+<tr>
+<td><code>semantic_search</code></td>
+<td>Embedding-based similarity search</td>
+</tr>
+<tr>
+<td><code>morphology_analysis</code></td>
+<td>Greek/Hebrew morphology with Strong’s numbers</td>
+</tr>
+<tr>
+<td><code>critical_apparatus</code></td>
+<td>Textual variants from UBS5/NA28 apparatus</td>
+</tr>
+<tr>
+<td><code>patristic_commentary</code></td>
+<td>Church father commentary on a passage</td>
+</tr>
+<tr>
+<td><code>save_patristic_original</code></td>
+<td>Persist patristic text to DB</td>
+</tr>
+<tr>
+<td><code>cross_references</code></td>
+<td>Cross-reference lookup</td>
+</tr>
+<tr>
+<td><code>word_study</code></td>
+<td>Deep lexical study for a word/lemma</td>
+</tr>
+<tr>
+<td><code>authenticity_report</code></td>
+<td>Textual authenticity analysis</td>
+</tr>
+<tr>
+<td><code>dss_lookup</code></td>
+<td>Dead Sea Scrolls parallels</td>
+</tr>
+<tr>
+<td><code>canon_history</code></td>
+<td>Canonical status and history of a book</td>
+</tr>
+<tr>
+<td><code>text_comparison</code></td>
+<td>Diff two versions of a passage</td>
+</tr>
+<tr>
+<td><code>chapter_study</code></td>
+<td>Full chapter study with Bedrock geo extraction</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-versions-db-version-strings">Text Versions (DB version
+strings)</h3>
+<table>
+<thead>
+<tr>
+<th>Version String</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MorphGNT</code></td>
+<td>Greek New Testament (morphologically tagged)</td>
+</tr>
+<tr>
+<td><code>LXX</code></td>
+<td>Septuagint (Greek OT)</td>
+</tr>
+<tr>
+<td><code>WLC</code></td>
+<td>Westminster Leningrad Codex (Hebrew OT)</td>
+</tr>
+<tr>
+<td><code>RVR60</code></td>
+<td>Reina-Valera 1960 (Spanish)</td>
+</tr>
+<tr>
+<td><code>YLT</code></td>
+<td>Young’s Literal Translation (English)</td>
+</tr>
+<tr>
+<td><code>Vulgate</code></td>
+<td>Latin Vulgate</td>
+</tr>
+<tr>
+<td><code>ApostolicFathers</code></td>
+<td>Apostolic Fathers corpus</td>
+</tr>
+</tbody>
+</table>
+<h3 id="db-schema-key-tables">DB Schema (Key Tables)</h3>
+<pre><code>verses(book, chapter, verse_num, version, text, testament, canon_status, morphology)
+morphology(book, chapter, verse_num, version, word_pos, word, lemma, morph_code, gloss, strongs)
+apparatus(book, chapter, verse_num, variant_id, reading, manuscripts, text_type)
+patristic(book, chapter, verse_num, father, work, text, date_approx, source_collection)
+cross_refs, dss, verse_embeddings</code></pre>
+<h3 id="aws-resources">AWS Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S3 Bucket</td>
+<td><code>bible-study-cache-609009159737</code> (us-east-1)</td>
+</tr>
+<tr>
+<td>Bedrock Model</td>
+<td><code>global.anthropic.claude-haiku-4-5-20251001-v1:0</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>us-east-1</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="bugs-found">Bugs Found</h2>
+<h3 id="bug-1-verse_lookup-wrong-default-version-active">Bug 1 —
+<code>verse_lookup</code> wrong default version (Active)</h3>
+<p><code>verse_lookup</code> defaults to <code>version="SBLGNT"</code>
+but <code>SBLGNT</code> is not a valid DB version string. Greek NT is
+stored as <code>MorphGNT</code>. Any call with the default returns empty
+results.</p>
+<p><strong>Fix (1 line in <code>server.py</code>):</strong></p>
+<pre class="python"><code># Change line ~49 from:
+def verse_lookup(..., version: str = &quot;SBLGNT&quot;, ...
+# To:
+def verse_lookup(..., version: str = &quot;MorphGNT&quot;, ...</code></pre>
+<h3 id="bug-2-outdated-tool-count-in-docs">Bug 2 — Outdated tool count
+in docs</h3>
+<p>README and <code>pyproject.toml</code> both say “12 tools”. Actual
+count is <strong>15</strong>. Missing from docs: <code>book_list</code>,
+<code>save_patristic_original</code>, <code>chapter_study</code>.</p>
+<p><strong>Fix:</strong></p>
+<pre class="bash"><code># In README.md and pyproject.toml description, update &quot;12 tools&quot; → &quot;15 tools&quot;
+# Add to README tools table: book_list, save_patristic_original, chapter_study</code></pre>
+<hr />
+<h2 id="common-workflows">Common Workflows</h2>
+<pre class="bash"><code># Initial setup
+make setup
+./setup.sh
+
+# Start MCP server
+make run
+
+# Smoke test (verifies tool count)
+make test
+
+# Sync DB from S3
+bash sync_from_s3.sh
+
+# Regenerate embeddings
+make embeddings
+
+# Ingest from local Koine Anki repo
+KOINE_ANKI_PATH=/path/to/koine-anki make ingest-local</code></pre>
+<hr />
+<h2 id="troubleshooting-decision-tree">Troubleshooting Decision
+Tree</h2>
+<div class="mermaid">
+flowchart TD
+    Start["Tool returns empty results"] --> Q1{"Which tool?"}
+    Q1 -->|verse_lookup| Q2{"version param set?"}
+    Q1 -->|semantic_search| Q3{"Embeddings exist?"}
+    Q1 -->|chapter_study| Q4{"AWS creds valid?"}
+    Q1 -->|Other| Q5{"DB populated?"}
+
+    Q2 -->|No / default| Fix1["Set version='MorphGNT'<br/>for Greek NT<br/>Bug: default is 'SBLGNT'"]
+    Q2 -->|Yes| Q5
+
+    Q3 -->|No| Fix2["Run: make embeddings"]
+    Q3 -->|Yes| Q5
+
+    Q4 -->|No| Fix3["Configure AWS credentials<br/>Region: us-east-1<br/>Needs Bedrock + S3 access"]
+    Q4 -->|Yes| Q5
+
+    Q5 -->|No| Fix4["Run: bash sync_from_s3.sh<br/>OR: ./setup.sh"]
+    Q5 -->|Yes| Q6{"make test passes?"}
+
+    Q6 -->|No| Fix5["Check server.py imports<br/>Verify venv: make setup"]
+    Q6 -->|Yes| Fix6["Check book name spelling<br/>books.py has multilingual aliases<br/>IDs 1-84 supported"]
+</div>
+<hr />
+<h2 id="agent-enhancement-sequence">Agent Enhancement Sequence</h2>
+<div class="mermaid">
+sequenceDiagram
+    participant Dev as Developer
+    participant Agent as bible-expert-agent
+    participant Server as server.py
+    participant DB as db/bible.db
+    participant AWS as AWS (Bedrock/S3)
+
+    Dev->>Agent: "Look up John 1:1 in Greek"
+    Agent->>Server: verse_lookup("John", 1, 1, version="MorphGNT")
+    Server->>DB: SELECT text FROM verses WHERE book=43 AND chapter=1 AND verse_num=1 AND version='MorphGNT'
+    DB-->>Server: "Εν αρχη ην ο λογος..."
+    Server-->>Agent: verse text + morphology
+    Agent-->>Dev: Formatted result
+
+    Dev->>Agent: "Generate chapter study for Romans 8"
+    Agent->>Server: chapter_study("Romans", 8)
+    Server->>AWS: Bedrock claude-haiku-4-5 (geo extraction)
+    AWS-->>Server: geographic entities
+    Server->>AWS: S3 cache check (bible-study-cache-609009159737)
+    AWS-->>Server: cache miss → generate HTML
+    Server-->>Agent: study HTML path
+    Agent-->>Dev: Study report
+
+    Dev->>Agent: "Fix the SBLGNT bug"
+    Agent->>Server: Read server.py line ~49
+    Server-->>Agent: def verse_lookup(..., version="SBLGNT"...)
+    Agent->>Server: Edit: version="MorphGNT"
+    Agent->>Server: make test
+    Server-->>Agent: 15 tools OK
+    Agent-->>Dev: Bug fixed, test passes
+</div>
+<hr />
+<h2 id="action-plan">Action Plan</h2>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Action</th>
+<th>Effort</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Deploy enhanced agent prompt (JSON below)</td>
+<td>2 min</td>
+<td>High — immediate agent productivity</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Fix <code>verse_lookup</code> SBLGNT default → MorphGNT</td>
+<td>1 line</td>
+<td>High — fixes silent data bug</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Update README + pyproject.toml tool count 12→15</td>
+<td>5 min</td>
+<td>Medium — doc accuracy</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Add minimal <code>tests/</code> directory</td>
+<td>30 min</td>
+<td>Medium — catch regressions</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="enhanced-agent-json">Enhanced Agent JSON</h2>
+<pre class="json"><code>{
+  &quot;name&quot;: &quot;bible-expert-project-agent&quot;,
+  &quot;description&quot;: &quot;Specialized agent for bible-expert — Python MCP server with 15 biblical research tools (verse lookup, morphology, patristic commentary, DSS, semantic search, chapter study)&quot;,
+  &quot;prompt&quot;: &quot;You are a specialized developer for the bible-expert project.\n\n## Project\n- Path: ~/work/github/bible-expert/\n- Purpose: Python 3.11+ MCP server (FastMCP, stdio transport) with 15 biblical research tools\n- Entry point: server.py (~988 lines, 15 @mcp.tool decorators)\n- DB: SQLite at db/bible.db (gitignored — populated by ingest pipeline or sync_from_s3.sh)\n\n## Architecture\n- server.py — all 15 MCP tools + helper functions\n- books.py — canonical book resolution (84 books, IDs 1–84, multilingual aliases)\n- bible_places.py — geographic coordinates for map generation\n- map_generator.py — matplotlib+cartopy map PNG generation\n- study_html_generator.py — interactive HTML with S3 cache (bucket: bible-study-cache-609009159737, us-east-1)\n- ingest/ — 11 data pipeline scripts\n- data-raw/ — local raw data (RVR60 JSON, UBS5 apparatus, Matthew HTML notes)\n\n## 15 Tools\nbook_list, verse_lookup, parallel_versions, semantic_search, morphology_analysis, critical_apparatus, patristic_commentary, save_patristic_original, cross_references, word_study, authenticity_report, dss_lookup, canon_history, text_comparison, chapter_study\n\n## Text Versions (DB version strings)\nMorphGNT (Greek NT), LXX (Septuagint), WLC (Hebrew OT), RVR60 (Spanish 1960), YLT (English), Vulgate (Latin), ApostolicFathers\n\n## DB Schema (key tables)\nverses(book, chapter, verse_num, version, text, testament, canon_status, morphology)\nmorphology(book, chapter, verse_num, version, word_pos, word, lemma, morph_code, gloss, strongs)\napparatus(book, chapter, verse_num, variant_id, reading, manuscripts, text_type)\npatristic(book, chapter, verse_num, father, work, text, date_approx, source_collection)\ncross_refs, dss, verse_embeddings\n\n## Common Workflows\n```bash\nmake setup\n./setup.sh\nmake run\nmake test\nmake ingest-local\nmake embeddings\nbash sync_from_s3.sh\n```\n\n## Critical Rules\n- ALWAYS use version string &#39;MorphGNT&#39; (not &#39;SBLGNT&#39;) for Greek NT — &#39;SBLGNT&#39; is not a valid DB version and returns empty results\n- Book IDs 1–66 = Protestant canon; 67–84 = deuterocanonical/extra-biblical\n- db/bible.db is gitignored — never commit it; use sync_from_s3.sh or run ingest pipeline\n- AWS credentials required for: chapter_study (Bedrock claude-haiku-4-5) and study_html_generator.py (S3 cache)\n- Run make test after any server.py change to verify tool count stays at 15\n- No ARCHITECTURE.md, DEVELOPMENT.md, or TROUBLESHOOTING.md — consult README.md and server.py docstrings\n- No tests/ directory — make test is the only automated check\n- KOINE_ANKI_PATH env var must point to koine-anki repo for ingest/ingest_local.py&quot;,
+  &quot;tools&quot;: [&quot;read&quot;, &quot;write&quot;, &quot;glob&quot;, &quot;grep&quot;, &quot;code&quot;, &quot;shell&quot;, &quot;@kiro-checkpoint/*&quot;],
+  &quot;allowedTools&quot;: [&quot;read&quot;, &quot;write&quot;, &quot;glob&quot;, &quot;grep&quot;, &quot;code&quot;, &quot;shell&quot;, &quot;web_search&quot;, &quot;web_fetch&quot;, &quot;checkpoint&quot;, &quot;diff&quot;, &quot;rollback&quot;, &quot;list_checkpoints&quot;, &quot;init&quot;, &quot;branch&quot;, &quot;switch_branch&quot;],
+  &quot;includeMcpJson&quot;: false
+}</code></pre>
+<hr />
+<h2 id="key-findings-summary">Key Findings Summary</h2>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 32%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Finding</th>
+<th>Status</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool count</td>
+<td><strong>15</strong> (not 12)</td>
+<td><code>grep @mcp.tool server.py</code> = 15 hits</td>
+</tr>
+<tr>
+<td>Language/Framework</td>
+<td>Python 3.11+ / FastMCP</td>
+<td><code>pyproject.toml</code>, <code>mcp&gt;=1.27.0</code></td>
+</tr>
+<tr>
+<td>DB</td>
+<td>SQLite + sqlite-vec</td>
+<td><code>db/bible.db</code>, gitignored</td>
+</tr>
+<tr>
+<td>Text versions</td>
+<td>7</td>
+<td>MorphGNT, LXX, WLC, RVR60, YLT, Vulgate, ApostolicFathers</td>
+</tr>
+<tr>
+<td>Book coverage</td>
+<td>84 books</td>
+<td>IDs 1–84: Protestant + deuterocanonical + pseudepigrapha</td>
+</tr>
+<tr>
+<td>AWS services</td>
+<td>Bedrock + S3</td>
+<td>claude-haiku-4-5, bucket
+<code>bible-study-cache-609009159737</code></td>
+</tr>
+<tr>
+<td>Bug: SBLGNT default</td>
+<td><strong>Active</strong></td>
+<td><code>verse_lookup</code> default returns empty — fix:
+<code>"MorphGNT"</code></td>
+</tr>
+<tr>
+<td>Bug: doc tool count</td>
+<td><strong>Active</strong></td>
+<td>README + pyproject say 12, actual is 15</td>
+</tr>
+<tr>
+<td>Test suite</td>
+<td><strong>None</strong></td>
+<td><code>make test</code> smoke test only; no <code>tests/</code>
+directory</td>
+</tr>
+<tr>
+<td>Missing docs</td>
+<td><strong>Confirmed</strong></td>
+<td>No ARCHITECTURE.md, DEVELOPMENT.md, TROUBLESHOOTING.md</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="references">References</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>server.py</code></td>
+<td>15 tools, all signatures, Bedrock model ID (line 972)</td>
+</tr>
+<tr>
+<td><code>pyproject.toml</code></td>
+<td>Dependencies, Python version, outdated tool count</td>
+</tr>
+<tr>
+<td><code>Makefile</code></td>
+<td>All make targets</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>Project overview — tool count outdated (says 12)</td>
+</tr>
+<tr>
+<td><code>ingest/init_schema.py</code></td>
+<td>Full DB schema</td>
+</tr>
+<tr>
+<td><code>books.py</code></td>
+<td>84-book canonical resolution</td>
+</tr>
+<tr>
+<td><code>study_html_generator.py</code></td>
+<td>S3 bucket name and caching logic</td>
+</tr>
+<tr>
+<td><code>sync_from_s3.sh</code></td>
+<td>S3 sync target path</td>
+</tr>
+<tr>
+<td><code>setup.sh</code></td>
+<td>External data sources and ingest sequence</td>
+</tr>
+</tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true, theme: 'default' });
+// Add copy buttons to ALL pre blocks
+document.querySelectorAll('pre').forEach(pre => {
+  if (pre.closest('.mermaid')) return;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'code-wrapper';
+  pre.parentNode.insertBefore(wrapper, pre);
+  wrapper.appendChild(pre);
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.textContent = 'Copy';
+  btn.onclick = function() {
+    const code = pre.querySelector('code') || pre;
+    navigator.clipboard.writeText(code.textContent).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  };
+  wrapper.appendChild(btn);
+});
+</script>
+</body>
+</html>
