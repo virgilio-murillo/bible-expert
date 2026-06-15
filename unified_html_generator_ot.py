@@ -341,15 +341,30 @@ def _render_verse_block(vnum, chapter_data, commentaries, patristic_entries,
     sp_text = spanish.get(vnum, verses.get(vnum, ""))
     h += f'<div class="text-line rvr-line"><span class="vlabel">RVR</span>{sp_text}</div>'
 
-    # Hebrew/Greek original text (morphology words rendered by JS)
+    # Hebrew/Greek original text (rendered server-side)
+    parallel = chapter_data.get("parallel", {})
+    morphology = chapter_data.get("morphology", {})
+    lxx_morphology = chapter_data.get("lxx_morphology", {})
     if is_ot:
-        h += f'<div class="text-line heb-line" id="greek-{vnum}" dir="rtl"><span class="vlabel" style="float:right;direction:ltr">WLC</span></div>'
+        wlc_text = ""
+        morph_words = morphology.get(vnum) or morphology.get(str(vnum))
+        if morph_words:
+            wlc_text = " ".join(w["w"] for w in morph_words)
+        elif parallel.get("WLC"):
+            wlc_text = parallel["WLC"].get(vnum) or parallel["WLC"].get(str(vnum)) or ""
+        h += f'<div class="text-line heb-line" dir="rtl"><span class="vlabel" style="float:right;direction:ltr">WLC</span>{wlc_text}</div>'
     else:
         h += f'<div class="text-line greek-orig-line" id="greek-{vnum}"><span class="vlabel">GNT</span></div>'
 
-    # LXX line for OT (rendered by JS)
+    # LXX line for OT (rendered server-side)
     if is_ot:
-        h += f'<div class="text-line lxx-line" id="lxx-{vnum}"><span class="vlabel">LXX</span></div>'
+        lxx_text = ""
+        lxx_words = lxx_morphology.get(vnum) or lxx_morphology.get(str(vnum))
+        if lxx_words:
+            lxx_text = " ".join(w["w"] for w in lxx_words)
+        elif parallel.get("LXX"):
+            lxx_text = parallel["LXX"].get(vnum) or parallel["LXX"].get(str(vnum)) or ""
+        h += f'<div class="text-line lxx-line"><span class="vlabel">LXX</span>{lxx_text}</div>'
         # LXX-ES literal translation - always visible
         lxx_es = chapter_data.get("lxx_spanish", {})
         lxx_es_text = lxx_es.get(vnum) or lxx_es.get(str(vnum)) or ""
