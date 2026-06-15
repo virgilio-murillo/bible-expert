@@ -64,7 +64,7 @@ _PATR_META = {
 
 def generate_unified_html(book: str, chapter: int, chapter_data: dict, output_dir: Path) -> Path:
     """Generate unified verse-by-verse analysis HTML."""
-    from study_html_generator import _s3_cache_get, _s3_cache_put
+    from study_html_generator_nt import _s3_cache_get, _s3_cache_put
 
     cache_key = f"cache/{book}/{chapter}/unified_analysis_v3.html"
     cached = _s3_cache_get(cache_key)
@@ -140,7 +140,7 @@ def generate_unified_html(book: str, chapter: int, chapter_data: dict, output_di
 
 def _load_tc_analyses(book, chapter, apparatus, verses, morphology, manuscripts):
     """Load TC verdict analyses from cache or generate."""
-    from study_html_generator import _s3_cache_get, _s3_cache_put, _strip_md
+    from study_html_generator_nt import _s3_cache_get, _s3_cache_put, _strip_md
     cache_key = f"cache/{book}/{chapter}/tc_verdicts_v2.json"
     cached = _s3_cache_get(cache_key)
     if cached:
@@ -188,7 +188,7 @@ Responde en español. SOLO JSON válido."""
 
 def _load_exeg_themes(book, chapter):
     """Load exegetical themes from cache."""
-    from study_html_generator import _s3_cache_get
+    from study_html_generator_nt import _s3_cache_get
     cache_key = f"cache/{book}/{chapter}/exegetical_themes_v2.html"
     cached = _s3_cache_get(cache_key)
     if not cached:
@@ -205,7 +205,7 @@ def _load_exeg_themes(book, chapter):
 
 def _load_patr_themes(book, chapter):
     """Load patristic themes from cache."""
-    from study_html_generator import _s3_cache_get, _s3_cache_put
+    from study_html_generator_nt import _s3_cache_get, _s3_cache_put
     # Try JSON cache first
     cache_key = f"cache/{book}/{chapter}/patristic_themes_v2.json"
     cached = _s3_cache_get(cache_key)
@@ -248,7 +248,7 @@ def _group_patr_themes_by_verse(all_themes):
 
 def _regenerate_patr_themes(book, chapter, patristic):
     """Regenerate patristic themes JSON from raw data using LLM."""
-    from study_html_generator import _s3_cache_put, _strip_md
+    from study_html_generator_nt import _s3_cache_put, _strip_md
     import boto3
     from botocore.config import Config
 
