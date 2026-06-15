@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report</title>
+<style>
+body { font-family: -apple-system, "Segoe UI", Helvetica Neue, sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #fff; }
+h1 { color: #232f3e; font-size: 22pt; border-bottom: 3px solid #ff9900; padding-bottom: 8px; }
+h2 { color: #0073bb; border-bottom: 2px solid #0073bb; padding-bottom: 4px; font-size: 16pt; margin-top: 2em; }
+h3 { color: #232f3e; font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; }
+th { background-color: #232f3e; color: white; padding: 8px; text-align: left; }
+td { border: 1px solid #ddd; padding: 6px 8px; }
+tr:nth-child(even) { background-color: #f8f8f8; }
+code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 10pt; color: #c7254e; }
+pre { background: #1e1e2e; padding: 16px; border-radius: 8px; font-size: 9.5pt; white-space: pre-wrap; word-break: break-word; overflow-x: auto; }
+pre code { background: none; color: #cdd6f4; padding: 0; font-size: inherit; }
+blockquote { border-left: 4px solid #0073bb; margin: 12px 0; padding: 8px 16px; background: #f0f7fc; }
+img { max-width: 100%; height: auto; display: block; margin: 12px auto; }
+.mermaid { background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e0e0e0; margin: 16px 0; text-align: center; }
+.code-wrapper { position: relative; }
+.copy-btn { position: absolute; top: 8px; right: 8px; background: #3498db; color: #fff; border: none; border-radius: 4px; padding: 4px 10px; font-size: 8pt; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+.copy-btn:hover { opacity: 1; }
+.copy-btn.copied { background: #27ae60; }
+</style>
+</head>
+<body>
+<h1 id="nt-chapter_study-otnt-generator-split-verification">NT
+chapter_study — OT/NT Generator Split Verification</h1>
+<p><strong>Investigation ID:</strong> v2-395459 · <strong>Date:</strong>
+2026-06-14 · <strong>Verdict:</strong> ✅ Functionally Correct</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>The OT/NT generator split is working correctly. All imports resolve,
+all function signatures match their call sites in
+<code>server.py</code>, and the <code>_is_ot()</code> routing logic
+correctly classifies all 66 canonical books (IDs 1–39 = OT, 40–66 = NT).
+The NT generator is a byte-for-byte copy of the pre-split original and
+behaves identically to the known-good May 12 state.</p>
+<p>Three hygiene issues exist — <strong>none affect runtime
+correctness</strong>. The most important is a set of 10 stale import
+sites in both unified generators that still point to the original
+<code>study_html_generator.py</code>. The system works today because the
+original still exists, but it must be fixed before that file can be
+safely deleted.</p>
+<hr />
+<h2 id="routing-architecture">Routing Architecture</h2>
+<figure>
+<img src="./diag1_routing.png" alt="Generator routing architecture" />
+<figcaption aria-hidden="true">Generator routing
+architecture</figcaption>
+</figure>
+<hr />
+<h2 id="confirmed-findings-12-of-12-high-confidence">Confirmed Findings
+(12 of 12 — HIGH Confidence)</h2>
+<figure>
+<img src="./diag2_findings.png" alt="All 12 confirmed findings" />
+<figcaption aria-hidden="true">All 12 confirmed findings</figcaption>
+</figure>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 37%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr>
+<th>ID</th>
+<th>Finding</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1</td>
+<td>All 6 imports from <code>_nt</code> and <code>_ot</code> generators
+resolve at runtime</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F2</td>
+<td><code>_is_ot()</code> uses
+<code>frozenset(BOOKS[i][0] for i in range(1, 40))</code> — IDs 1–39 =
+OT</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F3</td>
+<td><code>generate_unified_html(book, chapter, chapter_data, output_dir)</code>
+matches server.py call</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F4</td>
+<td><code>study_html_generator_nt.py</code> is byte-for-byte copy of
+original (1392 lines)</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F5</td>
+<td><code>study_html_generator_ot.py</code> is 1606 lines — +214 lines
+with <code>_translate_lxx()</code> + TC analysis</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F6</td>
+<td><code>unified_html_generator_nt.py</code> is byte-for-byte copy of
+original (893 lines)</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F7</td>
+<td><strong>10 stale import sites</strong> in both unified generators
+still point to original — MEDIUM issue</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F8</td>
+<td><code>_s3_cache_get</code>, <code>_s3_cache_put</code>,
+<code>_strip_md</code> are byte-identical across all 3 source files</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F9</td>
+<td><code>SyntaxWarning</code> for <code>\.</code> in OT generator is
+real but cosmetic — suppressed by <code>__pycache__</code></td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F10</td>
+<td><code>server.py</code> has <strong>zero</strong> imports from
+original <code>study_html_generator</code> — all use
+<code>_ot</code>/<code>_nt</code></td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Deuterocanonical books (IDs 67+) route to NT generator — same as
+pre-split</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>No circular imports exist in the dependency chain</td>
+<td>HIGH</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="file-structure">File Structure</h2>
+<figure>
+<img src="./diag4_filestruct.png" alt="File size comparison" />
+<figcaption aria-hidden="true">File size comparison</figcaption>
+</figure>
+<pre><code>study_html_generator.py       (1392 lines) — original; still alive due to stale imports
+study_html_generator_nt.py    (1392 lines) — byte-for-byte copy; NT path
+study_html_generator_ot.py    (1606 lines) — enhanced: +_translate_lxx(), +_generate_tc_analysis()
+unified_html_generator.py     ( 893 lines) — dead code; no importers in server.py
+unified_html_generator_nt.py  ( 893 lines) — byte-for-byte copy; NT path
+unified_html_generator_ot.py  (1044 lines) — enhanced; OT path</code></pre>
+<hr />
+<h2 id="contradictions-resolved">Contradictions Resolved</h2>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 37%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr>
+<th>ID</th>
+<th>Conflict</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td>Contrarian claimed line counts 1268/1469/801/942 — accused
+investigator of fabrication</td>
+<td>Judge ran <code>wc -l</code> independently. Investigator’s counts
+(1392/1606/893/1044) are correct at HEAD. Fabrication claim
+retracted.</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>Pair 1 flagged stale imports as <strong>CRITICAL</strong>. Pairs 0
+&amp; 2 said <strong>MEDIUM</strong>.</td>
+<td>Judge downgraded to <strong>MEDIUM</strong> — system functions
+today; risk is latent, triggered only on deleting the original. Fix is
+two <code>sed</code> commands.</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>Contrarian: routing deuterocanonicals to NT is a design gap (missing
+<code>_translate_lxx()</code>)</td>
+<td>Not a regression — <code>_translate_lxx()</code> didn’t exist
+pre-split. Deuterocanonicals get identical code path as before. Future
+enhancement, not a bug.</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>Contrarian challenged “runtime test” vs “static analysis”
+distinction</td>
+<td>Investigator conceded; conclusions unaffected. All 6 imports
+verified to resolve by both methods.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="action-plan">Action Plan</h2>
+<figure>
+<img src="./diag3_actions.png" alt="Recommended action plan" />
+<figcaption aria-hidden="true">Recommended action plan</figcaption>
+</figure>
+<h3 id="p1-medium-fix-stale-imports-10-sites-2-minutes">P1 — MEDIUM: Fix
+stale imports (10 sites, ~2 minutes)</h3>
+<pre class="bash"><code>sed -i &#39;&#39; &#39;s/from study_html_generator import/from study_html_generator_nt import/g&#39; unified_html_generator_nt.py
+sed -i &#39;&#39; &#39;s/from study_html_generator import/from study_html_generator_ot import/g&#39; unified_html_generator_ot.py
+
+# Verify — should return empty:
+grep &quot;from study_html_generator import&quot; unified_html_generator_nt.py unified_html_generator_ot.py</code></pre>
+<h3 id="p2-low-fix-syntaxwarning-in-study_html_generator_ot.py">P2 —
+LOW: Fix SyntaxWarning in study_html_generator_ot.py</h3>
+<p>The <code>\.</code> sequences appear in JavaScript regex strings
+embedded in Python f-strings. CPython 3.12+ (PEP 701) misreports the
+line numbers (reports 1611/1615 for a 1606-line file). Fix with raw
+strings or <code>\\.</code>.</p>
+<pre class="bash"><code># Reproduce:
+rm -f __pycache__/study_html_generator_ot.cpython-*.pyc
+python3 -Wall -c &quot;import study_html_generator_ot&quot; 2&gt;&amp;1 | grep SyntaxWarning</code></pre>
+<h3 id="p3-low-delete-dead-files-only-after-p1">P3 — LOW: Delete dead
+files (only after P1)</h3>
+<p>Once stale imports are fixed and tests pass, delete:</p>
+<pre class="bash"><code>rm study_html_generator.py
+rm unified_html_generator.py</code></pre>
+<h3 id="p4-future-deuterocanonical-routing">P4 — FUTURE:
+Deuterocanonical routing</h3>
+<p>Consider expanding <code>_OT_NAMES</code> to include
+deuterocanonical/pseudepigraphal books (IDs 67+) so they benefit from
+<code>_translate_lxx()</code> in the OT generator.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>server.py imports from <code>_nt</code>/<code>_ot</code> only</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td><code>_is_ot()</code> classifies all 66 books correctly</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td>NT generator function signatures match</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td>OT generator function signatures match</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td>No circular imports</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td><code>unified_html_generator_nt.py</code> signature correct</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td>Original <code>study_html_generator.py</code> NOT used by
+server.py</td>
+<td>✅ Confirmed</td>
+</tr>
+<tr>
+<td>Stale imports in unified generators</td>
+<td>⚠️ MEDIUM (fixable in ~2 min)</td>
+</tr>
+<tr>
+<td>SyntaxWarning in OT generator</td>
+<td>⚠️ LOW (cosmetic only)</td>
+</tr>
+<tr>
+<td>Dead code files can be deleted</td>
+<td>⏳ After P1 fix</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="references">References</h2>
+<table>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr>
+<th>Source</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pair 0 — internal-investigator</td>
+<td>Import integrity, circular import analysis, _s3_cache identity</td>
+</tr>
+<tr>
+<td>Pair 1 — docs-investigator</td>
+<td>Critical stale-import discovery, byte-for-byte file identity,
+deuterocanonical routing</td>
+</tr>
+<tr>
+<td>Pair 2 — bug-repro-agent</td>
+<td>Runtime import verification, function signature table, OT-specific
+extras</td>
+</tr>
+<tr>
+<td>Judge</td>
+<td>Line count arbitration, severity downgrade C→M, CPython
+SyntaxWarning reproduction</td>
+</tr>
+</tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true, theme: 'default' });
+// Add copy buttons to ALL pre blocks
+document.querySelectorAll('pre').forEach(pre => {
+  if (pre.closest('.mermaid')) return;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'code-wrapper';
+  pre.parentNode.insertBefore(wrapper, pre);
+  wrapper.appendChild(pre);
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.textContent = 'Copy';
+  btn.onclick = function() {
+    const code = pre.querySelector('code') || pre;
+    navigator.clipboard.writeText(code.textContent).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  };
+  wrapper.appendChild(btn);
+});
+</script>
+</body>
+</html>

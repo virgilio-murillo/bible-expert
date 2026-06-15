@@ -1,0 +1,7 @@
+11:41:54|Starting validation
+11:42:13|Reading findings file
+11:42:36|Checking source code
+11:43:33|Checking DB morph codes
+11:44:50|Checking ingest scripts
+11:45:37|Verifying study.html rendering
+11:46:05|Verifying external links

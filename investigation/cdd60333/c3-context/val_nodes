@@ -1,0 +1,10 @@
+11:47:29|Starting validation
+11:47:50|Reading findings file
+11:48:01|Verifying dead code
+11:48:15|Checking books.py aliases
+11:49:00|Verifying code claims
+11:49:41|Checking unified html
+11:50:38|Checking ingest scripts
+11:51:53|Checking LXX ingest
+11:52:54|Writing validated file
+11:53:53|Validation complete

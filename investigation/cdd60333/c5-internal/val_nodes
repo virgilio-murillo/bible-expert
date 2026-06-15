@@ -1,0 +1,10 @@
+11:43:04|Starting validation
+11:43:23|Reading findings file
+11:43:37|Verifying code claims
+11:44:06|Checking database claims
+11:45:05|Verifying LXX morph format
+11:46:30|Checking LXX morph format
+11:48:20|Verifying line numbers
+11:48:58|Checking unified generator
+11:50:02|Writing validated output
+11:51:27|Validation complete

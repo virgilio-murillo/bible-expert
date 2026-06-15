@@ -1,0 +1,1089 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mDuplicate agent with name [38;5;10maws-sap-c02-agent[0m was found in the global directory.
+[0m[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 1.16s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mmkdir -p /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal && printf '%s|Starting investigation\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mcat /Users/murivirg/work/github/bible-expert/investigation/cdd60333/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.521s[0m
+[38;5;12m[1m [1.1][0m[0m
+[38;5;244m - Completed in 1.315s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m1[0m to [38;5;141m100[0m[38;5;244m (using tool: read)[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m1[0m to [38;5;141m100[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m4588 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.303s[0m
+[38;5;12m[1m [1.3][0m[0m
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m8509 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.338s[0m
+[38;5;12m[1m [1.4][0m[0m
+[?25l[0m[?25l[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m100[0m to [38;5;141m250[0m[38;5;244m (using tool: read)[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m100[0m to [38;5;141m250[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m8143 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.491s[0m
+[38;5;12m[1m [1.5][0m[0m
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m6082 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.369s[0m
+[38;5;12m[1m [1.6][0m[0m
+[?25l[0m[?25l[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m250[0m to [38;5;141m400[0m[38;5;244m (using tool: read)[0mI will run the following command: [38;5;141mprintf '%s|Reading source files\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m7740 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.289s[0m
+[38;5;12m[1m [1.7][0m[0m
+[38;5;244m - Completed in 1.240s[0m
+[38;5;12m[1m [1.8][0m[0m
+[?25l[0m[?25l[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m400[0m to [38;5;141m550[0m[38;5;244m (using tool: read)[0mI will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"study_html_generator.py gather_chapter_data already handles WLC morphology (line 79-87) and LXX morphology separately (line 172-185). LXX Spanish translation cached in S3 via _translate_lxx. Unified generator references morphology from chapter_data but may not render WLC/LXX word-level display."}' >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m6783 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.320s[0m
+[38;5;12m[1m [1.9][0m[0m
+[38;5;244m - Completed in 1.309s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[?25l[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m550[0m to [38;5;141m750[0m[38;5;244m (using tool: read)[0mI will run the following command: [38;5;141mprintf '%s|Analyzing JS template\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m9159 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.336s[0m
+[38;5;12m[1m [1.11][0m[0m
+[38;5;244m - Completed in 1.249s[0m
+[38;5;12m[1m [1.12][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mgrep -n "renderMorph\|explainEnding\|verbTenseEs\|openWordStudy\|function parse" /Users/murivirg/work/github/bible-expert/study_html_generator.py | head -40[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mgrep -n "is_ot\|WLC\|Hebrew\|lxx_morph\|lxx_spanish" /Users/murivirg/work/github/bible-expert/study_html_generator.py | head -40[0m[38;5;244m (using tool: shell)[0m
+
+842:    html += `<div class="verse-line original"><span class="vlabel">WLC</span>${{renderMorph(v.v, D.parallel.WLC[v.v])}}</div>`;
+844:    html += `<div class="verse-line greek"><span class="vnum">${{v.v}}</span>${{renderMorph(v.v, '')}}</div>`;
+887:function verbTenseEs(rmac) {{
+966:function explainEnding(w) {{
+1084:function renderMorph(vnum, fallbackText) {{
+1088:    `<span class="morph-word" onmouseenter="showWordTip(event,${{vnum}},${{i}})" onmouseleave="hideWordTip()" onclick="openWordStudy(${{vnum}},${{i}})">${{w.w}}</span>`
+1141:function openWordStudy(vnum, idx) {{
+1163:    const endingInfo = explainEnding(w);
+[38;5;244m - Completed in 1.449s[0m
+[38;5;12m[1m [1.13][0m[0m
+63:    for ver in ["WLC", "LXX"]:
+89:                FROM morphology WHERE book=? AND chapter=? AND version='WLC'
+103:                    # Key by Strong's number (for WLC Hebrew lookup)
+166:    if "WLC" in data["parallel"] or not data["morphology"]:
+174:                data["lxx_morphology"] = {}
+177:                    data["lxx_morphology"].setdefault(vn, []).append({
+186:        if data.get("lxx_morphology"):
+187:            lxx_full = {v: " ".join(w["w"] for w in words) for v, words in data["lxx_morphology"].items()}
+190:        data["lxx_spanish"] = _translate_lxx(book, chapter, lxx_full)
+330:              'He':'Hebrews','Jas':'James','Re':'Revelation','Tt':'Titus',
+346:    for ver in ["MorphGNT", "SBLGNT", "LXX", "WLC"]:
+364:    cache_key = f"cache/{book}/{chapter}/lxx_spanish.json"
+709:                       is_ot="WLC" in chapter_data.get("parallel", {}))
+716:def chapter_data_is_ot(data):
+717:    """Check if chapter has OT-style data (WLC present)."""
+718:    return "WLC" in data.get("parallel", {})
+722:                xrefs_count, places_count, sorted_fathers, has_map, geo_data, is_ot=True):
+762:.verse-line.original {{ font-size: 0.95rem; color: #333; direction: rtl; font-family: 'SBL Hebrew', 'Ezra SIL', serif; }}
+829:const isOT = {'true' if is_ot else 'false'};
+841:  if (isOT && D.parallel.WLC && D.parallel.WLC[v.v]) {{
+842:    html += `<div class="verse-line original"><span class="vlabel">WLC</span>${{renderMorph(v.v, D.parallel.WLC[v.v])}}</div>`;
+854:    if (D.lxx_spanish && D.lxx_spanish[v.v]) {{
+855:      html += `<div class="verse-line" style="font-size:0.84rem;color:#6a1b9a;font-style:italic;margin-left:1rem"><span class="vlabel">LXX-ES</span>${{D.lxx_spanish[v.v]}}</div>`;
+1108:  if (!D.lxx_morphology) return fallbackText || '';
+1109:  const words = D.lxx_morphology[vnum];
+1116:  const w = D.lxx_morphology[vnum][idx];
+1127:  const w = D.lxx_morphology[vnum][idx];
+[38;5;244m - Completed in 1.341s[0m
+[38;5;12m[1m [1.14][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at the critical JS functions — [38;5;10mrenderMorph[0m, [38;5;10mexplainEnding[0m, [38;5;10mverbTenseEs[0m, and [38;5;10mopenWordStudy[0m:[0m[0m
+[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m825[0m to [38;5;141m920[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m4949 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.442s[0m
+[38;5;12m[1m [1.15][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m920[0m to [38;5;141m1040[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m8059 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.306s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m1040[0m to [38;5;141m1200[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m10505 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.349s[0m
+[38;5;12m[1m [1.17][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m1200[0m to [38;5;141m1350[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m9778 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+[38;5;244m - Completed in 1.314s[0m
+[38;5;12m[1m [1.18][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me check the [38;5;10mrenderMorph[0m function more carefully and how it handles WLC/Hebrew data vs the RMAC expectations:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking morph codes\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT version, morph_code FROM morphology WHERE version='WLC' LIMIT 10"[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.307s[0m
+[38;5;12m[1m [1.19][0m[0m
+WLC|HR/Ncfsa
+WLC|HVqp3ms
+WLC|HNcmpa
+WLC|HTo
+WLC|HTd/Ncmpa
+WLC|HC/To
+WLC|HTd/Ncbsa
+WLC|HC/Td/Ncbsa
+WLC|HVqp3fs
+WLC|HNcmsa
+[38;5;244m - Completed in 1.447s[0m
+[38;5;12m[1m [1.20][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT version, morph_code FROM morphology WHERE version='LXX' LIMIT 10"[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT version, count(*) FROM morphology GROUP BY version"[0m[38;5;244m (using tool: shell)[0m
+
+LXX|P
+LXX|N.DSF
+LXX|V.AAI3S
+LXX|RA.NSM
+LXX|N.NSM
+LXX|RA.ASM
+LXX|N.ASM
+LXX|C
+LXX|RA.ASF
+LXX|N.ASF
+[38;5;244m - Completed in 1.339s[0m
+[38;5;12m[1m [1.21][0m[0m
+LXX|623693
+MorphGNT|138013
+WLC|306785
+[38;5;244m - Completed in 1.521s[0m
+[38;5;12m[1m [1.22][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM morphology WHERE version='WLC' LIMIT 40"[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT count(DISTINCT book) FROM morphology WHERE version='WLC'"[0m[38;5;244m (using tool: shell)[0m
+
+1Chr
+1Kgs
+1Sam
+2Chr
+2Kgs
+2Sam
+Amos
+Dan
+Deut
+Eccl
+Esth
+Exod
+Ezek
+Ezra
+Gen
+Hab
+Hag
+Hos
+Isa
+Jer
+Job
+Joel
+Jonah
+Josh
+Judg
+Lam
+Lev
+Mal
+Mic
+Nah
+Neh
+Num
+Obad
+Prov
+Ps
+Ruth
+Song
+Zech
+Zeph
+[38;5;244m - Completed in 1.436s[0m
+[38;5;12m[1m [1.23][0m[0m
+39
+[38;5;244m - Completed in 1.329s[0m
+[38;5;12m[1m [1.24][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM verses WHERE version='WLC' LIMIT 40"[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"CRITICAL BUG: WLC morph codes (e.g. HVqp3ms, HNcmsa) are OSHM format, NOT RMAC. The renderMorph JS function passes them to explainEnding which expects RMAC V- prefixed codes. For OT, explainEnding will hit the fallback case and return minimal info. verbTenseEs also only parses V- prefix. Hebrew words get no morphological explanation."}' >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+1Chr
+1Kgs
+1Sam
+2Chr
+2Kgs
+2Sam
+Amos
+Dan
+Deut
+Eccl
+Esth
+Exod
+Ezek
+Ezra
+Gen
+Hab
+Hag
+Hos
+Isa
+Jer
+Job
+Joel
+Jonah
+Josh
+Judg
+Lam
+Lev
+Mal
+Mic
+Nah
+Neh
+Num
+Obad
+Prov
+Ps
+Ruth
+Song
+Zech
+Zeph
+[38;5;244m - Completed in 1.392s[0m
+[38;5;12m[1m [1.25][0m[0m
+[38;5;244m - Completed in 1.357s[0m
+[38;5;12m[1m [1.26][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141m# Check what book names study_html uses for OT candidates
+grep -n "candidates" /Users/murivirg/work/github/bible-expert/study_html_generator.py | head -10[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mgrep -n "candidates" /Users/murivirg/work/github/bible-expert/server.py | head -20[0m[38;5;244m (using tool: shell)[0m
+
+39:def gather_chapter_data(book: str, chapter: int, version: str, candidates: list) -> dict:
+46:    for b in candidates:
+54:        for b in candidates:
+64:        for b in candidates:
+73:        for b in candidates:
+80:    for b in candidates:
+167:        for b in candidates:
+238:    for b in candidates:
+251:    for b in candidates:
+268:    for b in candidates:
+[38;5;244m - Completed in 1.335s[0m
+[38;5;12m[1m [1.27][0m[0m
+206:        candidates = get_all_db_names(resolved)
+208:        for b in candidates:
+299:        candidates = get_all_db_names(resolved)
+301:        for b in candidates:
+385:        candidates = get_all_db_names(resolved)
+387:        for b in candidates:
+779:    candidates = get_all_db_names(book)
+780:    for b in candidates:
+791:        for b in candidates:
+879:        candidates = get_all_db_names(resolved)
+882:        chapter_data = gather_chapter_data(resolved, chapter, version, candidates)
+[38;5;244m - Completed in 1.372s[0m
+[38;5;12m[1m [1.28][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mgrep -n "get_all_db_names\|def get_all_db" /Users/murivirg/work/github/bible-expert/server.py | head -10[0m[38;5;244m (using tool: shell)[0m
+
+7:from books import resolve_book, get_all_db_names, BOOKS
+206:        candidates = get_all_db_names(resolved)
+299:        candidates = get_all_db_names(resolved)
+385:        candidates = get_all_db_names(resolved)
+779:    candidates = get_all_db_names(book)
+879:        candidates = get_all_db_names(resolved)
+[38;5;244m - Completed in 1.444s[0m
+[38;5;12m[1m [1.29][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mgrep -n "def get_all_db_names\|def resolve_book" /Users/murivirg/work/github/bible-expert/books.py | head -5[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141msed -n '1,50p' /Users/murivirg/work/github/bible-expert/books.py[0m[38;5;244m (using tool: shell)[0m
+
+113:def resolve_book(name_or_id) -> str | None:
+124:def get_all_db_names(book: str) -> list[str]:
+[38;5;244m - Completed in 1.283s[0m
+[38;5;12m[1m [1.30][0m[0m
+"""Canonical book resolution — maps any name/alias/ID to the DB canonical name."""
+import unicodedata
+
+# Canonical book list: ID -> (db_name, [aliases including spanish, abbreviations, etc.])
+# IDs 1-66 = Protestant canon, 67+ = deuterocanonical/extra
+BOOKS: dict[int, tuple[str, list[str]]] = {
+    # Torah / Pentateuch
+    1: ("Genesis", ["Gen", "Gn", "Génesis", "Genesis", "Γένεσις", "Genèse", "Liber Genesis"]),
+    2: ("Exodus", ["Exod", "Ex", "Éxodo", "Exodo", "Ἔξοδος", "Exode", "Liber Exodus"]),
+    3: ("Leviticus", ["Lev", "Lv", "Levítico", "Levitico", "Λευιτικόν", "Lévitique", "Liber Leviticus"]),
+    4: ("Numbers", ["Num", "Nm", "Números", "Numeros", "Ἀριθμοί", "Nombres", "Liber Numeri", "Numeri"]),
+    5: ("Deuteronomy", ["Deut", "Dt", "Deuteronomio", "Δευτερονόμιον", "Deutéronome", "Liber Deuteronomii"]),
+    # Historical
+    6: ("Joshua", ["Josh", "Jos", "Josué", "Josue", "Ἰησοῦς τοῦ Ναυή", "Josué", "Liber Iosue"]),
+    7: ("Judges", ["Judg", "Jdg", "Jue", "Jueces", "Κριταί", "Juges", "Liber Iudicum"]),
+    8: ("Ruth", ["Rut", "Rt", "Ῥούθ", "Liber Ruth"]),
+    9: ("1 Samuel", ["1Sam", "1 Sam", "I Samuel", "1S", "Α΄ Σαμουήλ", "1 Samuel", "Liber I Samuelis"]),
+    10: ("2 Samuel", ["2Sam", "2 Sam", "II Samuel", "2S", "Β΄ Σαμουήλ", "2 Samuel", "Liber II Samuelis"]),
+    11: ("1 Kings", ["1Kgs", "1 Kgs", "I Kings", "1 Reyes", "1Reyes", "1Re", "1R", "Α΄ Βασιλειῶν", "1 Rois", "Liber I Regum"]),
+    12: ("2 Kings", ["2Kgs", "2 Kgs", "II Kings", "2 Reyes", "2Reyes", "2Re", "2R", "Β΄ Βασιλειῶν", "2 Rois", "Liber II Regum"]),
+    13: ("1 Chronicles", ["1Chr", "1 Chr", "I Chronicles", "1 Crónicas", "1Cronicas", "1Crónicas", "1Cr", "Α΄ Παραλειπομένων", "1 Chroniques", "Liber I Paralipomenon"]),
+    14: ("2 Chronicles", ["2Chr", "2 Chr", "II Chronicles", "2 Crónicas", "2Cronicas", "2Crónicas", "2Cr", "Β΄ Παραλειπομένων", "2 Chroniques", "Liber II Paralipomenon"]),
+    15: ("Ezra", ["Esd", "Esdras", "Ἔσδρας", "Esdras", "Liber Esdrae"]),
+    16: ("Nehemiah", ["Neh", "Nehemías", "Nehemias", "Νεεμίας", "Néhémie", "Liber Nehemiae"]),
+    17: ("Esther", ["Esth", "Est", "Ester", "Ἐσθήρ", "Esther", "Liber Esther"]),
+    # Poetic
+    18: ("Job", ["Ἰώβ", "Liber Iob"]),
+    19: ("Psalms", ["Ps", "Pss", "Sal", "Salmos", "Salmo", "Ψαλμοί", "Psaumes", "Liber Psalmorum", "Psalmi"]),
+    20: ("Proverbs", ["Prov", "Pr", "Proverbios", "Παροιμίαι", "Proverbes", "Liber Proverbiorum"]),
+    21: ("Ecclesiastes", ["Eccl", "Ec", "Eclesiastés", "Eclesiastes", "Qoh", "Qohelet", "Ἐκκλησιαστής", "Ecclésiaste", "Liber Ecclesiastes"]),
+    22: ("Song of Solomon", ["Song", "Cant", "Cantar", "Cantar de los Cantares", "Cantares", "SOS", "Ἆσμα Ἀσμάτων", "Cantique des Cantiques", "Canticum Canticorum"]),
+    # Major Prophets
+    23: ("Isaiah", ["Isa", "Is", "Isaías", "Isaias", "Ἠσαΐας", "Ésaïe", "Isaïe", "Liber Isaiae"]),
+    24: ("Jeremiah", ["Jer", "Jr", "Jeremías", "Jeremias", "Ἱερεμίας", "Jérémie", "Liber Ieremiae"]),
+    25: ("Lamentations", ["Lam", "Lamentaciones", "Θρῆνοι", "Lamentations", "Liber Lamentationum", "Threni"]),
+    26: ("Ezekiel", ["Ezek", "Ez", "Ezequiel", "Ἰεζεκιήλ", "Ézéchiel", "Liber Ezechielis"]),
+    27: ("Daniel", ["Dan", "Dn", "Δανιήλ", "Liber Danielis"]),
+    # Minor Prophets
+    28: ("Hosea", ["Hos", "Os", "Oseas", "Ὡσηέ", "Osée", "Liber Osee"]),
+    29: ("Joel", ["Jl", "Ἰωήλ", "Joël", "Liber Ioel"]),
+    30: ("Amos", ["Am", "Ἀμώς", "Liber Amos"]),
+    31: ("Obadiah", ["Obad", "Abd", "Abdías", "Abdias", "Ὀβαδίας", "Abdias", "Liber Abdiae"]),
+    32: ("Jonah", ["Jon", "Jonás", "Jonas", "Ἰωνᾶς", "Liber Ionae"]),
+    33: ("Micah", ["Mic", "Mi", "Miqueas", "Μιχαίας", "Michée", "Liber Michaeae"]),
+    34: ("Nahum", ["Nah", "Na", "Nahúm", "Nahum", "Ναούμ", "Liber Nahum"]),
+    35: ("Habakkuk", ["Hab", "Habacuc", "Ἀμβακούμ", "Habacuc", "Liber Habacuc"]),
+    36: ("Zephaniah", ["Zeph", "Sof", "Sofonías", "Sofonias", "Σοφονίας", "Sophonie", "Liber Sophoniae"]),
+    37: ("Haggai", ["Hag", "Hageo", "Ἀγγαῖος", "Aggée", "Liber Aggaei"]),
+    38: ("Zechariah", ["Zech", "Zac", "Zacarías", "Zacarias", "Ζαχαρίας", "Zacharie", "Liber Zachariae"]),
+    39: ("Malachi", ["Mal", "Malaquías", "Malaquias", "Μαλαχίας", "Malachie", "Liber Malachiae"]),
+[38;5;244m - Completed in 1.329s[0m
+[38;5;12m[1m [1.31][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141msed -n '113,150p' /Users/murivirg/work/github/bible-expert/books.py[0m[38;5;244m (using tool: shell)[0m
+
+def resolve_book(name_or_id) -> str | None:
+    """Resolve any book name, alias, or numeric ID to the canonical DB name.
+    Returns None if not found."""
+    # Numeric ID
+    if isinstance(name_or_id, int) or (isinstance(name_or_id, str) and name_or_id.isdigit()):
+        entry = BOOKS.get(int(name_or_id))
+        return entry[0] if entry else None
+    # String lookup
+    key = _strip_accents(str(name_or_id)).strip().lower()
+    return _LOOKUP.get(key)
+
+def get_all_db_names(book: str) -> list[str]:
+    """Given a resolved canonical name, return all DB variants to try (for tables with inconsistent naming)."""
+    key = _strip_accents(book).lower()
+    for _id, (db_name, aliases) in BOOKS.items():
+        if _strip_accents(db_name).lower() == key:
+            return [db_name] + aliases
+    return [book]
+[38;5;244m - Completed in 2.388s[0m
+[38;5;12m[1m [1.32][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me check what happens when WLC morphology is loaded - the [38;5;10mcandidates[0m need to match the DB book names:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141m# Check if WLC morphology book names match what get_all_db_names would return
+# WLC uses abbreviations like "Gen", "Exod", "Lev" etc.
+# Let's check if "Genesis" candidates include "Gen"
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM morphology WHERE version='WLC' AND book LIKE 'Gen%'"[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check the canonical book names in the verses table for comparison
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM verses WHERE version='WLC' AND book LIKE 'Gen%'"[0m[38;5;244m (using tool: shell)[0m
+
+Gen
+[38;5;244m - Completed in 1.455s[0m
+[38;5;12m[1m [1.33][0m[0m
+Gen
+[38;5;244m - Completed in 1.306s[0m
+[38;5;12m[1m [1.34][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Both use abbreviated names (Gen, Exod...) - do they match what get_all_db_names returns?
+# BOOKS[1] = ("Genesis", ["Gen", ...]) so get_all_db_names("Genesis") returns ["Genesis", "Gen", ...] ✓
+# Now check - do book names in morphology match verses? This is critical
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT m.book, count(*) FROM morphology m WHERE m.version='WLC' AND NOT EXISTS (SELECT 1 FROM verses v WHERE v.book=m.book AND v.version='WLC' AND v.chapter=m.chapter AND v.verse_num=m.verse_num) GROUP BY m.book LIMIT 20"[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.635s[0m
+[38;5;12m[1m [1.35][0m[0m
+[?25l[0m[38;5;141m> [0mGood - all morphology entries have matching verses entries. Now let me check word counts:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141m# Check if morphology word count matches verse word count for a sample book
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "
+SELECT m.book, m.chapter, m.verse_num, 
+  count(m.word_pos) as morph_words,
+  length(v.text) - length(replace(v.text,' ','')) + 1 as verse_word_approx
+FROM morphology m
+JOIN verses v ON v.book=m.book AND v.chapter=m.chapter AND v.verse_num=m.verse_num AND v.version='WLC'
+WHERE m.version='WLC' AND m.book='Gen' AND m.chapter=1
+GROUP BY m.book, m.chapter, m.verse_num
+LIMIT 10"[0m[38;5;244m (using tool: shell)[0m
+
+Gen|1|1|7|7
+Gen|1|2|14|14
+Gen|1|3|6|6
+Gen|1|4|12|12
+Gen|1|5|13|13
+Gen|1|6|11|11
+Gen|1|7|17|17
+Gen|1|8|10|10
+Gen|1|9|13|13
+Gen|1|10|12|12
+[38;5;244m - Completed in 1.468s[0m
+[38;5;12m[1m [1.36][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check broader — are there any mismatches across the whole DB?
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "
+SELECT m.book, m.chapter, m.verse_num, 
+  count(m.word_pos) as morph_words,
+  length(v.text) - length(replace(v.text,' ','')) + 1 as verse_word_approx
+FROM morphology m
+JOIN verses v ON v.book=m.book AND v.chapter=m.chapter AND v.verse_num=m.verse_num AND v.version='WLC'
+WHERE m.version='WLC'
+GROUP BY m.book, m.chapter, m.verse_num
+HAVING abs(morph_words - verse_word_approx) > 3
+LIMIT 20"[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.597s[0m
+[38;5;12m[1m [1.37][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Perfect - word counts match. Now check if commentaries table has OT data
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM commentaries LIMIT 40"[0m[38;5;244m (using tool: shell)[0m
+
+1 Corinthians
+1 John
+1 Peter
+1 Thessalonians
+1 Timothy
+2 Corinthians
+2 John
+2 Peter
+2 Thessalonians
+2 Timothy
+3 John
+Acts
+Colossians
+Ephesians
+Galatians
+Hebrews
+James
+John
+Jude
+Luke
+Mark
+Matthew
+Philemon
+Philippians
+Revelation
+Romans
+Titus
+[38;5;244m - Completed in 1.363s[0m
+[38;5;12m[1m [1.38][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Commentaries are NT only. Check patristic table for OT coverage
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM patristic WHERE book IN ('Gen','Exod','Ps','Isa','Gen','Genesis','Isaiah','Psalms') LIMIT 20"[0m[38;5;244m (using tool: shell)[0m
+
+Genesis
+Isaiah
+Psalms
+[38;5;244m - Completed in 1.863s[0m
+[38;5;12m[1m [1.39][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Good, patristic has some OT books. How much coverage?
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT book, count(*) FROM patristic WHERE book NOT IN (SELECT DISTINCT book FROM commentaries) GROUP BY book ORDER BY count(*) DESC LIMIT 20"[0m[38;5;244m (using tool: shell)[0m
+
+|112974
+Psalms|21625
+Genesis|9266
+Isaiah|5206
+Job|4287
+Exodus|2253
+Jeremiah|1787
+Ezekiel|1544
+Daniel|1389
+Proverbs|1363
+I Corinthians|1034
+Deuteronomy|909
+1 Samuel|843
+Ecclesiastes|730
+015-diognetus|660
+Leviticus|600
+1 Cor|592
+Numbers|564
+I Peter|539
+Joshua|496
+[38;5;244m - Completed in 1.619s[0m
+[38;5;12m[1m [1.40][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"Commentaries table is NT-only (27 books). OT chapters get NO exegetical commentaries (Robertson, Vincent etc.), so greek_commentaries will be empty and exégesis button missing. Patristic has OT coverage (Psalms 21K, Genesis 9K, Isaiah 5K entries)."}' >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mprintf '%s|Analyzing unified gen\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.366s[0m
+[38;5;12m[1m [1.41][0m[0m
+[38;5;244m - Completed in 1.365s[0m
+[38;5;12m[1m [1.42][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at the unified_html_generator more closely to see what it does vs study.html:[0m[0m
+[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m250[0m to [38;5;141m400[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m6918 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.241s[0m
+[38;5;12m[1m [1.43][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m400[0m to [38;5;141m600[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m9657 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.242s[0m
+[38;5;12m[1m [1.44][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mwc -l /Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mgrep -n "def _build_unified_page\|WLC\|lxx\|Hebrew\|isOT\|is_ot" /Users/murivirg/work/github/bible-expert/unified_html_generator.py | head -30[0m[38;5;244m (using tool: shell)[0m
+
+     893 /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.341s[0m
+[38;5;12m[1m [1.45][0m[0m
+620:def _build_unified_page(book, chapter, verses_html, sidebar_html, js_data, verse_count):
+[38;5;244m - Completed in 1.291s[0m
+[38;5;12m[1m [1.46][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m620[0m to [38;5;141m750[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m9919 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.258s[0m
+[38;5;12m[1m [1.47][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m750[0m to end of file[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m8336 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+[38;5;244m - Completed in 1.254s[0m
+[38;5;12m[1m [1.48][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have a complete picture. Let me check directives and write findings:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mcat /Users/murivirg/work/github/bible-expert/investigation/cdd60333/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+{"from":"head","to":"all","directive":"Focus investigation: (1) unified_html_generator.py gaps vs study_html_generator.py for OT, (2) renderMorph/explainEnding JS functions for Hebrew OSHM codes vs RMAC, (3) LXX morphology code format mismatches, (4) openWordStudy Hebrew Strong's H-number links, (5) DB word count consistency for WLC. Report findings with file:line references."}
+[38;5;244m - Completed in 1.264s[0m
+[38;5;12m[1m [1.49][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Writing findings\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.309s[0m
+[38;5;12m[1m [1.50][0m[0m
+[?25l[0m[38;5;141m> [0mLet me do a final check on the [38;5;10mopenWordStudy[0m function and how it handles Hebrew Strong's numbers:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141m# Check what Strong's numbers look like for WLC
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT word, lemma, strongs, morph_code FROM morphology WHERE version='WLC' AND book='Gen' AND chapter=1 LIMIT 15"[0m[38;5;244m (using tool: shell)[0m
+
+בְּ/רֵאשִׁ֖ית|H7225|H7225|HR/Ncfsa
+בָּרָ֣א|H1254|H1254|HVqp3ms
+אֱלֹהִ֑ים|H430|H430|HNcmpa
+אֵ֥ת|H853|H853|HTo
+הַ/שָּׁמַ֖יִם|H8064|H8064|HTd/Ncmpa
+וְ/אֵ֥ת|H853|H853|HC/To
+הָ/אָֽרֶץ|H776|H776|HTd/Ncbsa
+וְ/הָ/אָ֗רֶץ|H776|H776|HC/Td/Ncbsa
+הָיְתָ֥ה|H1961|H1961|HVqp3fs
+תֹ֨הוּ֙|H8414|H8414|HNcmsa
+וָ/בֹ֔הוּ|H922|H922|HC/Ncmsa
+וְ/חֹ֖שֶׁךְ|H2822|H2822|HC/Ncmsa
+עַל|H5921|H5921|HR
+פְּנֵ֣י|H6440|H6440|HNcbpc
+תְה֑וֹם|H8415|H8415|HNcbsa
+[38;5;244m - Completed in 1.408s[0m
+[38;5;12m[1m [1.51][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check if the lexicon has Hebrew entries (H numbers)
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT strongs, lemma, gloss FROM lexicon WHERE strongs LIKE 'H%' LIMIT 5"[0m[38;5;244m (using tool: shell)[0m
+
+H1|אָב|chief, (fore-) father(-less), [idiom] patrimony, principal. Compare names in 'Abi-'.
+H2|אַב|father.
+H3|אֵב|greenness, fruit.
+H4|אֵב|fruit.
+H5|אֲבַגְתָא|Abagtha.
+[38;5;244m - Completed in 1.402s[0m
+[38;5;12m[1m [1.52][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check the openWordStudy external links - currently blueletterbible, biblehub, perseus, logeion, stepbible
+# These all use Greek-oriented URLs. For Hebrew words with H-numbers:
+# blueletterbible: https://www.blueletterbible.org/lexicon/H1234/kjv/wlc/0-1/ (supports Hebrew!)
+# biblehub: https://biblehub.com/hebrew/1234.htm (has hebrew!)
+# perseus: Greek only, not useful for Hebrew
+# logeion: Greek only, not useful for Hebrew
+echo "External link analysis complete"[0m[38;5;244m (using tool: shell)[0m
+
+External link analysis complete
+[38;5;244m - Completed in 1.362s[0m
+[38;5;12m[1m [1.53][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check the openFullStudy external links code
+grep -A5 "blueletterbible\|biblehub\|perseus\|logeion\|stepbible" /Users/murivirg/work/github/bible-expert/study_html_generator.py | head -20[0m[38;5;244m (using tool: shell)[0m
+
+<li><a href="https://www.blueletterbible.org/lexicon/${{w.s || ''}}/kjv/tr/0-1/" target="_blank">Blue Letter Bible \\u2014 Estudio completo</a></li>
+<li><a href="https://biblehub.com/greek/${{(w.s||'').replace('G','')}}.htm" target="_blank">BibleHub \\u2014 Concordancia</a></li>
+<li><a href="https://www.perseus.tufts.edu/hopper/morph?l=${{encodeURIComponent(w.l)}}&la=greek" target="_blank">Perseus \\u2014 Morfolog\\u00eda</a></li>
+<li><a href="https://logeion.uchicago.edu/${{encodeURIComponent(w.l)}}" target="_blank">Logeion \\u2014 LSJ + Liddell</a></li>
+<li><a href="https://www.stepbible.org/?q=strong=${{w.s || ''}}" target="_blank">STEP Bible \\u2014 Todas las apariciones</a></li>
+</ul></div></body></html>`;
+  const blob = new Blob([html], {{type: 'text/html'}});
+  window.open(URL.createObjectURL(blob), '_blank');
+}}
+
+[38;5;244m - Completed in 1.349s[0m
+[38;5;12m[1m [1.54][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Now check the renderMorph function - it uses D.morphology which for OT will be WLC data
+# The key insight: for OT chapters, the morphology is loaded from WLC (line 89 of study_html_generator.py)
+# So D.morphology will contain WLC words with Hebrew morph codes like "HVqp3ms"
+# The renderMorph function itself just displays words with hover - no parsing
+# But showWordTip calls contextualMeaning(w) which checks w.m.startsWith('V-') — this won't match "HVqp3ms"
+# And openWordStudy calls explainEnding(w) which also starts with rmac format checks
+
+# Let's verify: what does the code do with the rendering itself?
+# renderMorph (line 1084): just displays w.w with hover/click - NO morphology parsing at this stage ✓
+# showWordTip (line 1098): calls contextualMeaning(w) which only works for V- prefix codes → shows fallback (w.es or w.g)
+# openWordStudy (line 1141): calls explainEnding(w) which checks rmac format
+
+# For WLC: rmac = "HVqp3ms" 
+# explainEnding checks: rmac.startsWith('V-') → NO (it's "HV...")
+# Then: rmac[0] in pronounTypes → checks 'H' — not in pronounTypes
+# Then: rmac.startsWith('N-')||rmac.startsWith('A-')||rmac.startsWith('T-') → NO
+# Then: rmac.startsWith('V-') → NO
+# Falls to fallback: "Forma flexionada de [lemma]" — ONLY if form != lemma
+
+echo "Analysis of Hebrew morph handling in JS template complete"[0m[38;5;244m (using tool: shell)[0m
+
+Analysis of Hebrew morph handling in JS template complete
+[38;5;244m - Completed in 1.351s[0m
+[38;5;12m[1m [1.55][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check LXX morph codes - format is like "V.AAI3S", "N.NSM", "RA.NSM"
+# The explainEnding/verbTenseEs functions expect:
+# - "V-AAI-3S" or "V-AAI3S" (RMAC format with "V-" prefix)
+# LXX has "V.AAI3S" — dot instead of hyphen, no second hyphen before person
+
+# Let's trace what would happen with "V.AAI3S":
+# explainEnding: rmac = "V.AAI3S"
+# Check CONJ: no
+# Check PREP: no
+# Check ADV: no
+# Check PRT: no
+# Check INJ: no
+# Check HEB/ARAM: no
+# Check pronounTypes[firstChar]: 'V' is not in pronounTypes (P,D,R,X,I,S,F,K,C,Q)
+# Check N-/A-/T-: "V.AAI3S".startsWith('N-')? NO
+# Check V-: "V.AAI3S".startsWith('V-')? NO (it starts with "V.")
+# Fallback: if form !== lemma → "Forma flexionada de [lemma]"
+
+# So LXX words get NO morphological explanation either!
+
+echo "LXX morph format confirmation: V.AAI3S does NOT match V- prefix check"[0m[38;5;244m (using tool: shell)[0m
+
+LXX morph format confirmation: V.AAI3S does NOT match V- prefix check
+[38;5;244m - Completed in 1.490s[0m
+[38;5;12m[1m [1.56][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"CRITICAL: LXX morph codes (V.AAI3S, N.NSM, RA.NSM) also FAIL the explainEnding/verbTenseEs checks which expect V-/N-/T- prefixes (dash not dot). Both Hebrew OSHM and LXX codes fall to generic fallback. The openWordStudy external links (blueletterbible, biblehub, perseus, logeion) are hardcoded for Greek - Hebrew H-numbers need /wlc/ paths and biblehub/hebrew/ instead of /greek/."}' >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.305s[0m
+[38;5;12m[1m [1.57][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me check what the unified_html_generator does vs what study.html has — feature gaps for OT:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141m# Unified: renders D.morphology as Greek line for all versions (no OT-specific handling)
+# It uses "greek-line" CSS class and has no WLC/LXX separate lines
+# For OT: morphology is loaded from WLC → it renders Hebrew words in a "greek-line" div
+# Missing from unified vs study.html for OT:
+# 1. No LXX parallel line with hover morphology (study has renderLxxMorph)
+# 2. No LXX-ES translation line
+# 3. No RTL direction styling for Hebrew (study has .verse-line.original with direction:rtl)
+# 4. No WLC label visible (study shows "WLC" vlabel)
+# 5. The unified's JS only checks D.morphology and D.parallel.MorphGNT/SBLGNT - no WLC/LXX branch
+
+echo "Unified generator OT feature gap analysis complete"[0m[38;5;244m (using tool: shell)[0m
+
+Unified generator OT feature gap analysis complete
+[38;5;244m - Completed in 1.314s[0m
+[38;5;12m[1m [1.58][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check if unified_html_generator uses lxx_morphology or lxx_spanish from chapter_data
+grep -n "lxx\|LXX\|WLC\|parallel\|hebrew\|rtl" /Users/murivirg/work/github/bible-expert/unified_html_generator.py | head -20[0m[38;5;244m (using tool: shell)[0m
+
+755:  }} else if (D.parallel && D.parallel.MorphGNT && D.parallel.MorphGNT[v.v]) {{
+756:    el.textContent = D.parallel.MorphGNT[v.v];
+757:  }} else if (D.parallel && D.parallel.SBLGNT && D.parallel.SBLGNT[v.v]) {{
+758:    el.textContent = D.parallel.SBLGNT[v.v];
+[38;5;244m - Completed in 1.268s[0m
+[38;5;12m[1m [1.59][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me also check if the [38;5;10mgather_chapter_data[0m properly handles book name variants for OT:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141m# Check what happens when gather_chapter_data is called with "Genesis" candidates=["Genesis","Gen",...]
+# The DB morphology uses "Gen" not "Genesis" as book name. The candidates list includes both.
+# The loop "for b in candidates:" will try "Genesis" first (no match in morphology), then "Gen" (match!)
+# So this works correctly thanks to the candidates list iteration pattern.
+
+# But let's verify - are verses stored as "Genesis" or "Gen" for WLC?
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM verses WHERE version='WLC' AND (book='Genesis' OR book='Gen')"[0m[38;5;244m (using tool: shell)[0m
+
+Gen
+[38;5;244m - Completed in 1.577s[0m
+[38;5;12m[1m [1.60][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check RVR60 book names
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM verses WHERE version='RVR60' AND book LIKE 'Gen%'"[0m[38;5;244m (using tool: shell)[0m
+
+Genesis
+[38;5;244m - Completed in 1.643s[0m
+[38;5;12m[1m [1.61][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check patristic book name for Genesis
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM patristic WHERE book LIKE 'Gen%'"[0m[38;5;244m (using tool: shell)[0m
+
+GENERAL INDEX TO SOZOMEN'S ECC
+GENERAL INDEXES.
+GENERAL NOTE BY THE AMERICAN E
+GENERAL NOTE.
+GENERAL NOTES BY THE AMERICAN 
+GENERAL NOTICE
+General Introduction.
+General Literature
+of
+Gregory’
+General Note.
+Genesis
+[38;5;244m - Completed in 1.643s[0m
+[38;5;12m[1m [1.62][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Patristic uses "Genesis" (full name) — so it matches the first candidate. Good.
+# Now check cross_refs for OT
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT source_book FROM cross_refs WHERE source_book LIKE 'Gen%'"[0m[38;5;244m (using tool: shell)[0m
+
+Genesis
+[38;5;244m - Completed in 1.453s[0m
+[38;5;12m[1m [1.63][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Good - cross_refs use full names. Now check apparatus
+sqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book FROM apparatus LIMIT 30"[0m[38;5;244m (using tool: shell)[0m
+
+Matthew
+Mark
+Luke
+John
+Acts
+Romans
+1 Corinthians
+2 Corinthians
+Galatians
+Ephesians
+Philippians
+Colossians
+1 Thessalonians
+2 Thessalonians
+1 Timothy
+2 Timothy
+Titus
+Philemon
+Hebrews
+James
+1 Peter
+2 Peter
+1 John
+2 John
+3 John
+Jude
+Revelation
+[38;5;244m - Completed in 1.312s[0m
+[38;5;12m[1m [1.64][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Apparatus is NT-only too. Now let me write the comprehensive findings
+echo '{"from":"c5-internal","finding":"Feature gap summary: Unified HTML has NO OT-specific handling - no LXX parallel line, no LXX-ES, no RTL direction, no WLC label. JS only falls back to MorphGNT/SBLGNT (NT). Apparatus and commentaries tables are NT-only. Patristic and cross_refs cover some OT books (using full names matching candidates)."}' >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.424s[0m
+[38;5;12m[1m [1.65][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me write the complete findings document:[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/findings.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mBible-Expert OT Quality [38;2;143;161;179m&[38;2;143;161;179m Unified HTML Generator — Internal Investigation[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSummary[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe study.html generator has partial OT support (WLC + LXX morphology loads correctly, LXX-ES translation works) but [38;2;235;203;139m**[38;2;235;203;139mcritical JS template bugs[38;2;235;203;139m**[38;2;192;197;206m prevent morphological explanation for both Hebrew and LXX words. The unified_html_generator has [38;2;235;203;139m**[38;2;235;203;139mzero OT-specific handling[38;2;235;203;139m**[38;2;192;197;206m — it was built entirely for NT Greek workflows.[K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m1. unified_html_generator.py — OT Feature Gaps[K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mWhat it DOES use from chapter_data:[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mmorphology[38;2;163;190;140m`[38;2;191;97;106m — renders word-by-word (line 751-753), but always in [38;2;163;190;140m`[38;2;163;190;140m.greek-line[38;2;163;190;140m`[38;2;191;97;106m div[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mpatristic[38;2;163;190;140m`[38;2;191;97;106m — grouped by verse with themes (works for OT books that have patristic data)[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mapparatus[38;2;163;190;140m`[38;2;191;97;106m — TC section with collation table and verdicts[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgreek_commentaries[38;2;163;190;140m`[38;2;191;97;106m — exegesis section (requires commentaries table)[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mxrefs[38;2;163;190;140m`[38;2;191;97;106m — sidebar cross-references[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mWhat is MISSING for OT:[K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Feature [38;2;192;197;206m|[38;2;192;197;206m study.html [38;2;192;197;206m|[38;2;192;197;206m unified_html [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m-----------[38;2;192;197;206m|[38;2;192;197;206m--------------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m WLC RTL direction [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140m.verse-line.original { direction: rtl }[38;2;163;190;140m`[38;2;192;197;206m (line 762) [38;2;192;197;206m|[38;2;192;197;206m ❌ Uses [38;2;163;190;140m`[38;2;163;190;140m.greek-line[38;2;163;190;140m`[38;2;192;197;206m (LTR) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m WLC label [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140m<span class="vlabel">WLC</span>[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ No label [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX parallel line [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140mrenderLxxMorph()[38;2;163;190;140m`[38;2;192;197;206m with hover/click [38;2;192;197;206m|[38;2;192;197;206m ❌ Not rendered [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX-ES translation [38;2;192;197;206m|[38;2;192;197;206m ✅ Displayed below LXX line (line 854-855) [38;2;192;197;206m|[38;2;192;197;206m ❌ Not used [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX morphology data [38;2;192;197;206m|[38;2;192;197;206m ✅ Loaded as [38;2;163;190;140m`[38;2;163;190;140mD.lxx_morphology[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ Not in JS template [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m OT-aware fallback in JS [38;2;192;197;206m|[38;2;192;197;206m ✅ Checks [38;2;163;190;140m`[38;2;163;190;140misOT[38;2;163;190;140m`[38;2;192;197;206m flag (line 829) [38;2;192;197;206m|[38;2;192;197;206m ❌ No [38;2;163;190;140m`[38;2;163;190;140misOT[38;2;163;190;140m`[38;2;192;197;206m concept [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139munified_html_generator.py line 751-758[38;2;235;203;139m**[38;2;192;197;206m — JS rendering only handles:[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mD.morphology[v.v][38;2;163;190;140m`[38;2;191;97;106m (works for WLC since it's loaded into [38;2;163;190;140m`[38;2;163;190;140mmorphology[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mD.parallel.MorphGNT[38;2;163;190;140m`[38;2;191;97;106m fallback[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mD.parallel.SBLGNT[38;2;163;190;140m`[38;2;191;97;106m fallback[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;192;197;206mNo mention of [38;2;163;190;140m`[38;2;163;190;140mD.parallel.WLC[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mD.lxx_morphology[38;2;163;190;140m`[38;2;192;197;206m, or [38;2;163;190;140m`[38;2;163;190;140mD.lxx_spanish[38;2;163;190;140m`[38;2;192;197;206m anywhere in the unified generator.[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m2. study.html JS Template — Hebrew Morphology Bug (CRITICAL)[K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mThe [38;2;163;190;140m`[38;2;163;190;140mexplainEnding(w)[38;2;163;190;140m`[38;2;143;161;179m function (study_html_generator.py line 966)[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThis function provides the grammatical breakdown popup. It parses RMAC format exclusively:[K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (rmac === 'CONJ') ...       // exact match[K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (rmac.startsWith('PREP'))   // Greek preposition[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (rmac.startsWith('N-'))     // Noun: "N-NSM"[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (rmac.startsWith('A-'))     // Adjective: "A-NSM"  [K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (rmac.startsWith('T-'))     // Article: "T-NSM"[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (rmac.startsWith('V-'))     // Verb: "V-AAI-3S"[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mWLC morph codes[38;2;235;203;139m**[38;2;192;197;206m are OSHM format: [38;2;163;190;140m`[38;2;163;190;140mHVqp3ms[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mHNcmsa[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mHR/Ncfsa[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mHTd/Ncmpa[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mFirst char [38;2;163;190;140m`[38;2;163;190;140mH[38;2;163;190;140m`[38;2;191;97;106m = Hebrew language marker[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m None of these match any RMAC prefix check[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mH[38;2;163;190;140m`[38;2;191;97;106m is not in [38;2;163;190;140m`[38;2;163;190;140mpronounTypes[38;2;163;190;140m`[38;2;191;97;106m object ([38;2;163;190;140m`[38;2;163;190;140mP,D,R,X,I,S,F,K,C,Q[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mResult[38;2;235;203;139m**[38;2;191;97;106m: Falls to final fallback (line 1083):[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m```[38;2;208;135;112mjs[K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  if (form !== lemma) return header + `<span>Forma flexionada de ${lemma}</span>`;[K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  return '';[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  ```[K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThis means Hebrew words get [38;2;235;203;139m**[38;2;235;203;139mno case, gender, number, tense, or voice explanation[38;2;235;203;139m**[38;2;192;197;206m — just "Forma flexionada de [lemma]".[K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mThe [38;2;163;190;140m`[38;2;163;190;140mverbTenseEs(rmac)[38;2;163;190;140m`[38;2;143;161;179m function (line 887)[K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjs[K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfunction verbTenseEs(rmac) {[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (!rmac || !rmac.startsWith('V-')) return '';[K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  ...[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;192;197;206mHebrew verb codes like [38;2;163;190;140m`[38;2;163;190;140mHVqp3ms[38;2;163;190;140m`[38;2;192;197;206m → returns empty string. No tense/aspect info shown on hover.[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mThe [38;2;163;190;140m`[38;2;163;190;140mcontextualMeaning(w)[38;2;163;190;140m`[38;2;143;161;179m function (line 952)[K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjs[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif (!w.m || !w.m.startsWith('V-')) return '';[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206mHebrew verbs → returns empty string. No contextual meaning on hover tooltip.[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m3. LXX Morphology Code Mismatch (CRITICAL)[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;192;197;206mLXX morph codes use [38;2;235;203;139m**[38;2;235;203;139mdot notation[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mV.AAI3S[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mN.NSM[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mRA.NSM[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mC[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mP[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe [38;2;163;190;140m`[38;2;163;190;140mexplainEnding[38;2;163;190;140m`[38;2;192;197;206m function checks for [38;2;235;203;139m**[38;2;235;203;139mdash notation[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mV-[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mN-[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mA-[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mT-[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;192;197;206m"V.AAI3S".startsWith('V-')  → false  (dot not dash)[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;192;197;206m"N.NSM".startsWith('N-')    → false[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;192;197;206m"RA.NSM".startsWith('A-')   → false  (starts with "RA")[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResult[38;2;235;203;139m**[38;2;192;197;206m: ALL LXX words also fall to the generic fallback. No grammatical explanation.[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;192;197;206mHowever, the [38;2;163;190;140m`[38;2;163;190;140mopenLxxStudy[38;2;163;190;140m`[38;2;192;197;206m function (line 1127) provides a simpler popup that just shows the raw morph code — it doesn't attempt to parse it. So LXX words show their raw code [38;2;163;190;140m`[38;2;163;190;140mV.AAI3S[38;2;163;190;140m`[38;2;192;197;206m but without explanation.[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m4. [38;2;163;190;140m`[38;2;163;190;140mopenWordStudy[38;2;163;190;140m`[38;2;143;161;179m External Links — Greek-Only URLs[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mstudy_html_generator.py line ~1215-1220:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjs[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;192;197;206m<li><a href="https://www.blueletterbible.org/lexicon/${w.s}/kjv/tr/0-1/">Blue Letter Bible</a></li>[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;192;197;206m<li><a href="https://biblehub.com/greek/${(w.s||'').replace('G','')}.htm">BibleHub</a></li>[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;192;197;206m<li><a href="https://www.perseus.tufts.edu/hopper/morph?l=${encodeURIComponent(w.l)}&la=greek">Perseus</a></li>[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;192;197;206m<li><a href="https://logeion.uchicago.edu/${encodeURIComponent(w.l)}">Logeion</a></li>[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;192;197;206m<li><a href="https://www.stepbible.org/?q=strong=${w.s}">STEP Bible</a></li>[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;192;197;206mFor Hebrew words with H-numbers (e.g., H7225):[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mBlueLetter[38;2;235;203;139m**[38;2;191;97;106m: URL uses [38;2;163;190;140m`[38;2;163;190;140m/tr/0-1/[38;2;163;190;140m`[38;2;191;97;106m (Greek Textus Receptus) — should be [38;2;163;190;140m`[38;2;163;190;140m/wlc/0-1/[38;2;163;190;140m`[38;2;191;97;106m for Hebrew[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mBibleHub[38;2;235;203;139m**[38;2;191;97;106m: Uses [38;2;163;190;140m`[38;2;163;190;140m/greek/[38;2;163;190;140m`[38;2;191;97;106m path — should be [38;2;163;190;140m`[38;2;163;190;140m/hebrew/[38;2;163;190;140m`[38;2;191;97;106m for H-numbers[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPerseus[38;2;235;203;139m**[38;2;191;97;106m: [38;2;163;190;140m`[38;2;163;190;140mla=greek[38;2;163;190;140m`[38;2;191;97;106m param — should be [38;2;163;190;140m`[38;2;163;190;140mla=hebrew[38;2;163;190;140m`[38;2;191;97;106m (though Perseus Hebrew support is limited)[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mLogeion[38;2;235;203;139m**[38;2;191;97;106m: Greek-only dictionary, won't find Hebrew lemmas[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSTEP Bible[38;2;235;203;139m**[38;2;191;97;106m: Works correctly for both G and H numbers ✅[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m5. [38;2;163;190;140m`[38;2;163;190;140mgather_chapter_data[38;2;163;190;140m`[38;2;143;161;179m Book Name Candidates (WORKING CORRECTLY)[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe [38;2;163;190;140m`[38;2;163;190;140mcandidates[38;2;163;190;140m`[38;2;192;197;206m list is populated by [38;2;163;190;140m`[38;2;163;190;140mget_all_db_names(book)[38;2;163;190;140m`[38;2;192;197;206m in books.py (line 124):[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef get_all_db_names(book: str) -> list[str]:[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    # Returns [canonical_name] + [all aliases][K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    # e.g., get_all_db_names("Genesis") → ["Genesis", "Gen", "Gn", "Génesis", ...][K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;192;197;206mDB uses abbreviated names for morphology/verses: [38;2;163;190;140m`[38;2;163;190;140mGen[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mExod[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mPs[38;2;163;190;140m`[38;2;192;197;206m, etc.[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe [38;2;163;190;140m`[38;2;163;190;140mfor b in candidates:[38;2;163;190;140m`[38;2;192;197;206m loop tries each name until it finds rows.[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mVerified[38;2;235;203;139m**[38;2;192;197;206m: This works correctly. Example: [K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mMorphology WLC: book=[38;2;163;190;140m`[38;2;163;190;140mGen[38;2;163;190;140m`[38;2;191;97;106m → matched by candidates[1] [K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Patristic: book=[38;2;163;190;140m`[38;2;163;190;140mGenesis[38;2;163;190;140m`[38;2;191;97;106m → matched by candidates[0][K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Cross_refs: book=[38;2;163;190;140m`[38;2;163;190;140mGenesis[38;2;163;190;140m`[38;2;191;97;106m → matched by candidates[0][K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m6. DB Word Count Consistency (NO ISSUES)[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [38;2;192;197;206mTested WLC morphology word count vs verse text word count:[K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112msql[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSELECT ... HAVING abs(morph_words - verse_word_approx) > 3[K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;192;197;206m-- 0 rows returned[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAll 306,785 WLC morphology words align perfectly with their verse text word counts. The sub-verse handling (9a, 13a merged into parent verse with continuous word_pos) works correctly.[K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m7. [38;2;163;190;140m`[38;2;163;190;140mexegetical[38;2;163;190;140m`[38;2;143;161;179m Field [38;2;143;161;179m&[38;2;143;161;179m [38;2;163;190;140m`[38;2;163;190;140mgreek_commentaries[38;2;163;190;140m`[38;2;143;161;179m for OT[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCommentaries table coverage:[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139m27 NT books only[38;2;235;203;139m**[38;2;191;97;106m (Matthew through Revelation)[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mZero OT books[38;2;235;203;139m**[38;2;191;97;106m — Robertson's Word Pictures, Vincent's, Expositor's, Meyer's, Bengel's, Alford's are all NT commentaries[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Sources: [38;2;163;190;140m`[38;2;163;190;140mrobertson[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mvincent[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mexpositor[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mmeyer[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mbengel[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140malford[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mImpact on OT chapters:[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mdata["greek_commentaries"][38;2;163;190;140m`[38;2;191;97;106m will be empty dict [38;2;163;190;140m`[38;2;163;190;140m{}[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m The "📖 N exégesis" button will not appear (code: [38;2;163;190;140m`[38;2;163;190;140mif (commCount > 0)[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m The [38;2;163;190;140m`[38;2;163;190;140mexegetical[38;2;163;190;140m`[38;2;191;97;106m field is only set when [38;2;163;190;140m`[38;2;163;190;140mdata["morphology"][38;2;163;190;140m`[38;2;191;97;106m exists — this is true for OT (WLC loaded into morphology), but the grounded exegetical LLM synthesis ([38;2;163;190;140m`[38;2;163;190;140m_generate_grounded_exegetical[38;2;163;190;140m`[38;2;191;97;106m) requires commentaries data[K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPatristic table OT coverage:[K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Book [38;2;192;197;206m|[38;2;192;197;206m Entries [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Psalms [38;2;192;197;206m|[38;2;192;197;206m 21,625 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Genesis [38;2;192;197;206m|[38;2;192;197;206m 9,266 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Isaiah [38;2;192;197;206m|[38;2;192;197;206m 5,206 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Job [38;2;192;197;206m|[38;2;192;197;206m 4,287 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Exodus [38;2;192;197;206m|[38;2;192;197;206m 2,253 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Jeremiah [38;2;192;197;206m|[38;2;192;197;206m 1,787 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Ezekiel [38;2;192;197;206m|[38;2;192;197;206m 1,544 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Daniel [38;2;192;197;206m|[38;2;192;197;206m 1,389 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    180[0m:[39m[48;2;24;38;30m [38;2;192;197;206mGood patristic coverage for major OT books. The patristic section works for OT.[K
+[0m[48;2;40;67;43m[39m+    181[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    182[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    183[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    184[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m8. NT vs OT Feature Comparison[K
+[0m[48;2;40;67;43m[39m+    185[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    186[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Feature [38;2;192;197;206m|[38;2;192;197;206m NT Chapter [38;2;192;197;206m|[38;2;192;197;206m OT Chapter [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    187[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m-----------[38;2;192;197;206m|[38;2;192;197;206m------------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    188[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Word-by-word morphology [38;2;192;197;206m|[38;2;192;197;206m ✅ MorphGNT with full RMAC parsing [38;2;192;197;206m|[38;2;192;197;206m ⚠️ WLC displayed but NO parsing [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    189[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Grammatical explanation popup [38;2;192;197;206m|[38;2;192;197;206m ✅ Case, gender, number, tense, voice [38;2;192;197;206m|[38;2;192;197;206m ❌ Only "Forma flexionada de..." [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    190[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Verb tense badge on hover [38;2;192;197;206m|[38;2;192;197;206m ✅ "⏱ Aoristo, Activa, Indicativo" [38;2;192;197;206m|[38;2;192;197;206m ❌ Empty [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    191[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Contextual meaning on hover [38;2;192;197;206m|[38;2;192;197;206m ✅ "habiendo dicho", "creyendo" [38;2;192;197;206m|[38;2;192;197;206m ❌ Only gloss/es fallback [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    192[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Compound word decomposition [38;2;192;197;206m|[38;2;192;197;206m ✅ prefix + root + suffix breakdown [38;2;192;197;206m|[38;2;192;197;206m ❌ Works if data exists (check compounds table) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    193[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX parallel line with hover [38;2;192;197;206m|[38;2;192;197;206m N/A (NT) [38;2;192;197;206m|[38;2;192;197;206m ✅ Displays with gloss tooltip [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    194[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX-ES literal translation [38;2;192;197;206m|[38;2;192;197;206m N/A (NT) [38;2;192;197;206m|[38;2;192;197;206m ✅ Claude Opus cached [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    195[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX morphology explanation [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ❌ Code format mismatch (dot vs dash) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    196[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Exegetical commentaries [38;2;192;197;206m|[38;2;192;197;206m ✅ Robertson, Vincent, etc. [38;2;192;197;206m|[38;2;192;197;206m ❌ No data in table [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    197[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Patristic commentary [38;2;192;197;206m|[38;2;192;197;206m ✅ Good coverage [38;2;192;197;206m|[38;2;192;197;206m ✅ Good for Psalms/Genesis/Isaiah [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    198[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Textual apparatus [38;2;192;197;206m|[38;2;192;197;206m ✅ From apparatus table [38;2;192;197;206m|[38;2;192;197;206m ❌ No OT variants in table [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    199[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Cross-references [38;2;192;197;206m|[38;2;192;197;206m ✅ Full coverage [38;2;192;197;206m|[38;2;192;197;206m ✅ Full coverage [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    200[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m External links (word study) [38;2;192;197;206m|[38;2;192;197;206m ✅ All links work for G-numbers [38;2;192;197;206m|[38;2;192;197;206m ❌ 4/5 links broken for H-numbers [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    201[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m RTL text direction [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ✅ study.html has it; ❌ unified doesn't [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    202[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    203[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    204[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    205[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m9. Recommendations for OT Parity[K
+[0m[48;2;40;67;43m[39m+    206[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    207[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 1 (High Impact, Medium Effort):[K
+[0m[48;2;40;67;43m[39m+    208[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd Hebrew OSHM parser to [38;2;163;190;140m`[38;2;163;190;140mexplainEnding[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m — Parse codes like [38;2;163;190;140m`[38;2;163;190;140mHVqp3ms[38;2;163;190;140m`[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    209[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mH[38;2;163;190;140m`[38;2;191;97;106m = Hebrew[K
+[0m[48;2;40;67;43m[39m+    210[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mV[38;2;163;190;140m`[38;2;191;97;106m = Verb, [38;2;163;190;140m`[38;2;163;190;140mN[38;2;163;190;140m`[38;2;191;97;106m = Noun, [38;2;163;190;140m`[38;2;163;190;140mA[38;2;163;190;140m`[38;2;191;97;106m = Adjective, [38;2;163;190;140m`[38;2;163;190;140mT[38;2;163;190;140m`[38;2;191;97;106m = Article/Particle[K
+[0m[48;2;40;67;43m[39m+    211[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mq[38;2;163;190;140m`[38;2;191;97;106m = Qal, [38;2;163;190;140m`[38;2;163;190;140mp[38;2;163;190;140m`[38;2;191;97;106m = Piel, [38;2;163;190;140m`[38;2;163;190;140mh[38;2;163;190;140m`[38;2;191;97;106m = Hiphil, etc.[K
+[0m[48;2;40;67;43m[39m+    212[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Person, gender, number suffixes[K
+[0m[48;2;40;67;43m[39m+    213[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [K
+[0m[48;2;40;67;43m[39m+    214[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd LXX morphology parser[38;2;235;203;139m**[38;2;191;97;106m — Convert dot notation ([38;2;163;190;140m`[38;2;163;190;140mV.AAI3S[38;2;163;190;140m`[38;2;191;97;106m) to dash notation ([38;2;163;190;140m`[38;2;163;190;140mV-AAI3S[38;2;163;190;140m`[38;2;191;97;106m) before passing to existing RMAC parser, OR add a dot-format branch in [38;2;163;190;140m`[38;2;163;190;140mexplainEnding[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    215[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    216[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mFix external links for Hebrew[38;2;235;203;139m**[38;2;191;97;106m — Detect H-prefix in Strong's number and use:[K
+[0m[48;2;40;67;43m[39m+    217[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m BlueLetter: [38;2;163;190;140m`[38;2;163;190;140m/wlc/0-1/[38;2;163;190;140m`[38;2;191;97;106m instead of [38;2;163;190;140m`[38;2;163;190;140m/tr/0-1/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    218[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m BibleHub: [38;2;163;190;140m`[38;2;163;190;140m/hebrew/[38;2;163;190;140m`[38;2;191;97;106m instead of [38;2;163;190;140m`[38;2;163;190;140m/greek/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    219[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Replace Perseus/Logeion with Hebrew-appropriate resources (e.g., HALOT, BDB)[K
+[0m[48;2;40;67;43m[39m+    220[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    221[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 2 (Medium Impact, Low Effort):[K
+[0m[48;2;40;67;43m[39m+    222[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd OT-specific handling to unified_html_generator.py[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    223[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Add [38;2;163;190;140m`[38;2;163;190;140misOT[38;2;163;190;140m`[38;2;191;97;106m detection (check if [38;2;163;190;140m`[38;2;163;190;140mD.parallel.WLC[38;2;163;190;140m`[38;2;191;97;106m exists)[K
+[0m[48;2;40;67;43m[39m+    224[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Render WLC line with RTL direction[K
+[0m[48;2;40;67;43m[39m+    225[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Render LXX line with morphology hover[K
+[0m[48;2;40;67;43m[39m+    226[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Display LXX-ES below LXX[K
+[0m[48;2;40;67;43m[39m+    227[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    228[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd Hebrew verb conjugation labels[38;2;235;203;139m**[38;2;191;97;106m — Build OSHM equivalent of [38;2;163;190;140m`[38;2;163;190;140mverbTenseEs[38;2;163;190;140m`[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    229[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Qal/Piel/Hiphil/Niphal etc. stem names[K
+[0m[48;2;40;67;43m[39m+    230[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Perfect/Imperfect/Participle/Imperative aspect[K
+[0m[48;2;40;67;43m[39m+    231[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Person/gender/number[K
+[0m[48;2;40;67;43m[39m+    232[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    233[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 3 (Lower Priority):[K
+[0m[48;2;40;67;43m[39m+    234[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mOT textual apparatus[38;2;235;203;139m**[38;2;191;97;106m — The apparatus table only covers NT. Could add OT variants (BHS critical apparatus, DSS variants)[K
+[0m[48;2;40;67;43m[39m+    235[0m:[39m[48;2;24;38;30m [38;2;191;97;106m7[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mOT exegetical sources[38;2;235;203;139m**[38;2;191;97;106m — Add Hebrew commentaries (Keil-Delitzsch, Gesenius, HALOT notes)[K
+[0m[48;2;40;67;43m[39m+    236[0m:[39m[48;2;24;38;30m [38;2;191;97;106m8[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mCompound prefix parsing for Hebrew[38;2;235;203;139m**[38;2;191;97;106m — Hebrew words with prefixes (בְּ/רֵאשִׁית = ב + ראשׁית) should show prefix decomposition[K
+[0m[48;2;40;67;43m[39m+    237[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    238[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    239[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    240[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m10. Specific Code Locations for Fixes[K
+[0m[48;2;40;67;43m[39m+    241[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    242[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Fix [38;2;192;197;206m|[38;2;192;197;206m File [38;2;192;197;206m|[38;2;192;197;206m Line(s) [38;2;192;197;206m|[38;2;192;197;206m What to Change [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    243[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-----[38;2;192;197;206m|[38;2;192;197;206m------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m----------------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    244[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Hebrew OSHM parser [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 966-1083 [38;2;192;197;206m|[38;2;192;197;206m Add [38;2;163;190;140m`[38;2;163;190;140mif (rmac[0]==='H')[38;2;163;190;140m`[38;2;192;197;206m branch in [38;2;163;190;140m`[38;2;163;190;140mexplainEnding[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    245[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Hebrew verb labels [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 887-896 [38;2;192;197;206m|[38;2;192;197;206m Add OSHM verb stem/aspect parsing [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    246[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX code normalization [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 966 [38;2;192;197;206m|[38;2;192;197;206m Convert [38;2;163;190;140m`[38;2;163;190;140mV.AAI3S[38;2;163;190;140m`[38;2;192;197;206m→[38;2;163;190;140m`[38;2;163;190;140mV-AAI3S[38;2;163;190;140m`[38;2;192;197;206m at top of function [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    247[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Hebrew external links [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 1211-1220 [38;2;192;197;206m|[38;2;192;197;206m Add [38;2;163;190;140m`[38;2;163;190;140mconst isHeb = (w.s||'').startsWith('H')[38;2;163;190;140m`[38;2;192;197;206m conditional [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    248[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Unified OT rendering [38;2;192;197;206m|[38;2;192;197;206m unified_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 750-758 [38;2;192;197;206m|[38;2;192;197;206m Add WLC/LXX/lxx_spanish branches in JS [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    249[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Unified RTL styling [38;2;192;197;206m|[38;2;192;197;206m unified_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 638 [38;2;192;197;206m|[38;2;192;197;206m Add [38;2;163;190;140m`[38;2;163;190;140m.greek-line.rtl { direction: rtl; font-family: 'SBL Hebrew' }[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    250[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Contextual meaning [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 952 [38;2;192;197;206m|[38;2;192;197;206m Add Hebrew participle/infinitive patterns [38;2;192;197;206m|[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/findings.md[0m
+[38;5;244m - Completed in 1.509s[0m
+[38;5;12m[1m [1.66][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Findings complete\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/nodes
+echo '{"from":"c5-internal","finding":"INVESTIGATION COMPLETE. Written to findings.md. Key findings: (1) explainEnding/verbTenseEs ONLY handle RMAC V-/N-/A-/T- prefix format. Hebrew OSHM (HVqp3ms) and LXX dot format (V.AAI3S) both fall to generic fallback. (2) Unified HTML has ZERO OT handling - no WLC RTL, no LXX line, no LXX-ES. (3) External links broken for H-numbers (4/5 sites). (4) Commentaries+apparatus are NT-only tables. (5) DB word counts consistent, book name resolution works correctly."}' >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.287s[0m
+[38;5;12m[1m [1.67][0m[0m
+[?25l[0m[38;5;141m> [0mInvestigation complete. Here's the summary:[0m[0m
+[0m[0m
+[1mCritical Bugs Found:[22m[0m[0m
+[0m[0m
+1. [1mHebrew OSHM codes not parsed[22m — [38;5;10mexplainEnding()[0m (line 966) and [38;5;10mverbTenseEs()[0m (line 887) only handle RMAC format ([38;5;10mV-[0m, [38;5;10mN-[0m, [38;5;10mT-[0m). Hebrew codes like [38;5;10mHVqp3ms[0m fall to a useless "Forma flexionada" fallback. No grammar breakdown for any Hebrew word.[0m[0m
+[0m[0m
+2. [1mLXX codes not parsed[22m — Same functions reject [38;5;10mV.AAI3S[0m (dot notation) since they check for [38;5;10mV-[0m (dash). All 623K LXX words get no morphological explanation.[0m[0m
+[0m[0m
+3. [1mExternal links broken for Hebrew[22m — [38;5;10mopenWordStudy[0m hardcodes Greek paths ([38;5;10m/greek/[0m, [38;5;10m/tr/0-1/[0m, [38;5;10mla=greek[0m). Hebrew H-number words link to wrong pages.[0m[0m
+[0m[0m
+4. [1munified_html_generator.py has zero OT support[22m — No [38;5;10misOT[0m detection, no WLC RTL rendering, no LXX parallel line, no LXX-ES translation. The JS only falls back to MorphGNT/SBLGNT.[0m[0m
+[0m[0m
+[1mWorking Correctly:[22m[0m[0m
+- DB word counts match perfectly (306K WLC words)[0m[0m
+- Book name resolution via candidates list works for all tables[0m[0m
+- Patristic has good OT coverage (Psalms 21K, Genesis 9K entries)[0m[0m
+- LXX morphology data loads and displays words with gloss tooltip[0m[0m
+[0m[0m
+Full findings written to [38;5;10m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/c5-internal/findings.md[0m]9;Response complete.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 11.00 • Time: 7m 1s
+
+[0m[1G[0m[0m[?25h

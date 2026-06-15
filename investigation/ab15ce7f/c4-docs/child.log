@@ -1,0 +1,1711 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mDuplicate agent with name [38;5;10maws-sap-c02-agent[0m was found in the global directory.
+[0m[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 1.33s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: The user wants me to compare two HTML files (NT John-1 unified analysis vs OT Proverbs-13 unified analysis) and identify gaps. They also want me to look at the generator code and study.html. Let me start by reading the files and tracking progress. This is a code investigation task, not an AWS investigation, despite the steering context mentioning AWS docs. The task is about comparing HTML files in a bible-expert project.
+
+Let me:
+1. Read John-1/unified_analysis.html structure
+2. Read Proverbs-13/unified_analysis.html structure
+3. Read the generator code
+4. Read study.html for xref comparison
+5. Produce gap analysis and action plan
+
+Let me start by creating the output directory and tracking progress.
+[38;5;244m - Completed in 1.317s[0m
+[38;5;12m[1m [1.1][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mmkdir -p /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs && printf '%s|Starting investigation\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mcat /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.325s[0m
+[38;5;12m[1m [1.2][0m[0m
+[38;5;244m - Completed in 1.326s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[38;5;141m> [0mNo directives yet. Let me start reading the NT reference file to understand its full structure.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mwc -l ~/bible-studies/John-1/unified_analysis.html && wc -l ~/bible-studies/Proverbs-13/unified_analysis.html[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mwc -l ~/bible-studies/Proverbs-13/study.html[0m[38;5;244m (using tool: shell)[0m
+
+    1009 /Users/murivirg/bible-studies/John-1/unified_analysis.html
+     335 /Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html
+[38;5;244m - Completed in 1.339s[0m
+[38;5;12m[1m [1.4][0m[0m
+     855 /Users/murivirg/bible-studies/Proverbs-13/study.html
+[38;5;244m - Completed in 1.340s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/bible-studies/John-1/unified_analysis.html[0m, from line [38;5;141m1[0m to [38;5;141m100[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m8988 bytes[0m from /Users/murivirg/bible-studies/John-1/unified_analysis.html
+[38;5;244m - Completed in 1.332s[0m
+[38;5;12m[1m [1.6][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/bible-studies/John-1/unified_analysis.html[0m, from line [38;5;141m100[0m to [38;5;141m200[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m5901 bytes[0m from /Users/murivirg/bible-studies/John-1/unified_analysis.html
+[38;5;244m - Completed in 1.449s[0m
+[38;5;12m[1m [1.7][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/bible-studies/John-1/unified_analysis.html[0m, from line [38;5;141m200[0m to [38;5;141m350[0m[38;5;244m (using tool: read)[0m ⋮ 
+[1m[38;5;9m ● Execution failed after 0.4s:
+[0m[38;5;9mThis tool only supports reading 400000 bytes at a
+time. You tried to read 1667535 bytes. Try executing with fewer lines specified.[0m
+
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/bible-studies/John-1/unified_analysis.html[0m, from line [38;5;141m200[0m to [38;5;141m280[0m[38;5;244m (using tool: read)[0m ⋮ 
+[1m[38;5;9m ● Execution failed after 0.4s:
+[0m[38;5;9mThis tool only supports reading 400000 bytes at a
+time. You tried to read 1504322 bytes. Try executing with fewer lines specified.[0m
+
+[?25l[0m[38;5;141m> [0mThe file has very long lines. Let me use shell tools to extract the structure.[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mhead -c 50000 ~/bible-studies/John-1/unified_analysis.html | tail -c 30000 | head -c 15000[0m[38;5;244m (using tool: shell)[0m
+
+inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">24</a><a href="#vb25" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">25</a><a href="#vb26" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">26</a><a href="#vb27" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">27</a><a href="#vb28" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">28</a><a href="#vb29" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">29</a><a href="#vb30" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">30</a><a href="#vb31" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">31</a><a href="#vb32" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">32</a><a href="#vb33" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">33</a><a href="#vb34" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">34</a><a href="#vb35" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">35</a><a href="#vb36" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">36</a><a href="#vb37" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">37</a><a href="#vb38" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">38</a><a href="#vb39" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">39</a><a href="#vb40" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">40</a><a href="#vb41" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">41</a><a href="#vb42" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">42</a><a href="#vb43" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">43</a><a href="#vb44" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">44</a><a href="#vb45" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">45</a><a href="#vb46" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">46</a><a href="#vb47" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">47</a><a href="#vb48" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">48</a><a href="#vb49" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">49</a><a href="#vb50" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">50</a><a href="#vb51" style="display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;background:rgba(255,255,255,0.15);color:white;text-decoration:none;font-size:0.7rem">51</a>
+</div>
+<p style="font-size:0.7rem;opacity:0.6;margin-top:0.3rem">Teclas: J/K=navegar · R=RVR1960 · E=exégesis · P=patrística · T=TC · G=griego · U=uncial · N=notas · ?=ayuda</p>
+<div style="margin-top:0.4rem;display:flex;gap:0.3rem;justify-content:center;flex-wrap:wrap">
+<button onclick="expandAll('exeg')" style="padding:2px 8px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;background:transparent;color:white;cursor:pointer;font-size:0.65rem">Expandir Exégesis</button>
+<button onclick="expandAll('patr')" style="padding:2px 8px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;background:transparent;color:white;cursor:pointer;font-size:0.65rem">Expandir Patrística</button>
+<button onclick="expandAll('tc')" style="padding:2px 8px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;background:transparent;color:white;cursor:pointer;font-size:0.65rem">Expandir TC</button>
+<button onclick="document.querySelectorAll('.collapsed').forEach(e=>e.classList.remove('collapsed'))" style="padding:2px 8px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;background:transparent;color:white;cursor:pointer;font-size:0.65rem">Expandir Todo</button>
+<button onclick="toggleDarkMode()" style="padding:2px 8px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;background:transparent;color:white;cursor:pointer;font-size:0.65rem" data-darkbtn>🌙 Modo oscuro</button>
+</div>
+</header>
+<div class="toolbar">
+<button class="tool-btn" onclick="expandAll('exeg')">📜 Expandir toda Exégesis</button>
+<button class="tool-btn" onclick="expandAll('patr')">👨‍🏫 Expandir toda Patrística</button>
+<button class="tool-btn" onclick="expandAll('tc')">⚖️ Expandir todo TC</button>
+<button class="tool-btn" onclick="collapseAll()">🔽 Colapsar todo</button>
+<button class="tool-btn" onclick="toggleDarkMode()" data-darkbtn>🌙 Modo oscuro</button>
+<input type="text" id="searchBox" placeholder="🔍 Buscar..." style="padding:4px 12px;border-radius:14px;border:1px solid #ccc;font-size:0.78rem;width:140px" oninput="filterVerses(this.value)">
+<button class="tool-btn" onclick="exportJSON()">📤 JSON</button>
+<button class="tool-btn" onclick="exportNotes()">📝 Exportar notas</button>
+</div>
+<div class="card" style="grid-column:1/-1;background:var(--card);border-radius:10px;padding:1.2rem;margin-bottom:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.06)"><p style="font-size:0.92rem;line-height:1.7;color:#333;margin-bottom:0.8rem">Juan 1 presenta el prólogo teológico más profundo del Nuevo Testamento, estableciendo la divinidad preexistente de Cristo como el Logos eterno. El capítulo revela cómo el Verbo divino se hizo carne para habitar entre nosotros, trayendo gracia y verdad. Juan el Bautista da testimonio de Jesús como el Cordero de Dios, preparando el camino para Su ministerio público.</p><div style="margin-bottom:0.8rem"><strong style="color:#1a237e;font-size:0.85rem">📐 Estructura del capítulo:</strong><div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.4rem"><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8eaf6;color:#1a237e"><strong>vv.1-5</strong> La eternidad y divinidad del Verbo</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8eaf6;color:#1a237e"><strong>vv.6-8</strong> La misión de Juan el Bautista</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8eaf6;color:#1a237e"><strong>vv.9-13</strong> La recepción del Verbo en el mundo</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8eaf6;color:#1a237e"><strong>vv.14-18</strong> La encarnación del Verbo</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8eaf6;color:#1a237e"><strong>vv.19-28</strong> El testimonio de Juan ante las autoridades</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8eaf6;color:#1a237e"><strong>vv.29-30</strong> Jesús identificado como el Cordero de Dios</span></div></div><div style="margin-bottom:0.8rem"><strong style="color:#1a237e;font-size:0.85rem">📖 Paralelos sinópticos:</strong> <a href="https://www.biblegateway.com/passage/?search=Marcos 1:1-8&version=RVR1960" target="_blank" style="font-size:0.82rem;color:#1565c0">Marcos 1:1-8</a> (Testimonio y ministerio de Juan el Bautista), <a href="https://www.biblegateway.com/passage/?search=Mateo 3:11-17&version=RVR1960" target="_blank" style="font-size:0.82rem;color:#1565c0">Mateo 3:11-17</a> (Juan da testimonio de Aquel que viene después de él), <a href="https://www.biblegateway.com/passage/?search=Lucas 3:15-17&version=RVR1960" target="_blank" style="font-size:0.82rem;color:#1565c0">Lucas 3:15-17</a> (Juan niega ser el Cristo y señala al que viene)</div><details style="margin-bottom:0.5rem"><summary style="font-size:0.85rem;font-weight:600;color:#1a237e;cursor:pointer">❓ Preguntas de estudio</summary><ol style="font-size:0.83rem;margin:0.5rem 0 0 1.2rem;line-height:1.8"><li>¿Qué significa que el Verbo era 'con Dios' y 'era Dios' simultáneamente en el versículo 1?</li><li>¿Cómo se relaciona el concepto de 'luz' con la identidad y misión de Cristo en los versículos 4-9?</li><li>¿Qué implica ser 'engendrados de Dios' según el versículo 13 y cómo difiere del nacimiento natural?</li><li>¿Por qué Juan el Bautista enfatiza repetidamente que Cristo 'era antes' que él siendo menor en edad?</li><li>¿Qué significa el título 'Cordero de Dios' en el contexto del sistema sacrificial del Antiguo Testamento?</li></ol></details><details><summary style="font-size:0.85rem;font-weight:600;color:#1a237e;cursor:pointer">🔑 Palabras clave</summary><div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.4rem"><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8f5e9;border:1px solid #c8e6c9"><strong style="font-family:Noto Serif,serif">Λόγος</strong> (Verbo, Palabra) — Concepto central: Cristo como expresión divina eterna</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8f5e9;border:1px solid #c8e6c9"><strong style="font-family:Noto Serif,serif">φῶς</strong> (luz) — Metáfora de la revelación y vida espiritual que Cristo trae</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8f5e9;border:1px solid #c8e6c9"><strong style="font-family:Noto Serif,serif">σκοτία</strong> (tinieblas) — Representa la condición espiritual sin Cristo</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8f5e9;border:1px solid #c8e6c9"><strong style="font-family:Noto Serif,serif">μαρτυρία</strong> (testimonio) — Función clave de Juan el Bautista y todos los creyentes</span><span style="font-size:0.78rem;padding:3px 10px;border-radius:14px;background:#e8f5e9;border:1px solid #c8e6c9"><strong style="font-family:Noto Serif,serif">σάρξ</strong> (carne) — La encarnación: Dios asumiendo naturaleza humana</span></div></details></div>
+<div class="sidebar">
+<h2>🔗 Referencias Cruzadas</h2>
+<div style="margin-bottom:0.8rem"><div style="font-weight:700;color:#1a237e;font-size:0.8rem">v.1</div><div class="xref-item" title="LO que era desde el principio, lo que hemos oído, lo que hemos visto con nuestros ojos, lo que hemos mirado, y palparon nuestras manos tocante al Verbo de vida;" data-ref="1 John 1:1" data-es="LO que era desde el principio, lo que hemos oído, lo que hemos visto con nuestros ojos, lo que hemos mirado, y palparon nuestras manos tocante al Verbo de vida;" data-gr="Ὃ ἦν ἀπ’ ἀρχῆς, ὃ ἀκηκόαμεν, ὃ ἑωράκαμεν τοῖς ὀφθαλμοῖς ἡμῶν, ὃ ἐθεασάμεθα καὶ αἱ χεῖρες ἡμῶν ἐψηλάφησαν, περὶ τοῦ λόγου τῆς ζωῆς—" data-lxx="" onclick="showXrefPopup(this)">&bull; 1 John 1:1</div><div class="xref-item" title="(Porque la vida fué manifestada, y vimos, y testificamos, y os anunciamos aquella vida eterna, la cual estaba con el Padre, y nos ha aparecido;)" data-ref="1 John 1:2" data-es="(Porque la vida fué manifestada, y vimos, y testificamos, y os anunciamos aquella vida eterna, la cual estaba con el Padre, y nos ha aparecido;)" data-gr="καὶ ἡ ζωὴ ἐφανερώθη, καὶ ἑωράκαμεν καὶ μαρτυροῦμεν καὶ ἀπαγγέλλομεν ὑμῖν τὴν ζωὴν τὴν αἰώνιον ἥτις ἦν πρὸς τὸν πατέρα καὶ ἐφανερώθη ἡμῖν—" data-lxx="" onclick="showXrefPopup(this)">&bull; 1 John 1:2</div><div class="xref-item" title="Empero sabemos que el Hijo de Dios es venido, y nos ha dado entendimiento para conocer al que es verdadero: y estamos en el verdadero, en su Hijo Jesucristo. Este es el verdadero Dios, y la vida etern" data-ref="1 John 5:20" data-es="Empero sabemos que el Hijo de Dios es venido, y nos ha dado entendimiento para conocer al que es verdadero: y estamos en el verdadero, en su Hijo Jesucristo. Este es el verdadero Di[38;5;244m - Completed in 1.455s[0m
+[38;5;12m[1m [1.8][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading NT structure\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.694s[0m
+[38;5;12m[1m [1.9][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at a specific verse block to understand the full structure. Let me extract one complete verse block from the NT.[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141m# Extract first verse block from John-1 (get from id="vb1" area)
+python3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find the first verse-block div
+match = re.search(r'<div class=\"verse-block\"[^>]*id=\"vb1\"[^>]*>(.*?)(?=<div class=\"verse-block\"[^>]*id=\"vb2\")', content, re.DOTALL)
+if match:
+    block = match.group(0)
+    # Truncate for display
+    print(block[:8000])
+else:
+    # Try alternative
+    match = re.search(r'id=\"vb1\"', content)
+    if match:
+        print(content[match.start():match.start()+8000])
+    else:
+        print('NOT FOUND')
+" 2>&1 | head -200[0m[38;5;244m (using tool: shell)[0m
+
+<div class="verse-block" id="vb1"><div class="verse-header"><span class="vnum">1</span></div><div class="greek-line" id="greek-1">Ἐν ἀρχῇ ἦν ὁ Λόγος καὶ ὁ Λόγος ἦν πρὸς τὸν Θεόν καὶ Θεὸς ἦν ὁ Λόγος</div><div class="uncial-line" id="uncial-1" style="display:none;font-family:'Noto Serif',serif;font-size:0.9rem;letter-spacing:1.5px;color:#5d4037;background:#efebe9;padding:6px 10px;border-radius:4px;margin-bottom:0.3rem;overflow-wrap:break-word" title="Así se vería este versículo en un manuscrito uncial del siglo IV — todo mayúsculas, sin espacios (puntos medios añadidos como ayuda visual)">ΕΝ·ΑΡΧΗΙ·ΗΝ·Ο·ΛΟΓΟΣ·ΚΑΙ·Ο·ΛΟΓΟΣ·ΗΝ·ΠΡΟΣ·ΤΟΝ·ΘΕΟΝ·ΚΑΙ·ΘΕΟΣ·ΗΝ·Ο·ΛΟΓΟΣ<span style="display:block;font-size:0.65rem;margin-top:4px;letter-spacing:0;opacity:0.7"><a href="https://www.codexsinaiticus.org/en/manuscript.aspx?book=33&chapter=1&verse=1" target="_blank" style="color:#5d4037">Ver en Codex Sinaiticus →</a></span></div><div style="display:flex;gap:0.3rem;flex-wrap:wrap;margin-bottom:0.3rem;align-items:center"><div class="rvr-btn" onclick="toggleRVR(1)">RVR60</div><div class="rvr-btn" onclick="document.getElementById('uncial-1').style.display=document.getElementById('uncial-1').style.display==='none'?'':'none'" style="background:#efebe9;color:#5d4037;border-color:#bcaaa4" title="Escritura uncial: así se veía el NT en los manuscritos del s.IV (Vaticanus, Sinaiticus). Todo mayúsculas, sin espacios entre palabras (scriptio continua), sin acentos ni puntuación. La iota subscrita se escribe explícitamente.">Uncial</div><div class="rvr-btn" onclick="document.getElementById('pron-1').style.display=document.getElementById('pron-1').style.display==='none'?'':'none'" style="background:#e3f2fd;color:#1565c0;border-color:#90caf9" title="Pronunciación bizantina aproximada (griego moderno/eclesiástico)">Pronunciación</div><div class="rvr-btn vbtn-patr" onclick="toggleSection('patr-1')" title="140 citas patrísticas disponibles">✝ 140 patrística</div><div class="rvr-btn vbtn-exeg" onclick="toggleSection('exeg-1')" title="4 comentarios exegéticos">📚 4 exégesis</div><div class="rvr-btn vbtn-ver" onclick="document.getElementById('vers-1').classList.toggle('collapsed')" title="9 versiones disponibles">📖 versiones</div><div class="rvr-btn" onclick="document.getElementById('xrefs-1').classList.toggle('collapsed')" title="8 referencias cruzadas">🔗 8 refs</div><div class="rvr-btn" onclick="copyVerse(1)" title="Copiar versículo al portapapeles" style="background:#f3e5f5;border-color:#ce93d8;color:#6a1b9a">📋</div><div class="rvr-btn" onclick="document.getElementById('notes-1').style.display=document.getElementById('notes-1').style.display==='none'?'':'none'" title="Notas personales" style="background:#fff8e1;border-color:#ffd54f;color:#f57f17">📝</div></div><div id="rvr-1" class="collapsed spanish-line">En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.</div><div id="vers-1" class="collapsed" style="margin-bottom:0.5rem"><div class="ver-line"><span class="ver-label">RVR60</span>En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.</div><div class="ver-line"><span class="ver-label">RVR1909</span>EN el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.</div><div class="ver-line"><span class="ver-label">KJV</span>In the beginning was the Word, and the Word was with God, and the Word was God.</div><div class="ver-line"><span class="ver-label">ASV</span>In the beginning was the Word, and the Word was with God, and the Word was God. </div><div class="ver-line"><span class="ver-label">BSB</span> In the beginning was the Word, and the Word was with God, and the Word was God. </div><div class="ver-line"><span class="ver-label">Darby</span>In [the] beginning was the Word, and the Word was withGod, and the Word wasGod. </div><div class="ver-line"><span class="ver-label">LITV</span>In the beginning was the Word, and the Word was with God, and the Word was God. </div><div class="ver-line"><span class="ver-label">YLT</span>In the beginning was the Word, and the Word was with God, and the Word was God;</div><div class="ver-line"><span class="ver-label">Vulgate</span>in principio erat Verbum et Verbum erat apud Deum et Deus erat Verbum</div></div><div id="xrefs-1" class="collapsed xref-container" style="margin-bottom:0.5rem"><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="1 John 1:1" data-es="LO que era desde el principio, lo que hemos oído, lo que hemos visto con nuestros ojos, lo que hemos mirado, y palparon nuestras manos tocante al Verbo de vida;" data-gr="Ὃ ἦν ἀπ’ ἀρχῆς, ὃ ἀκηκόαμεν, ὃ ἑωράκαμεν τοῖς ὀφθαλμοῖς ἡμῶν, ὃ ἐθεασάμεθα καὶ αἱ χεῖρες ἡμῶν ἐψηλάφησαν, περὶ τοῦ λόγου τῆς ζωῆς—" data-lxx="" title="LO que era desde el principio, lo que hemos oído, lo que hemos visto con nuestro…">1 John 1:1</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="1 John 1:2" data-es="(Porque la vida fué manifestada, y vimos, y testificamos, y os anunciamos aquella vida eterna, la cual estaba con el Padre, y nos ha aparecido;)" data-gr="καὶ ἡ ζωὴ ἐφανερώθη, καὶ ἑωράκαμεν καὶ μαρτυροῦμεν καὶ ἀπαγγέλλομεν ὑμῖν τὴν ζωὴν τὴν αἰώνιον ἥτις ἦν πρὸς τὸν πατέρα καὶ ἐφανερώθη ἡμῖν—" data-lxx="" title="(Porque la vida fué manifestada, y vimos, y testificamos, y os anunciamos aquell…">1 John 1:2</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="1 John 5:20" data-es="Empero sabemos que el Hijo de Dios es venido, y nos ha dado entendimiento para conocer al que es verdadero: y estamos en el verdadero, en su Hijo Jesucristo. Este es el verdadero Dios, y la vida eterna." data-gr="οἴδαμεν δὲ ὅτι ὁ υἱὸς τοῦ θεοῦ ἥκει, καὶ δέδωκεν ἡμῖν διάνοιαν ἵνα ⸀γινώσκωμεν τὸν ἀληθινόν· καὶ ἐσμὲν ἐν τῷ ἀληθινῷ, ἐν τῷ υἱῷ αὐτοῦ Ἰησοῦ Χριστῷ. οὗτός ἐστιν ὁ ἀληθινὸς θεὸς καὶ ζωὴ αἰώνιος." data-lxx="" title="Empero sabemos que el Hijo de Dios es venido, y nos ha dado entendimiento para c…">1 John 5:20</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="1 John 5:7" data-es="Porque tres son los que dan testimonio en el cielo, el Padre, el Verbo, y el Espíritu Santo: y estos tres son uno." data-gr="ὅτι τρεῖς εἰσιν οἱ μαρτυροῦντες," data-lxx="" title="Porque tres son los que dan testimonio en el cielo, el Padre, el Verbo, y el Esp…">1 John 5:7</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="1 Timothy 3:16" data-es="Y sin cotradicción, grande es el misterio de la piedad: Dios ha sido manifestado en carne; ha sido justificado con el Espíritu; ha sido visto de los ángeles; ha sido predicado á los Gentiles; ha sido creído en el mundo; ha sido recibido en gloria." data-gr="καὶ ὁμολογουμένως μέγα ἐστὶν τὸ τῆς εὐσεβείας μυστήριον· ⸀Ὃς ἐφανερώθη ἐν σαρκί, ἐδικαιώθη ἐν πνεύματι, ὤφθη ἀγγέλοις, ἐκηρύχθη ἐν ἔθνεσιν, ἐπιστεύθη ἐν κόσμῳ, ἀνελήμφθη ἐν δόξῃ." data-lxx="" title="Y sin cotradicción, grande es el misterio de la piedad: Dios ha sido manifestado…">1 Timothy 3:16</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="2 Peter 1:1" data-es="SIMON Pedro, siervo y apóstol de Jesucristo, á los que habéis alcanzado fe igualmente preciosa con nosotros en la justicia de nuestro Dios y Salvador Jesucristo:" data-gr="⸀Συμεὼν Πέτρος δοῦλος καὶ ἀπόστολος Ἰησοῦ Χριστοῦ τοῖς ἰσότιμον ἡμῖν λαχοῦσιν πίστιν ἐν δικαιοσύνῃ τοῦ θεοῦ ἡμῶν καὶ σωτῆρος Ἰησοῦ Χριστοῦ·" data-lxx="" title="SIMON Pedro, siervo y apóstol de Jesucristo, á los que habéis alcanzado fe igual…">2 Peter 1:1</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="Colossians 1:17" data-es="Y él es antes de todas las cosas, y por él todas las cosas subsisten:" data-gr="καὶ αὐτός ἐστιν πρὸ πάντων καὶ τὰ πάντα ἐν αὐτῷ συνέστηκεν," data-lxx="" title="Y él es antes de todas las cosas, y por él todas las cosas subsisten:">Colossians 1:17</span><span class="xref-pill" onclick="showXrefPopup(this)" data-ref="Ephesians 3:9" data-es="Y de aclarar á todos cuál sea la dispensación del misterio escondido desde los siglos en Dios, que crió to
+[38;5;244m - Completed in 1.767s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[38;5;141m> [0mExcellent! Now let me get the exegesis and patristic sections for this verse:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find exeg section for verse 1
+match = re.search(r'id=\"exeg-1\"(.*?)(?=id=\"patr-1\")', content, re.DOTALL)
+if match:
+    print(match.group(0)[:6000])
+" 2>&1 | head -150[0m[38;5;244m (using tool: shell)[0m
+
+id="exeg-1" class="collapsed section-content exeg-section" role="region"><div class="exeg-summary"><strong style="color:#1b5e20">Alford:</strong> And not only would this be the case, but the assertion would be inconsistent with the whole historical idea of the λόγος , making this term to signify merely an attribute of God, just as when it is sa…<br><strong style="color:#1b5e20">Bengel:</strong> Πρός for παρά [Latin apud , French chez ], as εἰς for ἐν , [John 1:18] , denotes a perpetual, as it were, tendency of the Son to the Father in the unity of essence.<br><strong style="color:#1b5e20">Robertson:</strong> Three times in this sentence John uses this imperfect of ειμ to be which conveys no idea of origin for God or for the Logos, simply continuous existence.<br><strong style="color:#1b5e20">Vincent:</strong> " As signifying the outward form it is never used in the merely grammatical sense, as simply the name of a thing or act [ επος, ονομα, ρημα] , but means a word as the thing referred to : the material,…<br></div><div class="comm-item"><div class="comm-header" onclick="document.getElementById('uexv1_0').classList.toggle('collapsed')"><strong>Alford's Greek Testament</strong> <span style=color:#888;font-size:0.75rem>(1863)</span><span class="small-arrow">ver completo ▼</span></div><div id="uexv1_0" class="collapsed comm-body">1. ] ἐν ἀρχῇ = πρὸ τοῦ τὸν κόσμον εἶναι , ch. [John 17:5] . The expression is indefinite, and must be interpreted relatively to the matter spoken of. Thus in [Acts 11:15] , it is &lsquo;the beginning of the Gospel:&rsquo; and by the same principle of interpretation, here it is the beginning of all things, on account of the πάντα δι ʼ αὐτ . ἐγ . [John 1:3] . These words, if they do not assert , at least imply , the eternal præ-existence of the Divine Word. For ἐν ἀρχῇ ἦν is not said of an act done ἐν ἀρχῇ (as in Gen 1:1 ), but of a state existing ἐν ἀρχῇ , and therefore without beginning itself. ἦν , not equivalent to ἔστιν (see ἐγώ εἰμι , ch. Joh 8:58 alli [4] .), as Euthymius and others have supposed; but Origen has given the true reason for the indefinite past being used, ἦν μὲν κυριώτερον ἐπὶ τοῦ θεοῦ λόγου τὸ ἔστιν εἰπεῖν · ἀλλ ʼ ἐπεὶ πρὸς διαφορὰν τῆς ἐνανθρωπήσεως γενομένης ἔν τινι καιρῷ , ἀντὶ τοῦ ἔστιν τῷ ἦν ὁ εὐαγγελιστὴς κέχρηται (in Catena, Lücke, p. 296). The existence of an enduring and unlimited state of being, implied in ἦν , is contrasted with ἐγένετο in [John 1:3] , and especially in [John 1:14] . [4] alli = some cursive mss. καὶ ὁ λ . ἦν πρὸς τ . θ . ] The usage of πρός here, as with (i.e. &lsquo;chez&rsquo;), is sufficiently borne out by the reff. Basil remarks (Lücke, i. 297) that John says πρὸς τὸν θ ., not ἐν τῷ θ ., ἵνα τὸ ἰδιάζον τῆς ὑποστάσεως παραστήσῃ , … ἵνα μὴ πρόφασιν δῷ τῇ συγχύσει τῆς ὑποστάσεως . Both the inner substantial union, and the distinct personality of the λόγος are here asserted. The former is distinctly repeated in the next words. κ . θ . ἦν ὁ λ . ] and the Word was God. As regards the form of the sentence, it is strictly parallel with πνεῦμα ὁ θεός , ch. [John 4:24] . But the sense to be conveyed here is as weighty a consideration as the form of the sentence. Had John intended to say, &lsquo; God was the Word ,&rsquo; what meaning could his assertion possibly have conveyed? None other than a contradiction to his last assertion, by which he had distinguished God from the Word. And not only would this be the case, but the assertion would be inconsistent with the whole historical idea of the λόγος , making this term to signify merely an attribute of God, just as when it is said ὁ θεὸς ἀγάπη ἐστίν . Not to mention the unprecedented inversion of subject and predicate which this would occasion; ὁ λόγος having been the subject before , and again resumed as the subject afterwards . The rendering of the words being then as above, their meaning is the next question. The omission of the article before θεός is not mere usage; it could not have been here expressed, whatever place the words might hold in the sentence. ὁ λόγος ἦν ὁ θεός would give a sense liable to the objections first stated, and destroy the idea of the λόγος altogether. θεός must then be taken as implying God, in substance and essence , not ὁ θεός , &lsquo;the Father,&rsquo; in Person . It does not = θεῖος , nor is it to be rendered a God but, as i</div></div><div class="comm-item"><div class="comm-header" onclick="document.getElementById('uexv1_1').classList.toggle('collapsed')"><strong>Bengel's Gnomon</strong> <span style=color:#888;font-size:0.75rem>(1742)</span><span class="small-arrow">ver completo ▼</span></div><div id="uexv1_1" class="collapsed comm-body">[John 1:1] . Ἐν ἀρχῇ ἦν ὁ λόγος , καὶ ὁ λόγος ἦν πρὸς τὸν Θεὸν , καὶ Θεὸς ἦν ὁ λόγος · In the beginning was the Word, and the Word was with God, and the Word was God ) This is the thunder brought down to us by a &ldquo;Son of Thunder;&rdquo; [2] this is a voice from heaven, which man&rsquo;s conjecturing in vain starts objections against. By no reasoning of his could any orthodox believer better establish the truth of this palmary [capital] text, or more effectually refute Artemonism, than has Artemon&rsquo;s [3] modern follower himself, i.e. Samuel Crellius, whilst maintaining throughout the whole of his book, which he has entitled, &ldquo;The Beginning of the Gospel of John restored according to ecclesiastical antiquity,&rdquo; that, instead of Θεός , there ought to be written Θεοῦ . His whole system, both in the foundation and the superstructure, is mere conjecture: and the more I call to mind the contexture of his reasonings, the more I feel confirmed in the truth, which has been assailed by this foremost veteran of Unitarianism on such trifling grounds. To avow this again and again, I regard as the part of piety. In my Introduction [&lsquo;Apparatus&rsquo;], page 559, line 11, there has crept in by mistake, &ldquo;if you read Θεοῦ &rdquo; [ si Θεοῦ legas ], whereas the thing speaks for itself, that it o
+[38;5;244m - Completed in 1.655s[0m
+[38;5;12m[1m [1.11][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find patristic section for verse 1
+match = re.search(r'id=\"patr-1\"(.*?)(?=id=\"notes-1\")', content, re.DOTALL)
+if match:
+    print(match.group(0)[:5000])
+" 2>&1 | head -100[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.603s[0m
+[38;5;12m[1m [1.12][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find patr section for verse 1
+match = re.search(r'id=\"patr-1\"(.*?)(?=<div class=\"verse-block\")', content, re.DOTALL)
+if match:
+    text = match.group(0)[:6000]
+    print(text)
+else:
+    # Try to find patr near verse 1
+    idx = content.find('patr-1')
+    if idx > 0:
+        print(content[idx:idx+5000])
+    else:
+        print('NOT FOUND')
+" 2>&1 | head -120[0m[38;5;244m (using tool: shell)[0m
+
+id="patr-1" class="collapsed section-content patr-section" role="region"><div class="patr-theme"><div class="patr-theme-header" onclick="document.getElementById('ptc890556d').classList.toggle('collapsed');this.querySelector('.arrow').classList.toggle('open')"><strong>Eternidad del Verbo</strong><div class="consensus-bar" style="width:60px"><div style="width:85%;background:#4caf50"></div></div><span class="consensus-label" style="color:#4caf50">alto</span><span class="arrow">▼</span></div><div id="ptc890556d" class="collapsed" style="padding:0.5rem 0.2rem 0"><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Agustín de Hipona</strong> (354-430) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"In principio erat Verbum. This Word is not what we speak and passes away. This is the Word that remains. Consider how poor human speech is: my words strike your ears, and if you do not understand, I have spoken in vain. But the Word of God is always spoken and always heard."</div></div><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Juan Crisóstomo</strong> (c.349-407) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"The evangelist did not say 'In the beginning was made' or 'came to be' but 'was' (ἦν), showing the eternal pre-existence of the Word without beginning."</div></div><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Hilario de Poitiers</strong> (c.310-367) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"Years, centuries, ages, are passed over, place what beginning thou wilt in thy imagining, thou graspest it not in time, for He, from Whom it is derived, still was."</div></div><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Cirilo de Alejandría</strong> (c.376-444) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"There is nothing older than 'the beginning' if we stay with the definition of beginning (for there cannot be a beginning of a beginning), or else it would diverge from being in truth a beginning if there is something else one can imagine before it or that arises before it."</div></div><div class="patr-resumen">Los Padres afirman unánimemente la eternidad del Verbo, enfatizando que 'era' (ἦν) indica existencia eterna sin comienzo temporal. El 'principio' no denota límite temporal sino eternidad absoluta.</div></div></div><div class="patr-theme"><div class="patr-theme-header" onclick="document.getElementById('pt2b5c9d78').classList.toggle('collapsed');this.querySelector('.arrow').classList.toggle('open')"><strong>Divinidad del Verbo</strong><div class="consensus-bar" style="width:60px"><div style="width:85%;background:#4caf50"></div></div><span class="consensus-label" style="color:#4caf50">alto</span><span class="arrow">▼</span></div><div id="pt2b5c9d78" class="collapsed" style="padding:0.5rem 0.2rem 0"><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Atanasio de Alejandría</strong> (c.296-373) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"If they were disputing concerning any human being, then let them exercise reason in this human way, both concerning his Word and his Son. But if their dispute concerns God, who created humanity, let them no longer entertain human thoughts but others that are above."</div></div><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Hilario de Poitiers</strong> (c.310-367) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"[The Son], being God, is nothing else than God. For when I hear the words 'And the Word was God,' they do not merely tell me that the Son was called God; they reveal to my understanding that he is God."</div></div><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Ambrosio de Milán</strong> (c.340-397) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"And 'the Word was God.' This Word, therefore, consists not in uttered speech but in the designation of celestial excellence, so that Photinus's teaching is refuted."</div></div><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Cipriano</strong> (c.200-258) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"That the same Christ is the Word of God. In the forty-fourth Psalm: 'My heart hath breathed out a good Word. I tell my works to the King.' Also in the thirty-second Psalm: 'By the Word of God were the heavens made fast; and all their strength by the breath of His mouth.'"</div></div><div class="patr-resumen">Los Padres defienden firmemente la plena divinidad del Verbo contra herejías arrianas y otras. El Verbo no es meramente llamado Dios sino que es Dios por naturaleza y esencia.</div></div></div><div class="patr-theme"><div class="patr-theme-header" onclick="document.getElementById('ptb904f4a8').classList.toggle('collapsed');this.querySelector('.arrow').classList.toggle('open')"><strong>Distinción de Personas en la Trinidad</strong><div class="consensus-bar" style="width:60px"><div style="width:85%;background:#4caf50"></div></div><span class="consensus-label" style="color:#4caf50">alto</span><span class="arrow">▼</span></div><div id="ptb904f4a8" class="collapsed" style="padding:0.5rem 0.2rem 0"><div class="patr-citation" style="border-left-color:#4caf50"><div class="patr-cite-header">✅ <strong>Juan Crisóstomo</strong> (c.349-407) <span class="patr-verse-ref">[v.1]</span></div><div class="patr-cite-text">"And 'the Word was with God' shows distinct personhood, while 'the Word was God' shows unity of essence."</div></div><div class="patr-citation" style="border-left-color:#4
+[38;5;244m - Completed in 1.529s[0m
+[38;5;12m[1m [1.13][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me share my first finding and look at the morphology section:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"NT John-1 has: xref pills with data-es/data-gr/data-lxx attributes, patristic themes with consensus bars, expandable exegesis with 4+ commentators, uncial display, pronunciation button, notes, copy, versiones button, dark mode, keyboard nav, search filter"}' >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.587s[0m
+[38;5;12m[1m [1.14][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find morphology related content  
+morph_matches = [(m.start(), m.group(0)[:200]) for m in re.finditer(r'morph-word', content)]
+print(f'Total morph-word occurrences: {len(morph_matches)}')
+if morph_matches:
+    # Get context around first morph-word
+    idx = content.find('morph-word')
+    print(content[idx-50:idx+500])
+" 2>&1 | head -30[0m[38;5;244m (using tool: shell)[0m
+
+Total morph-word occurrences: 7
+op: 2px; font-size: 0.78rem; line-height: 1.4; }
+.morph-word { display: inline; cursor: pointer; border-bottom: 1px dotted #999; }
+.morph-word:hover { background: #bbdefb; border-radius: 3px; }
+.xref-item { font-size: 0.78rem; color: #1565c0; margin: 2px 0; cursor: pointer; padding: 2px 4px; border-radius: 4px; }
+.xref-item:hover { background: #e3f2fd; }
+.tc-interactive { cursor: pointer; position: relative; }
+.tc-interactive:hover { background: #bbdefb !important; }
+.patr-theme-header { cursor: pointer; display: flex; align-items: center; gap:
+[38;5;244m - Completed in 1.583s[0m
+[38;5;12m[1m [1.15][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find greek-line with morph-word spans  
+match = re.search(r'<div class=\"greek-line\"[^>]*>.*?morph-word.*?</div>', content, re.DOTALL)
+if match:
+    print(match.group(0)[:2000])
+else:
+    # Check if greek-line has inline spans
+    match = re.search(r'id=\"greek-1\"[^>]*>(.*?)</div>', content)
+    if match:
+        text = match.group(1)
+        print(f'Greek line v1 length: {len(text)}')
+        print(text[:500])
+" 2>&1 | head -20[0m[38;5;244m (using tool: shell)[0m
+
+<div class="greek-line" id="greek-1">Ἐν ἀρχῇ ἦν ὁ Λόγος καὶ ὁ Λόγος ἦν πρὸς τὸν Θεόν καὶ Θεὸς ἦν ὁ Λόγος</div><div class="uncial-line" id="uncial-1" style="display:none;font-family:'Noto Serif',serif;font-size:0.9rem;letter-spacing:1.5px;color:#5d4037;background:#efebe9;padding:6px 10px;border-radius:4px;margin-bottom:0.3rem;overflow-wrap:break-word" title="Así se vería este versículo en un manuscrito uncial del siglo IV — todo mayúsculas, sin espacios (puntos medios añadidos como ayuda visual)">ΕΝ·ΑΡΧΗΙ·ΗΝ·Ο·ΛΟΓΟΣ·ΚΑΙ·Ο·ΛΟΓΟΣ·ΗΝ·ΠΡΟΣ·ΤΟΝ·ΘΕΟΝ·ΚΑΙ·ΘΕΟΣ·ΗΝ·Ο·ΛΟΓΟΣ<span style="display:block;font-size:0.65rem;margin-top:4px;letter-spacing:0;opacity:0.7"><a href="https://www.codexsinaiticus.org/en/manuscript.aspx?book=33&chapter=1&verse=1" target="_blank" style="color:#5d4037">Ver en Codex Sinaiticus →</a></span></div><div style="display:flex;gap:0.3rem;flex-wrap:wrap;margin-bottom:0.3rem;align-items:center"><div class="rvr-btn" onclick="toggleRVR(1)">RVR60</div><div class="rvr-btn" onclick="document.getElementById('uncial-1').style.display=document.getElementById('uncial-1').style.display==='none'?'':'none'" style="background:#efebe9;color:#5d4037;border-color:#bcaaa4" title="Escritura uncial: así se veía el NT en los manuscritos del s.IV (Vaticanus, Sinaiticus). Todo mayúsculas, sin espacios entre palabras (scriptio continua), sin acentos ni puntuación. La iota subscrita se escribe explícitamente.">Uncial</div><div class="rvr-btn" onclick="document.getElementById('pron-1').style.display=document.getElementById('pron-1').style.display==='none'?'':'none'" style="background:#e3f2fd;color:#1565c0;border-color:#90caf9" title="Pronunciación bizantina aproximada (griego moderno/eclesiástico)">Pronunciación</div><div class="rvr-btn vbtn-patr" onclick="toggleSection('patr-1')" title="140 citas patrísticas disponibles">✝ 140 patrística</div><div class="rvr-btn vbtn-exeg" onclick="toggleSection('exeg-1')" title="4 comentarios exegéticos">📚 4 exégesis</div><div class="rvr-btn vbt
+[38;5;244m - Completed in 1.600s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at the xref popup JavaScript and the TC (textual criticism) section:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find the showXrefPopup function
+match = re.search(r'function showXrefPopup.*?(?=function [a-z])', content, re.DOTALL)
+if match:
+    print(match.group(0)[:3000])
+" 2>&1 | head -60[0m[38;5;244m (using tool: shell)[0m
+
+function showXrefPopup(el) {
+  const ref = el.dataset.ref || '';
+  const es = el.dataset.es || '';
+  const gr = el.dataset.gr || '';
+  const lxx = el.dataset.lxx || '';
+  const popup = document.getElementById('xrefPopup');
+  const content = document.getElementById('xrefPopupContent');
+  const tmp = document.createElement('span');
+  tmp.innerHTML = es; const esText = tmp.textContent;
+  tmp.innerHTML = gr; const grText = tmp.textContent;
+  tmp.innerHTML = lxx; const lxxText = tmp.textContent;
+  const otBooks = ['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','Judges','Ruth','1 Samuel','2 Samuel','1 Kings','2 Kings','1 Chronicles','2 Chronicles','Ezra','Nehemiah','Esther','Job','Psalms','Proverbs','Ecclesiastes','Song of Solomon','Isaiah','Jeremiah','Lamentations','Ezekiel','Daniel','Hosea','Joel','Amos','Obadiah','Jonah','Micah','Nahum','Habakkuk','Zephaniah','Haggai','Zechariah','Malachi'];
+  const isOT = otBooks.some(b => ref.startsWith(b));
+  let html = '<h3 style="color:#1a237e;margin-bottom:0.8rem;font-size:1.1rem">' + ref + '</h3>';
+  if (isOT && grText) {
+    html += '<div style="font-family:\'SBL Hebrew\',\'Ezra SIL\',serif;font-size:1rem;color:#333;direction:rtl;margin-bottom:0.5rem;line-height:1.7">';
+    html += '<span style="font-size:0.7rem;font-weight:600;color:#616161;text-transform:uppercase;display:block;margin-bottom:2px;direction:ltr">WLC (Hebreo)</span>';
+    html += grText + '</div>';
+  }
+  if (isOT && lxxText) {
+    html += '<div style="font-family:\'Noto Serif\',serif;font-size:0.95rem;color:#1b5e20;margin-bottom:0.5rem;line-height:1.7">';
+    html += '<span style="font-size:0.7rem;font-weight:600;color:#616161;text-transform:uppercase;display:block;margin-bottom:2px">LXX (Griego)</span>';
+    html += lxxText + '</div>';
+  }
+  if (!isOT && grText) {
+    html += '<div style="font-family:\'Noto Serif\',serif;font-size:1rem;color:#1b5e20;margin-bottom:0.6rem;line-height:1.7">';
+    html += '<span style="font-size:0.7rem;font-weight:600;color:#616161;text-transform:uppercase;display:block;margin-bottom:2px">Griego</span>';
+    html += grText + '</div>';
+  }
+  if (esText) {
+    html += '<div style="font-size:0.9rem;color:#333;line-height:1.6;border-top:1px solid #eee;padding-top:0.5rem">';
+    html += '<span style="font-size:0.7rem;font-weight:600;color:#616161;text-transform:uppercase;display:block;margin-bottom:2px">RVR1909</span>';
+    html += esText + '</div>';
+  }
+  html += '<a href="https://www.biblegateway.com/passage/?search=' + encodeURIComponent(ref) + '&version=RVR1960" target="_blank" style="display:inline-block;margin-top:0.8rem;font-size:0.78rem;color:#1565c0">Ver en BibleGateway →</a>';
+  // Show shared Greek vocabulary as connection indicator
+  const currentGreek = document.querySelector('.verse-block:not([style*="display:none"]) .greek-line')?.textContent || '';
+  if (grText && currentGreek) {
+    const currentWords = new Set(currentGreek.toLowerCase().split(/\s+/).filter(w=>w.length>3));
+    const
+[38;5;244m - Completed in 1.694s[0m
+[38;5;12m[1m [1.17][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find TC section for verse 1
+match = re.search(r'id=\"tc-1\"(.*?)(?=id=\"notes)', content, re.DOTALL)
+if match:
+    print(match.group(0)[:4000])
+else:
+    # Try finding any tc section
+    idx = content.find('tc-section')
+    if idx > 0:
+        print(content[idx:idx+4000])
+    else:
+        print('No TC section found')
+" 2>&1 | head -60[0m[38;5;244m (using tool: shell)[0m
+
+tc-section { background: #fff3e0; border-left: 3px solid #ff9800; }
+.exeg-summary { padding: 0.7rem; background: #e8f5e9; border-radius: 6px; margin-bottom: 0.8rem; border-left: 3px solid #1b5e20; line-height: 1.7; font-size: 0.88rem; }
+.comm-item { margin-bottom: 0.4rem; }
+.comm-header { cursor: pointer; padding: 0.4rem 0.7rem; background: #f5f5f5; border-radius: 6px; border-left: 3px solid #4caf50; display: flex; justify-content: space-between; align-items: center; }
+.comm-header strong { color: #1b5e20; font-size: 0.8rem; }
+.small-arrow { font-size: 0.65rem; color: #888; }
+.comm-body { padding: 0.6rem; font-size: 0.83rem; line-height: 1.5; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; }
+.themes-divider { font-size: 0.75rem; font-weight: 600; color: #33691e; margin: 0.8rem 0 0.4rem; padding-top: 0.6rem; border-top: 1px dashed #ccc; }
+.theme-card { margin-bottom: 0.8rem; padding: 0.7rem; border-radius: 8px; border: 1px solid #e0e0e0; background: #f9fbe7; }
+.theme-word { font-weight: 700; font-size: 0.9rem; color: #33691e; margin-bottom: 0.3rem; }
+.consensus-bar { height: 5px; background: #e0e0e0; border-radius: 3px; margin-bottom: 0.5rem; }
+.consensus-bar > div { height: 100%; border-radius: 3px; }
+.consensus-label { font-size: 0.7rem; font-weight: 600; }
+.opinion { margin-bottom: 0.4rem; padding: 0.4rem 0.6rem; border-left: 3px solid #9e9e9e; background: #fff; border-radius: 0 4px 4px 0; font-size: 0.83rem; }
+.theme-summary { margin-top: 0.5rem; font-size: 0.82rem; color: #555; font-style: italic; }
+.patr-theme { margin-bottom: 1rem; border-radius: 10px; border: 1px solid #e0e0e0; background: #fff; padding: 0.8rem; }
+.patr-theme-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.5rem; }
+.patr-citation { margin-bottom: 0.6rem; padding: 0.6rem 0.8rem; border-left: 3px solid #9e9e9e; background: #fafafa; border-radius: 0 6px 6px 0; }
+.patr-cite-header { font-weight: 700; font-size: 0.85rem; color: #333; }
+.patr-verse-ref { font-weight: 400; color: #777; font-size: 0.75rem; }
+.patr-cite-text { font-size: 0.85rem; margin-top: 0.3rem; color: #444; font-style: italic; }
+.patr-resumen { margin-top: 0.8rem; padding: 0.6rem; background: #e8eaf6; border-radius: 6px; font-size: 0.85rem; color: #283593; }
+.patr-entry { margin-bottom: 0.6rem; padding: 0.6rem; background: #fff; border-radius: 6px; border-left: 3px solid #c62828; }
+.patr-father { font-weight: 700; color: #880e4f; font-size: 0.85rem; }
+.patr-meta { font-weight: 400; color: #666; font-size: 0.78rem; }
+.patr-link { text-decoration: none; font-size: 0.75rem; }
+.patr-date { font-weight: 400; color: #999; font-size: 0.75rem; }
+.patr-work { color: var(--mut); font-size: 0.75rem; font-style: italic; }
+.patr-orig { font-family: 'Noto Serif', serif; font-size: 0.85rem; color: #333; margin: 0.3rem 0; }
+.patr-text { font-size: 0.85rem; color: #444; }
+.tc-table { border-collapse: collapse; font-size: 0.85rem; }
+.tc-table tr:hover td { background: #e8eaf615 !important; }
+.tc-header { background: #1a237e; color: white; }
+.tc-header th { padding: 6px 10px; border: 1px solid #444; white-space: nowrap; }
+.tc-ctx { font-weight: normal; opacity: 0.7; }
+.tc-var-col { font-weight: bold; }
+.tc-ms-col { position: sticky; left: 0; background: #1a237e; z-index: 1; }
+.tc-ms-cell { padding: 6px 8px; border: 1px solid #ddd; font-size: 0.75rem; position: sticky; left: 0; background: #f9f9f9; min-width: 120px; max-width: 320px; cursor: pointer; }
+.tc-ms-cell:hover { background: #e8eaf6; }
+.ms-chip { display: inline-block; padding: 2px 6px; margin: 2px; background: #e8eaf6; border-radius: 4px; font-size: 0.72rem; white-space: nowrap; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; }
+.ms-chip:hover { transform: scale(1.15); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.tc-word-cell { padding: 6px 8px; border: 1px solid #eee; text-align: center; font-family: 'Noto Serif', serif; }
+.tc-word-cell[style*="background:#eee"]::after { content: 
+[38;5;244m - Completed in 1.449s[0m
+[38;5;12m[1m [1.18][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Search for actual TC data section in verse blocks
+tc_idx = content.find('tc-section', 10000)  # skip CSS
+if tc_idx > 0:
+    print(content[tc_idx:tc_idx+3000])
+else:
+    # Search for tc-table usage
+    idx = content.find('<table class=\"tc-table\"')
+    if idx > 0:
+        print(content[idx:idx+2000])
+    else:
+        print('No tc-table found in actual content')
+        # Check what sections exist in v18 (which likely has TC)
+        idx18 = content.find('id=\"vb18\"')
+        if idx18 > 0:
+            print(content[idx18:idx18+3000])
+" 2>&1 | head -60[0m[38;5;244m (using tool: shell)[0m
+
+tc-section"><div class="tc-verdict" style="margin-bottom:0.8rem"><div class="tc-verdict-text"><strong>Veredicto:</strong> La lectura #1.4 (οὐδὲ ἓν ὃ γέγονεν ἐν) sin puntuación es probablemente original, apoyada por manuscritos tempranos como P66, P75*, א*, A, B. Las otras lecturas (#1.1, #1.2, #1.3) representan diferentes intentos de los escribas de clarificar la puntuación y el sentido del texto mediante la adición de puntos y cambios en la división de frases. La variante #1.1 con puntuación después de ἕν refleja una interpretación teológica específica que conecta 'lo que ha sido hecho' con la vida que sigue en el v.4.</div><div class="consensus-bar" style="max-width:200px"><div style="width:60%;background:#ff9800"></div></div><span style="font-size:0.72rem;color:#ff9800;font-weight:600;margin-left:4px">Confianza: media</span><div class="tc-impact"><strong>Impacto:</strong> La puntuación afecta significativamente la interpretación teológica: si se puntúa después de ἕν, entonces 'lo que ha sido hecho' se conecta con 'en él era vida', enfatizando que toda la creación tiene vida en el Logos. Si se puntúa después de γέγονεν, entonces se enfatiza que nada fue hecho sin el Logos.</div></div><div style="overflow-x:auto;margin-bottom:0.5rem"><table class="tc-table"><tr class="tc-header"><th class="tc-ms-col">MS</th><th class="tc-ctx">αὐτοῦ</th><th class="tc-ctx">ἐγένετο</th><th class="tc-var-col" title="Columna variante 1: οὐδὲ">⚡1</th><th class="tc-var-col" title="Columna variante 2: ἕν.">⚡2</th><th class="tc-var-col" title="Columna variante 3: ὃ">⚡3</th><th class="tc-var-col" title="Columna variante 4: γέγονεν">⚡4</th><th class="tc-var-col" title="Columna variante 5: ἐν">⚡5</th></tr><tr><td class="tc-ms-cell" onclick="showMSSPanel('𝔓75c C (D οὐδέν for ουδὲ ἕν) L Wsupp 050* 0141* vid (0141c omit ὃ γέγονεν) itb vgww, st syrc, (pal) copsa Heracleonacc. to Origen PtolemyFlora Ptolemy and Valentiniansacc. to Irenaeus Theophilus Irenaeuslat, arm Clement Naassenes and Perateniacc. to Hippolytus Hippolytus Heraclides and mssacc. to Origen Origen Letter of Hymenaeus Alexander Eusebius15/19 Ariansacc. to Epiphanius Athanasius Marcellus Meletius Cyril-Jerusalem (Apollinaris) Gregory-Nyssa Eunomius Didy')"><span class="ms-chip" style="background:#b71c1c;color:white;font-weight:700" data-s="𝔓75c" onclick="event.stopPropagation();showMSInfo(this,'𝔓75c');">𝔓75c</span><span class="ms-chip" style="background:#1565c0;color:white;font-weight:700" data-s="C" onclick="event.stopPropagation();showMSInfo(this,'C');">C</span><span class="ms-chip" style="background:#1565c0;color:white;font-weight:700" data-s="D" onclick="event.stopPropagation();showMSInfo(this,'D');">D</span><span class="ms-chip" style="background:#1565c0;color:white;font-weight:700" data-s="L" onclick="event.stopPropagation();showMSInfo(this,'L');">L</span><span class="ms-chip" style="background:#fff3e0;color:#e65100" data-s="Wsupp" onclick="event.stopPropagation();showMSInfo(this,'Wsupp');">Wsupp</span><spa
+[38;5;244m - Completed in 1.618s[0m
+[38;5;12m[1m [1.19][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading OT file\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.507s[0m
+[38;5;12m[1m [1.20][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at the pronunciation feature and the xref popup panel:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find pron-1 section
+idx = content.find('id=\"pron-1\"')
+if idx > 0:
+    print(content[idx:idx+500])
+
+# Find xrefPopup panel
+idx2 = content.find('id=\"xrefPopup\"')
+if idx2 > 0:
+    print('---XREF POPUP PANEL---')
+    print(content[idx2:idx2+500])
+
+# Find notes section
+idx3 = content.find('id=\"notes-1\"')
+if idx3 > 0:
+    print('---NOTES SECTION---')
+    print(content[idx3:idx3+500])
+" 2>&1 | head -40[0m[38;5;244m (using tool: shell)[0m
+
+id="pron-1" style="display:none;font-size:0.85rem;color:#1565c0;background:#e3f2fd;padding:4px 8px;border-radius:4px;margin-bottom:0.3rem;font-style:italic" class="pron-line"></div><div id="notes-1" style="display:none;margin-bottom:0.5rem"><textarea id="note-input-1" style="width:100%;min-height:50px;border:1px solid #ccc;border-radius:6px;padding:4px 8px;font-size:0.82rem;resize:vertical" placeholder="Tus notas para v.1..." oninput="saveNote(1)"></textarea></div><div class="section-toggle" onc
+---XREF POPUP PANEL---
+id="xrefPopup" style="display:none;position:fixed;top:0;right:0;width:380px;height:100vh;background:white;box-shadow:-4px 0 20px rgba(0,0,0,0.15);z-index:1000;overflow-y:auto;padding:1.5rem;transition:transform 0.2s">
+  <span style="position:sticky;top:0;float:right;font-size:1.5rem;cursor:pointer;color:#888;background:white;padding:0 0.5rem" onclick="document.getElementById('xrefPopup').style.display='none'">&times;</span>
+  <div id="xrefPopupContent"></div>
+</div>
+<div class="word-tip" id="wor
+---NOTES SECTION---
+id="notes-1" style="display:none;margin-bottom:0.5rem"><textarea id="note-input-1" style="width:100%;min-height:50px;border:1px solid #ccc;border-radius:6px;padding:4px 8px;font-size:0.82rem;resize:vertical" placeholder="Tus notas para v.1..." oninput="saveNote(1)"></textarea></div><div class="section-toggle" onclick="toggleSection('exeg-1')" role="button" aria-expanded="false" aria-controls="exeg-1" tabindex="0"><span class="section-icon">📜</span> Exégesis del Griego <span class="arrow" id="arr
+[38;5;244m - Completed in 1.710s[0m
+[38;5;12m[1m [1.21][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find the word tooltip / word-tip functionality  
+idx = content.find('\"word-tip\"', 10000)
+if idx > 0:
+    print(content[idx:idx+300])
+
+# Find progress bar
+idx2 = content.find('progress-bar')
+if idx2 > 0:
+    print('---PROGRESS BAR---')
+    # Already found in CSS
+
+# Check for red-letter class
+red_count = content.count('red-letter')
+print(f'\\nred-letter occurrences: {red_count}')
+
+# Find the JS section - get summary of all functions
+functions = re.findall(r'function\s+(\w+)\s*\(', content)
+print(f'\\nAll JS functions ({len(functions)}):')
+for f in functions:
+    print(f'  - {f}')
+" 2>&1 | head -50[0m[38;5;244m (using tool: shell)[0m
+
+"word-tip" id="wordTip"></div>
+<script>
+const D = {"verses": [{"v": 1, "text": "EN el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios."}, {"v": 2, "text": "Este era en el principio con Dios."}, {"v": 3, "text": "Todas las cosas por él fueron hechas; y sin él nada de lo que es he
+---PROGRESS BAR---
+
+red-letter occurrences: 1
+
+All JS functions (20):
+  - showTip
+  - hideTip
+  - toggleRVR
+  - generatePronunciation
+  - toggleDarkMode
+  - filterVerses
+  - copyVerse
+  - saveNote
+  - toggleSection
+  - showXrefPopup
+  - exportJSON
+  - exportNotes
+  - expandAll
+  - collapseAll
+  - _getMSUrl
+  - _getMSInfo
+  - showMSInfo
+  - handler
+  - closeMSSPanel
+  - showMSSPanel
+[38;5;244m - Completed in 1.581s[0m
+[38;5;12m[1m [1.22][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Get the showTip function 
+idx = content.find('function showTip')
+print(content[idx:idx+800])
+" 2>&1 | head -30[0m[38;5;244m (using tool: shell)[0m
+
+function showTip(e, vnum, idx) {
+  const w = D.morphology[vnum] && D.morphology[vnum][idx];
+  if (!w) return;
+  const meaning = w.es || w.g || '';
+  const lemma = (w.l && w.l !== w.w) ? ' (' + w.l + ')' : '';
+  // Decode morphology code
+  const morphCodes = {'V':'Verbo','N':'Sustantivo','A':'Adjetivo','P':'Pronombre','D':'Artículo','C':'Conjunción','R':'Preposición','X':'Partícula','I':'Interjección','M':'Indeclinable'};
+  const tenses = {'P':'Presente','I':'Imperfecto','F':'Futuro','A':'Aoristo','X':'Perfecto','Y':'Pluscuamperfecto'};
+  const voices = {'A':'Activa','M':'Media','P':'Pasiva'};
+  const moods = {'I':'Indicativo','S':'Subjuntivo','O':'Optativo','M':'Imperativo','N':'Infinitivo','P':'Participio'};
+  let morphDesc = '';
+  let significance = '';
+  if (w.m) {
+    const parts = w.m
+[38;5;244m - Completed in 1.738s[0m
+[38;5;12m[1m [1.23][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Get more of showTip function
+idx = content.find('function showTip')
+print(content[idx:idx+2500])
+" 2>&1 | head -80[0m[38;5;244m (using tool: shell)[0m
+
+function showTip(e, vnum, idx) {
+  const w = D.morphology[vnum] && D.morphology[vnum][idx];
+  if (!w) return;
+  const meaning = w.es || w.g || '';
+  const lemma = (w.l && w.l !== w.w) ? ' (' + w.l + ')' : '';
+  // Decode morphology code
+  const morphCodes = {'V':'Verbo','N':'Sustantivo','A':'Adjetivo','P':'Pronombre','D':'Artículo','C':'Conjunción','R':'Preposición','X':'Partícula','I':'Interjección','M':'Indeclinable'};
+  const tenses = {'P':'Presente','I':'Imperfecto','F':'Futuro','A':'Aoristo','X':'Perfecto','Y':'Pluscuamperfecto'};
+  const voices = {'A':'Activa','M':'Media','P':'Pasiva'};
+  const moods = {'I':'Indicativo','S':'Subjuntivo','O':'Optativo','M':'Imperativo','N':'Infinitivo','P':'Participio'};
+  let morphDesc = '';
+  let significance = '';
+  if (w.m) {
+    const parts = w.m.split('-');
+    const pos = morphCodes[parts[0]?.[0]] || parts[0] || '';
+    if (parts[0]?.[0] === 'V' && parts[1]) {
+      const tense = tenses[parts[1][0]] || '';
+      const voice = voices[parts[1][1]] || '';
+      const mood = moods[parts[1][2]] || '';
+      morphDesc = pos + ' ' + tense + ' ' + voice + ' ' + mood;
+      // Significance for study
+      if (parts[1][1] === 'P') significance = '⚡ Pasiva: el sujeto recibe la acción (¿pasivo divino? = Dios es el agente implícito)';
+      else if (parts[1][1] === 'M') significance = '⚡ Media: el sujeto actúa sobre/para sí mismo';
+      if (parts[1][0] === 'A') significance += significance ? ' · ' : '⚡ '; significance += parts[1][0] === 'A' ? 'Aoristo: acción puntual/completa (no continua)' : '';
+      if (parts[1][0] === 'P' && parts[1][2] === 'M') significance = '⚡ Presente Imperativo: orden de acción continua/habitual';
+      if (parts[1][0] === 'P' && parts[1][2] === 'P') significance = '⚡ Participio Presente: acción simultánea al verbo principal';
+      if (parts[1][2] === 'S') significance += (significance ? ' · ' : '⚡ ') + 'Subjuntivo: posibilidad/propósito/deseo';
+    } else { morphDesc = pos + ' ' + (w.m || ''); }
+    if (parts[0]?.[0] === 'N' || parts[0]?.[0] === 'A') {
+      // Case significance for nouns/adjectives
+      const cases = {'N':'Nominativo (sujeto)','G':'Genitivo (de/posesión/origen)','D':'Dativo (a/para/instrumento)','A':'Acusativo (objeto directo/destino)','V':'Vocativo (llamado directo)'};
+      const caseCode = (parts[1] || '')[1];
+      if (caseCode && cases[caseCode]) significance = '📌 ' + cases[caseCode];
+    }
+  }
+  const strongs = w.s ? ' [' + w.s + ']' : '';
+  tip.innerHTML = '<strong>' + 
+[38;5;244m - Completed in 1.529s[0m
+[38;5;12m[1m [1.24][0m[0m
+[?25l[0m[38;5;141m> [0mExcellent! Now let me read the Proverbs-13 unified analysis for comparison:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+print(f'File size: {len(content)} bytes')
+print(f'Lines: {content.count(chr(10))}')
+
+# Get all functions
+functions = re.findall(r'function\s+(\w+)\s*\(', content)
+print(f'\\nAll JS functions ({len(functions)}):')
+for f in functions:
+    print(f'  - {f}')
+
+# Check for key features
+features = {
+    'morph-word': 'Morphology word spans',
+    'uncial-line': 'Uncial display',
+    'pron-line': 'Pronunciation',
+    'xref-pill': 'Cross-ref pills',
+    'xrefPopup': 'Xref popup panel',
+    'tc-section': 'TC section',
+    'tc-table': 'TC table',
+    'exeg-section': 'Exegesis section',
+    'patr-section': 'Patristic section',
+    'red-letter': 'Red letter',
+    'progress-bar': 'Progress bar',
+    'back-to-top': 'Back to top',
+    'kbd-hint': 'Keyboard hint',
+    'word-tip': 'Word tooltip',
+    'dark': 'Dark mode',
+    'filterVerses': 'Search filter',
+    'exportJSON': 'JSON export',
+    'exportNotes': 'Notes export',
+    'showMSInfo': 'MS info popup',
+    'consensus-bar': 'Consensus bar',
+    'patr-theme': 'Patristic themes',
+    'highlightable': 'Highlightable',
+    'note-area': 'Notes area',
+    'notes-': 'Notes per verse',
+    'vers-': 'Versions panel'
+}
+
+print('\\n--- FEATURE PRESENCE ---')
+for key, desc in features.items():
+    count = content.count(key)
+    status = '✅' if count > 0 else '❌'
+    print(f'  {status} {desc}: {count} occurrences')
+" 2>&1[0m[38;5;244m (using tool: shell)[0m
+
+File size: 365841 bytes
+Lines: 335
+
+All JS functions (10):
+  - showTip
+  - hideTip
+  - openWord
+  - showPopup
+  - toggleSection
+  - toggleRVR
+  - expandAll
+  - collapseAll
+  - showMSSPanel
+  - showXrefPopup
+
+--- FEATURE PRESENCE ---
+  ✅ Morphology word spans: 4 occurrences
+  ❌ Uncial display: 0 occurrences
+  ❌ Pronunciation: 0 occurrences
+  ❌ Cross-ref pills: 0 occurrences
+  ❌ Xref popup panel: 0 occurrences
+  ✅ TC section: 1 occurrences
+  ✅ TC table: 1 occurrences
+  ✅ Exegesis section: 1 occurrences
+  ✅ Patristic section: 12 occurrences
+  ❌ Red letter: 0 occurrences
+  ❌ Progress bar: 0 occurrences
+  ❌ Back to top: 0 occurrences
+  ❌ Keyboard hint: 0 occurrences
+  ✅ Word tooltip: 2 occurrences
+  ✅ Dark mode: 1 occurrences
+  ❌ Search filter: 0 occurrences
+  ❌ JSON export: 0 occurrences
+  ❌ Notes export: 0 occurrences
+  ❌ MS info popup: 0 occurrences
+  ✅ Consensus bar: 14 occurrences
+  ✅ Patristic themes: 28 occurrences
+  ❌ Highlightable: 0 occurrences
+  ❌ Notes area: 0 occurrences
+  ❌ Notes per verse: 0 occurrences
+  ❌ Versions panel: 0 occurrences
+[38;5;244m - Completed in 1.591s[0m
+[38;5;12m[1m [1.25][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"OT Proverbs-13 MISSING: uncial, pronunciation, xref-pills, xrefPopup panel, progress bar, back-to-top, keyboard hints, search filter, JSON export, notes export, notes area, versions panel, MS info popup, highlightable, red-letter. Has: morphology, TC section, exegesis, patristic themes w/ consensus bars, dark mode, word tooltip"}' >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.434s[0m
+[38;5;12m[1m [1.26][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me examine the OT verse block structure:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find the first verse block
+match = re.search(r'<div class=\"verse-block\"[^>]*id=\"vb1\"[^>]*>(.*?)(?=<div class=\"verse-block\"[^>]*id=\"vb2\")', content, re.DOTALL)
+if match:
+    print(match.group(0)[:5000])
+else:
+    idx = content.find('id=\"vb1\"')
+    if idx > 0:
+        print(content[idx:idx+5000])
+" 2>&1 | head -120[0m[38;5;244m (using tool: shell)[0m
+
+<div class="verse-block" id="vb1"><div class="verse-header"><span class="vnum">1</span></div><div class="text-line rvr-line"><span class="vlabel">RVR</span>El hijo sabio recibe el consejo del padre; Mas el burlador no escucha las reprensiones.</div><div class="text-line heb-line" id="greek-1" dir="rtl"><span class="vlabel" style="float:right;direction:ltr">WLC</span></div><div class="text-line lxx-line" id="lxx-1"><span class="vlabel">LXX</span></div><div class="text-line lxx-es-line"><span class="vlabel">LXX-ES</span>Un hijo astuto es obediente al padre, pero un hijo desobediente está en perdición.</div><div class="badges-row"><span class="badge badge-xref" onclick="toggleSection('xref-1')">🔗 Refs (1)</span></div><div id="xref-1" class="collapsed section-content"><div class="xref-entry"><strong>Proverbs 15:5</strong>: El necio menosprecia el consejo de su padre: Mas el que guarda la corrección, vendrá á ser cuerdo.</div></div></div>
+[38;5;244m - Completed in 1.498s[0m
+[38;5;12m[1m [1.27][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Comparing xref display\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.465s[0m
+[38;5;12m[1m [1.28][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Check what the xref section looks like - get a few
+matches = re.findall(r'xref-entry.*?</div>', content)
+print(f'Total xref-entry elements: {len(matches)}')
+for m in matches[:5]:
+    print(m[:300])
+    print()
+" 2>&1 | head -30[0m[38;5;244m (using tool: shell)[0m
+
+Total xref-entry elements: 53
+xref-entry"><strong>Proverbs 15:5</strong>: El necio menosprecia el consejo de su padre: Mas el que guarda la corrección, vendrá á ser cuerdo.</div>
+
+xref-entry"><strong>Proverbs 12:14</strong>: El hombre será harto de bien del fruto de su boca: Y la paga de las manos del hombre le será dada.</div>
+
+xref-entry"><strong>Proverbs 18:20</strong>: Del fruto de la boca del hombre se hartará su vientre; Hartaráse del producto de sus labios.</div>
+
+xref-entry"><strong>James 1:26</strong>: Si alguno piensa ser religioso entre vosotros, y no refrena su lengua, sino engañando su corazón, la religión del tal es vana.</div>
+
+xref-entry"><strong>James 3:12</strong>: Hermanos míos, ¿puede la higuera producir aceitunas, ó la vid higos? Así ninguna fuente puede hacer agua salada y dulce.</div>
+
+[38;5;244m - Completed in 1.528s[0m
+[38;5;12m[1m [1.29][0m[0m
+[?25l[0m[38;5;141m> [0mNow I can see the critical difference. In the OT, cross-references only show Spanish text. No Hebrew, no Greek (LXX), no English. Let me check the study.html for comparison:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/study.html', 'r') as f:
+    content = f.read()
+
+# Find how xrefs are displayed in study.html
+idx = content.find('xref')
+if idx > 0:
+    # Get broader context
+    print(content[idx-100:idx+2000])
+" 2>&1 | head -60[0m[38;5;244m (using tool: shell)[0m
+
+-size: 0.75rem; font-style: italic; }
+.patr-item .text { font-size: 0.85rem; margin-top: 0.3rem; }
+.xref { display: inline-block; background: #e3f2fd; padding: 3px 10px; border-radius: 14px; margin: 3px; font-size: 0.78rem; color: #1565c0; cursor: pointer; position: relative; }
+.xref:hover { background: #1565c0; color: white; }
+.xref-tip { display: none; position: absolute; bottom: 110%; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 8px 12px; border-radius: 8px; font-size: 0.75rem; width: 280px; z-index: 50; line-height: 1.4; }
+.xref:hover .xref-tip { display: block; }
+.map-container img { max-width: 100%; border-radius: 8px; cursor: pointer; }
+.map-container img.zoomed { position: fixed; top: 2%; left: 2%; width: 96%; height: 96%; object-fit: contain; z-index: 2000; background: white; border-radius: 0; }
+.hint { font-size: 0.7rem; color: var(--mut); text-align: center; }
+.chart-box { height: 220px; }
+.timeline { padding-left: 1.5rem; border-left: 2px solid #c5cae9; }
+.ev-item { position: relative; margin-bottom: 0.8rem; padding-left: 0.8rem; }
+.ev-item::before { content: ''; position: absolute; left: -1.85rem; top: 0.5rem; width: 10px; height: 10px; background: var(--acc); border-radius: 50%; }
+.ev-item .place { font-weight: 700; color: var(--pri); }
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1>Prov 13</h1><p>Estudio interactivo · RVR1909</p></header>
+<div class="stats">
+  <div class="stat"><div class="num">25</div><div class="label">Versículos</div></div>
+  <div class="stat"><div class="num">45</div><div class="label">Patrística</div></div>
+  <div class="stat"><div class="num">53</div><div class="label">Refs. Cruzadas</div></div>
+  <div class="stat"><div class="num">0</div><div class="label">Lugares</div></div>
+</div>
+
+<div class="grid">
+<div class="main-col">
+  <div class="card"><h2>📖 Texto</h2><div id="versesContainer"></div></div>
+</div>
+<div class="side-col">
+  <div class="card"><h2>📊 Padres</h2><div class="chart-box"><canvas id="fathersChart"></canvas></div></div>
+  <div class="card"><h2>🔗 Referencias Cruzad
+[38;5;244m - Completed in 1.520s[0m
+[38;5;12m[1m [1.30][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/study.html', 'r') as f:
+    content = f.read()
+
+# Find inline xref usage in verse blocks
+# Look for xref class with data attributes
+match = re.search(r'class=\"xref\"[^>]*>.*?</span>', content, re.DOTALL)
+if match:
+    print('Found xref span:')
+    print(match.group(0)[:500])
+    
+# Find the verse data structure
+idx = content.find('const verseData')
+if idx < 0:
+    idx = content.find('verses:')
+if idx < 0:
+    idx = content.find('const data')
+if idx > 0:
+    print('\\n\\nFOUND DATA AT:')
+    print(content[idx:idx+2000])
+" 2>&1 | head -60[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.642s[0m
+[38;5;12m[1m [1.31][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/study.html', 'r') as f:
+    content = f.read()
+
+# Find script section
+idx = content.find('<script>')
+if idx > 0:
+    script = content[idx:idx+5000]
+    print(script[:5000])
+" 2>&1 | head -80[0m[38;5;244m (using tool: shell)[0m
+
+<script>
+const D = {"book": "Prov", "chapter": 13, "version": "RVR1909", "verses": [{"v": 1, "text": "EL hijo sabio toma el consejo del padre: Mas el burlador no escucha las reprensiones."}, {"v": 2, "text": "Del fruto de su boca el hombre comerá bien: Mas el alma de los prevaricadores hallará mal."}, {"v": 3, "text": "El que guarda su boca guarda su alma: Mas el que mucho abre sus labios tendrá calamidad."}, {"v": 4, "text": "Desea, y nada alcanza el alma del perezoso: Mas el alma de los diligentes será engordada."}, {"v": 5, "text": "El justo aborrece la palabra de mentira: Mas el impío se hace odioso é infame."}, {"v": 6, "text": "La justicia guarda al de perfecto camino: Mas la impiedad trastornará al pecador."}, {"v": 7, "text": "Hay quienes se hacen ricos, y no tienen nada: Y hay quienes se hacen pobres, y tienen muchas riquezas."}, {"v": 8, "text": "La redención de la vida del hombre son sus riquezas: Pero el pobre no oye censuras."}, {"v": 9, "text": "La luz de los justos se alegrará: Mas apagaráse la lámpara de los impíos."}, {"v": 10, "text": "Ciertamente la soberbia parirá contienda: Mas con los avisados es la sabiduría."}, {"v": 11, "text": "Disminuiránse las riquezas de vanidad: Empero multiplicará el que allega con su mano."}, {"v": 12, "text": "La esperanza que se prolonga, es tormento del corazón: Mas árbol de vida es el deseo cumplido."}, {"v": 13, "text": "El que menosprecia la palabra, perecerá por ello: Mas el que teme el mandamiento, será recompensado."}, {"v": 14, "text": "la ley del sabio es manantial de vida, Para apartarse de los lazos de la muerte."}, {"v": 15, "text": "El buen entendimiento conciliará gracia: Mas el camino de los prevaricadores es duro."}, {"v": 16, "text": "Todo hombre cuerdo obra con sabiduría: Mas el necio manifestará necedad."}, {"v": 17, "text": "El mal mensajero caerá en mal: Mas el mensajero fiel es medicina."}, {"v": 18, "text": "Pobreza y vergüenza tendrá el que menosprecia el consejo: Mas el que guarda la corrección, será honrado."}, {"v": 19, "text": "El deseo cumplido deleita el alma: Pero apartarse del mal es abominación á los necios."}, {"v": 20, "text": "El que anda con los sabios, sabio será; Mas el que se allega á los necios, será quebrantado."}, {"v": 21, "text": "Mal perseguirá á los pecadores: Mas á los justos les será bien retribuído."}, {"v": 22, "text": "El bueno dejará herederos á los hijos de los hijos; Y el haber del pecador, para el justo está guardado."}, {"v": 23, "text": "En el barbecho de los pobres hay mucho pan: Mas piérdese por falta de juicio."}, {"v": 24, "text": "El que detiene el castigo, á su hijo aborrece: Mas el que lo ama, madruga á castigarlo."}, {"v": 25, "text": "El justo come hasta saciar su alma: Mas el vientre de los impíos tendrá necesidad."}], "parallel": {"WLC": {"1": "בֵּ֣ן חָ֭כָם מ֣וּסַר אָ֑ב וְ֝/לֵ֗ץ לֹא שָׁמַ֥ע גְּעָרָֽה", "2": "מִ/פְּרִ֣י פִי אִ֭ישׁ יֹ֣אכַל ט֑וֹב וְ/נֶ֖פֶשׁ בֹּגְדִ֣ים חָמָֽס", "3": "נֹצֵ֣ר פִּ֭י/ו שֹׁמֵ֣ר נַפְשׁ֑/וֹ פֹּשֵׂ֥ק שְׂ֝פָתָ֗י/ו מְחִתָּה לֽ/וֹ", "4": "מִתְאַוָּ֣ה וָ֭/אַיִן נַפְשׁ֣/וֹ עָצֵ֑ל וְ/נֶ֖פֶשׁ חָרֻצִ֣ים תְּדֻשָּֽׁן", "5": "דְּבַר שֶׁ֭קֶר יִשְׂנָ֣א צַדִּ֑יק וְ֝/רָשָׁ֗ע יַבְאִ֥ישׁ וְ/יַחְפִּֽיר", "6": "צְ֭דָקָה תִּצֹּ֣ר תָּם דָּ֑רֶךְ וְ֝/רִשְׁעָ֗ה תְּסַלֵּ֥ף חַטָּֽאת", "7": "יֵ֣שׁ מִ֭תְעַשֵּׁר וְ/אֵ֣ין כֹּ֑ל מִ֝תְרוֹשֵׁ֗שׁ וְ/ה֣וֹן רָֽב", "8": "כֹּ֣פֶר נֶֽפֶשׁ אִ֣ישׁ עָשְׁר֑/וֹ וְ֝/רָ֗שׁ לֹא שָׁמַ֥ע גְּעָרָֽה", "9": "אוֹר צַדִּיקִ֥ים יִשְׂמָ֑ח וְ/נֵ֖ר רְשָׁעִ֣ים יִדְעָֽךְ", "10": "רַק בְּ֭/זָדוֹן יִתֵּ֣ן מַצָּ֑ה וְ/אֶת נ֖וֹעָצִ֣ים חָכְמָֽה", "11": "ה֭וֹן מֵ/הֶ֣בֶל יִמְעָ֑ט וְ/קֹבֵ֖ץ עַל יָ֣ד יַרְבֶּֽה", "12": "תּוֹחֶ֣לֶת מְ֭מֻשָּׁכָה מַחֲלָה לֵ֑ב וְ/עֵ֥ץ חַ֝יִּ֗ים תַּאֲוָ֥ה בָאָֽה", "13": "בָּ֣ז לְ֭/דָבָר יֵחָ֣בֶל ל֑/וֹ וִ/ירֵ֥א מִ֝צְוָ֗ה ה֣וּא יְשֻׁלָּֽם", "14": "תּוֹרַ֣ת חָ֭כָם מְק֣וֹר חַיִּ֑ים לָ֝/ס֗וּר מִ/מֹּ֥קְשֵׁי מָֽוֶת", "15": "שֵֽׂכֶל ט֭וֹב יִתֶּן חֵ֑ן וְ/דֶ֖רֶךְ בֹּגְדִ֣ים אֵיתָֽן", "16": "כָּל עָ֭רוּם יַעֲשֶׂ֣ה בְ/דָ֑עַת וּ֝/כְסִ֗יל יִפְרֹ֥שׂ אִוֶּֽלֶת", "17": "מַלְאָ֣ךְ רָ֭שָׁע יִפֹּ֣ל בְּ/רָ֑ע וְ/צִ֖יר אֱמוּנִ֣ים מַרְפֵּֽא", "18": "רֵ֣ישׁ וְ֭/קָלוֹן פּוֹרֵ֣עַ מוּסָ֑ר וְ/שׁוֹמֵ֖ר תּוֹכַ֣חַת יְכֻבָּֽד", "19": "תַּאֲוָ֣ה נִ֭הְיָה תֶּעֱרַ֣ב לְ/נָ֑פֶשׁ וְ/תוֹעֲבַ֥ת כְּ֝סִילִ֗ים ס֣וּר מֵ/רָֽע", "20": "הלוך הוֹלֵ֣ךְ אֶת חֲכָמִ֣ים ו/חכם יֶחְכָּ֑ם וְ/רֹעֶ֖ה כְסִילִ֣ים יֵרֽוֹעַ", "21": "חַ֭טָּאִים תְּרַדֵּ֣ף רָעָ֑ה וְ/אֶת צַ֝דִּיקִ֗ים יְשַׁלֶּם טֽוֹב", "22": "ט֗וֹב יַנְחִ֥יל בְּנֵֽי בָנִ֑ים וְ/צָפ֥וּן לַ֝/צַּדִּ֗יק חֵ֣יל חוֹטֵֽא", "23": "רָב אֹ֭כֶל נִ֣יר רָאשִׁ֑ים וְ/יֵ֥שׁ נִ֝סְפֶּ֗ה בְּ/לֹ֣א מִשְׁפָּֽט", "24": "חוֹשֵׂ֣ךְ שִׁ֭בְט/וֹ שׂוֹנֵ֣א בְנ֑/וֹ וְ֝/אֹהֲב֗/וֹ שִֽׁחֲר֥/וֹ מוּסָֽר", "25": "צַדִּ֗יק אֹ֭כֵל לְ/שֹׂ֣בַע נַפְשׁ֑/וֹ וּ/בֶ֖טֶן רְשָׁעִ֣ים תֶּחְסָֽר"}, "LXX": {"1": "υἱὸς πανοῦργος ὑπήκοος πατρί υἱὸς δὲ ἀνήκοος ἐν ἀπωλείᾳ", "2": "ἀπὸ καρπῶν δικαιοσύνης φάγεται ἀγαθός ψυχαὶ δὲ παρανόμων ὀλοῦνται ἄωροι", "3": "ὃς φυλάσσει τὸ ἑαυτοῦ στόμα τηρεῖ τὴν ἑαυτοῦ ψυχήν ὁ δὲ προπετὴς χείλεσιν πτοήσει ἑαυτόν", "4": "ἐν ἐπιθυμίαις ἐστὶν πᾶς ἀεργός χεῖρες δὲ ἀνδρείων ἐν ἐπιμελείᾳ"
+[38;5;244m - Completed in 1.537s[0m
+[38;5;12m[1m [1.32][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me see how the study.html renders xrefs inline:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/study.html', 'r') as f:
+    content = f.read()
+
+# Find the rendering logic for xrefs
+idx = content.find('xref')
+# Search for where xrefs are rendered in script
+script_idx = content.find('<script>')
+script = content[script_idx:]
+# Find xref rendering
+xref_idx = script.find('xref')
+if xref_idx > 0:
+    print(script[xref_idx-200:xref_idx+1500])
+" 2>&1 | head -50[0m[38;5;244m (using tool: shell)[0m
+
+d drink. Look\nupon such assuredly weakened, who are not able to act for themselves. Give to them at\nonce. I pledge my word that fourfold shall be given you by God.", "lang": "latin", "orig": ""}], "xrefs": [{"v": 1, "ref": "Proverbs 15:5", "rel": "cross-reference", "text": {"es": "El necio menosprecia el consejo de su padre: Mas el que guarda la corrección, vendrá á ser cuerdo.", "gr": ""}}, {"v": 2, "ref": "Proverbs 12:14", "rel": "cross-reference", "text": {"es": "El hombre será harto de bien del fruto de su boca: Y la paga de las manos del hombre le será dada.", "gr": ""}}, {"v": 2, "ref": "Proverbs 18:20", "rel": "cross-reference", "text": {"es": "Del fruto de la boca del hombre se hartará su vientre; Hartaráse del producto de sus labios.", "gr": ""}}, {"v": 3, "ref": "James 1:26", "rel": "cross-reference", "text": {"es": "Si alguno piensa ser religioso entre vosotros, y no refrena su lengua, sino engañando su corazón, la religión del tal es vana.", "gr": "Εἴ τις δοκεῖ θρησκὸς ⸀εἶναι μὴ χαλιναγωγῶν γλῶσσαν ⸀αὐτοῦ ἀλλὰ ἀπατῶν καρδίαν ⸀αὐτοῦ, τούτου μάταιος ἡ θρησκεία."}}, {"v": 3, "ref": "James 3:12", "rel": "cross-reference", "text": {"es": "Hermanos míos, ¿puede la higuera producir aceitunas, ó la vid higos? Así ninguna fuente puede hacer agua salada y dulce.", "gr": "μὴ δύναται, ἀδελφοί μου, συκῆ ἐλαίας ποιῆσαι ἢ ἄμπελος σῦκα; ⸂οὔτε ἁλυκὸν⸃ γλυκὺ ποιῆσαι ὕδωρ."}}, {"v": 3, "ref": "James 3:2", "rel": "cross-reference", "text": {"es": "Porque todos ofendemos en muchas cosas. Si alguno no ofende en palabra, éste es varón perfecto, que también puede con freno gobernar todo el cuerpo.", "gr": "πολλὰ γὰρ πταίομεν ἅπαντες. εἴ τις ἐν λόγῳ οὐ πταίει, οὗτος τέλειος ἀνήρ, δυ
+[38;5;244m - Completed in 2.245s[0m
+[38;5;12m[1m [1.33][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/study.html', 'r') as f:
+    content = f.read()
+
+# Find the rendering function for xrefs in the JavaScript
+script_idx = content.find('<script>')
+script = content[script_idx:]
+
+# Search for where xrefs are rendered into HTML
+render_idx = script.find('xref')
+while render_idx > 0:
+    line = script[render_idx:render_idx+200]
+    if 'class' in line or 'html' in line.lower() or 'inner' in line.lower() or 'append' in line.lower():
+        # Get broader context
+        start = max(0, render_idx - 100)
+        print(script[start:render_idx+400])
+        print('---')
+        break
+    render_idx = script.find('xref', render_idx + 5)
+
+# Actually let me search for the rendering loop
+for func_name in ['renderVerse', 'buildVerse', 'createVerse', 'render']:
+    idx = script.find(func_name)
+    if idx > 0:
+        print(f'\\nFound {func_name} at {idx}:')
+        print(script[idx:idx+500])
+        break
+" 2>&1 | head -40[0m[38;5;244m (using tool: shell)[0m
+
+oup xrefs by verse
+const xrefsByV = {};
+D.xrefs.forEach(x => { xrefsByV[x.v] = xrefsByV[x.v] || []; xrefsByV[x.v].push(x); });
+Object.keys(xrefsByV).sort((a,b)=>a-b).forEach(v => {
+  const grp = document.createElement('div');
+  grp.style.cssText = 'margin-bottom:0.6rem';
+  grp.innerHTML = `<span style="font-weight:700;color:var(--acc);font-size:0.8rem">v.${v}</span> `;
+  xrefsByV[v].forEach(x => {
+    const span = document.createElement('span');
+    span.className = 'xref';
+    span.style.cursor
+---
+
+Found render at 38354:
+render his son's soul obedient to salutary precepts. For he visits with a rod, as we read, I will visit their offences with the rod. And so he who smites the soul of the Israelites with a rod on the cheek, by this Divine punishment instructs her in the discipline of patience. But no man need despair who is chastised and corrected, for he who loveth his son chastiseth him. Let no man therefore despair of a remedy.", "lang": "english", "orig": ""}, {"v": 24, "f": "Apostolic Constitutions", "w": ""
+[38;5;244m - Completed in 1.692s[0m
+[38;5;12m[1m [1.34][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/study.html', 'r') as f:
+    content = f.read()
+
+# Get the full xref rendering JS
+script_idx = content.find('<script>')
+script = content[script_idx:]
+
+# Find 'xrefsByV' section
+idx = script.find('xrefsByV')
+print(script[idx:idx+1500])
+" 2>&1 | head -50[0m[38;5;244m (using tool: shell)[0m
+
+xrefsByV = {};
+D.xrefs.forEach(x => { xrefsByV[x.v] = xrefsByV[x.v] || []; xrefsByV[x.v].push(x); });
+Object.keys(xrefsByV).sort((a,b)=>a-b).forEach(v => {
+  const grp = document.createElement('div');
+  grp.style.cssText = 'margin-bottom:0.6rem';
+  grp.innerHTML = `<span style="font-weight:700;color:var(--acc);font-size:0.8rem">v.${v}</span> `;
+  xrefsByV[v].forEach(x => {
+    const span = document.createElement('span');
+    span.className = 'xref';
+    span.style.cursor = 'pointer';
+    span.textContent = x.ref;
+    span.onclick = () => showXref(x);
+    grp.appendChild(span);
+  });
+  xc.appendChild(grp);
+});
+if (!D.xrefs.length) xc.innerHTML = '<p style="color:var(--mut)">No hay referencias cruzadas.</p>';
+
+function showXref(x) {
+  let html = `<div style="font-weight:700;color:var(--pri);margin-bottom:0.8rem;font-size:1.1rem">${x.ref}</div>`;
+  if (x.text.gr) html += `<div style="padding:0.6rem;background:#e8f5e9;border-radius:6px;margin-bottom:0.6rem;font-family:'Noto Serif',serif;font-size:0.95rem;line-height:1.6">${x.text.gr}</div>`;
+  if (x.text.es) html += `<div style="padding:0.6rem;background:#f5f5f5;border-radius:6px;font-size:0.9rem;line-height:1.5">${x.text.es}</div>`;
+  if (!x.text.gr && !x.text.es) html += '<p style="color:var(--mut)">Texto no disponible.</p>';
+  showPopup(`🔗 ${x.ref}`, html);
+}
+
+// Events
+const ec = document.getElementById('eventsContainer');
+events.forEach(e => {
+  const div = document.createElement('div');
+  div.className = 'ev-item';
+  div.in
+[38;5;244m - Completed in 1.531s[0m
+[38;5;12m[1m [1.35][0m[0m
+[?25l[0m[38;5;141m> [0mNow I can see - the study.html has xrefs with [38;5;10mtext.es[0m and [38;5;10mtext.gr[0m but NOT Hebrew (WLC) or English (KJV). Let me check if the NT John-1 cross-refs show 3 languages (ES + Greek + LXX) while OT xrefs in unified only show Spanish.[0m[0m
+[0m[0m
+Now let me look at the unified_html_generator.py:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading generator code\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.428s[0m
+[38;5;12m[1m [1.36][0m[0m
+[?25l[0m[?25l[0m[0mGetting symbols from: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m [[38;5;12mtop_level=true[0m][38;5;244m (using tool: code)[0m
+⠋ Loading...⠙ Loading...[2K[1G[1A[?25l
+  1. [38;5;12mFunction[0m [38;5;141m_build_unified_body[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m768:1
+[0m  2. [38;5;12mFunction[0m [38;5;141m_build_unified_page[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m652:1
+[0m  3. [38;5;12mFunction[0m [38;5;141m_find_variant_pos[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m634:1
+[0m  4. [38;5;12mFunction[0m [38;5;141m_render_tc_content[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m526:1
+[0m  5. [38;5;12mFunction[0m [38;5;141m_render_patr_theme_inline[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m481:1
+[0m  [38;5;244m(10 more items found)
+[0m[38;5;244m - Completed in 1.450s[0m
+[38;5;12m[1m [1.37][0m[0m
+[?25l[0m[?25l[0m[0mLooking up symbols: ["[38;5;141m_render_verse_block[0m"][0m in [38;5;244m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m[38;5;244m (using tool: code)[0m
+⠋ Loading...⠙ Loading...[2K[1G[1A[?25l
+Found [38;5;141m1[0m of [38;5;141m1[0m symbols:
+  1. [38;5;12mFunction[0m [38;5;141m_render_verse_block[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m327:1
+[0m[38;5;244m - Completed in 1.513s[0m
+[38;5;12m[1m [1.38][0m[0m
+[?25l[0m[38;5;141m> [0mNow I can see the problem clearly. The xref section in the unified generator only shows Spanish text ([38;5;10mes[0m). No Greek, no Hebrew, no LXX, no English. Let me check how NT John-1 renders its xrefs differently - it must use a different generator or an older version:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"CRITICAL: unified_html_generator.py _render_verse_block xref section only renders ES text. NT John-1 was generated by a DIFFERENT generator that creates xref-pill spans with data-es, data-gr, data-lxx attributes + showXrefPopup() side panel. OT generator is completely missing this rich xref rendering."}' >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.273s[0m
+[38;5;12m[1m [1.39][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at what the NT John-1 generator has that produces the rich layout. Let me also check the [38;5;10m_build_unified_page[0m and [38;5;10m_build_unified_body[0m functions:[0m[0m
+[?25l[0m[0mLooking up symbols: ["[38;5;141m_build_unified_page[0m", "[38;5;141m_build_unified_body[0m"][0m in [38;5;244m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m[38;5;244m (using tool: code)[0m
+⠋ Loading...⠙ Loading...[2K[1G[1A[?25l
+Found [38;5;141m2[0m of [38;5;141m2[0m symbols:
+  1. [38;5;12mFunction[0m [38;5;141m_build_unified_page[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m652:1
+[0m  2. [38;5;12mFunction[0m [38;5;141m_build_unified_body[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m768:1
+[0m[38;5;244m - Completed in 1.354s[0m
+[38;5;12m[1m [1.40][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Analyzing gap details\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.366s[0m
+[38;5;12m[1m [1.41][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me also check the [38;5;10mgenerate_unified_html[0m function to understand how data is gathered:[0m[0m
+[?25l[0m[0mLooking up symbols: ["[38;5;141mgenerate_unified_html[0m"][0m in [38;5;244m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m[38;5;244m (using tool: code)[0m
+⠋ Loading...⠙ Loading...[2K[1G[1A[?25l
+Found [38;5;141m1[0m of [38;5;141m1[0m symbols:
+  1. [38;5;12mFunction[0m [38;5;141mgenerate_unified_html[0m at [38;5;141munified_html_generator.py[0m:[38;5;244m65:1
+[0m[38;5;244m - Completed in 1.898s[0m
+[38;5;12m[1m [1.42][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have a complete picture. Let me also look at the study_html_generator to see how it handles xrefs more richly:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import ast, sys
+with open('/Users/murivirg/work/github/bible-expert/study_html_generator.py', 'r') as f:
+    tree = ast.parse(f.read())
+# Just list top-level functions
+for node in ast.walk(tree):
+    if isinstance(node, ast.FunctionDef):
+        print(f'{node.name}:{node.lineno}')
+" 2>&1 | head -30[0m[38;5;244m (using tool: shell)[0m
+
+<unknown>:1595: SyntaxWarning: "\." is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\."? A raw string is also an option.
+<unknown>:1599: SyntaxWarning: "\." is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\."? A raw string is also an option.
+_s3_cache_get:9
+_s3_cache_put:21
+_get_db:32
+gather_chapter_data:39
+_lookup_ref_text:315
+_strip_md:356
+_translate_lxx:362
+_generate_tc_analysis:409
+_generate_patristic_analysis:491
+_generate_grounded_exegetical:622
+generate_study_html:686
+chapter_data_is_ot:716
+_build_html:721
+_call_chunk_phase1:525
+_call_chunk_phase2:556
+_call_exeg_chunk:640
+[38;5;244m - Completed in 1.568s[0m
+[38;5;12m[1m [1.43][0m[0m
+[?25l[0m[?25l[0m[0mLooking up symbols: ["[38;5;141m_lookup_ref_text[0m"][0m in [38;5;244m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m[38;5;244m (using tool: code)[0m
+⠋ Loading...⠙ Loading...[2K[1G[1A[?25l
+Found [38;5;141m1[0m of [38;5;141m1[0m symbols:
+  1. [38;5;12mFunction[0m [38;5;141m_lookup_ref_text[0m at [38;5;141mstudy_html_generator.py[0m:[38;5;244m315:1
+[0m[38;5;244m - Completed in 1.465s[0m
+[38;5;12m[1m [1.44][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"study_html_generator._lookup_ref_text gets only ES+Greek(MorphGNT/SBLGNT/LXX/WLC) - 2 languages. NT John-1 xref popup shows 3 labels: Greek, RVR1909, plus BibleGateway link. User wants 4 languages: Spanish, Hebrew, Greek, English. Neither generator currently provides all 4."}' >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.424s[0m
+[38;5;12m[1m [1.45][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me check what data the OT chapter_data xrefs actually contain and how they're structured:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find the D = {...} data object
+idx = content.find('const D = ')
+if idx > 0:
+    # Get a sample of the xrefs data
+    xref_idx = content.find('\"xrefs\"', idx)
+    if xref_idx > 0:
+        print(content[xref_idx:xref_idx+1000])
+" 2>&1 | head -30[0m[38;5;244m (using tool: shell)[0m
+
+"xrefs": [{"v": 1, "ref": "Proverbs 15:5", "rel": "cross-reference", "text": {"es": "El necio menosprecia el consejo de su padre: Mas el que guarda la corrección, vendrá á ser cuerdo.", "gr": ""}}, {"v": 2, "ref": "Proverbs 12:14", "rel": "cross-reference", "text": {"es": "El hombre será harto de bien del fruto de su boca: Y la paga de las manos del hombre le será dada.", "gr": ""}}, {"v": 2, "ref": "Proverbs 18:20", "rel": "cross-reference", "text": {"es": "Del fruto de la boca del hombre se hartará su vientre; Hartaráse del producto de sus labios.", "gr": ""}}, {"v": 3, "ref": "James 1:26", "rel": "cross-reference", "text": {"es": "Si alguno piensa ser religioso entre vosotros, y no refrena su lengua, sino engañando su corazón, la religión del tal es vana.", "gr": "Εἴ τις δοκεῖ θρησκὸς ⸀εἶναι μὴ χαλιναγωγῶν γλῶσσαν ⸀αὐτοῦ ἀλλὰ ἀπατῶν καρδίαν ⸀αὐτοῦ, τούτου μάταιος ἡ θρησκεία."}}, {"v": 3, "ref": "James 3:12", "rel": "cross-reference", "text": {"es": "Hermanos míos, ¿puede la higuera 
+[38;5;244m - Completed in 1.443s[0m
+[38;5;12m[1m [1.46][0m[0m
+[?25l[0m[38;5;141m> [0mNow I see the data structure. The OT xrefs have [38;5;10mtext.es[0m and [38;5;10mtext.gr[0m fields, but [38;5;10mtext.gr[0m is empty for OT-to-OT references (like Proverbs 15:5). It only has Greek for NT references (like James 1:26). This means the data gathering doesn't look up WLC Hebrew for OT targets.[0m[0m
+[0m[0m
+Let me check what the NT xref data looks like:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Check the data in the JS object  
+idx = content.find('const D = ')
+# Find xrefs array in John-1's D object
+xref_idx = content.find('\"xrefs\"', idx)
+if xref_idx > 0:
+    # Note: John-1 xrefs in body are rendered as xref-pill spans with data attributes
+    # Let's check the D object xrefs
+    print(content[xref_idx:xref_idx+800])
+" 2>&1 | head -20[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.628s[0m
+[38;5;12m[1m [1.47][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# The John-1 was hand-crafted or used a different generator
+# The xrefs are in the HTML itself as data attributes, not in D object
+# Let's check if D has xrefs
+idx = content.find('const D = ')
+if idx > 0:
+    # Get first 2000 chars of D
+    print(content[idx:idx+500])
+" 2>&1 | head -20[0m[38;5;244m (using tool: shell)[0m
+
+const D = {"verses": [{"v": 1, "text": "EN el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios."}, {"v": 2, "text": "Este era en el principio con Dios."}, {"v": 3, "text": "Todas las cosas por él fueron hechas; y sin él nada de lo que es hecho, fué hecho."}, {"v": 4, "text": "En él estaba la vida, y la vida era la luz de los hombres."}, {"v": 5, "text": "Y la luz en las tinieblas resplandece; mas las tinieblas no la comprendieron."}, {"v": 6, "text": "Fué un hombre enviado de
+[38;5;244m - Completed in 1.401s[0m
+[38;5;12m[1m [1.48][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Check if 'xrefs' exists as a key in the D object
+idx = content.find('const D = ')
+end_idx = content.find('</script>', idx)
+d_section = content[idx:end_idx][:10000]
+
+if '\"xrefs\"' in d_section:
+    xr_idx = d_section.find('\"xrefs\"')
+    print('FOUND xrefs in D:')
+    print(d_section[xr_idx:xr_idx+500])
+else:
+    print('NO xrefs key in D object in John-1')
+    # The John-1 file embeds xref data directly in HTML data attributes
+    # Extract structure of data attributes from xref-pill
+    pills = re.findall(r'data-ref=\"([^\"]+)\".*?data-es=\"([^\"]{0,80})\".*?data-gr=\"([^\"]{0,80})\".*?data-lxx=\"([^\"]{0,80})\"', content[:50000])
+    print(f'\\nXref pill data attributes sample ({len(pills)} found):')
+    for p in pills[:5]:
+        print(f'  ref={p[0]}, es={p[1][:40]}..., gr={p[2][:40]}..., lxx={p[3][:40]}...')
+" 2>&1[0m[38;5;244m (using tool: shell)[0m
+
+NO xrefs key in D object in John-1
+
+Xref pill data attributes sample (4 found):
+  ref=1 John 1:1, es=Y él es antes de todas las cosas, y por ..., gr=καὶ αὐτός ἐστιν πρὸ πάντων καὶ τὰ πάντα ..., lxx=...
+  ref=Ephesians 3:9, es=Y él es antes de todas las cosas, y por ..., gr=καὶ αὐτός ἐστιν πρὸ πάντων καὶ τὰ πάντα ..., lxx=...
+  ref=Ephesians 3:9, es=EN el principio crió Dios los cielos y l..., gr=בְּ/רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַ/..., lxx=ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ ...
+  ref=Genesis 1:26, es=En el mundo estaba, y el mundo fué hecho..., gr=Ἐν τῷ κόσμῳ ἦν, καὶ ὁ κόσμος δι’ αὐτοῦ ἐ..., lxx=...
+[38;5;244m - Completed in 1.403s[0m
+[38;5;12m[1m [1.49][0m[0m
+[?25l[0m[38;5;141m> [0mNow I can see the key difference! The NT John-1 has xref pills with [38;5;10mdata-es[0m, [38;5;10mdata-gr[0m, AND [38;5;10mdata-lxx[0m attributes. The [38;5;10mdata-gr[0m field stores Hebrew (WLC) for OT references, and the [38;5;10mdata-lxx[0m stores the Septuagint Greek. The popup function [38;5;10mshowXrefPopup[0m intelligently detects OT books and displays WLC and LXX separately.[0m[0m
+[0m[0m
+Let me now check the NT John-1's full features list and check what directives have come:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mcat /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.465s[0m
+[38;5;12m[1m [1.50][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Writing findings doc\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.450s[0m
+[38;5;12m[1m [1.51][0m[0m
+[?25l[0m[38;5;141m> [0mLet me verify a few more details about the NT before writing the final report - specifically the sidebar xrefs and the full list of per-verse buttons:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/John-1/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Sidebar in NT - already extracted above, it has xref-item divs with data-ref, data-es, data-gr, data-lxx and onclick=showXrefPopup
+
+# Check for header features in NT that OT might miss
+# 1. Verse navigator in header
+if 'vb1' in content and 'href=\"#vb' in content:
+    navs = re.findall(r'href=\"#vb(\d+)\"', content)
+    print(f'Verse navigator links: {len(navs)}')
+
+# 2. Keyboard shortcuts
+if 'J/K=' in content or 'Teclas' in content:
+    idx = content.find('Teclas')
+    print(f'\\nKeyboard hint: {content[idx:idx+200]}')
+
+# 3. Chapter summary card
+if 'estructura del capítulo' in content.lower() or 'Estructura' in content:
+    print('\\n✅ Has chapter structure summary')
+
+# 4. Study questions
+if 'Preguntas de estudio' in content:
+    print('✅ Has study questions')
+
+# 5. Key words section
+if 'Palabras clave' in content:
+    print('✅ Has key words section')
+
+# 6. Synoptic parallels
+if 'Paralelos sinópticos' in content or 'sinópticos' in content:
+    print('✅ Has synoptic parallels')
+" 2>&1[0m[38;5;244m (using tool: shell)[0m
+
+Verse navigator links: 51
+
+Keyboard hint: Teclas: J/K=navegar · R=RVR1960 · E=exégesis · P=patrística · T=TC · G=griego · U=uncial · N=notas · ?=ayuda</p>
+<div style="margin-top:0.4rem;display:flex;gap:0.3rem;justify-content:center;flex-wrap:
+
+✅ Has chapter structure summary
+✅ Has study questions
+✅ Has key words section
+✅ Has synoptic parallels
+[38;5;244m - Completed in 1.465s[0m
+[38;5;12m[1m [1.52][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Check OT for same features
+features = {
+    'Verse navigator': 'href=\"#vb' in content,
+    'Keyboard hints': 'Teclas' in content or 'J/K' in content,
+    'Chapter structure': 'Estructura' in content or 'estructura' in content,
+    'Study questions': 'Preguntas' in content,
+    'Key words': 'Palabras clave' in content,
+    'Synoptic/Related parallels': 'Paralelos' in content or 'paralelos' in content,
+    'Dark mode toggle button': 'darkMode' in content or 'dark' in content.lower(),
+    'Toolbar buttons': 'toolbar' in content,
+    'Sidebar': 'sidebar' in content,
+    'Search box': 'searchBox' in content or 'Buscar' in content,
+    'Export JSON': 'exportJSON' in content or 'JSON' in content,
+    'Export Notes': 'exportNotes' in content or 'Exportar notas' in content,
+    'Copy verse button': 'copyVerse' in content or '📋' in content,
+    'Per-verse notes textarea': 'saveNote' in content or 'notes-' in content,
+    'Uncial button': 'uncial' in content.lower() or 'Uncial' in content,
+    'Pronunciation button': 'Pronunciación' in content or 'pron-' in content,
+    'Multiple versions toggle': 'vers-' in content or 'versiones' in content.lower(),
+    'Verba Christi (red-letter)': 'red-letter' in content,
+    'Back to top': 'back-to-top' in content,
+    'Progress bar': 'progress-bar' in content,
+    'Highlight sections': 'highlightable' in content,
+    'Print styles': '@media print' in content,
+    'Deep link highlight': ':target' in content,
+    'Smooth scroll': 'scroll-behavior: smooth' in content,
+}
+
+print('=== OT Proverbs-13 Feature Check ===')
+for name, present in features.items():
+    status = '✅' if present else '❌'
+    print(f'  {status} {name}')
+" 2>&1[0m[38;5;244m (using tool: shell)[0m
+
+=== OT Proverbs-13 Feature Check ===
+  ❌ Verse navigator
+  ❌ Keyboard hints
+  ❌ Chapter structure
+  ❌ Study questions
+  ❌ Key words
+  ❌ Synoptic/Related parallels
+  ✅ Dark mode toggle button
+  ✅ Toolbar buttons
+  ✅ Sidebar
+  ❌ Search box
+  ❌ Export JSON
+  ❌ Export Notes
+  ❌ Copy verse button
+  ❌ Per-verse notes textarea
+  ✅ Uncial button
+  ❌ Pronunciation button
+  ✅ Multiple versions toggle
+  ❌ Verba Christi (red-letter)
+  ❌ Back to top
+  ❌ Progress bar
+  ❌ Highlight sections
+  ❌ Print styles
+  ❌ Deep link highlight
+  ❌ Smooth scroll
+[38;5;244m - Completed in 1.450s[0m
+[38;5;12m[1m [1.53][0m[0m
+[?25l[0m[38;5;141m> [0mWait, it says Uncial and Multiple versions are present. Let me verify:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Check where 'uncial' appears
+uncial_matches = [content[max(0,m.start()-30):m.start()+50] for m in re.finditer('uncial', content, re.IGNORECASE)]
+print(f'Uncial contexts ({len(uncial_matches)}):')
+for m in uncial_matches[:3]:
+    print(f'  ...{m}...')
+
+# Check where 'versiones' appears
+ver_matches = [content[max(0,m.start()-30):m.start()+50] for m in re.finditer('versiones|vers-', content, re.IGNORECASE)]
+print(f'\\nVersiones contexts ({len(ver_matches)}):')
+for m in ver_matches[:3]:
+    print(f'  ...{m}...')
+" 2>&1[0m[38;5;244m (using tool: shell)[0m
+
+Uncial contexts (1):
+  ...inaí). Es el único manuscrito uncial con el NT completo. Incluye libros que lueg...
+
+Versiones contexts (4):
+  ...1000 años.'},
+  'syr': {name:'Versiones Siríacas', date:'s.II-V', desc:'Traducci...
+  ...etoniana).'},
+  'cop': {name:'Versiones Coptas', date:'s.III-IV', desc:'Traducci...
+  ...te:'s.V', desc:'"Reina de las versiones" por su fidelidad.'},
+  'eth': {name:'Ve...
+[38;5;244m - Completed in 1.373s[0m
+[38;5;12m[1m [1.54][0m[0m
+[?25l[0m[38;5;141m> [0mThose are false positives - they're in the MSS_INFO dictionary text, not actual features. Let me check the actual per-verse buttons in OT:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "
+import re
+with open('/Users/murivirg/bible-studies/Proverbs-13/unified_analysis.html', 'r') as f:
+    content = f.read()
+
+# Find all badge types in the OT
+badges = re.findall(r'class=\"badge[^\"]*\"[^>]*>([^<]+)', content)
+print(f'Badge types found ({len(badges)}):')
+for b in set(badges):
+    print(f'  - {b}')
+
+# Check for button row per verse (like NT's rvr-btn row)
+if 'rvr-btn' in content:
+    idx = content.find('rvr-btn')
+    print(f'\\nrvr-btn context: {content[idx-50:idx+200]}')
+else:
+    print('\\nNo rvr-btn class found - per-verse buttons missing')
+" 2>&1[0m[38;5;244m (using tool: shell)[0m
+
+Badge types found (22):
+  - ✝ Patrística (2)
+  - ✝ Patrística (3)
+  - ✝ Patrística (5)
+  - 🔗 Refs (1)
+  - 🔗 Refs (2)
+  - ✝ Patrística (7)
+  - ✝ Patrística (1)
+  - 🔗 Refs (8)
+  - ✝ Patrística (4)
+  - 🔗 Refs (3)
+
+rvr-btn context: : 0.95rem; color: #333; margin-bottom: 0.6rem; }
+.rvr-btn { display: inline-block; font-size: 0.78rem; padding: 3px 10px; border-radius: 14px; border: 1px solid #ccc; background: #fafafa; cursor: pointer; margin-bottom: 0.5rem; }
+.rvr-btn:hover { bac
+[38;5;244m - Completed in 1.486s[0m
+[38;5;12m[1m [1.55][0m[0m
+[?25l[0m[38;5;141m> [0mSo the OT has [38;5;10mrvr-btn[0m class defined in CSS but NOT used in any verse block. The only interactive elements per verse are the badges (Patrística, Refs). No RVR toggle, no Uncial, no Pronunciation, no Versions, no Notes, no Copy.[0m[0m
+[0m[0m
+Now let me write the comprehensive findings document:[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/findings.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mNT vs OT Unified Analysis — Complete Gap Analysis[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mInvestigation Summary[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mNT Reference[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140m~/bible-studies/John-1/unified_analysis.html[38;2;163;190;140m`[38;2;192;197;206m (1.7MB, 1009 lines, 51 verses)[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mOT Current[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140m~/bible-studies/Proverbs-13/unified_analysis.html[38;2;163;190;140m`[38;2;192;197;206m (366KB, 335 lines, 25 verses)[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mGenerator[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m (989 lines)[K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe NT John-1 file was generated by a [38;2;235;203;139m**[38;2;235;203;139mdifferent/earlier pipeline[38;2;235;203;139m**[38;2;192;197;206m that produced a fully self-contained HTML with ALL interactive features baked directly into the HTML (xref pills with inline data attributes, rich keyboard navigation, per-verse notes, etc.). The current [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m produces a [38;2;235;203;139m**[38;2;235;203;139mstripped-down version[38;2;235;203;139m**[38;2;192;197;206m missing ~70% of the interactive features.[K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mFEATURE-BY-FEATURE GAP ANALYSIS[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m1. CROSS-REFERENCES (Critical — User Priority #1)[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT (John-1) Implementation:[K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mInline xref pills[38;2;235;203;139m**[38;2;191;97;106m per verse: [38;2;163;190;140m`[38;2;163;190;140m<span class="xref-pill" onclick="showXrefPopup(this)" data-ref="..." data-es="..." data-gr="..." data-lxx="...">[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139m3 data attributes[38;2;235;203;139m**[38;2;191;97;106m embedded: [38;2;163;190;140m`[38;2;163;190;140mdata-es[38;2;163;190;140m`[38;2;191;97;106m (Spanish RVR1909), [38;2;163;190;140m`[38;2;163;190;140mdata-gr[38;2;163;190;140m`[38;2;191;97;106m (Greek NT or WLC Hebrew for OT refs), [38;2;163;190;140m`[38;2;163;190;140mdata-lxx[38;2;163;190;140m`[38;2;191;97;106m (Septuagint for OT refs)[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSide panel popup[38;2;235;203;139m**[38;2;191;97;106m ([38;2;163;190;140m`[38;2;163;190;140m#xrefPopup[38;2;163;190;140m`[38;2;191;97;106m): 380px fixed panel slides in from right, shows:[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Reference title (h3)[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m For OT refs: WLC Hebrew (RTL) + LXX Greek labels[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m For NT refs: Greek label[K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Spanish text (RVR1909)[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m BibleGateway link[K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Shared vocabulary indicator (highlights common Greek words)[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSidebar[38;2;235;203;139m**[38;2;191;97;106m (left): Lists all xrefs by verse, clickable items also trigger the popup[K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mBadge button[38;2;235;203;139m**[38;2;191;97;106m per verse: [38;2;163;190;140m`[38;2;163;190;140m🔗 8 refs[38;2;163;190;140m`[38;2;191;97;106m toggles collapsed pill container[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT (Proverbs-13) Implementation:[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSimple text entries[38;2;235;203;139m**[38;2;191;97;106m: [38;2;163;190;140m`[38;2;163;190;140m<div class="xref-entry"><strong>Proverbs 15:5</strong>: El necio...</div>[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSpanish only[38;2;235;203;139m**[38;2;191;97;106m — no Greek, no Hebrew, no English[K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mNo popup[38;2;235;203;139m**[38;2;191;97;106m — just shows/hides a collapsed div with static text[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSidebar[38;2;235;203;139m**[38;2;191;97;106m exists but calls a basic [38;2;163;190;140m`[38;2;163;190;140mshowXrefPopup(ref, text)[38;2;163;190;140m`[38;2;191;97;106m that creates a small bottom-right popup with just ref + text[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mData Gap:[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mchapter_data["xrefs"][38;2;163;190;140m`[38;2;191;97;106m for OT has [38;2;163;190;140m`[38;2;163;190;140m{"es": "...", "gr": ""}[38;2;163;190;140m`[38;2;191;97;106m — the [38;2;163;190;140m`[38;2;163;190;140mgr[38;2;163;190;140m`[38;2;191;97;106m field is [38;2;235;203;139m**[38;2;235;203;139mempty for OT-to-OT references[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m The [38;2;163;190;140m`[38;2;163;190;140m_lookup_ref_text()[38;2;163;190;140m`[38;2;191;97;106m function in study_html_generator tries MorphGNT/SBLGNT/LXX/WLC but the unified generator doesn't call it — it uses whatever [38;2;163;190;140m`[38;2;163;190;140mgather_chapter_data[38;2;163;190;140m`[38;2;191;97;106m provides[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMissing entirely[38;2;235;203;139m**[38;2;191;97;106m: English (KJV/BSB) text — no version queries it[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mUSER REQUIREMENT: Cross-refs must show 4 languages: Spanish (RVR), Hebrew (WLC), Greek (LXX or MorphGNT), English (KJV/BSB)[K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m2. PER-VERSE BUTTONS (Interactive Controls)[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT has per verse:[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Button [38;2;192;197;206m|[38;2;192;197;206m Function [38;2;192;197;206m|[38;2;192;197;206m OT Has? [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m RVR60 [38;2;192;197;206m|[38;2;192;197;206m Toggle Spanish translation [38;2;192;197;206m|[38;2;192;197;206m ❌ (always visible inline) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Uncial [38;2;192;197;206m|[38;2;192;197;206m Toggle uncial scriptio continua display [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Pronunciación [38;2;192;197;206m|[38;2;192;197;206m Toggle Byzantine pronunciation [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m ✝ N patrística [38;2;192;197;206m|[38;2;192;197;206m Toggle patristic section [38;2;192;197;206m|[38;2;192;197;206m ✅ (as badge) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 📚 N exégesis [38;2;192;197;206m|[38;2;192;197;206m Toggle exegesis section [38;2;192;197;206m|[38;2;192;197;206m ❌ (missing badge) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 📖 versiones [38;2;192;197;206m|[38;2;192;197;206m Toggle multi-version panel [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 🔗 N refs [38;2;192;197;206m|[38;2;192;197;206m Toggle xref pills [38;2;192;197;206m|[38;2;192;197;206m ✅ (as badge) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 📋 [38;2;192;197;206m|[38;2;192;197;206m Copy verse to clipboard [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 📝 [38;2;192;197;206m|[38;2;192;197;206m Toggle personal notes textarea [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT has per verse:[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mOnly badges: [38;2;163;190;140m`[38;2;163;190;140m✝ Patrística (N)[38;2;163;190;140m`[38;2;191;97;106m and [38;2;163;190;140m`[38;2;163;190;140m🔗 Refs (N)[38;2;163;190;140m`[38;2;191;97;106m — no exegesis badge even when exegesis exists[K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m3. MULTI-VERSION PANEL[K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mToggleable panel showing verse in 9 versions: RVR60, RVR1909, KJV, ASV, BSB, Darby, LITV, YLT, Vulgate[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Each labeled with [38;2;163;190;140m`[38;2;163;190;140m<span class="ver-label">[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m❌ [38;2;235;203;139m**[38;2;235;203;139mCompletely absent[38;2;235;203;139m**[38;2;191;97;106m — no per-verse version display[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m4. UNCIAL DISPLAY[K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mHidden div [38;2;163;190;140m`[38;2;163;190;140mid="uncial-{vnum}"[38;2;163;190;140m`[38;2;191;97;106m showing scriptio continua (all caps, no spaces, middle dots)[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Link to Codex Sinaiticus manuscript page[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Tooltip explaining what uncial manuscripts looked like[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m❌ [38;2;235;203;139m**[38;2;235;203;139mAbsent[38;2;235;203;139m**[38;2;191;97;106m — for OT this could be paleo-Hebrew/Dead Sea Scrolls script or Masoretic notes[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m5. PRONUNCIATION[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mHidden div [38;2;163;190;140m`[38;2;163;190;140mid="pron-{vnum}"[38;2;163;190;140m`[38;2;191;97;106m with Byzantine/Koine pronunciation[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgeneratePronunciation()[38;2;163;190;140m`[38;2;191;97;106m JS function[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m❌ [38;2;235;203;139m**[38;2;235;203;139mAbsent[38;2;235;203;139m**[38;2;191;97;106m — could show Hebrew pronunciation (transliteration)[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m6. MORPHOLOGY / WORD TOOLTIP[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT (John-1):[K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mshowTip()[38;2;163;190;140m`[38;2;191;97;106m function with full morphology decoder:[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Part of speech (Verbo, Sustantivo, etc.)[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Tense, voice, mood for verbs (with significance notes: "Aoristo: acción puntual/completa")[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Case significance for nouns ("Genitivo: de/posesión/origen")[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Strong's number, lemma, definition[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Links to BibleHub, BLB, STEP Bible[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Hoverable morph-word spans with dotted underline[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Click opens full word study popup panel[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT (Proverbs-13):[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Has [38;2;163;190;140m`[38;2;163;190;140mshowTip()[38;2;163;190;140m`[38;2;191;97;106m and [38;2;163;190;140m`[38;2;163;190;140mopenWord()[38;2;163;190;140m`[38;2;191;97;106m functions[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has morph-word spans rendered by JS from [38;2;163;190;140m`[38;2;163;190;140mD.morphology[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has LXX morphology ([38;2;163;190;140m`[38;2;163;190;140mD.lxx_morphology[38;2;163;190;140m`[38;2;191;97;106m) also rendered[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ⚠️ Missing the full morphology decoder (tense/voice/mood significance notes)[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ⚠️ Missing case significance indicators[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m7. EXEGESIS SECTION[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mSection toggle with icon: [38;2;163;190;140m`[38;2;163;190;140m📜 Exégesis del Griego[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Summary box ([38;2;163;190;140m`[38;2;163;190;140mexeg-summary[38;2;163;190;140m`[38;2;191;97;106m) with quotes from multiple commentators[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Expandable individual commentaries (Alford, Bengel, Robertson, Vincent)[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Year shown per commentator[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m "Ver completo ▼" toggle per entry[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mExegesis themes[38;2;235;203;139m**[38;2;191;97;106m with theme cards, opinions, and summaries[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Has section toggle (but only if commentaries exist)[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has exeg-summary and comm-items[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has exegesis themes (theme-card, opinions)[K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ⚠️ Missing the "📚 N exégesis" badge — only has "📜 Exégesis" badge if data exists[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m8. PATRISTIC SECTION[K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mOrganized by [38;2;235;203;139m**[38;2;235;203;139mthemes[38;2;235;203;139m**[38;2;191;97;106m (e.g., "Eternidad del Verbo", "Divinidad del Verbo")[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Each theme has:[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Clickable header with expand/collapse[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Consensus bar (visual quality indicator)[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Consensus label (alto/medio/bajo)[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Multiple patristic citations with dates[K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Resumen (synthesis paragraph) per theme[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m 140 citations for v.1 alone[K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Has patristic themes with consensus bars[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has citations with father name and dates[K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has resumen per theme[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Overall structure matches NT ✓[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m9. TEXTUAL CRITICISM (TC) SECTION[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mFull apparatus table with:[K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m MS column (manuscript chips, color-coded)[K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Context columns + variant columns (⚡ markers)[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Clickable MS chips → [38;2;163;190;140m`[38;2;163;190;140mshowMSInfo()[38;2;163;190;140m`[38;2;191;97;106m with popup info[K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Clickable MS cell → [38;2;163;190;140m`[38;2;163;190;140mshowMSSPanel()[38;2;163;190;140m`[38;2;191;97;106m with full manuscript panel[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m TC verdict with confidence bar[K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Impact assessment[K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m TC criteria items (external/internal evidence)[K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m TC interactive words with hover tooltips (lemma + morphology)[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Has TC table with similar structure[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has MS chips and showMSSPanel()[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Has TC verdict section[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ⚠️ Missing [38;2;163;190;140m`[38;2;163;190;140mshowMSInfo()[38;2;163;190;140m`[38;2;191;97;106m function (per-chip popup)[K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ⚠️ Missing TC-interactive word tooltips[K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    180[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m10. CHAPTER-LEVEL CONTENT (Header/Summary Card)[K
+[0m[48;2;40;67;43m[39m+    181[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    182[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT has (in header/summary card after toolbar):[K
+[0m[48;2;40;67;43m[39m+    183[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Feature [38;2;192;197;206m|[38;2;192;197;206m Description [38;2;192;197;206m|[38;2;192;197;206m OT Has? [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    184[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m-------------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    185[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Chapter summary [38;2;192;197;206m|[38;2;192;197;206m Paragraph overview [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    186[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Structure outline [38;2;192;197;206m|[38;2;192;197;206m "📐 Estructura del capítulo" with verse ranges [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    187[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Synoptic parallels [38;2;192;197;206m|[38;2;192;197;206m "📖 Paralelos sinópticos" with links [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    188[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Study questions [38;2;192;197;206m|[38;2;192;197;206m "❓ Preguntas de estudio" (expandable details) [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    189[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Key words [38;2;192;197;206m|[38;2;192;197;206m "🔑 Palabras clave" with Greek terms + explanations [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    190[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Verse navigator [38;2;192;197;206m|[38;2;192;197;206m Number grid in header linking to #vbN [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    191[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    192[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    193[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    194[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m11. GLOBAL UI FEATURES[K
+[0m[48;2;40;67;43m[39m+    195[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    196[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Feature [38;2;192;197;206m|[38;2;192;197;206m NT [38;2;192;197;206m|[38;2;192;197;206m OT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    197[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m----[38;2;192;197;206m|[38;2;192;197;206m----[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    198[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Progress bar (scroll indicator) [38;2;192;197;206m|[38;2;192;197;206m ✅ fixed top, gradient [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    199[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Back to top button [38;2;192;197;206m|[38;2;192;197;206m ✅ floating bottom-right [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    200[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Keyboard navigation (J/K/R/E/P/T/G/U/N/?) [38;2;192;197;206m|[38;2;192;197;206m ✅ full keybindings [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    201[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Search/filter box [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140mfilterVerses()[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    202[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Export JSON [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140mexportJSON()[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    203[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Export Notes [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140mexportNotes()[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    204[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Dark mode toggle in toolbar [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140mtoggleDarkMode()[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ✅ (in body section toggle) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    205[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Dark mode CSS (comprehensive) [38;2;192;197;206m|[38;2;192;197;206m ✅ 60+ rules [38;2;192;197;206m|[38;2;192;197;206m ❌ (minimal) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    206[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Print styles [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140m@media print[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    207[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Smooth scroll [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140mscroll-behavior: smooth[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    208[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Deep-link highlight [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;163;190;140m`[38;2;163;190;140m.verse-block:target[38;2;163;190;140m`[38;2;192;197;206m animation [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    209[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Highlightable sections [38;2;192;197;206m|[38;2;192;197;206m ✅ click to highlight [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    210[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Accessibility (focus-visible, aria) [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    211[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Red letter (Verba Christi) [38;2;192;197;206m|[38;2;192;197;206m ✅ for Jesus' words [38;2;192;197;206m|[38;2;192;197;206m N/A (OT) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    212[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Header expand-all buttons [38;2;192;197;206m|[38;2;192;197;206m ✅ in header area [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    213[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    214[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    215[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    216[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m12. PERSONAL NOTES SYSTEM[K
+[0m[48;2;40;67;43m[39m+    217[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    218[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT:[K
+[0m[48;2;40;67;43m[39m+    219[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mPer-verse textarea: [38;2;163;190;140m`[38;2;163;190;140m<textarea id="note-input-{vnum}" oninput="saveNote({vnum})">[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    220[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140msaveNote()[38;2;163;190;140m`[38;2;191;97;106m persists to localStorage[K
+[0m[48;2;40;67;43m[39m+    221[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mexportNotes()[38;2;163;190;140m`[38;2;191;97;106m downloads all notes as text[K
+[0m[48;2;40;67;43m[39m+    222[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    223[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT:[K
+[0m[48;2;40;67;43m[39m+    224[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m❌ [38;2;235;203;139m**[38;2;235;203;139mCompletely absent[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    225[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    226[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    227[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    228[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m13. DATA STRUCTURE DIFFERENCES[K
+[0m[48;2;40;67;43m[39m+    229[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    230[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mNT John-1 D object:[K
+[0m[48;2;40;67;43m[39m+    231[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjavascript[K
+[0m[48;2;40;67;43m[39m+    232[0m:[39m[48;2;24;38;30m [38;2;192;197;206mconst D = {[K
+[0m[48;2;40;67;43m[39m+    233[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  verses: [...],[K
+[0m[48;2;40;67;43m[39m+    234[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  morphology: {1: [{w, l, s, m, g, es, d}, ...]}, [K
+[0m[48;2;40;67;43m[39m+    235[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // Full morph with definitions, Spanish glosses[K
+[0m[48;2;40;67;43m[39m+    236[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    237[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    238[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mXrefs NOT in D — embedded as HTML data attributes[K
+[0m[48;2;40;67;43m[39m+    239[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m MSS_INFO dictionary inline in JS[K
+[0m[48;2;40;67;43m[39m+    240[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    241[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mOT Proverbs-13 D object:[K
+[0m[48;2;40;67;43m[39m+    242[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjavascript[K
+[0m[48;2;40;67;43m[39m+    243[0m:[39m[48;2;24;38;30m [38;2;192;197;206mconst D = {[K
+[0m[48;2;40;67;43m[39m+    244[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  verses: [...],[K
+[0m[48;2;40;67;43m[39m+    245[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  parallel: {WLC: {...}, LXX: {...}},[K
+[0m[48;2;40;67;43m[39m+    246[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  morphology: {1: [{w, l, s, m, g}, ...]},[K
+[0m[48;2;40;67;43m[39m+    247[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  lxx_morphology: {1: [{w, l, s, m, g}, ...]},[K
+[0m[48;2;40;67;43m[39m+    248[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  xrefs: [{v, ref, rel, text: {es, gr}}, ...],[K
+[0m[48;2;40;67;43m[39m+    249[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // xrefs in D object, not in HTML[K
+[0m[48;2;40;67;43m[39m+    250[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    251[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    252[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    253[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    254[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    255[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mACTION PLAN — Bring OT to Full Parity[K
+[0m[48;2;40;67;43m[39m+    256[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    257[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPhase 1: Cross-References (HIGHEST PRIORITY)[K
+[0m[48;2;40;67;43m[39m+    258[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    259[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mEnhance [38;2;163;190;140m`[38;2;163;190;140m_lookup_ref_text()[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m to return 4 languages:[K
+[0m[48;2;40;67;43m[39m+    260[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mes[38;2;163;190;140m`[38;2;191;97;106m: RVR1909 (already works)[K
+[0m[48;2;40;67;43m[39m+    261[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mheb[38;2;163;190;140m`[38;2;191;97;106m: WLC Hebrew text (query [38;2;163;190;140m`[38;2;163;190;140mversion='WLC'[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+    262[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgr[38;2;163;190;140m`[38;2;191;97;106m: LXX or MorphGNT Greek (already works partially)[K
+[0m[48;2;40;67;43m[39m+    263[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140men[38;2;163;190;140m`[38;2;191;97;106m: KJV/BSB English (add new query for [38;2;163;190;140m`[38;2;163;190;140mversion='KJV'[38;2;163;190;140m`[38;2;191;97;106m or [38;2;163;190;140m`[38;2;163;190;140m'BSB'[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+    264[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    265[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mUpdate xref data structure[38;2;235;203;139m**[38;2;191;97;106m in [38;2;163;190;140m`[38;2;163;190;140mgather_chapter_data()[38;2;163;190;140m`[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    266[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    267[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   xref_text = {"es": "...", "heb": "...", "gr": "...", "en": "..."}[K
+[0m[48;2;40;67;43m[39m+    268[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   ```[K
+[0m[48;2;40;67;43m[39m+    269[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    270[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mReplace xref rendering in [38;2;163;190;140m`[38;2;163;190;140m_render_verse_block()[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    271[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Remove current [38;2;163;190;140m`[38;2;163;190;140m<div class="xref-entry">[38;2;163;190;140m`[38;2;191;97;106m output[K
+[0m[48;2;40;67;43m[39m+    272[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Add xref-pill spans with data attributes: [38;2;163;190;140m`[38;2;163;190;140mdata-ref[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdata-es[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdata-heb[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdata-gr[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdata-en[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    273[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [K
+[0m[48;2;40;67;43m[39m+    274[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd [38;2;163;190;140m`[38;2;163;190;140mshowXrefPopup()[38;2;163;190;140m`[38;2;235;203;139m function[38;2;235;203;139m**[38;2;191;97;106m to JS:[K
+[0m[48;2;40;67;43m[39m+    275[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Slide-in panel (380px fixed right) [K
+[0m[48;2;40;67;43m[39m+    276[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Display all 4 languages with labels[K
+[0m[48;2;40;67;43m[39m+    277[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Add BibleGateway link[K
+[0m[48;2;40;67;43m[39m+    278[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Add shared vocabulary indicator[K
+[0m[48;2;40;67;43m[39m+    279[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    280[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mUpdate sidebar rendering[38;2;235;203;139m**[38;2;191;97;106m to use clickable xref-items with data attributes[K
+[0m[48;2;40;67;43m[39m+    281[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    282[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPhase 2: Per-Verse Interactive Controls[K
+[0m[48;2;40;67;43m[39m+    283[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    284[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd button row[38;2;235;203;139m**[38;2;191;97;106m per verse (before badges):[K
+[0m[48;2;40;67;43m[39m+    285[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m RVR toggle (show/hide Spanish — for OT, maybe always visible + toggle for expanded RVR1909 vs RVR1960)[K
+[0m[48;2;40;67;43m[39m+    286[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m 📖 Versiones button → expand multi-version panel[K
+[0m[48;2;40;67;43m[39m+    287[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m 📋 Copy button → [38;2;163;190;140m`[38;2;163;190;140mcopyVerse(vnum)[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    288[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m 📝 Notes button → toggle notes textarea[K
+[0m[48;2;40;67;43m[39m+    289[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m For OT: no Uncial/Pronunciation (or add Hebrew transliteration)[K
+[0m[48;2;40;67;43m[39m+    290[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    291[0m:[39m[48;2;24;38;30m [38;2;191;97;106m7[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd per-verse notes textarea[38;2;235;203;139m**[38;2;191;97;106m with localStorage persistence[K
+[0m[48;2;40;67;43m[39m+    292[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    293[0m:[39m[48;2;24;38;30m [38;2;191;97;106m8[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd multi-version panel[38;2;235;203;139m**[38;2;191;97;106m per verse:[K
+[0m[48;2;40;67;43m[39m+    294[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Query: RVR60, RVR1909, KJV, ASV, BSB, YLT, Vulgate (same as NT)[K
+[0m[48;2;40;67;43m[39m+    295[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Add WLC + LXX labels for OT[K
+[0m[48;2;40;67;43m[39m+    296[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    297[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPhase 3: Chapter-Level Content[K
+[0m[48;2;40;67;43m[39m+    298[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    299[0m:[39m[48;2;24;38;30m [38;2;191;97;106m9[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd chapter summary card[38;2;235;203;139m**[38;2;191;97;106m after toolbar:[K
+[0m[48;2;40;67;43m[39m+    300[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Chapter overview paragraph (can be LLM-generated or static)[K
+[0m[48;2;40;67;43m[39m+    301[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Structure outline with verse ranges[K
+[0m[48;2;40;67;43m[39m+    302[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Related passages (for OT: parallel proverbs, wisdom literature connections)[K
+[0m[48;2;40;67;43m[39m+    303[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Study questions (5 per chapter)[K
+[0m[48;2;40;67;43m[39m+    304[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m Key Hebrew/Greek words with explanations[K
+[0m[48;2;40;67;43m[39m+    305[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    306[0m:[39m[48;2;24;38;30m [38;2;191;97;106m10[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd verse navigator[38;2;235;203;139m**[38;2;191;97;106m in header (number grid linking to [38;2;163;190;140m`[38;2;163;190;140m#vbN[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+    307[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    308[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPhase 4: Global UI Features[K
+[0m[48;2;40;67;43m[39m+    309[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    310[0m:[39m[48;2;24;38;30m [38;2;191;97;106m11[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd to [38;2;163;190;140m`[38;2;163;190;140m_build_unified_page()[38;2;163;190;140m`[38;2;235;203;139m CSS[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    311[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Progress bar (scroll indicator)[K
+[0m[48;2;40;67;43m[39m+    312[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Back-to-top button[K
+[0m[48;2;40;67;43m[39m+    313[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Print styles[K
+[0m[48;2;40;67;43m[39m+    314[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Smooth scroll + scroll-padding[K
+[0m[48;2;40;67;43m[39m+    315[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Deep-link [38;2;163;190;140m`[38;2;163;190;140m:target[38;2;163;190;140m`[38;2;191;97;106m highlight animation[K
+[0m[48;2;40;67;43m[39m+    316[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Focus-visible accessibility[K
+[0m[48;2;40;67;43m[39m+    317[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Comprehensive dark mode (60+ rules from NT)[K
+[0m[48;2;40;67;43m[39m+    318[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    319[0m:[39m[48;2;24;38;30m [38;2;191;97;106m12[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd to [38;2;163;190;140m`[38;2;163;190;140m_build_unified_body()[38;2;163;190;140m`[38;2;235;203;139m JS[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    320[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mfilterVerses()[38;2;163;190;140m`[38;2;191;97;106m — search box in toolbar[K
+[0m[48;2;40;67;43m[39m+    321[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mexportJSON()[38;2;163;190;140m`[38;2;191;97;106m — download chapter data[K
+[0m[48;2;40;67;43m[39m+    322[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mexportNotes()[38;2;163;190;140m`[38;2;191;97;106m — download notes[K
+[0m[48;2;40;67;43m[39m+    323[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mcopyVerse()[38;2;163;190;140m`[38;2;191;97;106m — clipboard copy[K
+[0m[48;2;40;67;43m[39m+    324[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140msaveNote()[38;2;163;190;140m`[38;2;191;97;106m — localStorage[K
+[0m[48;2;40;67;43m[39m+    325[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Keyboard navigation handler (J/K/E/P/T/G/N keys)[K
+[0m[48;2;40;67;43m[39m+    326[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mtoggleDarkMode()[38;2;163;190;140m`[38;2;191;97;106m with localStorage persistence[K
+[0m[48;2;40;67;43m[39m+    327[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    328[0m:[39m[48;2;24;38;30m [38;2;191;97;106m13[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd to toolbar[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+    329[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Search input box[K
+[0m[48;2;40;67;43m[39m+    330[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Export JSON button[K
+[0m[48;2;40;67;43m[39m+    331[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Export Notes button[K
+[0m[48;2;40;67;43m[39m+    332[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Dark mode toggle button[K
+[0m[48;2;40;67;43m[39m+    333[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    334[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPhase 5: Enhanced Morphology[K
+[0m[48;2;40;67;43m[39m+    335[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    336[0m:[39m[48;2;24;38;30m [38;2;191;97;106m14[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mEnrich [38;2;163;190;140m`[38;2;163;190;140mshowTip()[38;2;163;190;140m`[38;2;235;203;139m function[38;2;235;203;139m**[38;2;191;97;106m with:[K
+[0m[48;2;40;67;43m[39m+    337[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Full morphology decoder (Hebrew binyanim: Qal, Niphal, Piel, etc.)[K
+[0m[48;2;40;67;43m[39m+    338[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Tense/aspect significance notes for Hebrew verb forms[K
+[0m[48;2;40;67;43m[39m+    339[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Case indicators (construct state, absolute)[K
+[0m[48;2;40;67;43m[39m+    340[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m Significance notes (e.g., "Hiphil: causative — subject causes the action")[K
+[0m[48;2;40;67;43m[39m+    341[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    342[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPhase 6: TC Section Enhancements[K
+[0m[48;2;40;67;43m[39m+    343[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    344[0m:[39m[48;2;24;38;30m [38;2;191;97;106m15[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd [38;2;163;190;140m`[38;2;163;190;140mshowMSInfo()[38;2;163;190;140m`[38;2;235;203;139m function[38;2;235;203;139m**[38;2;191;97;106m — per-chip manuscript popup (already has [38;2;163;190;140m`[38;2;163;190;140mshowMSSPanel[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+    345[0m:[39m[48;2;24;38;30m [38;2;191;97;106m16[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAdd TC-interactive word tooltips[38;2;235;203;139m**[38;2;191;97;106m for variant words in table[K
+[0m[48;2;40;67;43m[39m+    346[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    347[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    348[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    349[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mIMPLEMENTATION PRIORITY ORDER[K
+[0m[48;2;40;67;43m[39m+    350[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    351[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Priority [38;2;192;197;206m|[38;2;192;197;206m Change [38;2;192;197;206m|[38;2;192;197;206m Effort [38;2;192;197;206m|[38;2;192;197;206m Impact [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    352[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    353[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P0 [38;2;192;197;206m|[38;2;192;197;206m Xref pills + 4-language popup [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[38;2;192;197;206m Critical (user requirement) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    354[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P1 [38;2;192;197;206m|[38;2;192;197;206m Per-verse buttons (versions, copy, notes) [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[38;2;192;197;206m High [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    355[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P2 [38;2;192;197;206m|[38;2;192;197;206m Chapter summary card (structure, questions, keywords) [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[38;2;192;197;206m High [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    356[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P3 [38;2;192;197;206m|[38;2;192;197;206m Global UI (progress bar, back-to-top, search, keyboard) [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    357[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P4 [38;2;192;197;206m|[38;2;192;197;206m Dark mode CSS comprehensive [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    358[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P5 [38;2;192;197;206m|[38;2;192;197;206m Print styles, smooth scroll, deep-link [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    359[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P6 [38;2;192;197;206m|[38;2;192;197;206m Enhanced Hebrew morphology decoder [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[38;2;192;197;206m Medium [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    360[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m P7 [38;2;192;197;206m|[38;2;192;197;206m TC section improvements [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    361[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    362[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    363[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    364[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mFILES TO MODIFY[K
+[0m[48;2;40;67;43m[39m+    365[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    366[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m — Primary target:[K
+[0m[48;2;40;67;43m[39m+    367[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140m_render_verse_block()[38;2;163;190;140m`[38;2;191;97;106m — Add buttons, xref pills, notes textarea, version panel[K
+[0m[48;2;40;67;43m[39m+    368[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140m_build_unified_page()[38;2;163;190;140m`[38;2;191;97;106m — Add CSS for new features, comprehensive dark mode, print styles[K
+[0m[48;2;40;67;43m[39m+    369[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140m_build_unified_body()[38;2;163;190;140m`[38;2;191;97;106m — Add JS functions, toolbar items, keyboard handler, chapter summary card[K
+[0m[48;2;40;67;43m[39m+    370[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgenerate_unified_html()[38;2;163;190;140m`[38;2;191;97;106m — Enhance xref data gathering (call enhanced [38;2;163;190;140m`[38;2;163;190;140m_lookup_ref_text[38;2;163;190;140m`[38;2;191;97;106m for 4 languages)[K
+[0m[48;2;40;67;43m[39m+    371[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    372[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m — Reference/data source:[K
+[0m[48;2;40;67;43m[39m+    373[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140m_lookup_ref_text()[38;2;163;190;140m`[38;2;191;97;106m — Extend to return 4 languages (add [38;2;163;190;140m`[38;2;163;190;140mheb[38;2;163;190;140m`[38;2;191;97;106m and [38;2;163;190;140m`[38;2;163;190;140men[38;2;163;190;140m`[38;2;191;97;106m fields)[K
+[0m[48;2;40;67;43m[39m+    374[0m:[39m[48;2;24;38;30m [38;2;191;97;106m   [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgather_chapter_data()[38;2;163;190;140m`[38;2;191;97;106m — Ensure xref text includes all 4 languages[K
+[0m[48;2;40;67;43m[39m+    375[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    376[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRe-run generation[38;2;235;203;139m**[38;2;191;97;106m for Proverbs-13 (and invalidate S3 cache: [38;2;163;190;140m`[38;2;163;190;140mcache/Proverbs/13/unified_analysis_v3.html[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+    377[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    378[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    379[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    380[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mKEY ARCHITECTURAL NOTE[K
+[0m[48;2;40;67;43m[39m+    381[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    382[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe NT John-1 file was generated by an older/different pipeline that embeds xref data directly in HTML data attributes. The current [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m puts xrefs in the JS [38;2;163;190;140m`[38;2;163;190;140mD[38;2;163;190;140m`[38;2;192;197;206m object and renders them as simple text divs. The recommended approach is to:[K
+[0m[48;2;40;67;43m[39m+    383[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    384[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;191;97;106mKeep xrefs in the [38;2;163;190;140m`[38;2;163;190;140mD[38;2;163;190;140m`[38;2;191;97;106m object (it's already there with the data)[K
+[0m[48;2;40;67;43m[39m+    385[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m Render xref pills from JS at page load (like morphology words are rendered)[K
+[0m[48;2;40;67;43m[39m+    386[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m Add the popup panel to the body HTML[K
+[0m[48;2;40;67;43m[39m+    387[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m This avoids bloating HTML with duplicate data in attributes[K
+[0m[48;2;40;67;43m[39m+    388[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    389[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAlternatively, render xref pills server-side (like NT does) with data attributes for a simpler JS implementation — either approach works.[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/findings.md[0m
+[38;5;244m - Completed in 1.421s[0m
+[38;5;12m[1m [1.56][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Findings doc complete\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/nodes && echo '{"from":"c4-docs","finding":"COMPLETE: Full gap analysis written to findings.md. 17 major features missing from OT. Priority order: P0=xref 4-lang pills, P1=per-verse buttons, P2=chapter summary card, P3=global UI, P4-P7=polish. Key insight: NT uses data attributes in HTML for xrefs, OT uses D object - recommend rendering pills from JS at load time."}' >> /Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.461s[0m
+[38;5;12m[1m [1.57][0m[0m
+[?25l[0m[38;5;141m> [0mInvestigation complete. I've written a comprehensive findings document to [38;5;10m/Users/murivirg/work/github/bible-expert/investigation/ab15ce7f/c4-docs/findings.md[0m covering:[0m[0m
+[0m[0m
+[1mKey findings:[22m[0m[0m
+1. The NT John-1 was generated by a different/older pipeline with ~20 interactive features. The current [38;5;10munified_html_generator.py[0m produces a stripped-down version missing ~70% of functionality.[0m[0m
+[0m[0m
+2. [1mCross-references (user's #1 priority)[22m: NT uses xref-pill spans with [38;5;10mdata-es[0m, [38;5;10mdata-gr[0m, [38;5;10mdata-lxx[0m attributes feeding a 380px slide-in panel showing 3 languages. OT only shows a [38;5;10m<div class="xref-entry">[0m with Spanish text. The data layer ([38;5;10m_lookup_ref_text[0m) doesn't even query WLC Hebrew for OT-to-OT references, and English (KJV/BSB) is never queried anywhere.[0m[0m
+[0m[0m
+3. [1m17 features identified as missing[22m from OT, organized into 6 implementation phases with clear priority ordering (P0-P7).[0m[0m
+[0m[0m
+4. [1mArchitecture recommendation[22m: Render xref pills from the existing [38;5;10mD.xrefs[0m JS object at page load (like morphology words are rendered) rather than duplicating data in HTML ]9;Response completeattributes.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 9.72 • Time: 7m 58s
+
+[0m[1G[0m[0m[?25h

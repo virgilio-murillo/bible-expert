@@ -1,0 +1,12 @@
+11:35:37|Starting up
+11:36:01|Starting investigation
+11:36:25|Reading gather_chapter_data
+11:36:55|Analyzing renderMorph JS
+11:37:26|Checking unified gaps
+11:38:19|Checking DB integrity
+11:39:51|Checking morph code formats
+11:40:45|Comparing NT vs OT features
+11:41:16|Checking unified vs study gaps
+11:43:51|Analyzing feature gap table
+11:44:29|Writing findings document
+11:47:09|Findings written complete

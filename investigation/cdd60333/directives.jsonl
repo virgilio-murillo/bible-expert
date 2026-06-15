@@ -1,0 +1,1 @@
+{"from":"head","to":"all","directive":"Focus investigation: (1) unified_html_generator.py gaps vs study_html_generator.py for OT, (2) renderMorph/explainEnding JS functions for Hebrew OSHM codes vs RMAC, (3) LXX morphology code format mismatches, (4) openWordStudy Hebrew Strong's H-number links, (5) DB word count consistency for WLC. Report findings with file:line references."}

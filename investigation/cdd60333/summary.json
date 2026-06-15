@@ -1,0 +1,27 @@
+{
+  "job_id": "cdd60333",
+  "description": "Investigate the bible-expert project (~/work/github/bible-expert/) focusing on Old Testament (AT) quality and the unified analysis HTML generator. \n\nCONTEXT OF RECENT CHANGES (today):\n- Added WLC (Hebrew) word-by-word morphology to the DB (306K words from morphhb repo)\n- Added LXX (Greek Septuagint) word-by-word morphology to the DB (623K words from LXX-Rahlfs-1935)\n- Added Hebrew Strong's lexicon (8674 entries)\n- study_html_generator.py now generates interactive hover for both WLC and LXX words\n- Added LXX literal Spanish translation (via Claude Opus 4.8, cached in S3)\n- Fixed sub-verse handling (9a, 13a merged into parent verse with continuous word_pos)\n\nINVESTIGATE:\n1. unified_html_generator.py - Does it use the new WLC/LXX morphology? Does it include LXX-ES translation? What's missing vs study.html?\n2. The study.html JS template (inside study_html_generator.py _build_html function) - any bugs with the new OT data?\n3. Compare what NT chapters get vs what OT chapters get - identify feature gaps\n4. Check the `renderMorph` function behavior for WLC data - Hebrew morphology codes (OSHM format like \"HNcmsa\") are NOT RMAC codes but the template tries to parse them as RMAC\n5. Check if the word study popup (openWordStudy) works correctly for Hebrew words (Strong's H numbers, external links)\n6. Check if the LXX morphology codes (like \"N.NSM\", \"V.AAI3S\") are handled by the explainEnding/verbTenseEs functions (they expect RMAC format \"V-AAI-3S\")\n7. Look at how `gather_chapter_data` handles the `candidates` list for OT books - are book name variants handled?\n8. DB: Are there any books where WLC morphology word count doesn't match the verses table word count?\n9. Check if the `exegetical` field and `greek_commentaries` work for OT (commentaries table may only have NT data)\n10. What improvements would make the unified_analysis equivalent for OT as it is for NT?\n\nFiles to investigate:\n- ~/work/github/bible-expert/study_html_generator.py (main generator, ~1100 lines)\n- ~/work/github/bible-expert/unified_html_generator.py (unified analysis)\n- ~/work/github/bible-expert/server.py (MCP server, chapter_study tool)\n- ~/.kiro/mcp-servers/bible-tools/db/bible.db (SQLite DB)",
+  "total_seconds": 1211,
+  "phases": {
+    "investigating": "11:35:43",
+    "orchestrating": "11:48:14",
+    "visualizing": "11:50:24",
+    "complete": "11:55:54"
+  },
+  "control_actions": [
+    {
+      "action": "skip_validation",
+      "target": "c4-docs"
+    },
+    {
+      "action": "skip_validation",
+      "target": "c5-internal"
+    },
+    {
+      "action": "finalize",
+      "target": null
+    }
+  ],
+  "findings_count": 57,
+  "has_report": true
+}

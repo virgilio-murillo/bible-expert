@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report</title>
+<style>
+body { font-family: -apple-system, "Segoe UI", Helvetica Neue, sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #fff; }
+h1 { color: #232f3e; font-size: 22pt; border-bottom: 3px solid #ff9900; padding-bottom: 8px; }
+h2 { color: #0073bb; border-bottom: 2px solid #0073bb; padding-bottom: 4px; font-size: 16pt; margin-top: 2em; }
+h3 { color: #232f3e; font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; }
+th { background-color: #232f3e; color: white; padding: 8px; text-align: left; }
+td { border: 1px solid #ddd; padding: 6px 8px; }
+tr:nth-child(even) { background-color: #f8f8f8; }
+code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 10pt; color: #c7254e; }
+pre { background: #1e1e2e; padding: 16px; border-radius: 8px; font-size: 9.5pt; white-space: pre-wrap; word-break: break-word; overflow-x: auto; }
+pre code { background: none; color: #cdd6f4; padding: 0; font-size: inherit; }
+blockquote { border-left: 4px solid #0073bb; margin: 12px 0; padding: 8px 16px; background: #f0f7fc; }
+img { max-width: 100%; height: auto; display: block; margin: 12px auto; }
+.mermaid { background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e0e0e0; margin: 16px 0; text-align: center; }
+.code-wrapper { position: relative; }
+.copy-btn { position: absolute; top: 8px; right: 8px; background: #3498db; color: #fff; border: none; border-radius: 4px; padding: 4px 10px; font-size: 8pt; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+.copy-btn:hover { opacity: 1; }
+.copy-btn.copied { background: #27ae60; }
+</style>
+</head>
+<body>
+<h1
+id="bible-expert-ot-quality-unified-html-generator-investigation">Bible
+Expert — OT Quality &amp; Unified HTML Generator Investigation</h1>
+<p><strong>Date</strong>: 2026-06-13 | <strong>Job</strong>: cdd60333 |
+<strong>Confidence</strong>: HIGH<br />
+<strong>Sources</strong>: Head agent (direct DB + code inspection) + 5
+parallel children (c1-internet, c2-kb, c3-context, c4-docs,
+c5-internal)</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>The bible-expert project successfully ingested OT data (WLC Hebrew
+306K words, LXX Greek 623K words, Hebrew Strong’s 8,674 entries), and
+<code>study_html_generator.py</code> correctly loads and displays this
+data. However, <strong>4 critical bugs</strong> and <strong>1 dead-code
+issue</strong> severely degrade OT user experience:</p>
+<ol type="1">
+<li>Hebrew OSHM morphology codes are silently unparsed — no grammatical
+explanations for Hebrew words</li>
+<li>LXX dot-format codes are silently unparsed — no grammatical
+explanations for LXX words<br />
+</li>
+<li>All 5 external links in the word study popup are wrong for Hebrew
+(point to Greek tools)</li>
+<li>12 LXX book variants (94,675 words) are unreachable due to missing
+<code>books.py</code> aliases</li>
+<li><code>generate_unified_html()</code> is dead code — <strong>never
+called from anywhere</strong></li>
+</ol>
+<hr />
+<h2 id="confirmed-findings">Confirmed Findings</h2>
+<h3
+id="critical-1-hebrew-oshm-morphology-codes-not-parsed-explainendingverbtensees-fail-silently">CRITICAL-1:
+Hebrew OSHM morphology codes not parsed — explainEnding/verbTenseEs fail
+silently</h3>
+<p><strong>Confidence</strong>: 100% (all 5 sources + direct code
+inspection + DB verification)<br />
+<strong>Files</strong>: <code>study_html_generator.py</code> lines
+887–896 (verbTenseEs), 966–1083 (explainEnding)</p>
+<p>WLC Hebrew words use OSHM (OpenScriptures Hebrew Morphology) format:
+<code>HNcmsa</code>, <code>HVqp3ms</code>, <code>HR</code>,
+<code>HC/Vqw3ms</code>. The JS functions <code>explainEnding()</code>
+and <code>verbTenseEs()</code> exclusively check RMAC format
+(<code>V-AAI-3S</code>, <code>N-NSM</code>). No branch matches any OSHM
+code:</p>
+<pre class="javascript"><code>function verbTenseEs(rmac) {
+  if (!rmac || !rmac.startsWith(&#39;V-&#39;)) return &#39;&#39;;  // HVqp3ms fails here
+  ...
+}
+function explainEnding(w) {
+  const rmac = w.m || &#39;&#39;;  // = &quot;HNcmsa&quot;
+  if (rmac === &#39;CONJ&#39;) ...      // no
+  if (rmac.startsWith(&#39;PREP&#39;))  // no
+  if (rmac.startsWith(&#39;N-&#39;))    // no (starts with H, not N)
+  if (rmac.startsWith(&#39;V-&#39;))    // no
+  // ... all other checks fail ...
+  // Falls to generic fallback:
+  if (form !== lemma) return header + `Forma flexionada de ${lemma}`;
+}</code></pre>
+<p><strong>Result</strong>: Hebrew words show “Forma flexionada de
+[lemma]” — zero grammatical information.<br />
+<strong>rmac_codes table</strong>: 1,392 RMAC entries, 0 OSHM entries —
+D.rmac[w.m] always returns undefined for Hebrew.</p>
+<p>OSHM code structure (Reference:
+https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html): -
+<code>H</code> prefix = Hebrew language - POS: <code>V</code>=verb,
+<code>N</code>=noun, <code>A</code>=adjective,
+<code>C</code>=conjunction, <code>P</code>=pronoun,
+<code>R</code>=preposition, <code>T</code>=particle/article,
+<code>D</code>=adverb, <code>S</code>=suffix - Verb stems:
+<code>q</code>=Qal, <code>N</code>=Niphal, <code>p</code>=Piel,
+<code>P</code>=Pual, <code>h</code>=Hithpael, <code>H</code>=Hophal,
+<code>i</code>=Hiphil - Verb conjugation types: <code>p</code>=perfect,
+<code>i</code>=imperfect, <code>w</code>=wayyiqtol,
+<code>v</code>=imperative, <code>r</code>=active participle,
+<code>s</code>=passive participle - Noun:
+<code>[c|p|g][m|f|b|c][s|p|d][a|c|d]</code> =
+type/gender/number/state</p>
+<h3
+id="critical-2-lxx-dot-format-codes-not-parsed-catss-format-vs-rmac-dash-format">CRITICAL-2:
+LXX dot-format codes not parsed — CATSS format vs RMAC dash format</h3>
+<p><strong>Confidence</strong>: 100% (all 5 sources + direct DB
+verification)<br />
+<strong>Files</strong>: <code>study_html_generator.py</code> lines 887,
+966</p>
+<p>LXX morphology uses CATSS format with dots: <code>V.AAI3S</code>,
+<code>N.NSM</code>, <code>RA.NSM</code>. RMAC uses dashes:
+<code>V-AAI-3S</code>. <strong>Zero</strong> LXX codes pass any
+check:</p>
+<pre class="sql"><code>SELECT code FROM rmac_codes WHERE code LIKE &#39;V.%&#39;;  -- returns 0 rows</code></pre>
+<p>Both <code>verbTenseEs("V.AAI3S")</code> and
+<code>explainEnding({m:"V.AAI3S"})</code> silently return empty or
+fallback text. The <code>openLxxStudy()</code> popup shows only the raw
+code string.</p>
+<h3
+id="critical-3-openfullstudy-hebrew-external-links-all-point-to-greek-resources">CRITICAL-3:
+openFullStudy Hebrew external links all point to Greek resources</h3>
+<p><strong>Confidence</strong>: 100% (all 4 sources + direct code
+inspection)<br />
+<strong>Files</strong>: <code>study_html_generator.py</code> lines
+1215–1225</p>
+<p>The <code>openFullStudy()</code> function hardcodes Greek-only
+external links with no Hebrew branching:</p>
+<pre class="javascript"><code>// ALL wrong for Hebrew H-numbers:
+`biblehub.com/greek/${(w.s||&#39;&#39;).replace(&#39;G&#39;,&#39;&#39;)}` // → /greek/1254.htm (should be /hebrew/1254.htm)
+`perseus.tufts.edu/...&amp;la=greek`                   // Greek morphology tool, useless for Hebrew
+`logeion.uchicago.edu/${w.l}`                      // LSJ Greek-only lexicon
+`blueletterbible.org/lexicon/${w.s||&#39;&#39;}/kjv/tr/0-1/` // &quot;tr&quot; = TR Greek, should be &quot;wlc&quot;
+// Only STEP Bible works for both: `stepbible.org/?q=strong=${w.s}`</code></pre>
+<p>For Hebrew word H1254 (בָּרָא, “create”), 4 of 5 links are broken.</p>
+<h3
+id="critical-4-generate_unified_html-is-dead-code-never-called">CRITICAL-4:
+generate_unified_html() is DEAD CODE — never called</h3>
+<p><strong>Confidence</strong>: 100% (head + c3-context + c5-internal
+confirmed)<br />
+<strong>Files</strong>: <code>unified_html_generator.py</code> (entire
+file, 893 lines)</p>
+<pre class="bash"><code>grep -rn &quot;generate_unified_html&quot; ~/work/github/bible-expert/ --include=&quot;*.py&quot;
+# Result: ONE match — the function definition itself</code></pre>
+<p><code>server.py</code> only calls <code>generate_study_html()</code>.
+The <code>chapter_study</code> MCP tool has no code path to
+<code>unified_html_generator.py</code>. The unified analysis HTML is
+completely unreachable from the MCP server.</p>
+<h3
+id="high-1-12-lxx-book-variants-unreachable-due-to-missing-aliases-in-books.py">HIGH-1:
+12 LXX book variants unreachable due to missing aliases in books.py</h3>
+<p><strong>Confidence</strong>: 100% (head + c3-context confirmed, DB
+verified)<br />
+<strong>Files</strong>: <code>books.py</code></p>
+<table>
+<thead>
+<tr>
+<th>LXX DB Code</th>
+<th>Should Map To</th>
+<th>Words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JoshA, JoshB</td>
+<td>Joshua (id=6)</td>
+<td>15,960</td>
+</tr>
+<tr>
+<td>JudgA, JudgB</td>
+<td>Judges (id=7)</td>
+<td>31,527</td>
+</tr>
+<tr>
+<td>DanOG, DanTh</td>
+<td>Daniel (id=27)</td>
+<td>21,234</td>
+</tr>
+<tr>
+<td>BelOG, BelTh</td>
+<td>Daniel (additions)</td>
+<td>1,772</td>
+</tr>
+<tr>
+<td>SusOG, SusTh</td>
+<td>Daniel (additions)</td>
+<td>1,926</td>
+</tr>
+<tr>
+<td>1Esdr</td>
+<td>Ezra (id=15)</td>
+<td>8,994</td>
+</tr>
+<tr>
+<td>2Esdr</td>
+<td>Nehemiah (id=16)</td>
+<td>13,262</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>94,675 words</strong></td>
+</tr>
+</tbody>
+</table>
+<p>When a user requests Joshua LXX morphology,
+<code>get_all_db_names("Joshua")</code> returns
+<code>["Joshua","Josh","Jos",...]</code> — none match the DB values
+<code>"JoshA"</code> or <code>"JoshB"</code>. Zero LXX morphology rows
+returned.</p>
+<h3
+id="high-2-unified_html_generator.py-.greek-line-has-no-rtl-direction-for-hebrew">HIGH-2:
+unified_html_generator.py .greek-line has no RTL direction for
+Hebrew</h3>
+<p><strong>Confidence</strong>: 99% (head + c3 + c5 confirmed)<br />
+<strong>Files</strong>: <code>unified_html_generator.py</code> line
+643</p>
+<p><code>study_html_generator.py</code> line 762:</p>
+<pre class="css"><code>.verse-line.original { direction: rtl; font-family: &#39;SBL Hebrew&#39;, &#39;Ezra SIL&#39;, serif; }</code></pre>
+<p><code>unified_html_generator.py</code> line 643:</p>
+<pre class="css"><code>.greek-line { font-family: &#39;Noto Serif&#39;, ...; color: #1b5e20; }  /* NO direction:rtl */</code></pre>
+<p>For OT chapters, Hebrew words in <code>unified_html</code> display
+left-to-right (visually incorrect).</p>
+<h3
+id="high-3-unified_html_generator.py-has-zero-ot-specific-rendering">HIGH-3:
+unified_html_generator.py has zero OT-specific rendering</h3>
+<p><strong>Confidence</strong>: 100% (all sources confirmed)<br />
+<strong>Files</strong>: <code>unified_html_generator.py</code> lines
+746–758</p>
+<p>The JS section only renders <code>D.morphology[v.v]</code> with plain
+spans (no onclick, no tooltip), then falls back to
+<code>D.parallel.MorphGNT</code> then <code>D.parallel.SBLGNT</code>.
+There is: - No <code>isOT</code> detection - No LXX morphology line
+(<code>D.lxx_morphology</code> completely absent) - No LXX-ES
+translation line (<code>D.lxx_spanish</code> completely absent)<br />
+- No WLC label
+(<code>&lt;span class="vlabel"&gt;WLC&lt;/span&gt;</code>) - No word
+study click handler - No RTL direction</p>
+<h3 id="medium-1-apparatus-textual-variants-table-is-nt-only">MEDIUM-1:
+apparatus (textual variants) table is NT-only</h3>
+<p><strong>Confidence</strong>: 99% (DB verified)</p>
+<pre class="sql"><code>SELECT COUNT(DISTINCT book) FROM apparatus;  -- returns 27 (all NT)
+SELECT COUNT(*) FROM apparatus WHERE book IN (&#39;Genesis&#39;,&#39;Psalms&#39;,&#39;Isaiah&#39;);  -- returns 0</code></pre>
+<p>The TC variants button never appears for any OT chapter. BHS critical
+apparatus would need to be ingested to enable this.</p>
+<h3
+id="data-gap-1-112974-patristic-entries-with-book-unindexed-to-bible-verses">DATA-GAP-1:
+112,974 patristic entries with book=’’ unindexed to Bible verses</h3>
+<p><strong>Confidence</strong>: 100% (DB verified)</p>
+<p>112,974 patristic rows have <code>book=''</code> and
+<code>verse_num=0</code>. These have valid <code>text_original</code>
+(Greek, from Origen, Irenaeus, etc.) but were never indexed to specific
+Bible verses. They are invisible to
+<code>gather_chapter_data</code>.</p>
+<hr />
+<h2 id="contradictions-found-and-resolutions">Contradictions Found and
+Resolutions</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 24%" />
+<col style="width: 27%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Contradiction</th>
+<th>c2-kb claim</th>
+<th>Verified truth</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OT patristic coverage</td>
+<td>“only 5,037 entries”</td>
+<td><strong>56,863 entries</strong> (Psalms=21K, Genesis=9K,
+Isaiah=5K)</td>
+<td>c2-kb was wrong; queried too narrowly</td>
+</tr>
+<tr>
+<td>WLC word display in study.html</td>
+<td>implied broken</td>
+<td>Display works correctly (direction:rtl on container, individual
+spans join correctly RTL)</td>
+<td>Not a bug — CSS direction:rtl on container reverses visual word
+order</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="gaps-identified-and-investigated">Gaps Identified and
+Investigated</h2>
+<h3 id="gap-does-wlc-word_pos-ordering-cause-rtl-display-issues">Gap:
+Does WLC word_pos ordering cause RTL display issues?</h3>
+<p>Investigated: WLC <code>word_pos=1</code> = first Hebrew word
+(rightmost when displayed RTL). <code>renderMorph</code> joins words
+with <code>' '</code>. In a <code>direction:rtl</code> container,
+logical-order items display right-to-left correctly. Slash-separated
+morpheme prefixes (<code>בְּ/רֵאשִׁ֖ית</code>) are stored as single tokens —
+correctly displayed as single words. <strong>No bug.</strong></p>
+<h3 id="gap-do-sub-verse-handling-changes-affect-word_pos">Gap: Do
+sub-verse handling changes affect word_pos?</h3>
+<p>Investigated: All WLC <code>verse_num</code> values are integers (1
+to 176 max). No fractional verse numbers in WLC. LXX has edge cases
+(SusOG verse_num=6062) but these are apocryphal variant texts. Canonical
+OT books have normal integer verse_nums. <strong>No bug.</strong></p>
+<h3
+id="gap-is-the-hebrew-strongs-lexicon-accessible-for-wlc-word-lookups">Gap:
+Is the Hebrew Strong’s lexicon accessible for WLC word lookups?</h3>
+<p>Investigated: The <code>gather_chapter_data</code> morphology section
+builds <code>norm_lex</code> keyed by Strong’s number
+(<code>lx["strongs"]</code>). For WLC words with no direct lemma match,
+it falls back to <code>lex = lex_map.get(r["strongs"], {})</code>. The
+Hebrew lexicon has 8,674 entries. <strong>Works correctly.</strong></p>
+<hr />
+<h2 id="nt-vs-ot-feature-comparison">NT vs OT Feature Comparison</h2>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: center;">NT (MorphGNT)</th>
+<th style="text-align: center;">OT Hebrew (WLC)</th>
+<th style="text-align: center;">OT Greek (LXX)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word-by-word display</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Hover tooltip (gloss)</td>
+<td style="text-align: center;">✅ Full</td>
+<td style="text-align: center;">✅ English gloss</td>
+<td style="text-align: center;">✅ English gloss</td>
+</tr>
+<tr>
+<td>explainEnding breakdown</td>
+<td style="text-align: center;">✅ RMAC parsed</td>
+<td style="text-align: center;">❌ Fallback only</td>
+<td style="text-align: center;">❌ Fallback only</td>
+</tr>
+<tr>
+<td>verbTenseEs / contextualMeaning</td>
+<td style="text-align: center;">✅ Full</td>
+<td style="text-align: center;">❌ Silent failure</td>
+<td style="text-align: center;">❌ Silent failure</td>
+</tr>
+<tr>
+<td>Click → word study popup</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅ (but links broken)</td>
+<td style="text-align: center;">✅ openLxxStudy</td>
+</tr>
+<tr>
+<td>External links (word study)</td>
+<td style="text-align: center;">✅ All correct</td>
+<td style="text-align: center;">❌ 4/5 broken</td>
+<td style="text-align: center;">❌ 4/5 broken</td>
+</tr>
+<tr>
+<td>RTL text direction (study.html)</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">✅ direction:rtl</td>
+<td style="text-align: center;">N/A</td>
+</tr>
+<tr>
+<td>RTL text direction (unified.html)</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">❌ LTR</td>
+<td style="text-align: center;">N/A</td>
+</tr>
+<tr>
+<td>LXX parallel line</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">✅ study.html only</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>LXX-ES literal translation</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">✅ study.html only</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>Exegetical commentaries</td>
+<td style="text-align: center;">✅ Robertson/Vincent</td>
+<td style="text-align: center;">❌ Table NT-only</td>
+<td style="text-align: center;">❌ Table NT-only</td>
+</tr>
+<tr>
+<td>Patristic commentary</td>
+<td style="text-align: center;">✅ Good</td>
+<td style="text-align: center;">✅ Psalms/Gen/Isa</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Textual apparatus (TC)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌ Table NT-only</td>
+<td style="text-align: center;">❌ Table NT-only</td>
+</tr>
+<tr>
+<td>Cross-references</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Compound word decomposition</td>
+<td style="text-align: center;">✅ Greek only</td>
+<td style="text-align: center;">❌ No data</td>
+<td style="text-align: center;">❌ No data</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recommended-actions">Recommended Actions</h2>
+<h3 id="priority-1-critical-fixes-code-changes">Priority 1 — Critical
+Fixes (Code Changes)</h3>
+<p><strong>1. Fix external links for Hebrew words</strong> —
+<code>study_html_generator.py</code> lines 1215–1225 (5 min)</p>
+<pre class="javascript"><code>// In openFullStudy():
+const isHeb = (w.s || &#39;&#39;).startsWith(&#39;H&#39;);
+const hNum = isHeb ? (w.s || &#39;&#39;).replace(&#39;H&#39;, &#39;&#39;) : &#39;&#39;;
+if (isHeb) {
+  // Hebrew-specific links:
+  links = `
+    &lt;li&gt;&lt;a href=&quot;https://www.blueletterbible.org/lexicon/h${hNum}/kjv/wlc/0-1/&quot; target=&quot;_blank&quot;&gt;Blue Letter Bible — Hebreo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://biblehub.com/hebrew/${hNum}.htm&quot; target=&quot;_blank&quot;&gt;BibleHub — Concordancia hebreo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.sefaria.org/search#${encodeURIComponent(w.l)}&quot; target=&quot;_blank&quot;&gt;Sefaria — Fuentes judías&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.stepbible.org/?q=strong=${w.s}&quot; target=&quot;_blank&quot;&gt;STEP Bible — Todas las apariciones&lt;/a&gt;&lt;/li&gt;
+  `;
+} else {
+  // existing Greek links...
+}</code></pre>
+<p><strong>2. Normalize LXX dot-codes to RMAC dash-format</strong> —
+<code>study_html_generator.py</code> lines 887, 966 (10 min)</p>
+<p>At the top of both <code>verbTenseEs()</code> and
+<code>explainEnding()</code>:</p>
+<pre class="javascript"><code>function verbTenseEs(rmac) {
+  let code = (rmac || &#39;&#39;).replace(/\./g, &#39;-&#39;);
+  // LXX: &quot;V.AAI3S&quot; → &quot;V-AAI3S&quot; (still needs dash before person: &quot;V-AAI-3S&quot;)
+  // Insert dash at position 5 if it&#39;s a verb with &gt;5 chars and no dash at pos 5:
+  if (code.startsWith(&#39;V-&#39;) &amp;&amp; code.length &gt; 5 &amp;&amp; code[5] !== &#39;-&#39;) {
+    code = code.substring(0, 5) + &#39;-&#39; + code.substring(5);
+  }
+  if (!code.startsWith(&#39;V-&#39;)) return &#39;&#39;;
+  // rest unchanged...
+}</code></pre>
+<p><strong>3. Implement Hebrew OSHM parser</strong> —
+<code>study_html_generator.py</code> line 966 (2–4 hrs)</p>
+<p>Add at top of <code>explainEnding()</code>:</p>
+<pre class="javascript"><code>function explainEnding(w) {
+  const rmac = w.m || &#39;&#39;;
+  if (rmac[0] === &#39;H&#39; || rmac[0] === &#39;A&#39;) return explainHebrewMorph(rmac, w.w, w.l);
+  // ... rest unchanged
+}
+
+function explainHebrewMorph(code, form, lemma) {
+  const lang = code[0] === &#39;H&#39; ? &#39;Hebreo&#39; : &#39;Arameo&#39;;
+  // Strip slash-separated prefixes for POS detection: &quot;HC/Vqw3ms&quot; → main code after last slash
+  const main = code.includes(&#39;/&#39;) ? code.split(&#39;/&#39;).pop() : code.substring(1);
+  const pos = main[0];
+  const posNames = {&#39;N&#39;:&#39;Sustantivo&#39;,&#39;V&#39;:&#39;Verbo&#39;,&#39;A&#39;:&#39;Adjetivo&#39;,&#39;P&#39;:&#39;Pronombre&#39;,
+                    &#39;R&#39;:&#39;Preposición&#39;,&#39;C&#39;:&#39;Conjunción&#39;,&#39;T&#39;:&#39;Artículo/Partícula&#39;,&#39;D&#39;:&#39;Adverbio&#39;,&#39;S&#39;:&#39;Sufijo&#39;};
+  let h = `&lt;strong style=&quot;font-family:&#39;SBL Hebrew&#39;,serif;font-size:1.2rem&quot;&gt;${form}&lt;/strong&gt;&lt;br&gt;`;
+  h += `&lt;span style=&quot;font-size:0.78rem;color:#555&quot;&gt;${lang}&lt;/span&gt;&lt;br&gt;`;
+  
+  if (pos === &#39;V&#39;) {
+    const stems = {&#39;q&#39;:&#39;Qal (simple activo)&#39;,&#39;N&#39;:&#39;Nifal (simple pasivo/reflexivo)&#39;,
+                   &#39;p&#39;:&#39;Piel (intensivo activo)&#39;,&#39;P&#39;:&#39;Pual (intensivo pasivo)&#39;,
+                   &#39;h&#39;:&#39;Hitpael (reflexivo intensivo)&#39;,&#39;H&#39;:&#39;Hofal (causativo pasivo)&#39;,
+                   &#39;i&#39;:&#39;Hifil (causativo activo)&#39;};
+    const conjs = {&#39;p&#39;:&#39;Perfecto (acción completada)&#39;,
+                   &#39;i&#39;:&#39;Imperfecto (acción continua/futura)&#39;,
+                   &#39;w&#39;:&#39;Wayyiqtol (narrativo pasado: &quot;y...entonces&quot;)&#39;,
+                   &#39;v&#39;:&#39;Imperativo (orden/mandato)&#39;,
+                   &#39;r&#39;:&#39;Participio activo&#39;,&#39;s&#39;:&#39;Participio pasivo&#39;,
+                   &#39;c&#39;:&#39;Cohortativo (deseo 1ª pers)&#39;,
+                   &#39;j&#39;:&#39;Yusivo (deseo 3ª pers)&#39;};
+    const stem = stems[main[1]] || main[1];
+    const conj = conjs[main[2]] || main[2];
+    h += `&lt;strong&gt;Verbo&lt;/strong&gt; — ${stem}&lt;br&gt;&lt;span style=&quot;font-size:0.8rem&quot;&gt;${conj}&lt;/span&gt;`;
+  } else if (pos === &#39;N&#39;) {
+    const types = {&#39;c&#39;:&#39;común&#39;,&#39;p&#39;:&#39;propio&#39;,&#39;g&#39;:&#39;gentilicio&#39;};
+    const genders = {&#39;m&#39;:&#39;masc.&#39;,&#39;f&#39;:&#39;fem.&#39;,&#39;b&#39;:&#39;ambos&#39;,&#39;c&#39;:&#39;común&#39;};
+    const numbers = {&#39;s&#39;:&#39;sing.&#39;,&#39;p&#39;:&#39;plur.&#39;,&#39;d&#39;:&#39;dual&#39;};
+    const states = {&#39;a&#39;:&#39;absoluto&#39;,&#39;c&#39;:&#39;constructo&#39;,&#39;d&#39;:&#39;determinado&#39;};
+    h += `&lt;strong&gt;${posNames[pos]}&lt;/strong&gt; — ${types[main[1]]||&#39;&#39;} ${genders[main[2]]||&#39;&#39;} ${numbers[main[3]]||&#39;&#39;} ${states[main[4]]||&#39;&#39;}`;
+  } else {
+    h += `&lt;strong&gt;${posNames[pos] || pos}&lt;/strong&gt;`;
+  }
+  return h;
+}</code></pre>
+<p><strong>4. Add LXX variant aliases to books.py</strong> —
+<code>books.py</code> (5 min)</p>
+<pre class="python"><code>6: (&quot;Joshua&quot;, [&quot;Josh&quot;,&quot;Jos&quot;,&quot;Josué&quot;,&quot;Josue&quot;,&quot;Ἰησοῦς τοῦ Ναυή&quot;,&quot;Josué&quot;,&quot;Liber Iosue&quot;,
+               &quot;JoshA&quot;,&quot;JoshB&quot;]),  # ADD
+7: (&quot;Judges&quot;, [&quot;Judg&quot;,&quot;Jdg&quot;,&quot;Jue&quot;,&quot;Jueces&quot;,&quot;Κριταί&quot;,&quot;Juges&quot;,&quot;Liber Iudicum&quot;,
+               &quot;JudgA&quot;,&quot;JudgB&quot;]),  # ADD
+27: (&quot;Daniel&quot;, [&quot;Dan&quot;,&quot;Dn&quot;,&quot;Δανιήλ&quot;,&quot;Liber Danielis&quot;,
+                &quot;DanOG&quot;,&quot;DanTh&quot;,&quot;BelOG&quot;,&quot;BelTh&quot;,&quot;SusOG&quot;,&quot;SusTh&quot;]),  # ADD
+15: (&quot;Ezra&quot;, [&quot;Esd&quot;,&quot;Esdras&quot;,&quot;Ἔσδρας&quot;,&quot;Liber Esdrae&quot;,
+              &quot;1Esdr&quot;]),  # ADD
+16: (&quot;Nehemiah&quot;, [&quot;Neh&quot;,&quot;Nehemías&quot;,&quot;Nehemias&quot;,&quot;Νεεμίας&quot;,&quot;Néhémie&quot;,&quot;Liber Nehemiae&quot;,
+                  &quot;2Esdr&quot;]),  # ADD</code></pre>
+<h3 id="priority-2-structural-fix-wire-up-unified-analysis">Priority 2 —
+Structural Fix (Wire up unified analysis)</h3>
+<p><strong>5. Call generate_unified_html from server.py</strong> —
+<code>server.py</code> (30 min)</p>
+<p>In the background thread
+(<code>_generate_background_analyses</code>), after generating
+<code>study.html</code>:</p>
+<pre class="python"><code># Unified analysis
+from unified_html_generator import generate_unified_html
+unified_path = generate_unified_html(resolved, chapter, chapter_data, out_path)
+if unified_path.exists():
+    subprocess.Popen([&quot;open&quot;, str(unified_path)])</code></pre>
+<h3
+id="priority-3-ot-feature-parity-in-unified_html_generator.py">Priority
+3 — OT Feature Parity in unified_html_generator.py</h3>
+<p><strong>6. Add OT detection and Hebrew/LXX rendering</strong> —
+<code>unified_html_generator.py</code> (2 hrs)</p>
+<p>In JS template (<code>_build_unified_page</code>), after morphology
+rendering:</p>
+<pre class="javascript"><code>const isOT = !!(D.parallel &amp;&amp; D.parallel.WLC);
+D.verses.forEach(v =&gt; {
+  const el = document.getElementById(&#39;greek-&#39; + v.v);
+  if (!el) return;
+  const words = D.morphology[v.v];
+  if (isOT) {
+    // WLC Hebrew line with RTL
+    el.className = &#39;greek-line heb&#39;;  // add RTL CSS class
+    el.setAttribute(&#39;dir&#39;, &#39;rtl&#39;);
+  }
+  if (words &amp;&amp; words.length) {
+    el.innerHTML = words.map((w,i) =&gt;
+      `&lt;span class=&quot;morph-word&quot; onmouseenter=&quot;showTip(event,${v.v},${i})&quot; 
+             onclick=&quot;openWordStudy(${v.v},${i})&quot;&gt;${w.w}&lt;/span&gt;`
+    ).join(&#39; &#39;);
+  }
+  // LXX line (for OT)
+  if (isOT &amp;&amp; D.lxx_morphology &amp;&amp; D.lxx_morphology[v.v]) {
+    const lxxEl = document.createElement(&#39;div&#39;);
+    lxxEl.className = &#39;lxx-line&#39;;
+    lxxEl.innerHTML = D.lxx_morphology[v.v].map(w =&gt; 
+      `&lt;span class=&quot;morph-word lxx-word&quot;&gt;${w.w}&lt;/span&gt;`
+    ).join(&#39; &#39;);
+    el.parentNode.insertBefore(lxxEl, el.nextSibling);
+  }
+  // LXX-ES translation
+  if (isOT &amp;&amp; D.lxx_spanish &amp;&amp; D.lxx_spanish[v.v]) {
+    const esEl = document.createElement(&#39;div&#39;);
+    esEl.className = &#39;lxx-es-line&#39;;
+    esEl.textContent = D.lxx_spanish[v.v];
+    el.parentNode.insertBefore(esEl, lxxEl ? lxxEl.nextSibling : el.nextSibling);
+  }
+});</code></pre>
+<p>Add to CSS:</p>
+<pre class="css"><code>.greek-line.heb { font-family: &#39;SBL Hebrew&#39;,&#39;Ezra SIL&#39;,serif; direction: rtl; unicode-bidi: bidi-override; }
+.lxx-line { font-family: &#39;Noto Serif&#39;,serif; color: #4a148c; margin-bottom: 0.3rem; font-size: 0.9rem; }
+.lxx-es-line { font-size: 0.82rem; color: #6a1b9a; font-style: italic; margin-left: 1rem; margin-bottom: 0.4rem; }</code></pre>
+<h3 id="priority-4-data-pipeline-fixes">Priority 4 — Data Pipeline
+Fixes</h3>
+<p><strong>7. Index 112K patristic entries to Bible verses</strong> —
+<code>ingest/</code> (significant effort)<br />
+Run a verse-reference extraction pass over the 112,974 entries with
+<code>book=''</code>. Use regex + LLM to identify Bible references in
+<code>text_original</code> (Greek) and assign <code>book</code>,
+<code>chapter</code>, <code>verse_num</code>.</p>
+<p><strong>8. Ingest OT commentary sources</strong> —
+<code>ingest/</code> (significant effort)<br />
+Public domain sources: Keil &amp; Delitzsch (Hebrew OT commentary),
+Matthew Henry, Cambridge Bible Commentary. These would populate the
+<code>commentaries</code> table for OT and enable the exegetical
+section.</p>
+<hr />
+<h2 id="summary-of-all-bugs">Summary of All Bugs</h2>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 25%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>ID</th>
+<th>Severity</th>
+<th>File</th>
+<th>Lines</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRIT-1</td>
+<td>Critical</td>
+<td>study_html_generator.py</td>
+<td>887, 966</td>
+<td>OSHM codes not parsed — Hebrew zero grammatical info</td>
+</tr>
+<tr>
+<td>CRIT-2</td>
+<td>Critical</td>
+<td>study_html_generator.py</td>
+<td>887, 966</td>
+<td>LXX dot-codes not parsed — LXX zero grammatical info</td>
+</tr>
+<tr>
+<td>CRIT-3</td>
+<td>Critical</td>
+<td>study_html_generator.py</td>
+<td>1215–1225</td>
+<td>Hebrew external links all wrong (Greek paths)</td>
+</tr>
+<tr>
+<td>CRIT-4</td>
+<td>Critical</td>
+<td>unified_html_generator.py</td>
+<td>entire file</td>
+<td>generate_unified_html() never called — dead code</td>
+</tr>
+<tr>
+<td>HIGH-1</td>
+<td>High</td>
+<td>books.py</td>
+<td>6,7,27,15,16</td>
+<td>12 LXX book variants unreachable (94,675 words)</td>
+</tr>
+<tr>
+<td>HIGH-2</td>
+<td>High</td>
+<td>unified_html_generator.py</td>
+<td>643</td>
+<td>.greek-line: no direction:rtl for Hebrew</td>
+</tr>
+<tr>
+<td>HIGH-3</td>
+<td>High</td>
+<td>unified_html_generator.py</td>
+<td>746–758</td>
+<td>No LXX line, no LXX-ES, no isOT, no word clicks</td>
+</tr>
+<tr>
+<td>MED-1</td>
+<td>Medium</td>
+<td>server.py + DB</td>
+<td>—</td>
+<td>apparatus table NT-only — no TC for OT chapters</td>
+</tr>
+<tr>
+<td>GAP-1</td>
+<td>Data Gap</td>
+<td>DB: patristic</td>
+<td>—</td>
+<td>112K patristic entries unindexed (book=’’)</td>
+</tr>
+<tr>
+<td>GAP-2</td>
+<td>Data Gap</td>
+<td>DB: commentaries</td>
+<td>—</td>
+<td>commentaries table NT-only (27 books)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="db-health-summary">DB Health Summary</h2>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WLC morphology completeness</td>
+<td>✅ 929 chapters, 306K words — complete</td>
+</tr>
+<tr>
+<td>LXX morphology completeness (accessible books)</td>
+<td>✅ 48+ books, 623K words</td>
+</tr>
+<tr>
+<td>LXX morphology coverage (all books)</td>
+<td>⚠️ 12 books unreachable (94K words)</td>
+</tr>
+<tr>
+<td>Book name resolution (WLC)</td>
+<td>✅ get_all_db_names() includes all short-form aliases</td>
+</tr>
+<tr>
+<td>Hebrew Strong’s lexicon</td>
+<td>✅ 8,674 entries</td>
+</tr>
+<tr>
+<td>Sub-verse handling</td>
+<td>✅ Continuous word_pos, no fractional verse_nums in WLC</td>
+</tr>
+<tr>
+<td>patristic OT coverage</td>
+<td>✅ 56,863 entries (Psalms=21K, Genesis=9K, Isaiah=5K)</td>
+</tr>
+<tr>
+<td>commentaries OT coverage</td>
+<td>❌ 0 entries — NT only</td>
+</tr>
+<tr>
+<td>apparatus OT coverage</td>
+<td>❌ 0 entries — NT only</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>OpenScriptures OSHM Hebrew Morphology Codes —
+https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html</li>
+<li>CATSS LXX Morphology Coding —
+http://ccat.sas.upenn.edu/gopher/text/religion/biblical/lxxmorph/*Morph-Coding</li>
+<li>LaParola JS OSHB Parser (reference impl) —
+https://www.laparola.net/app/js/bible/morphology.js</li>
+<li>morphhb repository — https://github.com/openscriptures/morphhb</li>
+<li>LXX-Rahlfs-1935 dataset —
+https://github.com/eliranwong/LXX-Rahlfs-1935</li>
+<li>BLB Hebrew lexicon URL format —
+<code>blueletterbible.org/lexicon/h{number}/kjv/wlc/0-1/</code></li>
+<li>BibleHub Hebrew URL format —
+<code>biblehub.com/hebrew/{number}.htm</code></li>
+</ol>
+<hr />
+<p><em>Report generated by Head Agent (cdd60333) — 2026-06-13T11:48
+MDT</em></p>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true, theme: 'default' });
+// Add copy buttons to ALL pre blocks
+document.querySelectorAll('pre').forEach(pre => {
+  if (pre.closest('.mermaid')) return;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'code-wrapper';
+  pre.parentNode.insertBefore(wrapper, pre);
+  wrapper.appendChild(pre);
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.textContent = 'Copy';
+  btn.onclick = function() {
+    const code = pre.querySelector('code') || pre;
+    navigator.clipboard.writeText(code.textContent).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  };
+  wrapper.appendChild(btn);
+});
+</script>
+</body>
+</html>

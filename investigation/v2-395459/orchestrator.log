@@ -1,0 +1,246 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mDuplicate agent with name [38;5;10maws-sap-c02-agent[0m was found in the global directory.
+[0m[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+One or more mcp server did not load correctly. See $TMPDIR/kiro-log/kiro-chat.log for more details.
+------
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 1.97s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Let me read the full findings to understand what's there, then synthesize into a final report. The judge rulings were cut off - let me check if there's more content in the investigation directory.
+[38;5;244m - Completed in 1.438s[0m
+[38;5;12m[1m [1.1][0m[0m
+[?25l[0m[?25l[0m[0mReading directory: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/v2-395459[0m[38;5;244m (using tool: read, max depth: 1, max entries: 1000, excluding: defaults)[0m
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/v2-395459[0m [38;5;244m(42 entries)[0m
+[38;5;244m - Completed in 1.570s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/v2-395459/judge_rulings.md[0m, all lines[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m9997 bytes[0m from /Users/murivirg/work/github/bible-expert/investigation/v2-395459/judge_rulings.md
+[38;5;244m - Completed in 1.363s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[38;5;141m> [0mI have everything I need. Let me write the final report now.[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/v2-395459/final_report.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mFinal Report — NT chapter_study After OT/NT Generator Split[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mInvestigation ID:[38;2;235;203;139m**[38;2;192;197;206m v2-395459[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mDate:[38;2;235;203;139m**[38;2;192;197;206m 2026-06-14[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSubject:[38;2;235;203;139m**[38;2;192;197;206m Verify NT chapter_study functionality is correctly wired after splitting [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m into OT and NT variants[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mVerdict:[38;2;235;203;139m**[38;2;192;197;206m ✅ Functionally correct — 3 low/medium hygiene issues, zero runtime bugs[K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mExecutive Summary[K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe OT/NT generator split is working correctly. All imports resolve, all function signatures match their call sites, and the [38;2;163;190;140m`[38;2;163;190;140m_is_ot()[38;2;163;190;140m`[38;2;192;197;206m routing logic correctly classifies all 66 canonical books. The NT path is a byte-for-byte copy of the pre-split original and therefore behaves identically to the known-good state.[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThree hygiene issues exist but none affect runtime correctness:[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMEDIUM[38;2;235;203;139m**[38;2;191;97;106m — 10 stale import sites in both unified generators still point to the original [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;191;97;106m instead of the split variants. The system works today because the original still exists, but a future cleanup deletion would break it.[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mLOW[38;2;235;203;139m**[38;2;191;97;106m — A [38;2;163;190;140m`[38;2;163;190;140mSyntaxWarning[38;2;163;190;140m`[38;2;191;97;106m fires in [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator_ot.py[38;2;163;190;140m`[38;2;191;97;106m for [38;2;163;190;140m`[38;2;163;190;140m\.[38;2;163;190;140m`[38;2;191;97;106m escape sequences inside JavaScript regex strings embedded in Python f-strings. CPython's f-string line tracker misreports the line numbers (reports 1611/1615 for a 1606-line file). Cosmetic only.[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mLOW[38;2;235;203;139m**[38;2;191;97;106m — [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;191;97;106m (original) and [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;191;97;106m (no suffix) are dead code in [38;2;163;190;140m`[38;2;163;190;140mserver.py[38;2;163;190;140m`[38;2;191;97;106m but cannot yet be deleted due to issue #1.[K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mConfirmed Findings[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m # [38;2;192;197;206m|[38;2;192;197;206m Finding [38;2;192;197;206m|[38;2;192;197;206m Confidence [38;2;192;197;206m|[38;2;192;197;206m Sources [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m-----------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F1 [38;2;192;197;206m|[38;2;192;197;206m All 6 imports from [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator_nt[38;2;163;190;140m`[38;2;192;197;206m and [38;2;163;190;140m`[38;2;163;190;140munified_html_generator_nt[38;2;163;190;140m`[38;2;192;197;206m resolve at runtime [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pairs 0, 1, 2 (all agree); judge confirmed [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F2 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m_is_ot()[38;2;163;190;140m`[38;2;192;197;206m uses [38;2;163;190;140m`[38;2;163;190;140mfrozenset(BOOKS[i][0] for i in range(1, 40))[38;2;163;190;140m`[38;2;192;197;206m — IDs 1-39 = OT, 40-66 = NT [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pairs 0, 1, 2 (all agree) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F3 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgenerate_unified_html(book, chapter, chapter_data, output_dir)[38;2;163;190;140m`[38;2;192;197;206m in [38;2;163;190;140m`[38;2;163;190;140munified_html_generator_nt.py[38;2;163;190;140m`[38;2;192;197;206m matches the 4-arg call in [38;2;163;190;140m`[38;2;163;190;140mserver.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pairs 0, 1, 2 (all agree) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F4 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator_nt.py[38;2;163;190;140m`[38;2;192;197;206m is a byte-for-byte copy of [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m (both 1392 lines) [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pair 1 file-size analysis; judge confirmed via [38;2;163;190;140m`[38;2;163;190;140mwc -l[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F5 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator_ot.py[38;2;163;190;140m`[38;2;192;197;206m is 1606 lines — 214 lines longer than the original due to [38;2;163;190;140m`[38;2;163;190;140m_translate_lxx()[38;2;163;190;140m`[38;2;192;197;206m and LXX TC analysis additions [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Judge independently verified [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F6 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140munified_html_generator_nt.py[38;2;163;190;140m`[38;2;192;197;206m is a byte-for-byte copy of [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m (both 893 lines) [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pair 1; judge confirmed [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F7 [38;2;192;197;206m|[38;2;192;197;206m 10 stale import sites (5 per unified file) still import from [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator[38;2;163;190;140m`[38;2;192;197;206m instead of the split variants [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pairs 0, 1, 2 (all agree); judge grep confirmed [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F8 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m_s3_cache_get[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140m_s3_cache_put[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140m_strip_md[38;2;163;190;140m`[38;2;192;197;206m are byte-identical across all three source files [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pair 0 verified; judge upheld [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F9 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mSyntaxWarning[38;2;163;190;140m`[38;2;192;197;206m for [38;2;163;190;140m`[38;2;163;190;140m\.[38;2;163;190;140m`[38;2;192;197;206m in [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator_ot.py[38;2;163;190;140m`[38;2;192;197;206m is real — suppressed by [38;2;163;190;140m`[38;2;163;190;140m__pycache__[38;2;163;190;140m`[38;2;192;197;206m, cosmetic only [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Judge independently reproduced [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F10 [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mserver.py[38;2;163;190;140m`[38;2;192;197;206m has zero imports from the original [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator[38;2;163;190;140m`[38;2;192;197;206m — all 6 import statements use [38;2;163;190;140m`[38;2;163;190;140m_ot[38;2;163;190;140m`[38;2;192;197;206m or [38;2;163;190;140m`[38;2;163;190;140m_nt[38;2;163;190;140m`[38;2;192;197;206m variants [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m All pairs; judge grep confirmed [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F11 [38;2;192;197;206m|[38;2;192;197;206m Deuterocanonical books (IDs 67+) route to NT generator — same behavior as pre-split [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m Pairs 1, 2; judge confirmed [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m F12 [38;2;192;197;206m|[38;2;192;197;206m No circular imports exist in the dependency chain [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m All pairs (all agree) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mContradictions Found and Resolutions[K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mC1: File line counts (Pair 1 Contrarian vs Pair 0 Investigator)[K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConflict:[38;2;235;203;139m**[38;2;192;197;206m Pair 1's contrarian claimed line counts of 1268/1268/1469/801/801/942 and accused the investigator's numbers of being "fabricated or stale."[K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m The judge ran [38;2;163;190;140m`[38;2;163;190;140mwc -l[38;2;163;190;140m`[38;2;192;197;206m independently. The investigator's numbers (1392/1392/1606/893/893/1044) are correct at current HEAD. The contrarian was working from stale data or a different branch. Claim of fabrication was retracted as unfounded.[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mC2: Stale import severity (CRITICAL vs MEDIUM)[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConflict:[38;2;235;203;139m**[38;2;192;197;206m Pair 1's investigator flagged the stale imports as a "CRITICAL BUG." Pairs 0 and 2 argued MEDIUM.[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m Judge downgraded to MEDIUM. "CRITICAL" requires immediate breakage or data loss. The system functions correctly today; the risk is latent (only triggered by deleting the original file). The fix is a two-line [38;2;163;190;140m`[38;2;163;190;140msed[38;2;163;190;140m`[38;2;192;197;206m operation. No behavioral change results because the three implementations of the affected functions are byte-identical.[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mC3: Deuterocanonical routing (bug vs enhancement)[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConflict:[38;2;235;203;139m**[38;2;192;197;206m Pair 1's contrarian argued that routing deuterocanonicals to the NT generator is a design gap since the OT generator now has [38;2;163;190;140m`[38;2;163;190;140m_translate_lxx()[38;2;163;190;140m`[38;2;192;197;206m.[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m Not a regression. [38;2;163;190;140m`[38;2;163;190;140m_translate_lxx()[38;2;163;190;140m`[38;2;192;197;206m did not exist in the original [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m (zero matches by grep). It is a new OT-only capability added during the split. Deuterocanonicals receive the exact same code path they always had. Future enhancement opportunity; not a bug.[K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mC4: "Runtime test" methodology claim[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConflict:[38;2;235;203;139m**[38;2;192;197;206m Pair 0's contrarian challenged whether certain verifications were truly runtime tests vs. static analysis.[K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m The investigator appropriately conceded that "static analysis" was the more accurate description for some checks. The conclusions are unaffected. All 6 imported names were verified to resolve correctly by both methods.[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mGaps Identified[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mG1: Import mechanism correctness for lazy imports[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAll three pairs confirmed imports are lazy (inside function bodies) — this means [38;2;163;190;140m`[38;2;163;190;140mImportError[38;2;163;190;140m`[38;2;192;197;206m would surface at call time, not server startup. No gap: all imports were also verified to resolve at runtime.[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mG2: [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;143;161;179m (no suffix) dead code status[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [38;2;192;197;206mPair 1 noted this file exists but is not imported by [38;2;163;190;140m`[38;2;163;190;140mserver.py[38;2;163;190;140m`[38;2;192;197;206m. Judge confirmed via grep: zero importers. It is dead code. No functional gap — just cleanup needed once the stale imports are fixed.[K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mFile Structure[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;192;197;206mstudy_html_generator.py       (1392 lines) — original; still needed as import source by both unified generators[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;192;197;206mstudy_html_generator_nt.py    (1392 lines) — byte-for-byte copy of original; NT path[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;192;197;206mstudy_html_generator_ot.py    (1606 lines) — enhanced with _translate_lxx(), _generate_tc_analysis(); OT path[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;192;197;206munified_html_generator.py     ( 893 lines) — dead code; no importers in server.py[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;192;197;206munified_html_generator_nt.py  ( 893 lines) — byte-for-byte copy of unified original; NT path[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;192;197;206munified_html_generator_ot.py  (1044 lines) — enhanced; OT path[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mmermaid[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgraph TD[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    A[server.py] -->|_is_ot True| B[study_html_generator_ot.py][K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    A -->|_is_ot False| C[study_html_generator_nt.py][K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    A -->|_is_ot True| D[unified_html_generator_ot.py][K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    A -->|_is_ot False| E[unified_html_generator_nt.py][K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    D -->|stale — 5 import sites| F[study_html_generator.py<br/>original][K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    E -->|stale — 5 import sites| F[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    F -.->|should be deleted<br/>after fix| G[dead code][K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    H[unified_html_generator.py<br/>no suffix] -.->|zero importers| G[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style F fill:#f90,color:#000[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style H fill:#f90,color:#000[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style G fill:#ccc,color:#333[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mRecommended Actions[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 1 — MEDIUM: Fix stale imports (10 sites)[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mRisk if deferred:[38;2;235;203;139m**[38;2;192;197;206m Anyone cleaning up the project by deleting [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m breaks both unified generators silently.[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Fix unified_html_generator_nt.py[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;192;197;206msed -i '' 's/from study_html_generator import/from study_html_generator_nt import/g' unified_html_generator_nt.py[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Fix unified_html_generator_ot.py[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;192;197;206msed -i '' 's/from study_html_generator import/from study_html_generator_ot import/g' unified_html_generator_ot.py[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;192;197;206mVerify with:[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgrep "from study_html_generator import" unified_html_generator_nt.py unified_html_generator_ot.py[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Should return empty[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 2 — LOW: Fix SyntaxWarning in study_html_generator_ot.py[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe [38;2;163;190;140m`[38;2;163;190;140m\.[38;2;163;190;140m`[38;2;192;197;206m escape sequences appear inside JavaScript regex strings embedded in Python f-strings. Fix by using raw strings for the JS regex content or escaping as [38;2;163;190;140m`[38;2;163;190;140m\\.[38;2;163;190;140m`[38;2;192;197;206m.[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Reproduce the warning[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;192;197;206mrm -f __pycache__/study_html_generator_ot.cpython-*.pyc[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;192;197;206mpython3 -Wall -c "import study_html_generator_ot" 2>&1 | grep SyntaxWarning[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;192;197;206mNote: Reported lines 1611/1615 exceed the file's 1606 actual lines due to a CPython PEP 701 bug in f-string line tracking (Python 3.12+). Locate the actual lines by searching for [38;2;163;190;140m`[38;2;163;190;140m\.[38;2;163;190;140m`[38;2;192;197;206m in the OT generator's f-string blocks.[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 3 — LOW: Delete dead files (after Priority 1)[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;192;197;206mOnce stale imports are fixed and tests pass, delete:[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;191;97;106m (original, 1392 lines)[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;191;97;106m (no suffix, 893 lines)[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPriority 4 — LOW/FUTURE: Deuterocanonical routing[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;192;197;206mConsider expanding [38;2;163;190;140m`[38;2;163;190;140m_OT_NAMES[38;2;163;190;140m`[38;2;192;197;206m to include deuterocanonical/pseudepigraphal books (IDs 67+) so they also benefit from [38;2;163;190;140m`[38;2;163;190;140m_translate_lxx()[38;2;163;190;140m`[38;2;192;197;206m in the OT generator. This is a net-new capability, not a regression fix.[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mReferences[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Source [38;2;192;197;206m|[38;2;192;197;206m Key Contribution [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Pair 0 — internal-investigator [38;2;192;197;206m|[38;2;192;197;206m Import integrity, circular import analysis, [38;2;180;142;173m_[38;2;180;142;173ms3_cache function identity confirmation |[K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;180;142;173m| Pair 1 — docs-investigator | Critical stale-import discovery (10 sites), file identity (byte-for-byte confirmation), deuterocanonical routing analysis |[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;180;142;173m| Pair 2 — bug-repro-agent | Runtime import verification, function signature table, OT-specific extras (_translate_lxx, _generate_tc_analysis) |[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;180;142;173m| Judge rulings | Line count arbitration (confirmed Pair 0 correct), severity downgrade (CRITICAL→MEDIUM), CPython SyntaxWarning reproduction, deuterocanonical non-regression verdict |[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/v2-395459/final_report.md[0m
+[38;5;244m - Completed in 3.904s[0m
+[38;5;12m[1m [1.4][0m[0m
+[?25l[0m[38;5;141m> [0mWritten to [38;5;10minvestigation/v2-395459/final_report.md[0m.[0m[0m
+[0m[0m
+[1mSummary:[22m The OT/NT generator split is functionally correct — zero runtime bugs. Three hygiene issues to clean up:[0m[0m
+[0m[0m
+1. [1mMEDIUM[22m — 10 stale import sites in both unified generators still reference the original [38;5;10mstudy_html_generator.py[0m. Two [38;5;10msed[0m commands fix it; defer deletion of the original file until after.[0m[0m
+2. [1mLOW[22m — [38;5;10mSyntaxWarning[0m for [38;5;10m\.[0m in the OT generator's f-string JS regex blocks. Cosmetic; becomes an error in a future Python version.[0m[0m
+3. [1mLOW[22m — [38;5;10mstudy_html_generator.py[0m and [38;5;10munified_html_generator.py[0m (no suffix) are dead code pending fix #1.[0m[0m
+[0m[0m
+The NT path works because [38;5;10mstudy_html_generator_nt.py[0m is a byte-for-byte copy of the pre-split original — [38;5;10m_is_ot()[0m routing and all 6 imported symbols resolve correctly at ]9;Response completeruntime.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 1.35 • Time: 1m 13s
+
+[0m[1G[0m[0m[?25h

@@ -1,0 +1,19 @@
+{
+  "job_id": "ab15ce7f",
+  "description": "Compare the NT unified analysis (John-1) with the OT unified analysis (Proverbs-13) and identify ALL features, UI elements, interactions, and data that the NT has but the OT is missing. Then produce a detailed action plan to bring OT to full parity.\n\nREFERENCE FILES:\n- NT reference (best example): ~/bible-studies/John-1/unified_analysis.html (1.7MB, full-featured)\n- OT current: ~/bible-studies/Proverbs-13/unified_analysis.html (378KB, recently generated)\n- Generator: ~/work/github/bible-expert/unified_html_generator.py\n- Study HTML (OT works well here): ~/bible-studies/Proverbs-13/study.html\n\nKEY USER REQUIREMENTS:\n1. Cross-references must be INLINE in each verse block (not just a badge) and must show the referenced text in 4 languages: Spanish (RVR), Hebrew (WLC), Greek (LXX or MorphGNT), and English (KJV/BSB)\n2. The OT unified should look and feel as rich as the NT one\n3. All interactive features from NT (hover, click, popups, expandable sections) must work in OT\n\nINVESTIGATE:\n1. Read John-1/unified_analysis.html structure \u2014 document every feature: \n   - How are cross-references displayed? (inline? expandable? what languages?)\n   - What sections does each verse have? (exegesis, patristic, TC, xrefs, translations, etc.)\n   - What interactive elements exist? (buttons, toggles, popups, tooltips)\n   - How is morphology displayed? (word-by-word, parsings, verb tense info)\n   - What data appears on click?\n   \n2. Read Proverbs-13/unified_analysis.html \u2014 document what's present vs missing\n\n3. Produce a DETAILED gap analysis: for each NT feature, state whether OT has it and what code change is needed\n\n4. Special focus on cross-references: How does NT display them? In how many languages? How does it look visually?\n\n5. Check study.html (Proverbs-13) \u2014 it already has inline xrefs with Spanish + Greek text in each verse. The unified should match or exceed this.\n\n6. Read the _render_verse_block function in unified_html_generator.py and the xref rendering in study_html_generator.py to understand current implementation differences.",
+  "total_seconds": 1241,
+  "phases": {
+    "investigating": "12:06:55",
+    "orchestrating": "12:18:35",
+    "visualizing": "12:21:05",
+    "complete": "12:27:36"
+  },
+  "control_actions": [
+    {
+      "action": "finalize",
+      "target": null
+    }
+  ],
+  "findings_count": 30,
+  "has_report": true
+}

@@ -1,0 +1,577 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mDuplicate agent with name [38;5;10maws-sap-c02-agent[0m was found in the global directory.
+[0m[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mknowledge-base[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-agents[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 1.35s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Let me start by reading the investigation report and then examining the relevant files to generate a comprehensive visual report.
+[38;5;244m - Completed in 1.318s[0m
+[38;5;12m[1m [1.1][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/final_report.md[0m, all lines[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m20462 bytes[0m from /Users/murivirg/work/github/bible-expert/investigation/cdd60333/final_report.md
+[38;5;244m - Completed in 2.329s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho "$(date +%H:%M:%S)|Report Read" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/visual_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.301s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me quickly scan the key files to verify and supplement the findings:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mwc -l /Users/murivirg/work/github/bible-expert/study_html_generator.py /Users/murivirg/work/github/bible-expert/unified_html_generator.py /Users/murivirg/work/github/bible-expert/server.py[0m[38;5;244m (using tool: shell)[0m
+
+    1508 /Users/murivirg/work/github/bible-expert/study_html_generator.py
+     893 /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+     988 /Users/murivirg/work/github/bible-expert/server.py
+    3389 total
+[38;5;244m - Completed in 1.440s[0m
+[38;5;12m[1m [1.4][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m3[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m880[0m to [38;5;141m910[0m
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m960[0m to [38;5;141m1000[0m
+↱ Operation 3: Reading file: [38;5;141m/Users/murivirg/work/github/bible-expert/study_html_generator.py[0m, from line [38;5;141m1210[0m to [38;5;141m1235[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m1414 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m3493 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m1560 bytes[0m from /Users/murivirg/work/github/bible-expert/study_html_generator.py
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 3 operations processed, 3 successful, 0 failed
+[38;5;244m - Completed in 1.297s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m2[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m630[0m to [38;5;141m780[0m
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/bible-expert/unified_html_generator.py[0m, from line [38;5;141m1[0m to [38;5;141m50[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m10590 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m5764 bytes[0m from /Users/murivirg/work/github/bible-expert/unified_html_generator.py
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 2 operations processed, 2 successful, 0 failed
+[38;5;244m - Completed in 1.389s[0m
+[38;5;12m[1m [1.6][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mgrep -n "generate_unified_html\|chapter_study\|generate_study_html\|_generate_background" /Users/murivirg/work/github/bible-expert/server.py | head -30[0m[38;5;244m (using tool: shell)[0m
+
+856:def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir: str = "") -> str:
+873:    from study_html_generator import gather_chapter_data, generate_study_html
+906:        html_path = generate_study_html(
+917:        def _generate_background_analyses():
+948:        threading.Thread(target=_generate_background_analyses).start()
+[38;5;244m - Completed in 1.326s[0m
+[38;5;12m[1m [1.7][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/bible-expert/server.py[0m, from line [38;5;141m856[0m to [38;5;141m960[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m5491 bytes[0m from /Users/murivirg/work/github/bible-expert/server.py
+[38;5;244m - Completed in 1.379s[0m
+[38;5;12m[1m [1.8][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho "$(date +%H:%M:%S)|Code Verified" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/visual_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.303s[0m
+[38;5;12m[1m [1.9][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have everything I need. Let me write the visual report:[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/visual_report.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mBible Expert — OT Quality [38;2;143;161;179m&[38;2;143;161;179m Unified HTML Generator[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mInvestigación[38;2;235;203;139m**[38;2;192;197;206m: cdd60333 · [38;2;235;203;139m**[38;2;235;203;139mFecha[38;2;235;203;139m**[38;2;192;197;206m: 2026-06-13 · [38;2;235;203;139m**[38;2;235;203;139mConfianza[38;2;235;203;139m**[38;2;192;197;206m: Alta[K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mResumen Ejecutivo[K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [38;2;192;197;206mLa ingesta de datos del AT fue exitosa: 306K palabras WLC (hebreo), 623K palabras LXX (griego), 8.674 entradas del léxico Strong's hebreo. [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m carga y muestra estos datos correctamente con RTL y hover. Sin embargo, [38;2;235;203;139m**[38;2;235;203;139m4 bugs críticos[38;2;235;203;139m**[38;2;192;197;206m dejan al AT prácticamente sin información gramatical, con 5 enlaces rotos por palabra hebrea, y [38;2;163;190;140m`[38;2;163;190;140munified_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m es código muerto (nunca invocado desde [38;2;163;190;140m`[38;2;163;190;140mserver.py[38;2;163;190;140m`[38;2;192;197;206m). Adicionalmente, 94.675 palabras de LXX son inaccesibles por aliases faltantes en [38;2;163;190;140m`[38;2;163;190;140mbooks.py[38;2;163;190;140m`[38;2;192;197;206m.[K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mDiagrama 1 — Arquitectura del Sistema y Flujo de Datos[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mmermaid[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;192;197;206mflowchart TD[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    MCP["🔌 MCP Client\nchapter_study(book, chapter)"][K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    SERVER["server.py\nchapter_study()"][K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    GATHER["study_html_generator.py\ngather_chapter_data()"][K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    DB[("bible.db\nWLC 306K · LXX 623K\nStrongs 8,674")][K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    STUDY["generate_study_html()\nstudy.html ✅"][K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    OPEN["subprocess.Popen\nopen study.html"][K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    BG["Threading Background\n_generate_background_analyses()"][K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    PATR["patristic_analysis.html ✅"][K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    EXEG["exegetical_analysis.html ✅"][K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    UNIFIED["unified_html_generator.py\ngenerate_unified_html()"][K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    DEAD["❌ DEAD CODE\nNunca invocado"][K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    MCP --> SERVER[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    SERVER --> GATHER[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    GATHER --> DB[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    GATHER --> STUDY[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    STUDY --> OPEN[K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    SERVER --> BG[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    BG --> PATR[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    BG --> EXEG[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    UNIFIED -.->|"grep: 0 callers"| DEAD[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style DEAD fill:#c62828,color:#fff[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style UNIFIED fill:#ff7043,color:#fff[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style STUDY fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style PATR fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style EXEG fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mDiagrama 2 — Árbol de Decisión para Depuración OT[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mmermaid[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;192;197;206mflowchart TD[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    START["¿El capítulo OT muestra\ninformación gramatical?"][K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q1["¿Es libro WLC\no LXX?"][K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    OSHM["WLC — código OSHM\nHVqp3ms, HNcmsa..."][K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    CATSS["LXX — código CATSS\nV.AAI3S, N.NSM..."][K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    BUG1["❌ CRIT-1\nexplainEnding()<br/>solo maneja RMAC (V-, N-)\nFallback: 'Forma flexionada de...'"][K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    BUG2["❌ CRIT-2\ndot-format no normalizado\nV.AAI3S → falla startsWith('V-')"][K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    FIX1["✅ FIX-1\nAgregar explainHebrewMorph()\nParser OSHM completo"][K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    FIX2["✅ FIX-2\nNormalizar dots → dashes\n+ ajustar posición del dash de persona"][K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q2["¿El popup de estudio\nabre correctamente?"][K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    LINKS["❌ CRIT-3\n4 de 5 enlaces apuntan\na recursos griegos"][K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    FIX3["✅ FIX-3\nisHeb = strongs.startsWith('H')\nBranch: BLB/wlc, BibleHub/hebrew,\nSefaria, STEP"][K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q3["¿El libro LXX aparece\nen resultados?"][K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    ALIAS["❌ HIGH-1\nJoshA/B, JudgA/B,\nDanOG/Th, 1Esdr, 2Esdr\n94,675 palabras inaccesibles"][K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    FIX4["✅ FIX-4\nAgregar aliases en books.py"][K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    START -->|"No"| Q1[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    START -->|"Sí"| OK["✅ NT funciona bien"][K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q1 -->|"WLC"| OSHM --> BUG1 --> FIX1[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q1 -->|"LXX"| CATSS --> BUG2 --> FIX2[K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    FIX1 --> Q2[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    FIX2 --> Q2[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q2 -->|"No — H números"| LINKS --> FIX3[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q2 -->|"Sí"| Q3[K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Q3 -->|"Cero resultados"| ALIAS --> FIX4[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style BUG1 fill:#c62828,color:#fff[K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style BUG2 fill:#c62828,color:#fff[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style LINKS fill:#c62828,color:#fff[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style ALIAS fill:#e65100,color:#fff[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style FIX1 fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style FIX2 fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style FIX3 fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    style FIX4 fill:#2e7d32,color:#fff[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mDiagrama 3 — Secuencia: Lo Que Ocurre al Abrir Génesis 1[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mmermaid[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;192;197;206msequenceDiagram[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    participant U as Usuario[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    participant S as server.py[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    participant G as gather_chapter_data[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    participant DB as bible.db[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    participant HTML as study.html (JS)[K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    U->>S: chapter_study("Genesis", 1, "WLC")[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    S->>G: gather_chapter_data("Genesis", 1, "WLC", candidates)[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    G->>DB: SELECT morphology WHERE book IN ('Genesis','Gen',...)[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    DB-->>G: 469 WLC rows ✅[K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    G->>DB: SELECT morphology (LXX) WHERE book IN ('Genesis',...)[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    DB-->>G: 1,266 LXX rows ✅[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    G->>DB: SELECT lexicon (Hebrew Strong's)[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    DB-->>G: matched entries ✅[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    G-->>S: chapter_data con morphology, lxx_morphology, lxx_spanish[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    S->>HTML: generate_study_html() → abre study.html[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Note over HTML: Usuario pasa el cursor sobre בְּרֵאשִׁ֖ית[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    HTML->>HTML: showTip() → muestra gloss "In the beginning" ✅[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    HTML->>HTML: explainEnding({m:"HNcmsa"})[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Note over HTML: ❌ CRIT-1: rmac="HNcmsa"<br/>No pasa ningún startsWith()<br/>→ "Forma flexionada de בְּרֵאשִׁ֖ית"[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Note over HTML: Usuario hace clic → openFullStudy()[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    HTML->>HTML: isHeb = undefined (sin detección)[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    HTML->>HTML: Construye link: biblehub.com/greek/7225.htm[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    Note over HTML: ❌ CRIT-3: URL debería ser /hebrew/7225.htm[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mBug Inventory Completo[K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m ID [38;2;192;197;206m|[38;2;192;197;206m Sev [38;2;192;197;206m|[38;2;192;197;206m Archivo [38;2;192;197;206m|[38;2;192;197;206m Líneas [38;2;192;197;206m|[38;2;192;197;206m Descripción [38;2;192;197;206m|[38;2;192;197;206m Impacto [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m----[38;2;192;197;206m|[38;2;192;197;206m-----[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m-------------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m CRIT-1 [38;2;192;197;206m|[38;2;192;197;206m 🔴 Critical [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 887, 966 [38;2;192;197;206m|[38;2;192;197;206m OSHM codes no parseados — cero info gramatical hebreo [38;2;192;197;206m|[38;2;192;197;206m 306K palabras WLC sin gramática [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m CRIT-2 [38;2;192;197;206m|[38;2;192;197;206m 🔴 Critical [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 887, 966 [38;2;192;197;206m|[38;2;192;197;206m LXX dot-codes no normalizados a RMAC dashes [38;2;192;197;206m|[38;2;192;197;206m 623K palabras LXX sin gramática [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m CRIT-3 [38;2;192;197;206m|[38;2;192;197;206m 🔴 Critical [38;2;192;197;206m|[38;2;192;197;206m study_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 1215–1225 [38;2;192;197;206m|[38;2;192;197;206m 4/5 enlaces del popup apuntan a recursos griegos para H-numbers [38;2;192;197;206m|[38;2;192;197;206m Todos los estudios hebreos con links rotos [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m CRIT-4 [38;2;192;197;206m|[38;2;192;197;206m 🔴 Critical [38;2;192;197;206m|[38;2;192;197;206m unified_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m Archivo completo [38;2;192;197;206m|[38;2;192;197;206m generate_unified_html() nunca invocado desde server.py [38;2;192;197;206m|[38;2;192;197;206m 893 líneas de código muerto [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m HIGH-1 [38;2;192;197;206m|[38;2;192;197;206m 🟠 High [38;2;192;197;206m|[38;2;192;197;206m books.py [38;2;192;197;206m|[38;2;192;197;206m 6,7,27,15,16 [38;2;192;197;206m|[38;2;192;197;206m 12 variantes LXX (JoshA/B, DanOG/Th, etc.) sin alias [38;2;192;197;206m|[38;2;192;197;206m 94,675 palabras inaccesibles [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m HIGH-2 [38;2;192;197;206m|[38;2;192;197;206m 🟠 High [38;2;192;197;206m|[38;2;192;197;206m unified_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 643 [38;2;192;197;206m|[38;2;192;197;206m .greek-line sin [38;2;163;190;140m`[38;2;163;190;140mdirection:rtl[38;2;163;190;140m`[38;2;192;197;206m para hebreo [38;2;192;197;206m|[38;2;192;197;206m Texto hebreo LTR en unified.html [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m HIGH-3 [38;2;192;197;206m|[38;2;192;197;206m 🟠 High [38;2;192;197;206m|[38;2;192;197;206m unified_html_generator.py [38;2;192;197;206m|[38;2;192;197;206m 746–758 [38;2;192;197;206m|[38;2;192;197;206m Sin LXX line, LXX-ES, isOT, word clicks en unified [38;2;192;197;206m|[38;2;192;197;206m 0% feature parity OT vs NT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m MED-1 [38;2;192;197;206m|[38;2;192;197;206m 🟡 Medium [38;2;192;197;206m|[38;2;192;197;206m DB: apparatus [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[38;2;192;197;206m Tabla apparatus solo tiene NT (27 libros) [38;2;192;197;206m|[38;2;192;197;206m Sin TC para OT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m GAP-1 [38;2;192;197;206m|[38;2;192;197;206m ⚪ Data [38;2;192;197;206m|[38;2;192;197;206m DB: patristic [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[38;2;192;197;206m 112,974 entradas patrísticas con book='' no indexadas [38;2;192;197;206m|[38;2;192;197;206m Gran corpus inaccesible [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m GAP-2 [38;2;192;197;206m|[38;2;192;197;206m ⚪ Data [38;2;192;197;206m|[38;2;192;197;206m DB: commentaries [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[38;2;192;197;206m Tabla commentaries solo NT [38;2;192;197;206m|[38;2;192;197;206m Sin exégesis para OT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mNT vs OT: Tabla de Paridad de Features[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Feature [38;2;192;197;206m|[38;2;192;197;206m NT (MorphGNT) [38;2;192;197;206m|[38;2;192;197;206m OT Hebreo (WLC) [38;2;192;197;206m|[38;2;192;197;206m OT Griego (LXX) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m:[38;2;192;197;206m---[38;2;192;197;206m:[38;2;192;197;206m|[38;2;192;197;206m:[38;2;192;197;206m---[38;2;192;197;206m:[38;2;192;197;206m|[38;2;192;197;206m:[38;2;192;197;206m---[38;2;192;197;206m:[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Visualización palabra por palabra [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Hover tooltip (gloss) [38;2;192;197;206m|[38;2;192;197;206m ✅ Completo [38;2;192;197;206m|[38;2;192;197;206m ✅ Gloss inglés [38;2;192;197;206m|[38;2;192;197;206m ✅ Gloss inglés [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m explainEnding() desglose gramatical [38;2;192;197;206m|[38;2;192;197;206m ✅ RMAC completo [38;2;192;197;206m|[38;2;192;197;206m ❌ Solo fallback [38;2;192;197;206m|[38;2;192;197;206m ❌ Solo fallback [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m verbTenseEs() tiempo verbal [38;2;192;197;206m|[38;2;192;197;206m ✅ Completo [38;2;192;197;206m|[38;2;192;197;206m ❌ Falla silencioso [38;2;192;197;206m|[38;2;192;197;206m ❌ Falla silencioso [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Click → popup estudio [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ✅ (links rotos) [38;2;192;197;206m|[38;2;192;197;206m ✅ openLxxStudy [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 5 enlaces externos en popup [38;2;192;197;206m|[38;2;192;197;206m ✅ Todos correctos [38;2;192;197;206m|[38;2;192;197;206m ❌ 4/5 rotos [38;2;192;197;206m|[38;2;192;197;206m ❌ 4/5 rotos [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Dirección RTL (study.html) [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ✅ direction:rtl [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Dirección RTL (unified.html) [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ❌ LTR [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Línea LXX paralela [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ✅ study.html ✅ [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Traducción LXX-ES [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ✅ study.html ✅ [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Análisis exegético [38;2;192;197;206m|[38;2;192;197;206m ✅ Robertson/Vincent [38;2;192;197;206m|[38;2;192;197;206m ❌ Sin datos [38;2;192;197;206m|[38;2;192;197;206m ❌ Sin datos [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Comentario patrístico [38;2;192;197;206m|[38;2;192;197;206m ✅ Bueno [38;2;192;197;206m|[38;2;192;197;206m ✅ Salmos/Gén/Is [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Apparatus textual (TC) [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ❌ Solo NT [38;2;192;197;206m|[38;2;192;197;206m ❌ Solo NT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Referencias cruzadas [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[38;2;192;197;206m ✅ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m unified_html disponible [38;2;192;197;206m|[38;2;192;197;206m ✅ (código muerto) [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[38;2;192;197;206m ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mDB Health Summary[K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Check [38;2;192;197;206m|[38;2;192;197;206m Estado [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m WLC morphology completeness [38;2;192;197;206m|[38;2;192;197;206m ✅ 929 capítulos, 306K palabras [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX morphology (libros accesibles) [38;2;192;197;206m|[38;2;192;197;206m ✅ 48+ libros, 623K palabras [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m LXX morphology (todos los libros) [38;2;192;197;206m|[38;2;192;197;206m ⚠️ 12 libros sin alias → 94K palabras inaccesibles [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Book name resolution (WLC) [38;2;192;197;206m|[38;2;192;197;206m ✅ get_all_db_names() incluye todos los alias cortos [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Hebrew Strong's lexicon [38;2;192;197;206m|[38;2;192;197;206m ✅ 8,674 entradas [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Manejo de sub-versos [38;2;192;197;206m|[38;2;192;197;206m ✅ word_pos continuo, sin verse_num fraccionales en WLC [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Cobertura patrística OT [38;2;192;197;206m|[38;2;192;197;206m ✅ 56,863 entradas (Salmos=21K, Génesis=9K, Isaías=5K) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Cobertura commentaries OT [38;2;192;197;206m|[38;2;192;197;206m ❌ 0 entradas — solo NT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Cobertura apparatus OT [38;2;192;197;206m|[38;2;192;197;206m ❌ 0 entradas — solo NT [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Entradas patrísticas sin indexar [38;2;192;197;206m|[38;2;192;197;206m ⚠️ 112,974 con book='' [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mPlan de Acción — Fixes por Prioridad[K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    180[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mP1 — Crítico (30–60 min total)[K
+[0m[48;2;40;67;43m[39m+    181[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    182[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFix 1: Links correctos para palabras hebreas[K
+[0m[48;2;40;67;43m[39m+    183[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mArchivo[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m líneas 1215–1225[K
+[0m[48;2;40;67;43m[39m+    184[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    185[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjavascript[K
+[0m[48;2;40;67;43m[39m+    186[0m:[39m[48;2;24;38;30m [38;2;192;197;206m// ANTES (solo griego):[K
+[0m[48;2;40;67;43m[39m+    187[0m:[39m[48;2;24;38;30m [38;2;192;197;206m`<li><a href="https://biblehub.com/greek/${(w.s||'').replace('G','')}...`[K
+[0m[48;2;40;67;43m[39m+    188[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    189[0m:[39m[48;2;24;38;30m [38;2;192;197;206m// DESPUÉS:[K
+[0m[48;2;40;67;43m[39m+    190[0m:[39m[48;2;24;38;30m [38;2;192;197;206mconst isHeb = (w.s || '').startsWith('H');[K
+[0m[48;2;40;67;43m[39m+    191[0m:[39m[48;2;24;38;30m [38;2;192;197;206mconst num = isHeb ? (w.s||'').replace('H','') : (w.s||'').replace('G','');[K
+[0m[48;2;40;67;43m[39m+    192[0m:[39m[48;2;24;38;30m [38;2;192;197;206mconst links = isHeb ? `[K
+[0m[48;2;40;67;43m[39m+    193[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  <li><a href="https://www.blueletterbible.org/lexicon/h${num}/kjv/wlc/0-1/" target="_blank">Blue Letter Bible — Hebreo</a></li>[K
+[0m[48;2;40;67;43m[39m+    194[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  <li><a href="https://biblehub.com/hebrew/${num}.htm" target="_blank">BibleHub — Concordancia hebreo</a></li>[K
+[0m[48;2;40;67;43m[39m+    195[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  <li><a href="https://www.sefaria.org/search#${encodeURIComponent(w.l)}" target="_blank">Sefaria — Fuentes judías</a></li>[K
+[0m[48;2;40;67;43m[39m+    196[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  <li><a href="https://www.stepbible.org/?q=strong=${w.s}" target="_blank">STEP Bible — Todas las apariciones</a></li>[K
+[0m[48;2;40;67;43m[39m+    197[0m:[39m[48;2;24;38;30m [38;2;192;197;206m` : `/* existing Greek links */`;[K
+[0m[48;2;40;67;43m[39m+    198[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    199[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    200[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFix 2: Normalizar LXX dot-codes a RMAC dashes[K
+[0m[48;2;40;67;43m[39m+    201[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mArchivo[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m líneas 887, 966[K
+[0m[48;2;40;67;43m[39m+    202[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    203[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjavascript[K
+[0m[48;2;40;67;43m[39m+    204[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfunction verbTenseEs(rmac) {[K
+[0m[48;2;40;67;43m[39m+    205[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  let code = (rmac || '').replace(/\./g, '-');[K
+[0m[48;2;40;67;43m[39m+    206[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // LXX "V.AAI3S" → "V-AAI3S" → insertar dash en pos 5: "V-AAI-3S"[K
+[0m[48;2;40;67;43m[39m+    207[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (code.startsWith('V-') && code.length > 5 && code[5] !== '-') {[K
+[0m[48;2;40;67;43m[39m+    208[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    code = code.substring(0, 5) + '-' + code.substring(5);[K
+[0m[48;2;40;67;43m[39m+    209[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  }[K
+[0m[48;2;40;67;43m[39m+    210[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (!code.startsWith('V-')) return '';[K
+[0m[48;2;40;67;43m[39m+    211[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // resto sin cambio...[K
+[0m[48;2;40;67;43m[39m+    212[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    213[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    214[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    215[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFix 3: Parser OSHM hebreo completo[K
+[0m[48;2;40;67;43m[39m+    216[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mArchivo[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mstudy_html_generator.py[38;2;163;190;140m`[38;2;192;197;206m — agregar antes de [38;2;163;190;140m`[38;2;163;190;140mexplainEnding()[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    217[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    218[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjavascript[K
+[0m[48;2;40;67;43m[39m+    219[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfunction explainHebrewMorph(code, form, lemma) {[K
+[0m[48;2;40;67;43m[39m+    220[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const lang = code[0] === 'H' ? 'Hebreo' : 'Arameo';[K
+[0m[48;2;40;67;43m[39m+    221[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const main = code.includes('/') ? code.split('/').pop() : code.substring(1);[K
+[0m[48;2;40;67;43m[39m+    222[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const pos = main[0];[K
+[0m[48;2;40;67;43m[39m+    223[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const posNames = {N:'Sustantivo',V:'Verbo',A:'Adjetivo',P:'Pronombre',[K
+[0m[48;2;40;67;43m[39m+    224[0m:[39m[48;2;24;38;30m [38;2;192;197;206m                    R:'Preposición',C:'Conjunción',T:'Artículo/Partícula',D:'Adverbio',S:'Sufijo'};[K
+[0m[48;2;40;67;43m[39m+    225[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  let h = `<strong style="font-family:'SBL Hebrew',serif;font-size:1.2rem">${form}</strong><br>`;[K
+[0m[48;2;40;67;43m[39m+    226[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  h += `<span style="font-size:0.78rem;color:#555">${lang}</span><br>`;[K
+[0m[48;2;40;67;43m[39m+    227[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (pos === 'V') {[K
+[0m[48;2;40;67;43m[39m+    228[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const stems = {q:'Qal',N:'Nifal',p:'Piel',P:'Pual',h:'Hitpael',H:'Hofal',i:'Hifil'};[K
+[0m[48;2;40;67;43m[39m+    229[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const conjs = {p:'Perfecto',i:'Imperfecto',w:'Wayyiqtol (narrativo)',[K
+[0m[48;2;40;67;43m[39m+    230[0m:[39m[48;2;24;38;30m [38;2;192;197;206m                   v:'Imperativo',r:'Participio activo',s:'Participio pasivo'};[K
+[0m[48;2;40;67;43m[39m+    231[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    h += `<strong>Verbo</strong> — ${stems[main[1]]||main[1]}<br>`;[K
+[0m[48;2;40;67;43m[39m+    232[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    h += `<span style="font-size:0.8rem">${conjs[main[2]]||main[2]}</span>`;[K
+[0m[48;2;40;67;43m[39m+    233[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  } else if (pos === 'N') {[K
+[0m[48;2;40;67;43m[39m+    234[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const g = {m:'masc.',f:'fem.',b:'ambos',c:'común'};[K
+[0m[48;2;40;67;43m[39m+    235[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const n = {s:'sing.',p:'plur.',d:'dual'};[K
+[0m[48;2;40;67;43m[39m+    236[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const st = {a:'absoluto',c:'constructo',d:'determinado'};[K
+[0m[48;2;40;67;43m[39m+    237[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    h += `<strong>${posNames[pos]}</strong> — ${g[main[2]]||''} ${n[main[3]]||''} ${st[main[4]]||''}`;[K
+[0m[48;2;40;67;43m[39m+    238[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  } else {[K
+[0m[48;2;40;67;43m[39m+    239[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    h += `<strong>${posNames[pos]||pos}</strong>`;[K
+[0m[48;2;40;67;43m[39m+    240[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  }[K
+[0m[48;2;40;67;43m[39m+    241[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  return h;[K
+[0m[48;2;40;67;43m[39m+    242[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    243[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    244[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfunction explainEnding(w) {[K
+[0m[48;2;40;67;43m[39m+    245[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const rmac = w.m || '';[K
+[0m[48;2;40;67;43m[39m+    246[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (!rmac) return '';[K
+[0m[48;2;40;67;43m[39m+    247[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (rmac[0] === 'H' || rmac[0] === 'A') return explainHebrewMorph(rmac, w.w, w.l);[K
+[0m[48;2;40;67;43m[39m+    248[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // ... resto sin cambio[K
+[0m[48;2;40;67;43m[39m+    249[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    250[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    251[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    252[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    253[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    254[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mP2 — Alto (5 min)[K
+[0m[48;2;40;67;43m[39m+    255[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    256[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFix 4: Aliases LXX faltantes en books.py[K
+[0m[48;2;40;67;43m[39m+    257[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    258[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    259[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Agregar a cada entrada:[K
+[0m[48;2;40;67;43m[39m+    260[0m:[39m[48;2;24;38;30m [38;2;192;197;206m6:  [..., "JoshA", "JoshB"],        # Joshua — +15,960 palabras LXX[K
+[0m[48;2;40;67;43m[39m+    261[0m:[39m[48;2;24;38;30m [38;2;192;197;206m7:  [..., "JudgA", "JudgB"],        # Judges — +31,527 palabras LXX[K
+[0m[48;2;40;67;43m[39m+    262[0m:[39m[48;2;24;38;30m [38;2;192;197;206m27: [..., "DanOG", "DanTh",         # Daniel — +21,234 palabras LXX[K
+[0m[48;2;40;67;43m[39m+    263[0m:[39m[48;2;24;38;30m [38;2;192;197;206m         "BelOG", "BelTh",          # Bel and the Dragon[K
+[0m[48;2;40;67;43m[39m+    264[0m:[39m[48;2;24;38;30m [38;2;192;197;206m         "SusOG", "SusTh"],         # Susanna[K
+[0m[48;2;40;67;43m[39m+    265[0m:[39m[48;2;24;38;30m [38;2;192;197;206m15: [..., "1Esdr"],                 # Ezra — +8,994 palabras LXX[K
+[0m[48;2;40;67;43m[39m+    266[0m:[39m[48;2;24;38;30m [38;2;192;197;206m16: [..., "2Esdr"],                 # Nehemiah — +13,262 palabras LXX[K
+[0m[48;2;40;67;43m[39m+    267[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Total recuperado: 94,675 palabras LXX[K
+[0m[48;2;40;67;43m[39m+    268[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    269[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    270[0m:[39m[48;2;24;38;30m [38;2;192;197;206mVerificar con:[K
+[0m[48;2;40;67;43m[39m+    271[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    272[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    273[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book, COUNT(*) FROM morphology WHERE src='LXX' AND book IN ('JoshA','JoshB','JudgA','JudgB','DanOG','DanTh','1Esdr','2Esdr') GROUP BY book;"[K
+[0m[48;2;40;67;43m[39m+    274[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    275[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    276[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    277[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    278[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mP3 — Estructural: Conectar unified_html_generator.py (30 min)[K
+[0m[48;2;40;67;43m[39m+    279[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    280[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mArchivo[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mserver.py[38;2;163;190;140m`[38;2;192;197;206m — dentro de [38;2;163;190;140m`[38;2;163;190;140m_generate_background_analyses()[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    281[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    282[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    283[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Agregar al final del bloque try en _generate_background_analyses():[K
+[0m[48;2;40;67;43m[39m+    284[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom unified_html_generator import generate_unified_html[K
+[0m[48;2;40;67;43m[39m+    285[0m:[39m[48;2;24;38;30m [38;2;192;197;206munified_path = generate_unified_html(resolved, chapter, chapter_data, out_path)[K
+[0m[48;2;40;67;43m[39m+    286[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif unified_path and Path(unified_path).exists():[K
+[0m[48;2;40;67;43m[39m+    287[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subprocess.Popen(["open", str(unified_path)])[K
+[0m[48;2;40;67;43m[39m+    288[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    289[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    290[0m:[39m[48;2;24;38;30m [38;2;192;197;206mVerificar que la función no falla para libros OT:[K
+[0m[48;2;40;67;43m[39m+    291[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    292[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    293[0m:[39m[48;2;24;38;30m [38;2;192;197;206mcd ~/work/github/bible-expert && python3 -c "[K
+[0m[48;2;40;67;43m[39m+    294[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom study_html_generator import gather_chapter_data, get_all_db_names[K
+[0m[48;2;40;67;43m[39m+    295[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom unified_html_generator import generate_unified_html[K
+[0m[48;2;40;67;43m[39m+    296[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom pathlib import Path[K
+[0m[48;2;40;67;43m[39m+    297[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdata = gather_chapter_data('Genesis', 1, 'WLC', get_all_db_names('Genesis'))[K
+[0m[48;2;40;67;43m[39m+    298[0m:[39m[48;2;24;38;30m [38;2;192;197;206mout = Path('/tmp/test-unified')[K
+[0m[48;2;40;67;43m[39m+    299[0m:[39m[48;2;24;38;30m [38;2;192;197;206mout.mkdir(exist_ok=True)[K
+[0m[48;2;40;67;43m[39m+    300[0m:[39m[48;2;24;38;30m [38;2;192;197;206mresult = generate_unified_html('Genesis', 1, data, out)[K
+[0m[48;2;40;67;43m[39m+    301[0m:[39m[48;2;24;38;30m [38;2;192;197;206mprint(result)[K
+[0m[48;2;40;67;43m[39m+    302[0m:[39m[48;2;24;38;30m [38;2;192;197;206m"[K
+[0m[48;2;40;67;43m[39m+    303[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    304[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    305[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    306[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    307[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mP4 — Paridad OT en unified_html_generator.py (2 hrs)[K
+[0m[48;2;40;67;43m[39m+    308[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    309[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mCSS — agregar a la sección [38;2;163;190;140m`[38;2;163;190;140m<style>[38;2;163;190;140m`[38;2;235;203;139m en [38;2;163;190;140m`[38;2;163;190;140m_build_unified_page()[38;2;163;190;140m`[38;2;235;203;139m**[38;2;192;197;206m:[K
+[0m[48;2;40;67;43m[39m+    310[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    311[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mcss[K
+[0m[48;2;40;67;43m[39m+    312[0m:[39m[48;2;24;38;30m [38;2;192;197;206m.greek-line.heb {[K
+[0m[48;2;40;67;43m[39m+    313[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  font-family: 'SBL Hebrew', 'Ezra SIL', serif;[K
+[0m[48;2;40;67;43m[39m+    314[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  direction: rtl;[K
+[0m[48;2;40;67;43m[39m+    315[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  unicode-bidi: bidi-override;[K
+[0m[48;2;40;67;43m[39m+    316[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    317[0m:[39m[48;2;24;38;30m [38;2;192;197;206m.lxx-line {[K
+[0m[48;2;40;67;43m[39m+    318[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  font-family: 'Noto Serif', serif;[K
+[0m[48;2;40;67;43m[39m+    319[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  color: #4a148c;[K
+[0m[48;2;40;67;43m[39m+    320[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  font-size: 0.9rem;[K
+[0m[48;2;40;67;43m[39m+    321[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  margin-bottom: 0.3rem;[K
+[0m[48;2;40;67;43m[39m+    322[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    323[0m:[39m[48;2;24;38;30m [38;2;192;197;206m.lxx-es-line {[K
+[0m[48;2;40;67;43m[39m+    324[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  font-size: 0.82rem;[K
+[0m[48;2;40;67;43m[39m+    325[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  color: #6a1b9a;[K
+[0m[48;2;40;67;43m[39m+    326[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  font-style: italic;[K
+[0m[48;2;40;67;43m[39m+    327[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  margin-left: 1rem;[K
+[0m[48;2;40;67;43m[39m+    328[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  margin-bottom: 0.4rem;[K
+[0m[48;2;40;67;43m[39m+    329[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    330[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    331[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    332[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mJS — reemplazar el bloque [38;2;163;190;140m`[38;2;163;190;140mD.verses.forEach[38;2;163;190;140m`[38;2;235;203;139m actual[38;2;235;203;139m**[38;2;192;197;206m:[K
+[0m[48;2;40;67;43m[39m+    333[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    334[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjavascript[K
+[0m[48;2;40;67;43m[39m+    335[0m:[39m[48;2;24;38;30m [38;2;192;197;206mconst isOT = !!(D.parallel && D.parallel.WLC);[K
+[0m[48;2;40;67;43m[39m+    336[0m:[39m[48;2;24;38;30m [38;2;192;197;206mD.verses.forEach(v => {[K
+[0m[48;2;40;67;43m[39m+    337[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const el = document.getElementById('greek-' + v.v);[K
+[0m[48;2;40;67;43m[39m+    338[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (!el) return;[K
+[0m[48;2;40;67;43m[39m+    339[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  const words = D.morphology[v.v];[K
+[0m[48;2;40;67;43m[39m+    340[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (isOT) {[K
+[0m[48;2;40;67;43m[39m+    341[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    el.className = 'greek-line heb';[K
+[0m[48;2;40;67;43m[39m+    342[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    el.setAttribute('dir', 'rtl');[K
+[0m[48;2;40;67;43m[39m+    343[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  }[K
+[0m[48;2;40;67;43m[39m+    344[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (words && words.length) {[K
+[0m[48;2;40;67;43m[39m+    345[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    el.innerHTML = words.map((w, i) =>[K
+[0m[48;2;40;67;43m[39m+    346[0m:[39m[48;2;24;38;30m [38;2;192;197;206m      `<span class="morph-word"[K
+[0m[48;2;40;67;43m[39m+    347[0m:[39m[48;2;24;38;30m [38;2;192;197;206m         onmouseenter="showTip(event,${v.v},${i})"[K
+[0m[48;2;40;67;43m[39m+    348[0m:[39m[48;2;24;38;30m [38;2;192;197;206m         onmouseleave="hideTip()"[K
+[0m[48;2;40;67;43m[39m+    349[0m:[39m[48;2;24;38;30m [38;2;192;197;206m         onclick="openWordStudy(${v.v},${i})">${w.w}</span>`[K
+[0m[48;2;40;67;43m[39m+    350[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    ).join(' ');[K
+[0m[48;2;40;67;43m[39m+    351[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  }[K
+[0m[48;2;40;67;43m[39m+    352[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // LXX line for OT[K
+[0m[48;2;40;67;43m[39m+    353[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (isOT && D.lxx_morphology && D.lxx_morphology[v.v]) {[K
+[0m[48;2;40;67;43m[39m+    354[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const lxxEl = document.createElement('div');[K
+[0m[48;2;40;67;43m[39m+    355[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    lxxEl.className = 'lxx-line';[K
+[0m[48;2;40;67;43m[39m+    356[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    lxxEl.innerHTML = D.lxx_morphology[v.v].map(w =>[K
+[0m[48;2;40;67;43m[39m+    357[0m:[39m[48;2;24;38;30m [38;2;192;197;206m      `<span class="morph-word">${w.w}</span>`[K
+[0m[48;2;40;67;43m[39m+    358[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    ).join(' ');[K
+[0m[48;2;40;67;43m[39m+    359[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    el.parentNode.insertBefore(lxxEl, el.nextSibling);[K
+[0m[48;2;40;67;43m[39m+    360[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  }[K
+[0m[48;2;40;67;43m[39m+    361[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  // LXX-ES translation[K
+[0m[48;2;40;67;43m[39m+    362[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  if (isOT && D.lxx_spanish && D.lxx_spanish[v.v]) {[K
+[0m[48;2;40;67;43m[39m+    363[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    const esEl = document.createElement('div');[K
+[0m[48;2;40;67;43m[39m+    364[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    esEl.className = 'lxx-es-line';[K
+[0m[48;2;40;67;43m[39m+    365[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    esEl.textContent = D.lxx_spanish[v.v];[K
+[0m[48;2;40;67;43m[39m+    366[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    el.parentNode.appendChild(esEl);[K
+[0m[48;2;40;67;43m[39m+    367[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  }[K
+[0m[48;2;40;67;43m[39m+    368[0m:[39m[48;2;24;38;30m [38;2;192;197;206m});[K
+[0m[48;2;40;67;43m[39m+    369[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    370[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    371[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    372[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    373[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mP5 — Futuro: Datos faltantes para OT[K
+[0m[48;2;40;67;43m[39m+    374[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    375[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mIndexar 112K entradas patrísticas sin versículo[38;2;235;203;139m**[38;2;192;197;206m (esfuerzo significativo):[K
+[0m[48;2;40;67;43m[39m+    376[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    377[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    378[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Verificar el volumen actual:[K
+[0m[48;2;40;67;43m[39m+    379[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT COUNT(*), MIN(id), MAX(id) FROM patristic WHERE book='' AND verse_num=0;"[K
+[0m[48;2;40;67;43m[39m+    380[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    381[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Ejemplo de entrada con referencia implícita:[K
+[0m[48;2;40;67;43m[39m+    382[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT id, text_original FROM patristic WHERE book='' LIMIT 5;"[K
+[0m[48;2;40;67;43m[39m+    383[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    384[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    385[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mIngestar comentarios OT[38;2;235;203;139m**[38;2;192;197;206m — fuentes dominio público:[K
+[0m[48;2;40;67;43m[39m+    386[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mKeil [38;2;191;97;106m&[38;2;191;97;106m Delitzsch (comentario completo del AT hebreo)[K
+[0m[48;2;40;67;43m[39m+    387[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Matthew Henry (AT + NT)[K
+[0m[48;2;40;67;43m[39m+    388[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Cambridge Bible Commentary (AT)[K
+[0m[48;2;40;67;43m[39m+    389[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    390[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    391[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Verificar estado actual de la tabla commentaries:[K
+[0m[48;2;40;67;43m[39m+    392[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT COUNT(DISTINCT book) as books, COUNT(*) as total FROM commentaries;"[K
+[0m[48;2;40;67;43m[39m+    393[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    394[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    395[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    396[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    397[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mComandos de Diagnóstico Rápido[K
+[0m[48;2;40;67;43m[39m+    398[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    399[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mbash[K
+[0m[48;2;40;67;43m[39m+    400[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Verificar dead code — confirm generate_unified_html nunca es invocado[K
+[0m[48;2;40;67;43m[39m+    401[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgrep -rn "generate_unified_html" ~/work/github/bible-expert/ --include="*.py"[K
+[0m[48;2;40;67;43m[39m+    402[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    403[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Ver distribución de códigos morfológicos WLC[K
+[0m[48;2;40;67;43m[39m+    404[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT substr(morph,1,2) as prefix, COUNT(*) FROM morphology WHERE src='WLC' GROUP BY prefix ORDER BY COUNT(*) DESC LIMIT 15;"[K
+[0m[48;2;40;67;43m[39m+    405[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    406[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Ver ejemplos de códigos LXX (formato dot)[K
+[0m[48;2;40;67;43m[39m+    407[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT morph FROM morphology WHERE src='LXX' AND morph LIKE 'V.%' LIMIT 10;"[K
+[0m[48;2;40;67;43m[39m+    408[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    409[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Comprobar libros LXX sin alias[K
+[0m[48;2;40;67;43m[39m+    410[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT DISTINCT book, COUNT(*) as words FROM morphology WHERE src='LXX' AND book IN ('JoshA','JoshB','JudgA','JudgB','DanOG','DanTh','1Esdr','2Esdr','BelOG','BelTh','SusOG','SusTh') GROUP BY book;"[K
+[0m[48;2;40;67;43m[39m+    411[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    412[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Cobertura patrística OT[K
+[0m[48;2;40;67;43m[39m+    413[0m:[39m[48;2;24;38;30m [38;2;192;197;206msqlite3 ~/.kiro/mcp-servers/bible-tools/db/bible.db "SELECT book, COUNT(*) as entries FROM patristic WHERE book != '' AND book NOT IN ('Matthew','Mark','Luke','John','Acts','Romans','1 Corinthians','2 Corinthians','Galatians','Ephesians','Philippians','Colossians','1 Thessalonians','2 Thessalonians','1 Timothy','2 Timothy','Titus','Philemon','Hebrews','James','1 Peter','2 Peter','1 John','2 John','3 John','Jude','Revelation') GROUP BY book ORDER BY COUNT(*) DESC LIMIT 10;"[K
+[0m[48;2;40;67;43m[39m+    414[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    415[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    416[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    417[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    418[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mReferencias[K
+[0m[48;2;40;67;43m[39m+    419[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    420[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;191;97;106mOpenScriptures OSHM Hebrew Morphology Codes — [38;2;191;97;106mhttps://hb.openscriptures.org[38;2;191;97;106m/parsing/HebrewMorphologyCodes[38;2;191;97;106m.[38;2;191;97;106mhtml[K
+[0m[48;2;40;67;43m[39m+    421[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m. CATSS LXX Morphology Coding — [38;2;191;97;106mhttp://ccat.sas.upenn.edu[38;2;191;97;106m/gopher/text/religion/biblical/lxxmorph/[K
+[0m[48;2;40;67;43m[39m+    422[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m. BLB Hebrew lexicon URL format — [38;2;163;190;140m`[38;2;163;190;140mblueletterbible.org/lexicon/h{number}/kjv/wlc/0-1/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    423[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m BibleHub Hebrew URL format — [38;2;163;190;140m`[38;2;163;190;140mbiblehub.com/hebrew/{number}.htm[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    424[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m morphhb repository — [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/openscriptures/morphhb[K
+[0m[48;2;40;67;43m[39m+    425[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m. LXX-Rahlfs-1935 dataset — [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/eliranwong/LXX-Rahlfs-1935[K
+[0m[48;2;40;67;43m[39m+    426[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    427[0m:[39m[48;2;24;38;30m [38;2;191;97;106m---[K
+[0m[48;2;40;67;43m[39m+    428[0m:[39m[48;2;24;38;30m [38;2;191;97;106m*[38;2;191;97;106mReporte[38;2;191;97;106m generado: 2026-06-13 · Job: cdd60333 · Basado en investigación del head agent + 5 agentes paralelos*[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/visual_report.md[0m
+[38;5;244m - Completed in 1.447s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho "$(date +%H:%M:%S)|Report Written" >> /Users/murivirg/work/github/bible-expert/investigation/cdd60333/visual_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.838s[0m
+[38;5;12m[1m [1.11][0m[0m
+[?25l[0m[38;5;141m> [0mWritten to [38;5;10m/Users/murivirg/work/github/bible-expert/investigation/cdd60333/visual_report.md[0m.[0m[0m
+[0m[0m
+The report covers all 10 investigation points with:[0m[0m
+[0m[0m
+[1m3 mermaid diagrams:[22m[0m[0m
+1. Architecture flow — shows the data pipeline from MCP client → server.py → study.html, and highlights [38;5;10munified_html_generator.py[0m as dead code[0m[0m
+2. Troubleshooting decision tree — guides from "OT shows no grammar" → identifies OSHM vs CATSS vs link vs alias bugs → each with the exact fix[0m[0m
+3. Sequence diagram — traces a real Genesis 1 request showing exactly where CRIT-1 (OSHM fallback) and CRIT-3 (wrong Hebrew URL) fail[0m[0m
+[0m[0m
+[1mKey findings confirmed vs the investigation report:[22m[0m[0m
+- CRIT-4 confirmed: [38;5;10mgrep[0m shows [38;5;10mgenerate_unified_html[0m only appears once (definition), [38;5;10mserver.py[0m calls only [38;5;10mgenerate_study_html[0m in the background thread[0m[0m
+- CRIT-1/2 confirmed: [38;5;10mverbTenseEs[0m checks [38;5;10m!rmac.startsWith('V-')[0m — [38;5;10mHVqp3ms[0m fails immediately; [38;5;10mexplainEnding[0m has no H/A prefix branch[0m[0m
+- CRIT-3 confirmed: hardcoded [38;5;10m/greek/[0m paths and [38;5;10mtr[0m (Textus Receptus) for the BLB link[0m[0m
+[0m[0m
+[1mPrioritized fix plan[22m with copy-pasteable code for each bug, from 5-minute fixes (aliases, links) up to the 2-hour OT parity work in [38;5;10munified_html_generator.py[0m]9;Response complete.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 2.87 • Time: 2m 48s
+
+[0m[1G[0m[0m[?25h

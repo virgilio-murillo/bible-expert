@@ -1,0 +1,15 @@
+11:43:14|Starting validation
+11:43:34|Reading findings file
+11:43:46|Checking project structure
+11:44:21|Checking renderMorph code
+11:44:46|Verifying morph parsers
+11:45:11|Checking ingest code
+11:45:26|Checking WLC morph format
+11:46:12|Checking BLB URL format
+11:46:48|Verifying BibleHub URLs
+11:47:03|LXX morph format check
+11:48:08|Checking patristic OT data
+11:48:57|Verifying psalm numbering
+11:49:11|Checking LXX naming in books
+11:50:03|Writing validated report
+11:51:37|Validation complete
