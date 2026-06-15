@@ -102,9 +102,9 @@ def generate_unified_html(book: str, chapter: int, chapter_data: dict, output_di
     exeg_themes = _load_exeg_themes(book, chapter)
     patr_themes = _load_patr_themes(book, chapter)
 
-    # If no patristic themes JSON but we have patristic data, regenerate
-    if not patr_themes and patristic:
-        patr_themes = _regenerate_patr_themes(book, chapter, patristic)
+    # Skip LLM regeneration — render without themes if not cached
+    if not patr_themes:
+        patr_themes = {}
 
     # Build HTML
     verses_html = ""
