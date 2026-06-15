@@ -929,11 +929,12 @@ def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir:
         def _generate_background_analyses():
             import traceback
             try:
+                # Patristic & exegetical: always use NT generator (proven working)
+                from study_html_generator_nt import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
+                # Unified: separate per testament
                 if _is_ot(resolved):
-                    from study_html_generator_ot import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
                     from unified_html_generator_ot import generate_unified_html
                 else:
-                    from study_html_generator_nt import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
                     from unified_html_generator_nt import generate_unified_html
                 
                 # Patristic thematic analysis
