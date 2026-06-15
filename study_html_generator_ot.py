@@ -7,6 +7,7 @@ S3_BUCKET = "bible-study-cache-609009159737"
 
 
 def _s3_cache_get(key: str) -> str:
+    return ""  # CACHE DISABLED
     """Get cached content from S3. Returns empty string if not found."""
     import boto3
     from botocore.config import Config
@@ -19,6 +20,7 @@ def _s3_cache_get(key: str) -> str:
 
 
 def _s3_cache_put(key: str, content: str):
+    return  # CACHE DISABLED
     """Store content in S3 cache."""
     import boto3
     from botocore.config import Config
