@@ -9,6 +9,13 @@ from books import resolve_book, get_all_db_names, BOOKS
 DB_PATH = Path(__file__).parent / "db" / "bible.db"
 DATA_DIR = Path(__file__).parent / "data"
 
+# OT book IDs: 1-39 in BOOKS dict
+_OT_NAMES = frozenset(BOOKS[i][0] for i in range(1, 40))
+
+def _is_ot(book: str) -> bool:
+    """Return True if resolved book name is Old Testament."""
+    return book in _OT_NAMES
+
 mcp = FastMCP("Bible-Expert")
 
 
@@ -870,13 +877,18 @@ def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir:
         output_dir: Directory to save output. Default: ~/bible-studies/<book>-<chapter>/
     """
     import boto3, json
-    from study_html_generator import gather_chapter_data, generate_study_html
     from map_generator import generate_chapter_map
     
     db = get_db()
     try:
         resolved = _resolve_book_or_error(book)
         candidates = get_all_db_names(resolved)
+        
+        # Route to OT or NT generator
+        if _is_ot(resolved):
+            from study_html_generator_ot import gather_chapter_data, generate_study_html
+        else:
+            from study_html_generator_nt import gather_chapter_data, generate_study_html
         
         # Gather all data
         chapter_data = gather_chapter_data(resolved, chapter, version, candidates)
@@ -917,7 +929,12 @@ def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir:
         def _generate_background_analyses():
             import traceback
             try:
-                from study_html_generator import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
+                if _is_ot(resolved):
+                    from study_html_generator_ot import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
+                    from unified_html_generator_ot import generate_unified_html
+                else:
+                    from study_html_generator_nt import _generate_patristic_analysis, _generate_grounded_exegetical, _strip_md
+                    from unified_html_generator_nt import generate_unified_html
                 
                 # Patristic thematic analysis
                 if chapter_data.get("patristic"):
@@ -944,6 +961,14 @@ def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir:
             except Exception as e:
                 err_path = out_path / "background_error.txt"
                 err_path.write_text(traceback.format_exc(), encoding="utf-8")
+
+            # Unified analysis (combines all data into one interactive page)
+            try:
+                unified_path = generate_unified_html(resolved, chapter, chapter_data, out_path)
+                if unified_path and unified_path.exists():
+                    subprocess.Popen(["open", str(unified_path)])
+            except Exception:
+                pass
         
         threading.Thread(target=_generate_background_analyses).start()
         
